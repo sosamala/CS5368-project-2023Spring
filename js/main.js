@@ -302,7 +302,7 @@ $(document).ready(function() {
 
     function makeAQuery(query,unkowns, pr_return) {
         $.ajax({
-            url: "http://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
+            url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",
             headers: {
               "X-Requested-With": "XMLHttpRequest",
