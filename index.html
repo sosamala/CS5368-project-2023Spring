@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-grid.min.css" rel="stylesheet"/>
+    <link href="./css/bootstrap-reboot.min.css" rel="stylesheet"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href='./css/fonts/fonts/bootstrap-icons.woff' rel='stylesheet' type='text/css'>
+    <title>Food suggestion Chat bot</title>
+</head>
+<body style="width: 100%;">
+    <div class="container">
+        <div class="content">
+            <div class="row chat-header">
+                <h3>Messages<span></span></h3>
+            </div>
+            <div id="chatbody" class="row chat-body">
+            <div class="messages" id="diMessages">
+                <div class="left-message">
+                    Hey!!! 
+                </div>
+            </div>
+
+            </div>
+            <div class=" row chat-form">
+                <div class="col">
+                   <textarea  id="taMessage" placeholder="say something I'm giving up on you...">Yo!! Suggest me a Restaurant na..</textarea>
+                </div>
+                <div class="col-sm-3half" style="width: 25%;">
+                    <input class="btn btn-primary" type="button" id="btSend" value="send"/>
+                    <button class="btn btn-dark" type="button"  id="btMic" > <img src="css/fonts/mic.svg"> </button>
+                    <button class="btn btn-dark" type="button"  id="btSpeakers" > <img id="imgVolume" src="css/fonts/volume-up.svg"> </button>
+                </div>
+            </div>  
+        </div>
+    </div>
+    
+</body>
+<script src="./js/jquery-3.6.4.min.js"></script>
+<script src="./js/jquery-3.6.4.min.js"></script>
+<script src="./js/knowledgeBase.js"></script>
+<script src="./js/bot-commands.js"></script>
+<script src="./js/data.js"></script>
+<script src="./js/constants.js"></script>
+<script src="./js/main.js"></script>
+</html>
