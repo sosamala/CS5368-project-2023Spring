@@ -88,7 +88,7 @@ $(document).ready(function() {
         message = message.toLowerCase().trim().replace(/[^a-z0-9 ]/g, "");
 
         //process if expecting a response first :O 
-        if(context.expectint_a_response != null) {
+        if(context != null && context.expectint_a_response != null) {
             var ex_return  = process_exc(message);
             if(ex_return != null) {
                 return process_msg_response(process_exc_response(ex_return));
