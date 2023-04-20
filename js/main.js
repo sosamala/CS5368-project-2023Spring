@@ -186,6 +186,46 @@ $(document).ready(function() {
             else if(response_case === 'q5'){
                 console.log('In q1');
             }
+            else if(response_case === 'q1_sq1'){
+                params = []
+                unkowns = 0;
+                params.push(context.res_id)
+                params.push(unkown_names[unkowns++])
+                query_name = 'category';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
+            else if(response_case === 'q1_sq2'){
+                params = []
+                unkowns = 0;
+                params.push(context.res_id)
+                params.push(unkown_names[unkowns++])
+                query_name = 'hasItem';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
+            else if(response_case === 'q1_sq3'){
+                params = []
+                unkowns = 0;
+                params.push(context.res_id)
+                params.push(unkown_names[unkowns++])
+                query_name = 'getPriceRange';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
+            else if(response_case === 'q1_sq4'){
+                params = []
+                unkowns = 0;
+                params.push(context.res_id)
+                params.push(unkown_names[unkowns++])
+                query_name = 'zipcode';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
+            else if(response_case === 'q1_sq5'){
+                params = []
+                unkowns = 0;
+                params.push(context.res_id)
+                params.push(unkown_names[unkowns++])
+                query_name = 'hasFoodCategory';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
         }
         
         return null;
@@ -347,6 +387,7 @@ $(document).ready(function() {
         const response_case = pr_return.data.response;
 
         if(response_case === "q1") {
+
             response_message = '';
             item = results[Math.floor(Math.random()*results.length)];
             res_name = res_hash_name[item[1]];
@@ -364,6 +405,56 @@ $(document).ready(function() {
             else 
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
+
+        } else if( response_case === "q1_sq1"){
+            response_message = '';
+            
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +"."+res_hash_cat[results[i]]+"</br>"
+            }
+
+            return createResponseMessage(response_message);
+
+        } else if( response_case === "q1_sq2"){
+            response_message = '';
+            
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +"."+res_hash_food[results[i]]+"</br>"
+            }
+
+            return createResponseMessage(response_message);
+
+        } else if( response_case === "q1_sq3"){
+            response_message = '';
+            
+            if(result === "1"){
+                response_message = "Budget Friendly"
+            } else if( result === "2"){
+                response_message = "Moderate"
+            } else {
+                response_message = "Expensive"
+            }
+
+            return createResponseMessage(response_message);
+            
+        } else if( response_case === "q1_sq4"){
+            response_message = '';
+            
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +"."+res_hash_zip[results[i]]+"\n"
+            }
+
+            return createResponseMessage(response_message);
+            
+        } else if( response_case === "q1_sq5"){
+            response_message = '';
+            
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +"."+res_hash_cat[results[i]]+"\n"
+            }
+
+            return createResponseMessage(response_message);
+            
         }
 
     }

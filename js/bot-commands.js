@@ -56,6 +56,42 @@ var commands = {
             "response_type":"calculated",
             "response" : "q5"
         },
+        {
+            "pattern": ["(.*)ask(.*)now(.*)"],
+            "match_tye": "r",
+            "response_type": "string",
+            "response" : "Ask me  <br/> 1.What cuisine this restaurant serves? <br/> 2. Show me the menu<br/> 3. What is budget range of this restaurant <br/> 4. Where is this restaurant located? </br> 5. What are food categories served in this restaurant?"
+        },
+        {
+            "pattern": ["(.*)cuisine(.*)restaurant(.*)serves(.*)"],
+            "match_tye": "r",
+            "response_type": "calculated",
+            "response" : "q1_sq1"
+        },
+        {
+            "pattern": ["(.*)show(.*)menu(.*)"],
+            "match_tye": "r", 
+            "response_type": "calculated",
+            "response" : "q1_sq2"
+        },
+        {
+            "pattern": ["(.*)budget(.*)range(.*)restaurant(.*)"],
+            "match_tye": "r",
+            "response_type": "calculated",
+            "response" : "q1_sq3"
+        },
+        {
+            "pattern": ["(.*)restaurant(.*)located(.*)"],
+            "match_tye": "r",
+            "response_type": "calculated",
+            "response" : "q1_sq4"
+        },
+        {
+            "pattern": ["(.*)categories(.*)served(.*)restaurant(.*)"],
+            "match_tye": "r",
+            "response_type": "calculated",
+            "response" : "q1_sq5"
+        }
     ]
 }
 
