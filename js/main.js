@@ -121,7 +121,7 @@ $(document).ready(function() {
                 context.res = context.saved_suff.data[1];
                 context.res_id = context.saved_suff.data[0];
                 response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
-                To know what you can ask me now say "what can I ask now ?".
+                To know what you can ask me now say "what can I ask now?".
                 `.format([res_hash_name[context.saved_suff.data[1]]]);
                 return {'data': response_message, 'tag':'string'};
             } else if(negative_response.includes(message)) {
@@ -184,7 +184,15 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q5'){
-                console.log('In q1');
+                category = initCap(regex[2])
+                console.log(category)
+                params = []
+                unkowns = 0;
+                params.push(res_cat_hash[category])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getRestaurantByCategory';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q1_sq1'){
                 params = []
@@ -455,6 +463,22 @@ $(document).ready(function() {
 
             return createResponseMessage(response_message);
             
+        } else if( response_case === "q5"){
+            response_message = '';
+
+            item = results[1]
+            console.log()
+            context = getEmptyContext();
+            context.expectint_a_response = "q5";
+            context.saved_suff = {
+                "data_q5" : results
+            };
+
+            console.log(results)
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+            }
+            return createResponseMessage(response_message);
         }
 
     }
@@ -463,6 +487,15 @@ $(document).ready(function() {
         return {'data' : message};
     }
 
+    function initCap(mySentence) {
+        const words = mySentence.split(" ");
+
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+        }
+
+        return words.join(" ");
+    }
 
 
 });
