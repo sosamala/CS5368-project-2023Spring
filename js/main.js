@@ -135,13 +135,15 @@ $(document).ready(function() {
         } else if(context.expectint_a_response == "q5") {
             message = message.replace(/[^0-9]/g, "");
             try {
-                option = Number(message)-1
+                option = Number(message)
                 if(option <= context.saved_suff.data_q5.length && option > 0) {
+                    option = option - 1
                     context.res = context.saved_suff.data_q5[option][1];
-                    context.res_id = context.saved_suff[data_q5][option][0];
+                    context.res_id = context.saved_suff.data_q5[option][0];
                     response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
                     To know what you can ask me now say "what can I ask now?".
                     `.format([res_hash_name[context.saved_suff.data_q5[option][1]]]);
+                    console.log({'data': response_message, 'tag':'string'})
                     return {'data': response_message, 'tag':'string'};
                 }
             }
