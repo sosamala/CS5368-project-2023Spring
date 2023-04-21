@@ -51,7 +51,7 @@ var commands = {
             "response" : "q4"
         },
         {
-            "pattern": ["(.*)serving ([a-z])"],
+            "pattern": ["(.*)serving (.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q5"
