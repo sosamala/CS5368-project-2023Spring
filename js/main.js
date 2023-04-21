@@ -189,7 +189,7 @@ $(document).ready(function() {
                 params = []
                 unkowns = 0;
                 params.push(unkown_names[unkowns++])
-                params.push(res_[regex[2].trim()])
+                params.push(res_food_cat_hash[regex[2].trim()])
                 params.push(unkown_names[unkowns++])
                 params.push(unkown_names[unkowns++])
                 params.push(unkown_names[unkowns++])
