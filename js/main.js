@@ -441,7 +441,7 @@ $(document).ready(function() {
             response_message = '';
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_zip[results[i]]+"\n"
+                response_message += "It is located at: "+res_hash_address[results[i]]+"</br>"
             }
 
             return createResponseMessage(response_message);
