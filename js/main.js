@@ -226,7 +226,7 @@ $(document).ready(function() {
                 unkowns = 0;
                 params.push(context.res_id)
                 params.push(unkown_names[unkowns++])
-                query_name = 'zipcode';
+                query_name = 'fullAddress';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q1_sq5'){
