@@ -57,6 +57,12 @@ var commands = {
             "response" : "q5"
         },
         {
+            "pattern": ["search for (.*)"],
+            "match_tye":"r",
+            "response_type":"calculated",
+            "response" : "q6"
+        },
+        {
             "pattern": ["(.*)ask(.*)now(.*)"],
             "match_tye": "r",
             "response_type": "string",

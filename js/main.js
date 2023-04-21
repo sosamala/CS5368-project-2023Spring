@@ -186,6 +186,21 @@ $(document).ready(function() {
             else if(response_case === 'q5'){
                 console.log('In q1');
             }
+            else if(response_case === 'q6'){
+                params = []
+                unkowns = 0;
+                console.log("regex"+regex[1])
+                params.push(unkown_names[unkowns++])
+                params.push(res_name_hash[regex[1]])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getRestaurantDetails';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
             else if(response_case === 'q1_sq1'){
                 params = []
                 unkowns = 0;
@@ -199,7 +214,9 @@ $(document).ready(function() {
                 unkowns = 0;
                 params.push(context.res_id)
                 params.push(unkown_names[unkowns++])
-                query_name = 'hasItem';
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getMenuByRestaurant';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q1_sq3'){
@@ -337,10 +354,12 @@ $(document).ready(function() {
 
     function createAndMakeQuery(query_name, params, unkowns, pr_return) {        
         makeAQuery(query_name+"("+params.join(',')+")",unkowns, pr_return);
+        
         return  {'data': null};
     }
 
     function makeAQuery(query,unkowns, pr_return) {
+        console.log(query)
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",
@@ -406,6 +425,29 @@ $(document).ready(function() {
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
+        } else if(response_case === "q6"){
+            response_message = '';
+            console.log(results);
+            context = getEmptyContext();
+            context.res_id =  results[0]
+            priceRange = ''
+            if(results[5] === "1"){
+                priceRange = "Budget Friendly"
+            } else if( results[5] === "2"){
+                priceRange = "Moderate"
+            } else {
+                priceRange = "Expensive"
+            }
+            response_message = 'Please find restaurant Details </br>' +
+                                'Name :'+ res_hash_name[results[1]]+ '</br>'+
+                                'Ranking :' +results[2]+'</br>'+
+                                'Rating :' + results[4]+'</br>'+
+                                'Price Range:'+priceRange+'</br>'+
+                                'Address' + res_hash_address[results[6]]+'</br>'+
+                                'zipcode' + res_hash_zip[results[7]]+'</br>'
+
+            return createResponseMessage(response_message);
+        
         } else if( response_case === "q1_sq1"){
             response_message = '';
             
@@ -419,7 +461,8 @@ $(document).ready(function() {
             response_message = '';
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_food[results[i]]+"</br>"
+                response_message += (i+1) +"."+ res_hash_food[results[i][1]]+ 
+                 "          "+results[i][2] +"$</br>"
             }
 
             return createResponseMessage(response_message);
