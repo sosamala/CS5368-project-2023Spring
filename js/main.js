@@ -155,7 +155,7 @@ $(document).ready(function() {
     }
 
     function process_regex_response(pr_return) {
-        
+        debugger;
         if(pr_return.data.response_type === "string") {
             return {"data": pr_return.data.response}
         }
@@ -184,6 +184,17 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q5'){
+                console.log('In q1');
+            }else if(response_case === 'q7'){ 
+                params = []
+                unkowns = 0;
+                params.push(unkown_names[unkowns++])
+                params.push(res_[regex[2].trim()])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getRestaurantNameByFoodItem';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
                 console.log('In q1');
             }
             else if(response_case === 'q1_sq1'){
@@ -341,6 +352,7 @@ $(document).ready(function() {
     }
 
     function makeAQuery(query,unkowns, pr_return) {
+        console.log("makeeeeeee",query);
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",

@@ -367,7 +367,7 @@ predicates
     
     getRestaurantDetails(#id,#restaurantName,#position,#score,#rating,#priceRange,#fullAddress,#zipcode).
     getMenuByRestaurant(#id,#foodCategory,#foodItem, #foodPrice).
-    
+    getRestaurantNameByFoodItem(#id,#foodCategory,#foodItem, #foodPrice, #restaurantName).
 rules
 
     getRestaurantDetails(I,N,P,S,R,B,A,Z) :- name(I,N),
@@ -382,6 +382,11 @@ rules
     getMenuByRestaurant(I,C,F,P) :-   hasFoodCategory(I,C),
                                       categoryHasItem(C,F),
                                       price(F,P).
+                                      
+    getRestaurantNameByFoodItem(I,C,F,P,N) :- hasFoodCategory(I,C),
+                                      categoryHasItem(C,F),
+                                      price(F,P),
+                                      name(I, N).                                  
 
     %positionByName(X,Y) :- name(I,X), position(I,Y).
     %scoreByName(X,Y) :- name(I,X), score(I,Y).
@@ -1454,6 +1459,5 @@ description(gbngnwth,kfheqdxn).
 description(piakseab,kfheqdxn).
 description(ibcgmdas,mblcspzq).
 description(kxbdtpfs,rsgtnzxy).
-
 `;
 
