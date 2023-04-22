@@ -93,7 +93,7 @@ var commands = {
             "response" : "q1_sq4"
         },
         {
-            "pattern": ["(.*)categories(.*)served(.*)restaurant(.*)"],
+            "pattern": ["(.*)categories(.*)((serve)|(has))?(.*)(restaurant)?(.*)"],
             "match_tye": "r",
             "response_type": "calculated",
             "response" : "q1_sq5"

@@ -548,10 +548,10 @@ $(document).ready(function() {
             return createResponseMessage(response_message);
             
         } else if( response_case === "q1_sq5"){
-            response_message = '';
+            response_message = "Here's the Food Categories for '{}' Restaurant: </br>".format([res_hash_name[context.res]]);
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_cat[results[i]]+"\n"
+                response_message += "{}. {} </br>".format([i+1, res_hash_food_cat[results[i]]])
             }
 
             return createResponseMessage(response_message);
@@ -615,6 +615,7 @@ $(document).ready(function() {
     d('suggest restaurant');
     d('Hey, Tell me some restaurants in 79414');
     d('So Tell me what cuisine does the restaurant serve');
+    d('tell me the food Categories served in this restaurant');
     function d(s) {
         if(debugEnabled) {
             console.log(s);
