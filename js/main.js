@@ -213,6 +213,21 @@ $(document).ready(function () {
                 params.push(unkown_names[unkowns++])
                 query_name = 'getRestaurantByCategory';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
+            else if(response_case === 'q6'){
+                params = []
+                unkowns = 0;
+                console.log("regex"+regex[1])
+                params.push(unkown_names[unkowns++])
+                params.push(res_name_hash[regex[1]])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getRestaurantDetails';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
             } else if (response_case === 'q7' || response_case === 'q7_1') {
                 params = []
                 unkowns = 0;
@@ -223,7 +238,8 @@ $(document).ready(function () {
                 params.push(unkown_names[unkowns++])
                 query_name = 'getRestaurantNameByFoodItem';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return, regex[2].trim());
-            } else if (response_case === 'q1_sq1') {
+            }
+            else if(response_case === 'q1_sq1'){
                 params = []
                 unkowns = 0;
                 params.push(context.res_id)
@@ -236,7 +252,9 @@ $(document).ready(function () {
                 unkowns = 0;
                 params.push(context.res_id)
                 params.push(unkown_names[unkowns++])
-                query_name = 'hasItem';
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getMenuByRestaurant';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if (response_case === 'q1_sq3') {
@@ -441,18 +459,44 @@ $(document).ready(function () {
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
-        } else if (response_case === "q1_sq1") {
+        } else if(response_case === "q6"){
+            response_message = '';
+            console.log(results);
+            context = getEmptyContext();
+            context.res_id =  results[0]
+            priceRange = ''
+            if(results[5] === "1"){
+                priceRange = "Budget Friendly"
+            } else if( results[5] === "2"){
+                priceRange = "Moderate"
+            } else {
+                priceRange = "Expensive"
+            }
+            response_message = 'Please find restaurant Details </br>' +
+                                'Name :'+ res_hash_name[results[1]]+ '</br>'+
+                                'Ranking :' +results[2]+'</br>'+
+                                'Rating :' + results[4]+'</br>'+
+                                'Price Range:'+priceRange+'</br>'+
+                                'Address' + res_hash_address[results[6]]+'</br>'+
+                                'zipcode' + res_hash_zip[results[7]]+'</br>'
 
-            for (let i = 0; i < results.length; i++) {
-                response_message += (i + 1) + "." + res_hash_cat[results[i]] + "</br>"
+            return createResponseMessage(response_message);
+        
+        } else if( response_case === "q1_sq1"){
+            response_message = '';
+            
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +"."+res_hash_cat[results[i]]+"</br>"
             }
 
             return createResponseMessage(response_message);
 
-        } else if (response_case === "q1_sq2") {
-
-            for (let i = 0; i < results.length; i++) {
-                response_message += (i + 1) + "." + res_hash_food[results[i]] + "</br>"
+        } else if( response_case === "q1_sq2"){
+            response_message = '';
+            
+            for(let i = 0 ; i < results.length; i++){
+                response_message += (i+1) +"."+ res_hash_food[results[i][1]]+ 
+                 "          $ "+results[i][2] +"</br>"
             }
 
             return createResponseMessage(response_message);
