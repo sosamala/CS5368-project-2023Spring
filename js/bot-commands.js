@@ -45,7 +45,7 @@ var commands = {
             "response" : "q3"
         },
         {
-            "pattern": ["(.*)restaraunts in ([0-9]{5})(.*)"],
+            "pattern": ["(.*)restaurants in ([0-9]{5})(.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q4"
