@@ -509,9 +509,10 @@ $(document).ready(function() {
             
         } else if( response_case === "q1_sq4"){
             response_message = '';
+            console.log(context)
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_zip[results[i]]+"\n"
+                response_message += res_hash_name[context.res]+" is located at: "+res_hash_address[results[i]]+".</br>"
             }
 
             return createResponseMessage(response_message);
