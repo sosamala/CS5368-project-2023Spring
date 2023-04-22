@@ -533,12 +533,19 @@ $(document).ready(function() {
             context.saved_suff = {
                 "data_q5" : results
             };
-
-            response_message += "Here is a list of restaurants serve "+ context.res_cat+ ":"+"</br>"+"</br>"
-            for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+            console.log("results")
+            if(results.length == 0){
+                response_message += "Could not find a restaurant that serves "+ context.res_cat+"."+"</br>"
+                response_message += "Try again with: fast food, bbq, coffee and tea, tex mex..."+"</br>"
+            } else {
+                response_message += "Here is a list of restaurants serve "+ context.res_cat+ ":"+"</br>"+"</br>"
+                for(let i = 0 ; i < results.length; i++){
+                    response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+                }
+                response_message += "</br>"+"Select a restaurant by entering it's serial number."
             }
-            response_message += "</br>"+"Select a restaurant by entering it's serial number."
+
+            
             return createResponseMessage(response_message);
         }
 
