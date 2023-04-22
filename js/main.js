@@ -506,7 +506,7 @@ $(document).ready(function() {
             return createResponseMessage(response_message);
         
         } else if( response_case === "q1_sq1"){
-            response_message = '';
+            response_message = "Here's the Cuisine for '{}' Restaurant: </br>".format([res_hash_name[context.res]]);
             
             for(let i = 0 ; i < results.length; i++){
                 response_message += (i+1) +"."+res_hash_cat[results[i]]+"</br>"
@@ -612,7 +612,9 @@ $(document).ready(function() {
         return words.join(" ");
     }
 
+    d('suggest restaurant');
     d('Hey, Tell me some restaurants in 79414');
+    d('So Tell me what cuisine does the restaurant serve');
     function d(s) {
         if(debugEnabled) {
             console.log(s);
