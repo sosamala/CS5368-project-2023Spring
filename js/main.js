@@ -462,7 +462,7 @@ $(document).ready(function() {
             
             for(let i = 0 ; i < results.length; i++){
                 response_message += (i+1) +"."+ res_hash_food[results[i][1]]+ 
-                 "          "+results[i][2] +"$</br>"
+                 "          $ "+results[i][2] +"</br>"
             }
 
             return createResponseMessage(response_message);
