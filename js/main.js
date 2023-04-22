@@ -218,6 +218,7 @@ $(document).ready(function () {
                 params = []
                 unkowns = 0;
                 console.log("regex"+regex[1])
+                context.res_name_id = res_name_hash[regex[1]]
                 params.push(unkown_names[unkowns++])
                 params.push(res_name_hash[regex[1]])
                 params.push(unkown_names[unkowns++])
@@ -231,8 +232,10 @@ $(document).ready(function () {
             } else if (response_case === 'q7' || response_case === 'q7_1') {
                 params = []
                 unkowns = 0;
+                const food_item_id = res_food_cat_hash[regex[2].trim()];
+                context.food_item_id = food_item_id;
                 params.push(unkown_names[unkowns++])
-                params.push(res_food_cat_hash[regex[2].trim()])
+                params.push(food_item_id)
                 params.push(unkown_names[unkowns++])
                 params.push(unkown_names[unkowns++])
                 params.push(unkown_names[unkowns++])
@@ -384,17 +387,20 @@ $(document).ready(function () {
             "res": null,
             "res_cat": null,
             "res_menu": null,
+            "res_name_id": null,
             "expectint_a_response": null,
-            "saved_suff": null
+            "saved_suff": null,
+            "food_item_id": null
         }
     }
 
-    function createAndMakeQuery(query_name, params, unkowns, pr_return, extraparam = null) {
-        makeAQuery(query_name + "(" + params.join(',') + ")", unkowns, pr_return, extraparam);
+    function createAndMakeQuery(query_name, params, unkowns, pr_return = null) {
+        makeAQuery(query_name + "(" + params.join(',') + ")", unkowns, pr_return);
         return { 'data': null };
     }
 
-    function makeAQuery(query, unkowns, pr_return, extraparam) {
+    function makeAQuery(query, unkowns, pr_return) {
+        console.log(query)
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",
@@ -409,7 +415,7 @@ $(document).ready(function () {
                 editor: knowledge
             },
             success: function (response) {
-                process_msg_response(processAjaxResponse(response, unkowns, pr_return, extraparam));
+                process_msg_response(processAjaxResponse(response, unkowns, pr_return));
             },
             error: function (xhr, status, error) {
                 console.log("error: " + error);
@@ -417,7 +423,7 @@ $(document).ready(function () {
         });
     }
 
-    function processAjaxResponse(response, unkowns, pr_return, extraparam) {
+    function processAjaxResponse(response, unkowns, pr_return) {
         results = []
         lines = response.split('<p')[1].split('<br');
         response_message = '';
@@ -463,22 +469,22 @@ $(document).ready(function () {
             response_message = '';
             console.log(results);
             context = getEmptyContext();
-            context.res_id =  results[0]
+            context.res_id =  results[0][0]
             priceRange = ''
-            if(results[5] === "1"){
+            if(results[4] === "1"){
                 priceRange = "Budget Friendly"
-            } else if( results[5] === "2"){
+            } else if( results[4] === "2"){
                 priceRange = "Moderate"
             } else {
                 priceRange = "Expensive"
             }
             response_message = 'Please find restaurant Details </br>' +
-                                'Name :'+ res_hash_name[results[1]]+ '</br>'+
-                                'Ranking :' +results[2]+'</br>'+
-                                'Rating :' + results[4]+'</br>'+
+                                'Name :'+ res_hash_name[context.res_name_id]+ '</br>'+
+                                'Ranking :' +results[0][1]+'</br>'+
+                                'Rating :' + results[0][2]+'</br>'+
                                 'Price Range:'+priceRange+'</br>'+
-                                'Address' + res_hash_address[results[6]]+'</br>'+
-                                'zipcode' + res_hash_zip[results[7]]+'</br>'
+                                'Address' + res_hash_address[results[0][5]]+'</br>'+
+                                'zipcode' + res_hash_zip[results[0][6]]+'</br>'
 
             return createResponseMessage(response_message);
         
@@ -547,7 +553,7 @@ $(document).ready(function () {
             return createResponseMessage(response_message);
         } else if (response_case === "q7" || response_case === 'q7_1') {
 
-            response_message = 'You can get ' + extraparam + ' in these restaurants </br>';
+            response_message = 'You can get ' + res_hash_food_cat[context.food_item_id] + ' in these restaurants </br>';
             const uniqueRestName = results?.filter((thing, index) => {
                 return index === results.findIndex(obj => {
                     return obj[3] === thing[3];
@@ -556,6 +562,7 @@ $(document).ready(function () {
             for (let i = 0; i < uniqueRestName.length; i++) {
                 response_message += res_hash_name[results[i][3]] + "</br>"
             }
+            context = getEmptyContext();
             return createResponseMessage(response_message);
         }
     }
