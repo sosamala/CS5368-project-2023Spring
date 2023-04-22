@@ -121,7 +121,7 @@ $(document).ready(function() {
                 context.res = context.saved_suff.data[1];
                 context.res_id = context.saved_suff.data[0];
                 response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
-                To know what you can ask me now say "what can I ask now ?".
+                To know what you can ask me now say "what can I ask now?".
                 `.format([res_hash_name[context.saved_suff.data[1]]]);
                 return {'data': response_message, 'tag':'string'};
             } else if(negative_response.includes(message)) {
@@ -132,6 +132,25 @@ $(document).ready(function() {
                 return null;
             }
 
+        } else if(context.expectint_a_response == "q5") {
+            message = message.replace(/[^0-9]/g, "");
+            try {
+                option = Number(message)
+                if(option <= context.saved_suff.data_q5.length && option > 0) {
+                    option = option - 1
+                    context.res = context.saved_suff.data_q5[option][1];
+                    context.res_id = context.saved_suff.data_q5[option][0];
+                    response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
+                    To know what you can ask me now say "what can I ask now?".
+                    `.format([res_hash_name[context.saved_suff.data_q5[option][1]]]);
+                    console.log({'data': response_message, 'tag':'string'})
+                    return {'data': response_message, 'tag':'string'};
+                }
+            }
+            catch(err) {
+                console.log(err)
+                return null;
+            }
         }
         return null;
 
@@ -184,7 +203,30 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q5'){
-                console.log('In q1');
+                category = regex[2]
+                params = []
+                unkowns = 0;
+                params.push(res_cat_hash[category])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getRestaurantByCategory';
+                context.res_cat=category
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+            }
+            else if(response_case === 'q6'){
+                params = []
+                unkowns = 0;
+                console.log("regex"+regex[1])
+                params.push(unkown_names[unkowns++])
+                params.push(res_name_hash[regex[1]])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getRestaurantDetails';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q1_sq1'){
                 params = []
@@ -199,7 +241,9 @@ $(document).ready(function() {
                 unkowns = 0;
                 params.push(context.res_id)
                 params.push(unkown_names[unkowns++])
-                query_name = 'hasItem';
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                query_name = 'getMenuByRestaurant';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q1_sq3'){
@@ -337,10 +381,12 @@ $(document).ready(function() {
 
     function createAndMakeQuery(query_name, params, unkowns, pr_return) {        
         makeAQuery(query_name+"("+params.join(',')+")",unkowns, pr_return);
+        
         return  {'data': null};
     }
 
     function makeAQuery(query,unkowns, pr_return) {
+        console.log(query)
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",
@@ -406,6 +452,29 @@ $(document).ready(function() {
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
+        } else if(response_case === "q6"){
+            response_message = '';
+            console.log(results);
+            context = getEmptyContext();
+            context.res_id =  results[0]
+            priceRange = ''
+            if(results[5] === "1"){
+                priceRange = "Budget Friendly"
+            } else if( results[5] === "2"){
+                priceRange = "Moderate"
+            } else {
+                priceRange = "Expensive"
+            }
+            response_message = 'Please find restaurant Details </br>' +
+                                'Name :'+ res_hash_name[results[1]]+ '</br>'+
+                                'Ranking :' +results[2]+'</br>'+
+                                'Rating :' + results[4]+'</br>'+
+                                'Price Range:'+priceRange+'</br>'+
+                                'Address' + res_hash_address[results[6]]+'</br>'+
+                                'zipcode' + res_hash_zip[results[7]]+'</br>'
+
+            return createResponseMessage(response_message);
+        
         } else if( response_case === "q1_sq1"){
             response_message = '';
             
@@ -419,7 +488,8 @@ $(document).ready(function() {
             response_message = '';
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_food[results[i]]+"</br>"
+                response_message += (i+1) +"."+ res_hash_food[results[i][1]]+ 
+                 "          $ "+results[i][2] +"</br>"
             }
 
             return createResponseMessage(response_message);
@@ -455,6 +525,28 @@ $(document).ready(function() {
 
             return createResponseMessage(response_message);
             
+        } else if( response_case === "q5"){
+            response_message = '';
+
+            item = results[1]
+            context.expectint_a_response = "q5";
+            context.saved_suff = {
+                "data_q5" : results
+            };
+            console.log("results")
+            if(results.length == 0){
+                response_message += "Could not find a restaurant that serves "+ context.res_cat+"."+"</br>"
+                response_message += "Try again with: fast food, bbq, coffee and tea, tex mex..."+"</br>"
+            } else {
+                response_message += "Here is a list of restaurants serve "+ context.res_cat+ ":"+"</br>"+"</br>"
+                for(let i = 0 ; i < results.length; i++){
+                    response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+                }
+                response_message += "</br>"+"Select a restaurant by entering it's serial number."
+            }
+
+            
+            return createResponseMessage(response_message);
         }
 
     }
@@ -463,6 +555,15 @@ $(document).ready(function() {
         return {'data' : message};
     }
 
+    function initCap(mySentence) {
+        const words = mySentence.split(" ");
+
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+        }
+
+        return words.join(" ");
+    }
 
 
 });

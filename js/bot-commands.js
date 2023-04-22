@@ -51,10 +51,16 @@ var commands = {
             "response" : "q4"
         },
         {
-            "pattern": ["(.*)serving ([a-z])"],
+            "pattern": ["(.*)serving (.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q5"
+        },
+        {
+            "pattern": ["search for (.*)"],
+            "match_tye":"r",
+            "response_type":"calculated",
+            "response" : "q6"
         },
         {
             "pattern": ["(.*)ask(.*)now(.*)"],
