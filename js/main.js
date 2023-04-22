@@ -1,49 +1,49 @@
-$(document).ready(function() {
-    
+$(document).ready(function () {
+
     var isVolume = true;
 
-    $("#btSend").on('click', function(){
+    $("#btSend").on('click', function () {
         textarea = $("#taMessage");
         value = textarea.val();
-        if(value.trim().length == 0) {
+        if (value.trim().length == 0) {
             return;
         }
         sendMessage(value);
         value = textarea.val("");
     });
 
-    $("#taMessage").keyup(function(e) {
+    $("#taMessage").keyup(function (e) {
         var code = e.keyCode ? e.keyCode : e.which;
         if (code == 13) {  // Enter keycode
             e.preventDefault();
             $("#btSend").click();
         }
-     });
+    });
 
 
-     $("#btMic").click(function(e) {
+    $("#btMic").click(function (e) {
         recognition.start();
         console.log("Listening...");
-     });
+    });
 
     recognition.onresult = (event) => {
-        $("#taMessage").val(event.results[0][0].transcript);    
+        $("#taMessage").val(event.results[0][0].transcript);
     };
 
-    $("#btSpeakers").click(function(e){
-       isVolume = !isVolume;
-       console.log(isVolume)
-       if(isVolume){
-        $("#imgVolume").attr('src','css/fonts/volume-up.svg');
-       } else {
-        $("#imgVolume").attr('src','css/fonts/volume-mute.svg');
-       }
+    $("#btSpeakers").click(function (e) {
+        isVolume = !isVolume;
+        console.log(isVolume)
+        if (isVolume) {
+            $("#imgVolume").attr('src', 'css/fonts/volume-up.svg');
+        } else {
+            $("#imgVolume").attr('src', 'css/fonts/volume-mute.svg');
+        }
     });
 
     //$.ajax("bot-commands.json", function(data) {console.log(data)});
     //console.log(commands);
 
-    var context = getEmptyContext(); 
+    var context = getEmptyContext();
 
     function sendMessage(message) {
 
@@ -72,12 +72,12 @@ $(document).ready(function() {
 
         displayContext();
 
-        if(isVolume) {
-        const utterThis = new SpeechSynthesisUtterance(message);
-        utterThis.voice = synth.getVoices()[2];
-        utterThis.pitch = specch_pitch;
-        utterThis.rate = speech_rate;
-        synth.speak(utterThis);
+        if (isVolume) {
+            const utterThis = new SpeechSynthesisUtterance(message);
+            utterThis.voice = synth.getVoices()[2];
+            utterThis.pitch = specch_pitch;
+            utterThis.rate = speech_rate;
+            synth.speak(utterThis);
         }
 
     }
@@ -88,46 +88,46 @@ $(document).ready(function() {
         message = message.toLowerCase().trim().replace(/[^a-z0-9 ]/g, "");
 
         //process if expecting a response first :O 
-        if(context != null && context.expectint_a_response != null) {
-            var ex_return  = process_exc(message);
-            if(ex_return != null) {
+        if (context != null && context.expectint_a_response != null) {
+            var ex_return = process_exc(message);
+            if (ex_return != null) {
                 return process_msg_response(process_exc_response(ex_return));
-            }            
+            }
         }
 
         // process regex first :)
         var pr_return = process_regex(message);
-        if(pr_return != null) {
+        if (pr_return != null) {
             return process_msg_response(process_regex_response(pr_return));
         }
 
         // process percentile later :thumbsup
         var pp_return = process_percentile(message);
-        if(pp_return != null) {
+        if (pp_return != null) {
             return process_msg_response(process_percentile_response(pp_return));
         }
 
-        process_msg_response({"data": "I don't understand what you said.... L , could you please retry? Thanks :)"});
+        process_msg_response({ "data": "I don't understand what you said.... L , could you please retry? Thanks :)" });
 
 
     }
 
     function process_exc(message) {
 
-        if(context.expectint_a_response == "q1") {
+        if (context.expectint_a_response == "q1") {
 
             message = message.replace(/[^a-z]/g, "");
-            if(positive_response.includes(message)) {
+            if (positive_response.includes(message)) {
                 context.res = context.saved_suff.data[1];
                 context.res_id = context.saved_suff.data[0];
                 response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
                 To know what you can ask me now say "what can I ask now ?".
                 `.format([res_hash_name[context.saved_suff.data[1]]]);
-                return {'data': response_message, 'tag':'string'};
-            } else if(negative_response.includes(message)) {
+                return { 'data': response_message, 'tag': 'string' };
+            } else if (negative_response.includes(message)) {
                 context.saved_suff.negative_response = true;
                 process_regex_response(process_regex('suggest restaurant'));
-                return {'data': null , 'tag':'string'}
+                return { 'data': null, 'tag': 'string' }
             } else {
                 return null;
             }
@@ -138,7 +138,7 @@ $(document).ready(function() {
     }
 
     function process_exc_response(ex_return) {
-        if(ex_return.tag === 'string') {
+        if (ex_return.tag === 'string') {
             return ex_return;
         }
     }
@@ -146,27 +146,27 @@ $(document).ready(function() {
 
     function process_regex(message) {
         const c_objects = commands["commands_r"];
-        for(x of c_objects) {
+        for (x of c_objects) {
             reg = RegExp(x.pattern[0]);
             response = reg.exec(message);
-            if(response != null) return { "regex" : response , "data": x};
+            if (response != null) return { "regex": response, "data": x };
         }
         return null;
     }
 
     function process_regex_response(pr_return) {
-        debugger;
-        if(pr_return.data.response_type === "string") {
-            return {"data": pr_return.data.response}
+
+        if (pr_return.data.response_type === "string") {
+            return { "data": pr_return.data.response }
         }
 
-        if(pr_return.data.response_type === "calculated") {
+        if (pr_return.data.response_type === "calculated") {
             var response_case = pr_return.data.response;
             var regex = pr_return.regex;
-            if(response_case === "r_1") {
-                return {"data": "All Hail " + regex[1] + "!!!!" };
+            if (response_case === "r_1") {
+                return { "data": "All Hail " + regex[1] + "!!!!" };
             }
-            else if(response_case === 'q1'){
+            else if (response_case === 'q1') {
                 params = []
                 unkowns = 0;
                 params.push(unkown_names[unkowns++])
@@ -174,18 +174,18 @@ $(document).ready(function() {
                 query_name = 'name';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
-            else if(response_case === 'q2'){
+            else if (response_case === 'q2') {
                 console.log('In q1');
             }
-            else if(response_case === 'q3'){
+            else if (response_case === 'q3') {
                 console.log('In q1');
             }
-            else if(response_case === 'q4'){
+            else if (response_case === 'q4') {
                 console.log('In q1');
             }
-            else if(response_case === 'q5'){
+            else if (response_case === 'q5') {
                 console.log('In q1');
-            }else if(response_case === 'q7'){ 
+            } else if (response_case === 'q7' || response_case === 'q7_1') {
                 params = []
                 unkowns = 0;
                 params.push(unkown_names[unkowns++])
@@ -194,10 +194,9 @@ $(document).ready(function() {
                 params.push(unkown_names[unkowns++])
                 params.push(unkown_names[unkowns++])
                 query_name = 'getRestaurantNameByFoodItem';
-                return createAndMakeQuery(query_name, params, unkowns, pr_return);
-                console.log('In q1');
+                return createAndMakeQuery(query_name, params, unkowns, pr_return, regex[2].trim());
             }
-            else if(response_case === 'q1_sq1'){
+            else if (response_case === 'q1_sq1') {
                 params = []
                 unkowns = 0;
                 params.push(context.res_id)
@@ -205,7 +204,7 @@ $(document).ready(function() {
                 query_name = 'category';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
-            else if(response_case === 'q1_sq2'){
+            else if (response_case === 'q1_sq2') {
                 params = []
                 unkowns = 0;
                 params.push(context.res_id)
@@ -213,7 +212,7 @@ $(document).ready(function() {
                 query_name = 'hasItem';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
-            else if(response_case === 'q1_sq3'){
+            else if (response_case === 'q1_sq3') {
                 params = []
                 unkowns = 0;
                 params.push(context.res_id)
@@ -221,7 +220,7 @@ $(document).ready(function() {
                 query_name = 'getPriceRange';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
-            else if(response_case === 'q1_sq4'){
+            else if (response_case === 'q1_sq4') {
                 params = []
                 unkowns = 0;
                 params.push(context.res_id)
@@ -229,7 +228,7 @@ $(document).ready(function() {
                 query_name = 'fullAddress';
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
-            else if(response_case === 'q1_sq5'){
+            else if (response_case === 'q1_sq5') {
                 params = []
                 unkowns = 0;
                 params.push(context.res_id)
@@ -238,7 +237,7 @@ $(document).ready(function() {
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
         }
-        
+
         return null;
     }
 
@@ -248,14 +247,13 @@ $(document).ready(function() {
         const c_objects = commands["commands_p"];
         max_percentage = 0;
         max_percentage_obj = null;
-        //debugger;
-        for(x of c_objects) {
+        for (x of c_objects) {
 
             must_have = false;
-            if(x.must_have != null) {
+            if (x.must_have != null) {
                 dance:
-                for(y of x.must_have) {
-                    if(tokens.includes(y)) {
+                for (y of x.must_have) {
+                    if (tokens.includes(y)) {
                         must_have = true;
                     } else {
                         must_have = false;
@@ -267,52 +265,52 @@ $(document).ready(function() {
             }
 
 
-            if(must_have) {
+            if (must_have) {
                 hits = 0
                 total = x.pattern.length
 
-                if(x.must_have != null) {
+                if (x.must_have != null) {
                     hits += x.must_have.length
                     total += x.must_have.length
                 }
-                
-                for(z of tokens) {
-                    if(x.pattern.includes(z)) {
+
+                for (z of tokens) {
+                    if (x.pattern.includes(z)) {
                         hits += 1;
                     }
                 }
 
-                percentage = (hits / total )* 100;
-                if(percentage > max_percentage) {
+                percentage = (hits / total) * 100;
+                if (percentage > max_percentage) {
                     max_percentage = percentage
                     max_percentage_obj = x
                 }
-                
-                
+
+
             }
         }
-        if(max_percentage_obj === null)
+        if (max_percentage_obj === null)
             return null;
-        return  {"data": max_percentage_obj}
+        return { "data": max_percentage_obj }
     }
 
 
     function process_percentile_response(pp_return) {
-        if(pp_return.data.response_type === "string") {
-            return {"data": pp_return.data.response}
+        if (pp_return.data.response_type === "string") {
+            return { "data": pp_return.data.response }
         }
 
-        if(pp_return.data.response_type === "calculated") {
+        if (pp_return.data.response_type === "calculated") {
             var response_case = pp_return.data.response;
-           
+
         }
-        
+
         return null;
 
     }
 
     function process_msg_response(msgresponse) {
-        if(msgresponse != null && msgresponse.data != null) {
+        if (msgresponse != null && msgresponse.data != null) {
             recieveMessage(msgresponse.data)
         }
     }
@@ -338,141 +336,147 @@ $(document).ready(function() {
         return {
             "talking_about": "",
             "res_id": null,
-            "res" : null,
+            "res": null,
             "res_cat": null,
             "res_menu": null,
             "expectint_a_response": null,
-            "saved_suff": null 
+            "saved_suff": null
         }
     }
 
-    function createAndMakeQuery(query_name, params, unkowns, pr_return) {        
-        makeAQuery(query_name+"("+params.join(',')+")",unkowns, pr_return);
-        return  {'data': null};
+    function createAndMakeQuery(query_name, params, unkowns, pr_return, extraparam = null) {
+        makeAQuery(query_name + "(" + params.join(',') + ")", unkowns, pr_return, extraparam);
+        return { 'data': null };
     }
 
-    function makeAQuery(query,unkowns, pr_return) {
-        console.log("makeeeeeee",query);
+    function makeAQuery(query, unkowns, pr_return, extraparam) {
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",
             headers: {
-              "X-Requested-With": "XMLHttpRequest",
-              "Access-Control-Allow-Origin":"*",
-              "Access-Control-Allow-Methods" : "GET, POST, PUT, PATCH, DELETE, OPTIONS"
+                "X-Requested-With": "XMLHttpRequest",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE, OPTIONS"
             },
             data: {
-              action: "getQuery",
-              query: query,
-              editor: knowledge
+                action: "getQuery",
+                query: query,
+                editor: knowledge
             },
-            success: function(response ) {
-                process_msg_response(processAjaxResponse(response, unkowns, pr_return ));
+            success: function (response) {
+                process_msg_response(processAjaxResponse(response, unkowns, pr_return, extraparam));
             },
-            error: function(xhr, status, error) {
-              console.log("error: " + error);
+            error: function (xhr, status, error) {
+                console.log("error: " + error);
             }
-          });
+        });
     }
 
-    function processAjaxResponse(response, unkowns, pr_return) {
+    function processAjaxResponse(response, unkowns, pr_return, extraparam) {
         results = []
         lines = response.split('<p')[1].split('<br');
-        for(line of lines) {
+        response_message = '';
+        for (line of lines) {
             result = []
             should_add = true;
             dance:
-            for(var i=0; i<unkowns ;i++) {
+            for (var i = 0; i < unkowns; i++) {
                 rStr = '(.*?)' + unkown_names[i] + ' = ([0-9a-zA-Z]*) (.*)';
-                answer = RegExp(rStr).exec(line+" filler");
-                if(answer==null) {
+                answer = RegExp(rStr).exec(line + " filler");
+                if (answer == null) {
                     should_add = false;
                     break dance
                 }
                 result.push(answer[2]);
             }
-            if(should_add)
+            if (should_add)
                 results.push(result)
         }
         console.log(results);
 
         const response_case = pr_return.data.response;
 
-        if(response_case === "q1") {
-
-            response_message = '';
-            item = results[Math.floor(Math.random()*results.length)];
+        if (response_case === "q1") {
+            item = results[Math.floor(Math.random() * results.length)];
             res_name = res_hash_name[item[1]];
             neg_response = false;
-            if(context.saved_suff != null && context.saved_suff.negative_response != null)
+            if (context.saved_suff != null && context.saved_suff.negative_response != null)
                 neg_response = true
-            
+
             context = getEmptyContext();
             context.expectint_a_response = "q1";
             context.saved_suff = {
-                "data" : item
+                "data": item
             };
-            if(!neg_response)
+            if (!neg_response)
                 response_message = 'wanna try "{}" Resturaunt today ?'.format([res_name]);
-            else 
+            else
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
-        } else if( response_case === "q1_sq1"){
-            response_message = '';
-            
-            for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_cat[results[i]]+"</br>"
+        } else if (response_case === "q1_sq1") {
+
+            for (let i = 0; i < results.length; i++) {
+                response_message += (i + 1) + "." + res_hash_cat[results[i]] + "</br>"
             }
 
             return createResponseMessage(response_message);
 
-        } else if( response_case === "q1_sq2"){
-            response_message = '';
-            
-            for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_food[results[i]]+"</br>"
+        } else if (response_case === "q1_sq2") {
+
+            for (let i = 0; i < results.length; i++) {
+                response_message += (i + 1) + "." + res_hash_food[results[i]] + "</br>"
             }
 
             return createResponseMessage(response_message);
 
-        } else if( response_case === "q1_sq3"){
-            response_message = '';
-            
-            if(result === "1"){
+        } else if (response_case === "q1_sq3") {
+
+            if (result === "1") {
                 response_message = "Budget Friendly"
-            } else if( result === "2"){
+            } else if (result === "2") {
                 response_message = "Moderate"
             } else {
                 response_message = "Expensive"
             }
 
             return createResponseMessage(response_message);
-            
-        } else if( response_case === "q1_sq4"){
-            response_message = '';
-            
-            for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_zip[results[i]]+"\n"
+
+        } else if (response_case === "q1_sq4") {
+
+            for (let i = 0; i < results.length; i++) {
+                response_message += (i + 1) + "." + res_hash_zip[results[i]] + "\n"
             }
 
             return createResponseMessage(response_message);
-            
-        } else if( response_case === "q1_sq5"){
-            response_message = '';
-            
-            for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_cat[results[i]]+"\n"
+
+        } else if (response_case === "q1_sq5") {
+
+            for (let i = 0; i < results.length; i++) {
+                response_message += (i + 1) + "." + res_hash_cat[results[i]] + "\n"
             }
 
             return createResponseMessage(response_message);
-            
+
+        } else if (response_case === "q7" || response_case === 'q7_1') {
+
+            response_message = 'You can get ' + extraparam + ' in these restaurants </br>';
+            const uniqueRestName = results?.filter((thing, index) => {
+                return index === results.findIndex(obj => {
+                    return obj[3] === thing[3];
+                });
+            });
+            for (let i = 0; i < uniqueRestName.length; i++) {
+                response_message += res_hash_name[results[i][3]] + "</br>"
+            }
+            return createResponseMessage(response_message);
+
         }
 
     }
-    
+
     function createResponseMessage(message) {
-        return {'data' : message};
+        return { 'data': message };
     }
 
 
