@@ -148,7 +148,6 @@ $(document).ready(function() {
                 }
             }
             catch(err) {
-                console.log("cought an error")
                 console.log(err)
                 return null;
             }
@@ -204,14 +203,14 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q5'){
-                category = initCap(regex[2])
-                console.log(category)
+                category = regex[2]
                 params = []
                 unkowns = 0;
                 params.push(res_cat_hash[category])
                 params.push(unkown_names[unkowns++])
                 params.push(unkown_names[unkowns++])
                 query_name = 'getRestaurantByCategory';
+                context.res_cat=category
                 return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q6'){
@@ -530,17 +529,23 @@ $(document).ready(function() {
             response_message = '';
 
             item = results[1]
-            console.log()
-            context = getEmptyContext();
             context.expectint_a_response = "q5";
             context.saved_suff = {
                 "data_q5" : results
             };
-
-            console.log(results)
-            for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+            console.log("results")
+            if(results.length == 0){
+                response_message += "Could not find a restaurant that serves "+ context.res_cat+"."+"</br>"
+                response_message += "Try again with: fast food, bbq, coffee and tea, tex mex..."+"</br>"
+            } else {
+                response_message += "Here is a list of restaurants serve "+ context.res_cat+ ":"+"</br>"+"</br>"
+                for(let i = 0 ; i < results.length; i++){
+                    response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+                }
+                response_message += "</br>"+"Select a restaurant by entering it's serial number."
             }
+
+            
             return createResponseMessage(response_message);
         }
 
