@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
     var isVolume = true;
+    var debugEnabled = true;
 
     $("#btSend").on('click', function(){
         textarea = $("#taMessage");
@@ -88,7 +89,7 @@ $(document).ready(function() {
         message = message.toLowerCase().trim().replace(/[^a-z0-9 ]/g, "");
 
         //process if expecting a response first :O 
-        if(context != null && context.expectint_a_response != null) {
+        if(context != null && context.expecting_a_response != null) {
             var ex_return  = process_exc(message);
             if(ex_return != null) {
                 return process_msg_response(process_exc_response(ex_return));
@@ -112,9 +113,10 @@ $(document).ready(function() {
 
     }
 
+    // Process Expecting responses Method.
     function process_exc(message) {
 
-        if(context.expectint_a_response == "q1") {
+        if(context.expecting_a_response == "q1") {
 
             message = message.replace(/[^a-z]/g, "");
             if(positive_response.includes(message)) {
@@ -132,7 +134,7 @@ $(document).ready(function() {
                 return null;
             }
 
-        } else if(context.expectint_a_response == "q5") {
+        } else if(context.expecting_a_response == "q5") {
             message = message.replace(/[^0-9]/g, "");
             try {
                 option = Number(message)
@@ -144,6 +146,25 @@ $(document).ready(function() {
                     To know what you can ask me now say "what can I ask now?".
                     `.format([res_hash_name[context.saved_suff.data_q5[option][1]]]);
                     console.log({'data': response_message, 'tag':'string'})
+                    return {'data': response_message, 'tag':'string'};
+                }
+            }
+            catch(err) {
+                console.log(err)
+                return null;
+            }
+        } else if(context.expecting_a_response == "q4") {
+            message = message.replace(/[^0-9]/g, "");
+            try {
+                option = Number(message)
+                if(option <= context.saved_suff.data_q4.length && option > 0) {
+                    option = option - 1
+                    context.res = context.saved_suff.data_q4[option][1];
+                    context.res_id = context.saved_suff.data_q4[option][0];
+                    response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
+                    To know what you can ask me now say "what can I ask now?".
+                    `.format([res_hash_name[context.saved_suff.data_q4[option][1]]]);
+                    d({'data': response_message, 'tag':'string'})
                     return {'data': response_message, 'tag':'string'};
                 }
             }
@@ -200,7 +221,16 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q4'){
-                console.log('In q1');
+                zipcode = regex[2];
+                params = []
+                unkowns = 0;
+                params.push(unkown_names[unkowns++])
+                params.push(unkown_names[unkowns++])
+                params.push(res_zip_hash[zipcode])
+                query_name = 'zipcodeByNameAndId';
+                context.inputs = {"zipcode" : zipcode };
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
+                
             }
             else if(response_case === 'q5'){
                 category = regex[2]
@@ -374,7 +404,7 @@ $(document).ready(function() {
             "res" : null,
             "res_cat": null,
             "res_menu": null,
-            "expectint_a_response": null,
+            "expecting_a_response": null,
             "saved_suff": null 
         }
     }
@@ -386,7 +416,7 @@ $(document).ready(function() {
     }
 
     function makeAQuery(query,unkowns, pr_return) {
-        console.log(query)
+        d(query)
         $.ajax({
             url: "https://cors-anywhere.herokuapp.com/http://wave.ttu.edu/ajax.php",
             type: "POST",
@@ -428,7 +458,7 @@ $(document).ready(function() {
             if(should_add)
                 results.push(result)
         }
-        console.log(results);
+        d(results);
 
         const response_case = pr_return.data.response;
 
@@ -442,7 +472,7 @@ $(document).ready(function() {
                 neg_response = true
             
             context = getEmptyContext();
-            context.expectint_a_response = "q1";
+            context.expecting_a_response = "q1";
             context.saved_suff = {
                 "data" : item
             };
@@ -476,7 +506,7 @@ $(document).ready(function() {
             return createResponseMessage(response_message);
         
         } else if( response_case === "q1_sq1"){
-            response_message = '';
+            response_message = "Here's the Cuisine for '{}' Restaurant: </br>".format([res_hash_name[context.res]]);
             
             for(let i = 0 ; i < results.length; i++){
                 response_message += (i+1) +"."+res_hash_cat[results[i]]+"</br>"
@@ -518,10 +548,10 @@ $(document).ready(function() {
             return createResponseMessage(response_message);
             
         } else if( response_case === "q1_sq5"){
-            response_message = '';
+            response_message = "Here's the Food Categories for '{}' Restaurant: </br>".format([res_hash_name[context.res]]);
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_cat[results[i]]+"\n"
+                response_message += "{}. {} </br>".format([i+1, res_hash_food_cat[results[i]]])
             }
 
             return createResponseMessage(response_message);
@@ -530,7 +560,7 @@ $(document).ready(function() {
             response_message = '';
 
             item = results[1]
-            context.expectint_a_response = "q5";
+            context.expecting_a_response = "q5";
             context.saved_suff = {
                 "data_q5" : results
             };
@@ -547,6 +577,22 @@ $(document).ready(function() {
             }
 
             
+            return createResponseMessage(response_message);
+        } else if(response_case === "q4") {
+            response_message = '';
+            if(results.length == 0) {
+                response_message = "Could not find any restaurants in {}.</br> Please, "
+                + "Try a different zip code such as 79414 etc"
+                .format([context.inputs.zipcode]);
+
+            } else {
+                context.expecting_a_response = "q4";
+                context.saved_suff = { "data_q4": results };
+                for(let i=0;i<results.length;i++) {
+                    response_message += (i+1) +". "+res_hash_name[results[i][1]]+"</br>"
+                }   
+                response_message += '</br> Reply with a number to select one of the above Restaurants.'
+            }
             return createResponseMessage(response_message);
         }
 
@@ -566,6 +612,15 @@ $(document).ready(function() {
         return words.join(" ");
     }
 
+    d('suggest restaurant');
+    d('Hey, Tell me some restaurants in 79414');
+    d('So Tell me what cuisine does the restaurant serve');
+    d('tell me the food Categories served in this restaurant');
+    function d(s) {
+        if(debugEnabled) {
+            console.log(s);
+        }
+    }
 
 });
 

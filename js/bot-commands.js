@@ -45,7 +45,7 @@ var commands = {
             "response" : "q3"
         },
         {
-            "pattern": ["(.*)restaraunts in ([0-9]{5})(.*)"],
+            "pattern": ["(.*)restaurants in ([0-9]{5})(.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q4"
@@ -69,7 +69,7 @@ var commands = {
             "response" : "Ask me  <br/> 1.What cuisine this restaurant serves? <br/> 2. Show me the menu<br/> 3. What is budget range of this restaurant <br/> 4. Where is this restaurant located? </br> 5. What are food categories served in this restaurant?"
         },
         {
-            "pattern": ["(.*)cuisine(.*)restaurant(.*)serves(.*)"],
+            "pattern": ["(.*)cuisine(.*)((restaurant)|(they)|(it))(.*)((serve)|(have))(.*)"],
             "match_tye": "r",
             "response_type": "calculated",
             "response" : "q1_sq1"
@@ -93,7 +93,7 @@ var commands = {
             "response" : "q1_sq4"
         },
         {
-            "pattern": ["(.*)categories(.*)served(.*)restaurant(.*)"],
+            "pattern": ["(.*)categories(.*)((serve)|(has))?(.*)(restaurant)?(.*)"],
             "match_tye": "r",
             "response_type": "calculated",
             "response" : "q1_sq5"
