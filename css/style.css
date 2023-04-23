@@ -74,7 +74,7 @@ h3 {
     text-align: left;
     border: 1px solid black;
     border-radius: 12px 12px 10px 5px;
-    background-color: #edf6f9;   
+    background-color: #efeeee;   
 }
 
 .right-message {
@@ -85,7 +85,7 @@ h3 {
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 12px 12px  5px 10px;
-    background-color: #edf6f9;   
+    background-color: lightblue;   
 }
 
 textarea {

@@ -33,13 +33,13 @@ var commands = {
             "response" : "q1"
         },
         {
-            "pattern": ["(.*)top rated(.*)"],
+            "pattern": ["(.*)top rated (restaurant)?(.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q2"
         },
         {
-            "pattern": ["(.*)restaurants by (${1-3})(.*)"],
+            "pattern": ["(.*)restaurants by price range (\\${1,3})$(.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q3"
@@ -66,7 +66,9 @@ var commands = {
             "pattern": ["(.*)ask(.*)now(.*)"],
             "match_tye": "r",
             "response_type": "string",
-            "response" : "Ask me  <br/> 1. What cuisine this restaurant serves? <br/> 2. Show me the menu.<br/> 3. What is budget range of this restaurant?<br/> 4. Where is this restaurant located? </br> 5. What are food categories served in this restaurant?"
+            "response" : "Ask me  <br/> 1. What cuisine this restaurant serves? <br/> 2. Show me the menu.<br/> 3. What is budget range of this restaurant?<br/> 4. Where is this restaurant located? </br> 5. What are food categories served in this restaurant?",
+            "expecting_a_response": "asknow"
+
         },
         {
             "pattern": ["(.*)cuisine(.*)((restaurant)|(they)|(it))(.*)((serve)|(have))(.*)"],
@@ -75,7 +77,7 @@ var commands = {
             "response" : "q1_sq1"
         },
         {
-            "pattern": ["(.*)show(.*)menu(.*)"],
+            "pattern": ["(.*)menu(.*)"],
             "match_tye": "r", 
             "response_type": "calculated",
             "response" : "q1_sq2"
@@ -97,6 +99,12 @@ var commands = {
             "match_tye": "r",
             "response_type": "calculated",
             "response" : "q1_sq5"
+        },
+        {
+            "pattern": ["(.*)want to eat (.*)", "(.*)want to have (.*)"],
+            "match_tye":"r",
+            "response_type":"calculated",
+            "response" : "q7"
         }
     ]
 }
