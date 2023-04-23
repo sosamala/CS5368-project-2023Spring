@@ -108,7 +108,7 @@ $(document).ready(function() {
             return process_msg_response(process_percentile_response(pp_return));
         }
 
-        process_msg_response({"data": "I don't understand what you said.... L , could you please retry? Thanks :)"});
+        process_msg_response({"data": "I don't understand what you said, could you please retry? Thanks :)"});
 
 
     }
@@ -122,7 +122,7 @@ $(document).ready(function() {
             if(positive_response.includes(message)) {
                 context.res = context.saved_suff.data[1];
                 context.res_id = context.saved_suff.data[0];
-                response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
+                response_message = `Awesome! what more do you want to know about the Restaurant '{}'?
                 To know what you can ask me now say "what can I ask now?".
                 `.format([res_hash_name[context.saved_suff.data[1]]]);
                 return {'data': response_message, 'tag':'string'};
@@ -142,7 +142,7 @@ $(document).ready(function() {
                     option = option - 1
                     context.res = context.saved_suff.data_q5[option][1];
                     context.res_id = context.saved_suff.data_q5[option][0];
-                    response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
+                    response_message = `Awesome! what more do you want to know about the Restaurant '{}'? 
                     To know what you can ask me now say "what can I ask now?".
                     `.format([res_hash_name[context.saved_suff.data_q5[option][1]]]);
                     console.log({'data': response_message, 'tag':'string'})
@@ -161,7 +161,7 @@ $(document).ready(function() {
                     option = option - 1
                     context.res = context.saved_suff.data_q4[option][1];
                     context.res_id = context.saved_suff.data_q4[option][0];
-                    response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
+                    response_message = `Awesome! what more do you want to know about the Restaurant '{}'?  
                     To know what you can ask me now say "what can I ask now?".
                     `.format([res_hash_name[context.saved_suff.data_q4[option][1]]]);
                     d({'data': response_message, 'tag':'string'})
@@ -477,9 +477,9 @@ $(document).ready(function() {
                 "data" : item
             };
             if(!neg_response)
-                response_message = 'wanna try "{}" Resturaunt today ?'.format([res_name]);
+                response_message = 'Do you want try "{}" Resturaunt today ?'.format([res_name]);
             else 
-                response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
+                response_message = 'Okay, how about "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
         } else if(response_case === "q6"){
@@ -496,20 +496,20 @@ $(document).ready(function() {
                 priceRange = "Expensive"
             }
             response_message = 'Please find restaurant Details </br>' +
-                                'Name :'+ res_hash_name[results[1]]+ '</br>'+
-                                'Ranking :' +results[2]+'</br>'+
-                                'Rating :' + results[4]+'</br>'+
-                                'Price Range:'+priceRange+'</br>'+
-                                'Address' + res_hash_address[results[6]]+'</br>'+
-                                'zipcode' + res_hash_zip[results[7]]+'</br>'
+                                'Name: '+ res_hash_name[results[1]]+ '</br>'+
+                                'Ranking: ' +results[2]+'</br>'+
+                                'Rating: ' + results[4]+'</br>'+
+                                'Price Range: '+priceRange+'</br>'+
+                                'Address: ' + res_hash_address[results[6]]+'</br>'+
+                                'zipcode: ' + res_hash_zip[results[7]]+'</br>'
 
             return createResponseMessage(response_message);
         
         } else if( response_case === "q1_sq1"){
-            response_message = "Here's the Cuisine for '{}' Restaurant: </br>".format([res_hash_name[context.res]]);
+            response_message = "Here's the Cuisine for '{}': </br>".format([res_hash_name[context.res]]);
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+res_hash_cat[results[i]]+"</br>"
+                response_message += (i+1) +". "+res_hash_cat[results[i]]+"</br>"
             }
 
             return createResponseMessage(response_message);
@@ -518,7 +518,7 @@ $(document).ready(function() {
             response_message = '';
             
             for(let i = 0 ; i < results.length; i++){
-                response_message += (i+1) +"."+ res_hash_food[results[i][1]]+ 
+                response_message += (i+1) +". "+ res_hash_food[results[i][1]]+ 
                  "          $ "+results[i][2] +"</br>"
             }
 
@@ -548,7 +548,7 @@ $(document).ready(function() {
             return createResponseMessage(response_message);
             
         } else if( response_case === "q1_sq5"){
-            response_message = "Here's the Food Categories for '{}' Restaurant: </br>".format([res_hash_name[context.res]]);
+            response_message = "Here's the Food Categories for '{}': </br>".format([res_hash_name[context.res]]);
             
             for(let i = 0 ; i < results.length; i++){
                 response_message += "{}. {} </br>".format([i+1, res_hash_food_cat[results[i]]])
