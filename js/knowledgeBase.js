@@ -1,19 +1,18 @@
 const knowledge = `
 sorts
    %% Restarants table
-    #id = 1..25. %%1..271
-    #position =  1..100. %%1..182.
-    #restaurantName = {rdsciprv, qqpxcvcp, ouyceuyb, gbxjblpd, iogocxfn, vbuxbhlg, sdabcpiy, hqsplpey, jsqdtysb, ishnguvg }.
+    #id = 1..200. %%1..271
+    #position =  1..250. %%1..182.
+    #restaurantName = {rdsciprv, ouyceuyb, gbxjblpd, hqsplpey, jsqdtysb, ishnguvg, sqscmmsr, kodnhpea, lggpjmpr, xmzqgfca, zdwqmllx, gldowqla, cletuumn, qbfrppef, bczaeloa, sbirykvj, xhpuenbj, vxukbrwc, dmneonwq }.
     #score = 0..50.
     #rating = 0..200.
-    #category = {ipsgxfrn, mbqdomyp, ttkxvvno, eimkemgr, ktxeefhg, gdmfeoks, intqqmnk, rahdrcot, bqctdiau, xlvjogtb, yduqrbnh, duhwkrid, fzjugfbl, hozdveen, dfmnogqq, iidscufg, yavgbbkr, ldiryiri, yliyhxlx, nrkaudde, ryvbsweh, intqqmnk, eimkemgr, kqqqgiwa, ziwlbfeu, xixgogkr, hnahdmbe, dswazbvm, dfmnogqq, nuszxokw, fdwhjqwh, lqjjvbcx, eoycxldk, ryvbsweh, pkdlizdc, ryvbsweh, kqqqgiwa, ipzovute, nrkaudde, mzieroag, xlvjogtb, hnahdmbe, mzieroag, iidscufg, tdzmfulb, rahdrcot}.
+    #category = {ipsgxfrn, mbqdomyp, ttkxvvno, eimkemgr, ktxeefhg, gdmfeoks, intqqmnk, rahdrcot, fzjugfbl, hozdveen, dfmnogqq, iidscufg, yavgbbkr, ldiryiri, yliyhxlx, nrkaudde, ryvbsweh, intqqmnk, eimkemgr, ryvbsweh, kqqqgiwa, ipzovute, nrkaudde, mzieroag, xlvjogtb, hnahdmbe, mzieroag, iidscufg, tdzmfulb, rahdrcot, intqqmnk, kceborfg, bblqicsh, kqqqgiwa, xixgogkr, guiddmud, ryvbsweh, intqqmnk, rahdrcot, rbmaubjl, iidscufg, bblqicsh, kmsugtzy, ktxeefhg, bblqicsh, unjrwyxk, ktxeefhg, slgsmlpu, eimkemgr, rbmaubjl, kqqqgiwa, ziwlbfeu, xixgogkr, kqqqgiwa, ziwlbfeu, xixgogkr, eimkemgr, kpigxwux, xslfkehe, eimkemgr, gdmfeoks, sevgyqmi, rbmaubjl, slgsmlpu, dswazbvm, kceborfg, intqqmnk, rahdrcot, bblqicsh, yavgbbkr, eimkemgr, eoycxldk, slgsmlpu, eimkemgr, rbmaubjl}.
     #priceRange = 1..3.
-    #fullAddress = {elkgnltp, autpqcog, dauxlkec, wtneuvan, gsgzhnco, avruixtu, wqjsxipb, kucbuchl, qderkdtr, abxrttzr}.
-    #zipcode = {bbvltflp, euqzmpyx, vlbhkipn, vlbhkipn, bbvltflp, euqzmpyx, ffrghyfc, vlbhkipn, ypcxxhqq, bbvltflp}.
-
-    #foodCategory = {ydgrcaxx, nzdgtqbo, tjsbfdlb, vmynpqdj, moklfdsc, onpahegy, xlvjogtb, onsjxlnr, iidscufg, flzufqiu, dlmarohb, xkzcvext, cbilfzcy, evfghufy, jbtiseet, xrsjfzgy, ywnieaen, gchgefrv, eybdoxlx, eslnvjue, foukgbls, iuwygtzn, yduqrbnh, afnlienn, nhmhjcaq, xlvjogtb, znkweirv, xkzcvext, jbjzajbo, wmhqovtu, yeydvadl, syljbbhn, xqlvvvmb, rzkzzptq, xkzcvext, ekwueian, adeoaaxm, ccojujbt, czpqkrsj, bvgsvtht, rgholllx, onsjxlnr, xkzcvext, yxudrbrs, vwtaqxvd, jznkxzud, qaphrepe, ufcaened, eflnlpdu, bpusuqzk, xkzcvext, zduxsojk}.
-    #foodDescription = {gsdphudq, cesecozs, jonhulzc, mtsyqhtp, ianaigqi, mjabhnfo, hbeaatqn, zohgqgiu, kkfvrjnw, brploune, etcmuvas, hnucbyhg, xnfuyyte, kmjapnlx, kfheqdxn, pcfyogmu, sgmbclmn, ikgztaay, oemaacbt, iyamngba, lizccvci, kfheqdxn, yiljppcv, gmmihqox, jtdeowet, ujwugrxv, ypcwquzu, gxavewdw, dvbyczqd, smdxrakp, hblceqsf, kidmsfcb, nndkylno, rrqnawga, prrmctjh, bhjkuydl, nfilefol, yugzyffc, fnhzxcbk, llmlbcnv, ahljrpko, dajigcpp, rlpzdjzj, mmvoagey, mwtkuvsk, nmnooqzu, xnqrpuoc, xgxowvyo, zfmlhhfz, rvluolpa, djpvorjj, hhbqakxj, fqevunbk, iwtonoyh, qomunaum, bndmcjcq, emfggvml, dkweibef, kfheqdxn, wwrumjhp, ecuodzjv, kqkpnuwf, dohjdqqy, esslaygp, kfheqdxn, mblcspzq, red onions, kfheqdxn, aczqhaci, lcsficrp, oykegpzc, jogdnjjg, wjevcjhv, bjjkzipb, kbxkrgll, pmjvmtnq, tucdtesn, cajpibzq, yqhhwlts, qivobgqt, byuchlmz, kzftmpgu, fguvxqmk, lhomueke, eewqddlc, ektjuour, fnxfaayj, msrpeguu, rbgquclm, kfheqdxn, hwibtmfp, dhjgzvbs, lusevvwn, mhbatmdb, umrzvism, iezkoffr, iyqcaqua, yxppzcbd, hkyhbjfl, zshpgsub}.
-    #foodItem = {agtujvnh,fatcigwp, gaqvsphs, mhswceig, jrpmtiuo, hhcbpnyk, vekkhnna, kertodfh, ojdbwrnl, xicpfzmk, mbpdljnt, pnyzrver, xalffohh, shsfkewg, ovvocceu, bcqylwcn, sufngthl, tdkgynyx, gscrcxle, ctqwqotl, fhkjcuix, xrjvodfv, ndsbtrnu, bhldydul, soacgjye, ndtuyfxd, hhdwvuya, mqdvtmsr, udpirazf, ewnamoly, kgygdgyz, mfqfjpyc, jsfdibyu, jrijpolr, qoekvqrm, grqzxvnx, qxsqylcr, lfdhance, zogvxojf, bwtkvyvg, zyderedh, ckryfdat, rtyttxtq, fezengow, xycbqwqs, ggohelni, pghoarts, hdxvyfkw, bdnxvwdt, sneilvbm, vekujcyb, vbqvpudj, detlyzpn, pixhfgwy, tucdtesn, zjivagfc, pocdgqpx, julxgomt, rdnwkxse, uhrleups, teshunzg, dpvjjobh, vnzcbgoj, fpfvwopw, nimlmhqj, syaeyiqt, bgbpevgj, skpuidoc, wzzxbqbi, eiywblcq, npqincrv, hughxwlz, ejxoeepm, rifdtdti, swxadfgj, uzwfrjpb, mzhujdjk, szxladpz, ydmtzkvi, omdaviio, gqkfjjqp, jmgqkrcc, gdtteork, qysqwclu, nnayldat, egxmrjoq, xwijkzsh, qpxaphka, oujiwsvg, peafczyl, gecokluf, dmnidguz, klrnhmbp, ljplrkoo, dqitlkrq, sqdiepsj, uejttnhe, ejvssbwo, jcsmtvdy, onadfnqq, tlkfzane, kpjqiitr, nxhiyvvj, nfoucwhf, gmukkfzm, gkdoenjp, cxrjzjmu, qabbqlhh, engwmpan, cqwihloe, cduxrhkx, aewfsyjk, jzhvnjbv, vdtjgejf, hnrbehjn, lzcyiycz, jbqdfvrn, ribbwtoq, bcaaqxbw, zaamhdky, lwktbvjq, tmcojnai, avrsesbh, jnuylowp, ceunovse, ajbksafr, zpemfycz, tzfqvihp, nboepgqc, nvdiccpx, seolwlcy, mcpwbwig, rusyftca, hpqvqpou, fshmajsj, bgptcqit, byqzsjaj, pfwpinrc, cjqmyglb, rfustlek, dtgwcjqv, ozbubsnf, nwqlrizb, xbwsusbf, dkfeufbh, smvcmohg, hpuxyyjh, vluxpnrd, irlrtnzb, fimkhlxt, piakseab, xuoqvgim, xofyxgmc, kqolrgkx, fovmpjqt, mnwgmogq, cflzxmun, qdmrhuqc, mnlrsdmy, zrympsyv, sfrwtzvw, hnextklx, ekmbbmug, wyscfyzg, ytdoszfx, fyokvcda, gdaasvgg, ntxheika, nyjlyoul, mqfexupf, ngklfnwi, rnewugrg, qujymaaz, elcajzut, cdcwgahh, kyguzjwg, kcilomsn, katbjhhv, jxjuyyiy, ktqfblxt, nsufqczt, qpjraqwn, gbngnwth, ibcgmdas, jhibsope, ezeurdkp, moqryotc, vunkpdol, nemmfotc, avagecln, kaxbxyso, iyzhuttm, ksrnwmto, rqmtgklb, ezxdzhsg, mowbpnsr, zjqjiazf, uxontugg, zrmdedqy, tfgideui, tucdtesn, cajpibzq, yqhhwlts, ruqjsxmo, iiewzgbb, azsyvssj, hhhwcxfw, ivfhqzbj, awbqhmjo, jecoljyk, lahasimj, peetqevh, lnjhtnxx, wyefpnve, wduqzoik, ezoaxlrs, qbdcrbss, ndwhskvh, injiwwtd, ygmtxijy, dtfhopij, civwxjoi, jvazasan, xrlealxo, xjansupd, nikzmyaa, vihgolia, pmkldmmd, kojrmsby, fglzlvnd, zbtwsbhe, rrkktuao, gtquzzhf, nptosbfc, qdwyxtwa, addccfxc, ebboohyl, okvhdhkh, yppiovmk, jskdbvjg, jxxssorf, zunvkvxb, rzcgndeb, vogdcwoo, mqcedrup, telecprm, jprwznhh, newrskog, pyvudheb, haepxtgs, agfhqbue, bsbrlajn, aahoirxj, ebrjkfyq, ihmgfiir, actcdqty, mdrinytm, igujkimr, xujrnvyh}.
+    #fullAddress = {elkgnltp, dauxlkec, wtneuvan, kucbuchl, qderkdtr, abxrttzr, sqjtcgzo, nwidmpbv, dfknkjlm, uhhwcukm, asegwxyy, zcvnzkdf, buznjfhr, izgzrpbe, hstqhtcj, erruvlog, terppxis, wqjfwmxo, cdqasopm}.
+    #zipcode = {bbvltflp, vlbhkipn, vlbhkipn, vlbhkipn, ypcxxhqq, bbvltflp, jphjbnvq, ksxbvglz, vlbhkipn, euqzmpyx, jphjbnvq, vlbhkipn, vlbhkipn, bbvltflp, bbvltflp, bbvltflp, vlbhkipn, euqzmpyx, jphjbnvq}.
+    #foodCategory = {ydgrcaxx, nzdgtqbo, tjsbfdlb, vmynpqdj, moklfdsc, onpahegy, xlvjogtb, onsjxlnr, iidscufg, flzufqiu, dlmarohb, afnlienn, nhmhjcaq, xlvjogtb, znkweirv, xkzcvext, jbjzajbo, wmhqovtu, yeydvadl, syljbbhn, xqlvvvmb, rzkzzptq, xkzcvext, ekwueian, adeoaaxm, ccojujbt, czpqkrsj, bvgsvtht, rgholllx, onsjxlnr, xkzcvext, yxudrbrs, vwtaqxvd, jznkxzud, qaphrepe, ufcaened, eflnlpdu, bpusuqzk, xkzcvext, zduxsojk, riiedzyd, rdpuhzrr, kvcxqnrg, czzhhsif, hwaqkkzw, zrmuwfem, lvjjbnsz, rrdewzyj, kmsugtzy, lzqrvmkt, rahdrcot, rtrimsww, onsjxlnr, xlvjogtb, imbishqe, xkzcvext, ukeravyd, tjxmjvns, intqqmnk, mhzxyrea, xlvjogtb, tlpmgdqn, xkzcvext, yovyvucr, bpagkjuo, xkzcvext, ydgrcaxx, auqfbxmu, iekmbftp, ojsxepei, rbmaubjl, xssajudq, euemitni, zfzqvppy, dgthcpnx, ffxhsshg, klcspiai, nlnsdpaj, iidscufg, wwgqovsb, xkzcvext, zuglofcc, fdmlqvrx, ajnnosce, trzybwjx, awoifbkk, wwgqovsb, hpavfsad, xkzcvext, oxwpwewt, fjlgyvgi, bzyhdezb, hmqhlkma, oerhuqhv, igmyemqn, ezfuqxqb, igkuekin, ugqsxvji, gtnpuifs, wwgqovsb, ktqrvipr, xkzcvext, iekmbftp, kmvhbuqi, qwjkaoge, yzmiuxow, cwmlzxum, sssciuse, xtyrfxuq, daznxwic, azeuimig, onsjxlnr, xlvjogtb, xkzcvext, coutmhpu, xoiurirb, eoycxldk, pugzqysb, onsjxlnr, wwgqovsb, iidscufg, xkzcvext, rbmaubjl, ukkuyflr, kmsugtzy, eewxrhna, bblqicsh, hnahdmbe, wwgqovsb, csfxqwnt, ldroshyy, szymwzlh, nqgbiwis, lbjpbkmb, xkzcvext, afnlienn, mgrhgttl, hpavfsad, xlvjogtb}.
+    #foodDescription = {gsdphudq, cesecozs, jonhulzc, mtsyqhtp, ianaigqi, mjabhnfo, hbeaatqn, zohgqgiu, kkfvrjnw, brploune, etcmuvas, hnucbyhg, xnfuyyte, kmjapnlx, kfheqdxn, pcfyogmu, sgmbclmn, ikgztaay, oemaacbt, iyamngba, bndmcjcq, emfggvml, dkweibef, kfheqdxn, wwrumjhp, ecuodzjv, kqkpnuwf, dohjdqqy, esslaygp, kfheqdxn, mblcspzq, kfheqdxn, aczqhaci, lcsficrp, oykegpzc, jogdnjjg, wjevcjhv, bjjkzipb, kbxkrgll, pmjvmtnq, tucdtesn, cajpibzq, yqhhwlts, qivobgqt, byuchlmz, kzftmpgu, fguvxqmk, lhomueke, eewqddlc, ektjuour, fnxfaayj, msrpeguu, rbgquclm, kfheqdxn, hwibtmfp, dhjgzvbs, lusevvwn, mhbatmdb, umrzvism, iezkoffr, iyqcaqua, yxppzcbd, hkyhbjfl, zshpgsub, lgvhyehq, uakkekuy, mspybnoj, kfheqdxn, euogblzm, oydpoqte, ioyglopp, udtmcjmd, ggrcusvq, qaezjzex, seiqiyrf, totytqdd, lenadxci, vuvexhis, fxuxtkgb, rhixruco, rfbbibfr, sajdbojt, mrhrsexh, zjqsgbxo, qumwpccu, eczqdcfh, cphzqjqg, sxexhbly, xupzgghj, ttkxbtdq, liwixecm, jibnbdjk, arbwsgtu, qjeipciy, crwsmrng, oqqdmrah, maekhllk, hqsrgoju, fgjqykqh, cmpplevj, kfheqdxn, avueidae, ahisahhk, huqzlpho, qdhmcnho, vqtgcfvu, ohnvvkps, tfamllzw, txrijffa, pomethls, irxypaat, vebltirn, mnjwdfru, dzovqrew, podiryxl, kfheqdxn, dlhapuoy, kfheqdxn, xnhpnvxq, upafafha, vnaaforp, eofnndmv, jaepzpir, gllwsnmk, fcarohfe, pufympmo, sxularnv, uqafqwsc, tkagntal, roiiqhxh, hdmjxcnj, vjetowxh, fyicizlt, uvucdvlw, btdsfuly, zknxlqnr, yqlulyzx, ukpyefge, vesiaqpm, gwrvflix, krcmbasj, fdwicbpl, rvzalpfr, xpgmkoww, qrkavygl, nhodiysg, kfheqdxn, jfinpgwi, qugxnmgx, xllnowyy, plhtbiui, ztjrkxxo, aixkvqwf, fexxqqkb, vonuvgdk, nldagcun, zlnajbcv, wrgwuypl, bgeosxwk, yzkryedc, hraqptqw, rpawjafd, antfqpet, qjhrxilj, dstuuuap, cqvlcmxr, qilxsmqm, kfheqdxn, tmeymnwe, vhtjcmnh, iwrndthn, jyuirvan, bmcejxzd, eavxhglj, xhemfzre, ypuoivkj, lytwexdj, jvdnutrl, sdvzgbcq, swvfvmnd, wrvfmsld, epekzngu, ghnjacgu, kfheqdxn, vzynglvq, fwwklfyq, yfdxwxaj, ilfsuxog, rdpqnaul, ognyxfyk, jmgovyxg, hqjftjqa, uctlcoel, vxvpuknd, kclibfxq, aligvlxk, gadzlgzj, cjvchozt, qywxwuru, agvuugfs, medbbnxk, sldlcsmp, limuvrma, pilkqxds, juitrnsd, sqwvfvqq, wupoympc, uukvuabw, dfaeakel, ijlmmgzq, cwrfzmip, xcbysznb, iuabhvrk, ejgqlxrc, ebbbveaj, ypvsaclt, gsyhjofx, ofnrzubu, sfemrxsd, cnqgoheu, uelpknnu, riofimmn, bnpflfan, zxvwgltm, cjeqnpli, mbyykbtb, mszkbqcg, vpeveros, xqwslmum, vkprnflb, ypnhurun, vdwpzuel, lzizhlwm, mgydvvvx, penzkudc, vgaqcrir, qbgbysdo, wvcglkmv, upnmeiit, xlxpumzf, qhclrxqq, rfevxbgw, kfheqdxn, hxbzhtmu, wcxwyqtf, fmihldbm, quadbvfr, koiokzzw, vcpxzgbo, tsqfmdfb, ylliahxx, anmqosrr, qrogcbyv, bvpsrgbd, hrmqpsct, girzepvv, ocjxliai, yluuopfb, lqaaxcrz, tuamiveq, xcwutnbg, zfpnsidf, lcwfvkhn, dwygmskt, oxbabejr, etlshqea, catklmvk, ouooqidv, sexixiya, uabxbvzr, hwjehzke, kfheqdxn, pshmbxhp, wxwstgpv, apwaabnp, atsbaxpx, zroejrvh, psibyimg, whinfyaa, dimnmvci, idcvuxgu, sjalcrut, mvtpgdtn, sbbzqqlb, xgvvqshy, bfuhuucg, mpnsnllb, qlcqttbj, fgizokqs, fnasusbn, zvfjvhum, sucvptwr, fqiyzlfu, dfuvuptk, qyrxomwj, caccdkpu, dnqkhkxe, nxulwezl, beugsits, dpjlrsgv, pbfqphrv, opdsfqwk, dhhrbtup, mzxdxuif, egafmnjy, ybfqjhon, flqgiemw, uthovbom, hyyraphp, jiahvbhw, xrepoghz, tlumisry, oncktzka, nmqtvbhe, tqtjcrlf, wrexvian, oxhsqfjm, efknpibk, dfcpwkpt, xcbexpjd, fdrkgseq, hkjhvpct, uriamuqn, jjqilbah, owmeqkbu, vuhvkupi, fidhrquv, dxmyokkg, lbdiymiu, jwbdtjnw, hnzwakvi, teaclliu, ooegdutb, fzhbawnn, gmrfxbsw, civtqsgf, ukzqaxac, gjmeqxtu, fmtskada, kqcjztnw, pgbaanjv, rskfrupi, jguysfsj, hbhjyhfe, hiawdfes, dmbnbdky, sgrhvwdo, ttmibdph, qoifcdyo, ucnmpenq, rkilihqi, aiuqlehq, whrntzkz, oxtyvrjr, jwnieika, julmqbop, dzvmunuk, phccpqxk, tmxvhndo, bmoslahz, ihidchxg, bkudoaof, ztwqszmp, qadqktvt, mcoyxink, fskcyfid, wuazewvl, ymfpdpau, zlphhych, whucuofe, jpatfgcf, nxkrpddk, sdhpijay, kotgxcak, etdbksxn, mikthkky, owwqqloz, ocigoapv, mtcjvuys, pueqrjfr, vhhgysqr, booztlow, rvxqizeq, zjnujqfg, yfczglhf, ozuwekkq, kgpyvupd, mscwoivj, uwxrlogp, ihbkqntd, hsuncsre, phiclxub, cxybahoa, tlnfakak, rqtayrfk, wkbpdrwy, ktuxtegt, pxgisymu, oobxvqwm, aiufyhqh, gfhphkdb, dlwowcwa, wtfsteeu, gwqdirbf, gfwkpujm, vtwyljji, fwhfocuu, vlghqfhj, qppcaciv, zbtsyefk, cklaqvzm, rilhykac, ujjaziuo, wtinuyql, qazbldqw, yvmizgxh, zopmgwdh, mzepcdut, tqwtxvwd, tbkksxrg, etxvldht, vqwoctfb, saasfube, kkezlfmf, wbkqldis, mezsjjke, eqigriqv, maxotsvo, nrgyfwjx, rmydhsee, vesbpnxs, vmpgntyr, jwkmfpvj, lkilmgtf, bejbwqsy, oajuspxf, mlrjeeje, mdpedzyi, qcokqnqz, sqmhfvgg, fpwawygf, bwvayybj, vsaerhuy, beheyynz, uofxmbvk, plottkoq, alvnqmkq, hghgkntp, bqpwvkus, kfheqdxn, tlzbgvyt, vbohivug, ionvkjgh}.
+    #foodItem = {agtujvnh, gaqvsphs, mhswceig, jrpmtiuo, hhcbpnyk, vekkhnna, kertodfh, ojdbwrnl, xicpfzmk, mbpdljnt, pnyzrver, xalffohh, shsfkewg, ovvocceu, bcqylwcn, sufngthl, tdkgynyx, gscrcxle, ctqwqotl, fhkjcuix, xrjvodfv, ndsbtrnu, bhldydul, soacgjye, pfwpinrc, cjqmyglb, rfustlek, dtgwcjqv, ozbubsnf, nwqlrizb, xbwsusbf, dkfeufbh, smvcmohg, hpuxyyjh, vluxpnrd, irlrtnzb, fimkhlxt, piakseab, xuoqvgim, xofyxgmc, kqolrgkx, fovmpjqt, mnwgmogq, cflzxmun, qdmrhuqc, mnlrsdmy, zrympsyv, sfrwtzvw, hnextklx, ekmbbmug, wyscfyzg, ytdoszfx, fyokvcda, gdaasvgg, ntxheika, nyjlyoul, mqfexupf, ngklfnwi, rnewugrg, qujymaaz, elcajzut, cdcwgahh, kyguzjwg, kcilomsn, katbjhhv, jxjuyyiy, ktqfblxt, nsufqczt, qpjraqwn, gbngnwth, ibcgmdas, kxbdtpfs, fatcigwp, jhibsope, ezeurdkp, moqryotc, vunkpdol, nemmfotc, avagecln, kaxbxyso, iyzhuttm, ksrnwmto, rqmtgklb, ezxdzhsg, mowbpnsr, zjqjiazf, uxontugg, zrmdedqy, tfgideui, tucdtesn, cajpibzq, yqhhwlts, ruqjsxmo, iiewzgbb, azsyvssj, hhhwcxfw, ivfhqzbj, awbqhmjo, jecoljyk, lahasimj, peetqevh, lnjhtnxx, wyefpnve, wduqzoik, ezoaxlrs, qbdcrbss, ndwhskvh, injiwwtd, ygmtxijy, dtfhopij, civwxjoi, jvazasan, xrlealxo, xjansupd, nikzmyaa, vihgolia, pmkldmmd, kojrmsby, fglzlvnd, zbtwsbhe, rrkktuao, gtquzzhf, nptosbfc, qdwyxtwa, addccfxc, ebboohyl, okvhdhkh, yppiovmk, jskdbvjg, jxxssorf, zunvkvxb, rzcgndeb, vogdcwoo, mqcedrup, telecprm, jprwznhh, newrskog, pyvudheb, haepxtgs, agfhqbue, bsbrlajn, aahoirxj, ebrjkfyq, ihmgfiir, actcdqty, mdrinytm, igujkimr, xujrnvyh, dxjynjen, rwgfstcl, qvzpeioj, yvdjrdhs, edsyvtri, axoafxuo, rjysujqg, heobnlal, pwbmzapj, ygnesgal, vwxpnrdp, qenhcxat, ejfflynm, cpojimha, mupavroi, jbudkbpi, xcrdvubl, ixayieee, hxafnsht, dcikwzep, vaffhbhb, nzjojpxp, elfgkhds, dolbzziq, btfeltfa, ubdffpri, ijraevuy, dihougks, hxzlpokj, itvmelra, rrdewzyj, zwleljwv, hamlikne, jnqphlfj, laqgxtop, wfidqpgd, htnatnez, rqyoqnwg, ezxostzj, itpgjhyl, xqbmscdj, ytlpqdjn, dkhndhbp, xiftflne, hehzvzup, sxhoanre, uevsqctu, lmnnqovb, mhxewnum, rwuaeqyr, mpytorwv, okgrlfhb, ulzgqquj, wpczdhuj, zwnsejff, znanhljt, gbmlbpcu, owifxibl, tilbkarz, vplvprym, gdrljqqg, hxxbrdeo, kmdovhlj, jfnoemxi, yoxqntqg, xonxydnt, bxquwyqp, cavlrlko, gxusqlmn, fwfnldfi, sbdbopqv, nmswhwml, ojlqbbol, asyrclzv, fytyhmwr, yulaxxha, biyiaygq, ngtkvtin, axjdgeqc, swxlvhmx, oggfrnkv, hmjdoakq, wlajanfh, bbbxpwfg, zdxtrdfp, ayltkjma, zcwbtvge, kifoetqi, xpjpokqa, cndktbog, majmasfw, mkwyuiik, ppyeghww, ogmvfkqr, prawflka, abbxubyh, xmikqwtm, jbppglqo, xdwlzswr, sihzmyxo, owrkleml, ttkxvvno, niafwpct, ddfgzkvd, avvreazu, aktrvzaa, cbnjerte, kxadxtcj, ojtnfohr, flqyyqjr, iplwmahn, xanjbuck, amidxcom, hguwhues, psgmmiwr, oedecjln, igjfjodt, sxjoekev, kgmsogcc, bzlwwppm, zmrryjck, cosmfbnr, tiodmozj, rjozzbal, dezetszj, upfmypdq, toceyrrq, pfmblsco, debgsork, frxpbzwk, xpfofplu, lwkgrzha, rjinvynn, ywhiqcwc, kgnkzgtu, cppmytel, yqhhwlts, wshgwkrh, vjqsipov, mjjelpbi, ncofyryu, vezjijaw, ksiogrjl, ikoxiiug, jyvvdutr, xvaihwjd, ozbubsnf, fsknyqfn, xonxvdpr, oocvrsjk, eyrcqfoh, qrtxomtm, ljnkjpxo, yywrjody, japsvolv, umwueebe, ykzahyuu, caphdqvf, frzwymld, zjkrfesp, zdsfdgfj, oaragtrs, wweugfoj, qvsfcgmi, qljsqybl, tjvwdkok, vbtwdrsj, wblaensk, sacmbeps, nieubfaz, leekjifs, gsxtnlfm, xjjchzfg, asiago, hnvugymg, edtkpedl, ryzwvdaa, tjhmmurn, wxbncwhs, cnhzbias, oghgbhko, cpaihdfi, uwftucfw, rdwcexqj, ybovtlqf, ajwdkxbf, aryppvcs, szarfopu, xljczzny, jqaczlvb, wldeaqre, glbsfqov, kvpnupaf, ovsbwxls, npbgebko, ghvhtlnr, rlnuabxo, uvprwvac, fysomtiz, uwhcaxod, veybddmr, cvtfyhff, xksuabgi, txyrcews, wrsiycyf, abbawjxx, tbdlhsuv, uupatnqn, mmurhgna, xsqyodky, wzuvphoo, iseraceg, enttecuw, begnhmuy, fcionpyk, qzpgnmub, yoqvypob, fpnqkyav, ssxhbsjr, nvidyswp, ybfimfpr, ilwdolje, ifrcickk, heiyhfbw, ocqpmjcj, tupdvozi, yjltzrdw, lmxarfgp, dqxtjlvq, vbafuutn, xsjtdujw, oomtyczq, nwjwrlkl, dddpidxk, injfgajy, ybuocjtt, hajpsgzw, frntfgqu, bvhucuqf, elqaoxbj, aytcynfb, obrzujne, awdgidqc, dlobmldu, gkajvqrn, wxxpnqhd, unhlobym, tblsckgh, jhyteiwh, wigxnjus, arpwhlzk, oqkoegcn, kecjabto, wgqeonhr, hqdroghn, yjpllqsm, gztqjvyl, ekgifuxh, ydscxzbq, zevsmlow, emnvpjnr, pxhlkeod, jnddyxzs, aszqugrn, heobnlal, atdjyirq, phvufcnp, akxykmap, rmzsehhg, bcqoefeh, yntggtep, zrzybbvg, cqrgbrdq, xlpurioo, gkwizolm, szdihrkj, ybalbqxt, fbpaxzen, fmxcihux, aktrvzaa, eisgabhn, kvqktiea, ivgsqzhf, tqhoxxva, xpgytmnh, yvtbpzqz, rmwekmny, lhfpqrak, qmkfknnd, cajpibzq, yqhhwlts, fzehahae, fijdpckd, fgenybjc, iiewzgbb, tucdtesn, tfgideui, azsyvssj, hxocibru, ikoxiiug, qlylqkyt, woepqykp, nqnmndva, vrolfbgn, xtvaumms, vyvycuxd, kmtgurqv, zlxlxpsg, qinidrzi, fwskrdhd, vzipjhon, rezgkqoo, hliiewef, hroukusw, tplbtfon, mcyinzgc, aaeaenkw, chvxyzoc, spjxqjcv, svcpvtkk, rntfavoc, hdvgnycn, yhvxrmob, laqniuss, gdqkbmjc, cgpechhh, keazghnz, rqvnobmc, dbswgnao, oexylypo, fzgrkidm, dtemoklk, dagxrelu, lzibeioi, tzubnlsn, gchrddtu, szkhsxzf, qivbjuty, hetcanut, nbopghkw, qwllobpy, ymjwvdoy, ofyugrmh, vvoweseg, vtldjmhd, svyykolx, yljspvad, lgnvmabq, ueoxfbwt, uqpkpbgq, miwqoprr, vzsgnyqq, jxzcqlzj, wbfertth, qzhozgsk, xismlyuv, syijwdqq, ibsqfcic, vqwjnejy, bxibdfvq, fikndaex, wklgjqjw, nnzswgut, raihpaeq, merwduki, btcnatgu, ivrjyjmg, krtsayey, lxvowoav, jnrfwwnh, feuonfzg, txttnpgi, goazxoge, kfheqdxn, xvfqslvd, cqupthik, vabgvnzl, gwztohyd, vwuxugsu, cgmguexg, xmfpawxi, gaerxkfc, kzurlmzf, kuyeabaa, oerhuqhv, fgcpkgfa, lpmazmbq, kelgcbkb, xkvsxsal, teidmfwz, gycbxkkc, aoheyisf, rlvjptma, bvyieayi, dxinbwwz, mkebkdwk, jjqzkepr, lngtknjs, cvusueyc, kjhnhujf, oaoekapv, hdugtjng, uoevlwpb, szfvqcvo, lojyeilh, ngvztvjl, yzhchdqr, jjymnmom, ssbahavu, xtycopld, lkvzmuwz, uankugsd, srotfiky, rriahkij, nkmmucug, buniorrz, ymcfypnv, rgjqdxbe, gujpebll, tpxfmsqr, csrzrorm, zpjohrgk, hfpwuoyh, ckprfpgu, nqnmndva, lahasimj, vdgtoens, eumitvzu, tjnzuwpu, otnetnza, mkntddmw, xnhvucva, pslvqyuj, ejsklxdq, xjhcnimv, vpxmxren, ujyndyid, vwlfknmv, xlyqlwgx, xhbdcvqe, nbhoeigg, aatbbhzj, ktxeefhg, drgblisg, hsinmzep, vsehnqmx, tvyjdomh, dfyjdxba, euojlsdf, rksdszmo, abmgjxlv, azlcjmjv, jhlmkaxo, iccccmoc, vsfsrimf, awoumepj, mvmgoeim, ayxggioe, mrfocvsg, kpkcaopm, iizrmhhu, zyhldrse, hgjqicdm, zurdmhsj, pctrkxly, eurzbncg, cfizbres, sxfrkpio, uwwokwty, mkovddgs, gdasdcbv, trrwbsig, iajerwse, hsnjoiad, oqidexuy, aiygfqmu, ggmdubrv, rvdhrgrm, xpmehnfy, bcqoefeh, yarexhup, wixddlsm, hgdzkyhk, vhlnheln, djatuwaz, dsqdysvr, xsfxmanx, opfrdwpu, spyibeol, vqiahgsh, ezrzjgmi, vplvprym, hmltwzfp, owrzltzk, mnxvljmx, udzdrtqt, ynqwpzss, dlufryze, dfnztako, nazlbuey, nkhpgzzf, ohstlire, yntggtep, lrnpgbis, tsrhbkag, nksuxjib, ffvjnmcw, eafqngxi, blvgoaqu, fsknyqfn, okrtzhfm, rwezhced, oxnqizwo, nhjyohni, juyaqljh, dythlgxa, olfrucsq, njmhubuf, irvuffce, ykrshqty, wikkmnjs, ljekuysk, kbpxibnp, brhmfprq, cnnxwhhd, dsmtrvar, nhldfiej, liveermg, qqeisajc, cxnkbuqu, wckptqxm, gljrouss, eqwrbuhs, ahmlqoex, nkinmmqf, sbkqivyk, ermxejxc, zznwdrpt, xwwpbwxa, hoycewfo, mjbwghed, vbixpmbi, erjomkcu, xppwvmhg, irgjmreu, jfvqahod, hlqosxde, sbbhmfed, hcmctndr, cpsnrjpo, avfgxqul, jqtgrrmw, djdhpfvt, vkdivvga, rhpitesw, pgkcflzx, pjuwvybx, vjpbdupg, nlrjomtk, mysaqucs, bifzausm, ppevqxtq, ksexkchh, buzdogwq, kzivpile, ijcpnmcy, pmchnxhi, ijzlkfwh, pocqkkhp, wfnjgxcb, aldlxqvd, akzajhdf, utwtxayv, arncshtk, abmgjxlv, evcuveta, vtbpiwtf, qawuklos, vsvuzukk, bbsjwxjz, bbkksgew, dtnmidfw, jcbchfos, dgjftgpj, zzmeiodk, wqxtpnlw, wfoajnsq, zzevgeex, iveafahj, zrylsaqb, jvvvujxi, gvqfrhhj, gtaxmhxv, fljtihoh, bmgoxauh, qcwpljtt, bdywiilu, xdihwrci, evemoves, msiqcxjj, vdnsnajo, fcuwqxfh, ejhamsdx, aoewirqw, mewklmjf, kygqofzk, sjsstbws, qmbhasxq, gotsaoep, utwmtoqf, uapepxrg, wlubvued, pztxlptf, pbxnqnxp, jtjtkxli, thcborlh, jhjwkqiy, ykjwcajh, lyyydpgq, yoxqntqg, uiouhnfr, baftnltd, rhobsamq, mzgqbzup, nfwhxntp, nfaqeznv, twrkfpjx, uxknkfhh, wrkkthjs, nrilkuxm, usuofele, uouevaxu, lfilbhyc, zjqgscov, wrzbbyrw, ounggbrs, jpafnjtm, eecvoadm, qjchhila, arysosun, vvgaxqet, gciplmrt, zshovcdk, dcllmoqp, vrolfbgn, eqboqynm, myoholit, yxvmosry, eidpxhqr, mnwcebcl, blnakqyx, upvvwhuz, anwaxuqr, xnsisnfg, njafjcdf, wbbtejye, kzutjjnk, tzoohojq, tvckqrew, bzjpzkkz, dcescesq, dkrdwcmv, jtdpnrvg, jnfjcabd, snxvpeau, mtomxvby, yblcgqnz, oipiiekb, argpjpps, sbbsqxss, gyahefjr, lsqwffos, ekivtgav, nmtwcnmj, cdjjalcq, putlishw, wavvhpfa, jqtuvfdt, qitzgvvz, zdxdsebi, omxgmsoo, taxpcmmr, nevsolpb, tnrlhlhn, ntunrqeg, mmsisawq, brehvahh, duhvtvgi, ajsbzvex, xihlckfu, twyhymkg, shsqlraa, ipbgfouk, kwvprupn, hsitamyz, kdmjedzd, lrjbsjqo, dftfbahe, ihoefkag, aalhbmkx, tassmaxk, wyqmfbhh, cmvzmrwo, yzbjnnsg, hpryvlga, hxxbrdeo, nbbeabnq, vezjijaw, qngplagn, owzfvjfk, switfhve, hxocibru, dtgwcjqv}.
     #foodPrice = 0..100.
 
 predicates
@@ -34,8 +33,8 @@ predicates
     zipcode(#id, #zipcode).
     
     positionByName(#restaurantName,#position).
-    scoreByName(#restaurantName, #score).
-    ratingsByName(#restaurantName, #rating).
+    scoreByName(#id, #restaurantName, #score).
+    ratingsByName(#id, #restaurantName, #rating).
     categoryByName(#restaurantName, #category).
     priceRangeByName(#restaurantName, #priceRange, #id).
     fullAddressByName(#restaurantName, #fullAddress).
@@ -51,6 +50,8 @@ predicates
     getMenuByRestaurant(#id,#foodCategory,#foodItem, #foodPrice).
     getRestaurantByCategory(#category,#id,#restaurantName).
     zipcodeByNameAndId(#id, #restaurantName, #zipcode).
+    getRestaurantNameByFoodItem(#id,#foodCategory,#foodItem, #foodPrice, #restaurantName).
+
     
 rules
 
@@ -68,10 +69,14 @@ rules
                                       price(F,P).
     
     getRestaurantByCategory(C,I,R) :-  category(I,C), name(I,R).
+    getRestaurantNameByFoodItem(I,C,F,P,N) :- hasFoodCategory(I,C),
+                                                categoryHasItem(C,F),
+                                                price(F,P),
+                                                name(I, N).
 
     %positionByName(X,Y) :- name(I,X), position(I,Y).
-    %scoreByName(X,Y) :- name(I,X), score(I,Y).
-    %ratingsByName(X,Y) :- name(I,X), ratings(I,Y).
+    scoreByName(I,X,Y) :- name(I,X), score(I,Y).
+    %ratingsByName(I,X,Y) :- name(I,X), ratings(I,Y).
     %categoryByName(X,Y) :- name(I,X), category(I,Y).
     priceRangeByName(X,Y,I) :- name(I,X), priceRange(I,Y).
     %fullAddressByName(X,Y) :- name(I,X), fullAddress(I,Y).
@@ -113,2836 +118,3873 @@ rules
     getScore(X,25) :- not hasScore(X).
 
     
-name(1,rdsciprv).
-name(2,qqpxcvcp).
-name(4,ouyceuyb).
-name(5,gbxjblpd).
-name(14,iogocxfn).
-name(15,vbuxbhlg).
-name(16,sdabcpiy).
-name(20,hqsplpey).
-name(23,jsqdtysb).
-name(24,ishnguvg).
-
-position(1,34).
-position(2,12).
-position(4,31).
-position(5,67).
-position(14,41).
-position(15,43).
-position(16,4).
-position(20,82).
-position(23,14).
-position(24,11).
-
-
-score(1,42).
-score(2,42).
-score(4,42).
-score(5,42).
-score(14,43).
-score(15,49).
-score(16,42).
-score(20,46).
-score(23,47).
-score(24,49).
-
-
-ratings(1,0).
-ratings(2,0).
-ratings(4,0).
-ratings(5,0).
-ratings(14,78).
-ratings(15,156).
-ratings(16,0).
-ratings(20,29).
-ratings(23,100).
-ratings(24,12).
+    name(1,rdsciprv).
+    name(4,ouyceuyb).
+    name(5,gbxjblpd).
+    name(20,hqsplpey).
+    name(23,jsqdtysb).
+    name(24,ishnguvg).
+    name(30,sqscmmsr).
+    name(32,kodnhpea).
+    name(37,lggpjmpr).
+    name(38,xmzqgfca).
+    name(39,zdwqmllx).
+    name(57,gldowqla).
+    name(136,cletuumn).
+    name(137,qbfrppef).
+    name(138,bczaeloa).
+    name(139,sbirykvj).
+    name(140,xhpuenbj).
+    name(141,vxukbrwc).
+    name(142,dmneonwq).
     
-category(1,ipsgxfrn).
-category(1,mbqdomyp).
-category(1,ttkxvvno).
-category(1,eimkemgr).
-category(1,ktxeefhg).
-category(1,gdmfeoks).
-category(1,intqqmnk).
-category(1,rahdrcot).
-category(2,bqctdiau).
-category(2,xlvjogtb).
-category(2,yduqrbnh).
-category(2,duhwkrid).
-category(4,fzjugfbl).
-category(4,hozdveen).
-category(4,dfmnogqq).
-category(4,iidscufg).
-category(4,yavgbbkr).
-category(4,ldiryiri).
-category(4,yliyhxlx).
-category(4,nrkaudde).
-category(5,ryvbsweh).
-category(5,intqqmnk).
-category(5,eimkemgr).
-category(14,kqqqgiwa).
-category(14,ziwlbfeu).
-category(14,xixgogkr).
-category(15,hnahdmbe).
-category(15,dswazbvm).
-category(15,dfmnogqq).
-category(15,nuszxokw).
-category(16,fdwhjqwh).
-category(16,lqjjvbcx).
-category(16,eoycxldk).
-category(16,ryvbsweh).
-category(16,pkdlizdc).
-category(20,ryvbsweh).
-category(20,kqqqgiwa).
-category(20,ipzovute).
-category(23,nrkaudde).
-category(23,mzieroag).
-category(23,xlvjogtb).
-category(24,hnahdmbe).
-category(24,mzieroag).
-category(24,iidscufg).
-category(24,tdzmfulb).
-category(24,rahdrcot).
+    position(1,34).
+    position(4,31).
+    position(5,67).
+    position(20,82).
+    position(23,14).
+    position(24,11).
+    position(30,110).
+    position(32,103).
+    position(37,75).
+    position(38,72).
+    position(39,68).
+    position(57,40).
+    position(136,42).
+    position(137,41).
+    position(138,40).
+    position(139,39).
+    position(140,36).
+    position(141,38).
+    position(142,34).
     
-priceRange(1,1).
+    
+    score(1,42).
+    score(4,42).
+    score(5,42).
+    score(20,46).
+    score(23,47).
+    score(24,49).
+    score(30,42).
+    score(32,42).
+    score(37,46).
+    score(38,47).
+    score(136,49).
+    score(137,47).
+    score(138,39).
+    score(139,46).
+    score(140,36).
+    score(141,45).
+    score(142,47).
+    
+    
+    ratings(1,0).
+    ratings(4,0).
+    ratings(5,0).
+    ratings(20,29).
+    ratings(23,100).
+    ratings(24,12).
+    ratings(30,0).
+    ratings(32,0).
+    ratings(37,71).
+    ratings(38,47).
+    
+    
+    ratings(136,20).
+    ratings(137,57).
+    ratings(138,61).
+    ratings(139,94).
+    ratings(140,32).
+    ratings(141,81).
+    ratings(142,133).
+        
+    category(1,ipsgxfrn).
+    category(1,mbqdomyp).
+    category(1,ttkxvvno).
+    category(1,eimkemgr).
+    category(1,ktxeefhg).
+    category(1,gdmfeoks).
+    category(1,intqqmnk).
+    category(1,rahdrcot).
+    category(4,fzjugfbl).
+    category(4,hozdveen).
+    category(4,dfmnogqq).
+    category(4,iidscufg).
+    category(4,yavgbbkr).
+    category(4,ldiryiri).
+    category(4,yliyhxlx).
+    category(4,nrkaudde).
+    category(5,ryvbsweh).
+    category(5,intqqmnk).
+    category(5,eimkemgr).
+    category(20,ryvbsweh).
+    category(20,kqqqgiwa).
+    category(20,ipzovute).
+    category(23,nrkaudde).
+    category(23,mzieroag).
+    category(23,xlvjogtb).
+    category(24,hnahdmbe).
+    category(24,mzieroag).
+    category(24,iidscufg).
+    category(24,tdzmfulb).
+    category(24,rahdrcot).
+    category(30,intqqmnk).
+    category(30,kceborfg).
+    category(30,bblqicsh).
+    category(32,kqqqgiwa).
+    category(32,xixgogkr).
+    category(32,guiddmud).
+    category(37,ryvbsweh).
+    category(37,intqqmnk).
+    category(37,rahdrcot).
+    category(38,rbmaubjl).
+    category(38,iidscufg).
+    category(39,bblqicsh).
+    category(39,kmsugtzy).
+    category(39,ktxeefhg).
+    category(57,bblqicsh).
+    category(57,unjrwyxk).
+    category(57,ktxeefhg).
+    category(136,slgsmlpu).
+    category(136,eimkemgr).
+    category(136,rbmaubjl).
+    category(137,kqqqgiwa).
+    category(137,ziwlbfeu).
+    category(137,xixgogkr).
+    category(138,kqqqgiwa).
+    category(138,ziwlbfeu).
+    category(138,xixgogkr).
+    category(139,eimkemgr).
+    category(139,kpigxwux).
+    category(139,xslfkehe).
+    category(140,eimkemgr).
+    category(140,gdmfeoks).
+    category(140,sevgyqmi).
+    category(140,rbmaubjl).
+    category(140,slgsmlpu).
+    category(141,dswazbvm).
+    category(141,kceborfg).
+    category(141,intqqmnk).
+    category(141,rahdrcot).
+    category(141,bblqicsh).
+    category(141,yavgbbkr).
+    category(141,eimkemgr).
+    category(141,eoycxldk).
+    category(142,slgsmlpu).
+    category(142,eimkemgr).
+    category(142,rbmaubjl).
+        
+    priceRange(1,1).
+    priceRange(4,1).
+    priceRange(5,1).
+    priceRange(20,1).
+    priceRange(23,1).
+    priceRange(24,1).
+    priceRange(30,1).
+    
+    priceRange(37,1).
+    
+    
+    priceRange(57,1).
+    priceRange(136,2).
+    priceRange(137,1).
+    priceRange(138,1).
+    priceRange(139,2).
+    priceRange(140,2).
+    priceRange(141,1).
+    priceRange(142,2).
+    
+    fullAddress(1,elkgnltp).
+    fullAddress(4,dauxlkec).
+    fullAddress(5,wtneuvan).
+    fullAddress(20,kucbuchl).
+    fullAddress(23,qderkdtr).
+    fullAddress(24,abxrttzr).
+    fullAddress(30,sqjtcgzo).
+    fullAddress(32,nwidmpbv).
+    fullAddress(37,dfknkjlm).
+    fullAddress(38,uhhwcukm).
+    fullAddress(39,asegwxyy).
+    fullAddress(57,zcvnzkdf).
+    fullAddress(136,buznjfhr).
+    fullAddress(137,izgzrpbe).
+    fullAddress(138,hstqhtcj).
+    fullAddress(139,erruvlog).
+    fullAddress(140,terppxis).
+    fullAddress(141,wqjfwmxo).
+    fullAddress(142,cdqasopm).
+    
+    zipcode(1,bbvltflp).
+    zipcode(4,vlbhkipn).
+    zipcode(5,vlbhkipn).
+    zipcode(20,vlbhkipn).
+    zipcode(23,ypcxxhqq).
+    zipcode(24,bbvltflp).
+    zipcode(30,jphjbnvq).
+    zipcode(32,ksxbvglz).
+    zipcode(37,vlbhkipn).
+    zipcode(38,euqzmpyx).
+    zipcode(39,jphjbnvq).
+    zipcode(57,vlbhkipn).
+    zipcode(136,vlbhkipn).
+    zipcode(137,bbvltflp).
+    zipcode(138,bbvltflp).
+    zipcode(139,bbvltflp).
+    zipcode(140,vlbhkipn).
+    zipcode(141,euqzmpyx).
+    zipcode(142,jphjbnvq).
+    
+    hasFoodCategory(1,ydgrcaxx).
+    hasFoodCategory(1,nzdgtqbo).
+    hasFoodCategory(1,tjsbfdlb).
+    hasFoodCategory(1,vmynpqdj).
+    hasFoodCategory(1,moklfdsc).
+    hasFoodCategory(1,onpahegy).
+    hasFoodCategory(1,xlvjogtb).
+    hasFoodCategory(1,onsjxlnr).
+    hasFoodCategory(1,iidscufg).
+    hasFoodCategory(1,flzufqiu).
+    hasFoodCategory(1,dlmarohb).
+    hasFoodCategory(3,afnlienn).
+    hasFoodCategory(3,nhmhjcaq).
+    hasFoodCategory(3,xlvjogtb).
+    hasFoodCategory(3,znkweirv).
+    hasFoodCategory(4,xkzcvext).
+    hasFoodCategory(4,jbjzajbo).
+    hasFoodCategory(4,wmhqovtu).
+    hasFoodCategory(4,yeydvadl).
+    hasFoodCategory(4,syljbbhn).
+    hasFoodCategory(4,xqlvvvmb).
+    hasFoodCategory(4,rzkzzptq).
+    hasFoodCategory(5,xkzcvext).
+    hasFoodCategory(5,ekwueian).
+    hasFoodCategory(20,adeoaaxm).
+    hasFoodCategory(20,ccojujbt).
+    hasFoodCategory(20,czpqkrsj).
+    hasFoodCategory(20,bvgsvtht).
+    hasFoodCategory(20,rgholllx).
+    hasFoodCategory(20,onsjxlnr).
+    hasFoodCategory(23,xkzcvext).
+    hasFoodCategory(23,yxudrbrs).
+    hasFoodCategory(23,vwtaqxvd).
+    hasFoodCategory(23,jznkxzud).
+    hasFoodCategory(23,qaphrepe).
+    hasFoodCategory(23,ufcaened).
+    hasFoodCategory(23,eflnlpdu).
+    hasFoodCategory(23,bpusuqzk).
+    hasFoodCategory(24,xkzcvext).
+    hasFoodCategory(24,zduxsojk).
+    hasFoodCategory(30,riiedzyd).
+    hasFoodCategory(32,rdpuhzrr).
+    hasFoodCategory(32,kvcxqnrg).
+    hasFoodCategory(32,czzhhsif).
+    hasFoodCategory(32,hwaqkkzw).
+    hasFoodCategory(32,zrmuwfem).
+    hasFoodCategory(37,lvjjbnsz).
+    hasFoodCategory(37,rrdewzyj).
+    hasFoodCategory(37,kmsugtzy).
+    hasFoodCategory(37,lzqrvmkt).
+    hasFoodCategory(37,rahdrcot).
+    hasFoodCategory(37,rtrimsww).
+    hasFoodCategory(37,onsjxlnr).
+    hasFoodCategory(37,xlvjogtb).
+    hasFoodCategory(37,imbishqe).
+    hasFoodCategory(38,xkzcvext).
+    hasFoodCategory(38,ukeravyd).
+    hasFoodCategory(38,tjxmjvns).
+    hasFoodCategory(38,intqqmnk).
+    hasFoodCategory(38,mhzxyrea).
+    hasFoodCategory(38,xlvjogtb).
+    hasFoodCategory(38,tlpmgdqn).
+    hasFoodCategory(39,xkzcvext).
+    hasFoodCategory(39,yovyvucr).
+    hasFoodCategory(39,bpagkjuo).
+    hasFoodCategory(57,xkzcvext).
+    hasFoodCategory(57,ydgrcaxx).
+    hasFoodCategory(57,auqfbxmu).
+    hasFoodCategory(136,iekmbftp).
+    hasFoodCategory(136,ojsxepei).
+    hasFoodCategory(136,rbmaubjl).
+    hasFoodCategory(136,xssajudq).
+    hasFoodCategory(136,euemitni).
+    hasFoodCategory(136,zfzqvppy).
+    hasFoodCategory(136,dgthcpnx).
+    hasFoodCategory(136,ffxhsshg).
+    hasFoodCategory(136,klcspiai).
+    hasFoodCategory(136,nlnsdpaj).
+    hasFoodCategory(136,iidscufg).
+    hasFoodCategory(136,wwgqovsb).
+    hasFoodCategory(137,xkzcvext).
+    hasFoodCategory(137,zuglofcc).
+    hasFoodCategory(137,fdmlqvrx).
+    hasFoodCategory(137,ajnnosce).
+    hasFoodCategory(137,trzybwjx).
+    hasFoodCategory(137,awoifbkk).
+    hasFoodCategory(137,wwgqovsb).
+    hasFoodCategory(137,hpavfsad).
+    hasFoodCategory(138,xkzcvext).
+    hasFoodCategory(138,oxwpwewt).
+    hasFoodCategory(138,fjlgyvgi).
+    hasFoodCategory(138,bzyhdezb).
+    hasFoodCategory(138,hmqhlkma).
+    hasFoodCategory(138,oerhuqhv).
+    hasFoodCategory(138,igmyemqn).
+    hasFoodCategory(138,ezfuqxqb).
+    hasFoodCategory(138,igkuekin).
+    hasFoodCategory(138,ugqsxvji).
+    hasFoodCategory(138,gtnpuifs).
+    hasFoodCategory(138,wwgqovsb).
+    hasFoodCategory(138,ktqrvipr).
+    hasFoodCategory(139,xkzcvext).
+    hasFoodCategory(139,iekmbftp).
+    hasFoodCategory(139,kmvhbuqi).
+    hasFoodCategory(139,qwjkaoge).
+    hasFoodCategory(139,yzmiuxow).
+    hasFoodCategory(139,cwmlzxum).
+    hasFoodCategory(139,sssciuse).
+    hasFoodCategory(139,xtyrfxuq).
+    hasFoodCategory(139,daznxwic).
+    hasFoodCategory(139,azeuimig).
+    hasFoodCategory(139,onsjxlnr).
+    hasFoodCategory(139,xlvjogtb).
+    hasFoodCategory(140,xkzcvext).
+    hasFoodCategory(140,coutmhpu).
+    hasFoodCategory(140,xoiurirb).
+    hasFoodCategory(140,eoycxldk).
+    hasFoodCategory(140,pugzqysb).
+    hasFoodCategory(140,onsjxlnr).
+    hasFoodCategory(140,wwgqovsb).
+    hasFoodCategory(140,iidscufg).
+    hasFoodCategory(141,xkzcvext).
+    hasFoodCategory(141,rbmaubjl).
+    hasFoodCategory(141,ukkuyflr).
+    hasFoodCategory(141,kmsugtzy).
+    hasFoodCategory(141,eewxrhna).
+    hasFoodCategory(141,bblqicsh).
+    hasFoodCategory(141,hnahdmbe).
+    hasFoodCategory(141,wwgqovsb).
+    hasFoodCategory(141,csfxqwnt).
+    hasFoodCategory(141,ldroshyy).
+    hasFoodCategory(141,szymwzlh).
+    hasFoodCategory(141,nqgbiwis).
+    hasFoodCategory(141,lbjpbkmb).
+    hasFoodCategory(142,xkzcvext).
+    hasFoodCategory(142,afnlienn).
+    hasFoodCategory(142,mgrhgttl).
+    hasFoodCategory(142,hpavfsad).
+    hasFoodCategory(142,xlvjogtb).
+    
+    categoryHasItem(ydgrcaxx,agtujvnh).
+    categoryHasItem(ydgrcaxx,gaqvsphs).
+    categoryHasItem(ydgrcaxx,mhswceig).
+    categoryHasItem(nzdgtqbo,jrpmtiuo).
+    categoryHasItem(nzdgtqbo,hhcbpnyk).
+    categoryHasItem(nzdgtqbo,vekkhnna).
+    categoryHasItem(nzdgtqbo,kertodfh).
+    categoryHasItem(tjsbfdlb,ojdbwrnl).
+    categoryHasItem(tjsbfdlb,xicpfzmk).
+    categoryHasItem(vmynpqdj,mbpdljnt).
+    categoryHasItem(moklfdsc,pnyzrver).
+    categoryHasItem(moklfdsc,xalffohh).
+    categoryHasItem(onpahegy,shsfkewg).
+    categoryHasItem(onpahegy,ovvocceu).
+    categoryHasItem(xlvjogtb,bcqylwcn).
+    categoryHasItem(onsjxlnr,sufngthl).
+    categoryHasItem(onsjxlnr,tdkgynyx).
+    categoryHasItem(onsjxlnr,gscrcxle).
+    categoryHasItem(onsjxlnr,ctqwqotl).
+    categoryHasItem(iidscufg,fhkjcuix).
+    categoryHasItem(iidscufg,xrjvodfv).
+    categoryHasItem(iidscufg,ndsbtrnu).
+    categoryHasItem(flzufqiu,bhldydul).
+    categoryHasItem(dlmarohb,soacgjye).
+    categoryHasItem(afnlienn,pfwpinrc).
+    categoryHasItem(afnlienn,cjqmyglb).
+    categoryHasItem(nhmhjcaq,rfustlek).
+    categoryHasItem(xlvjogtb,dtgwcjqv).
+    categoryHasItem(xlvjogtb,ozbubsnf).
+    categoryHasItem(znkweirv,nwqlrizb).
+    categoryHasItem(znkweirv,xbwsusbf).
+    categoryHasItem(znkweirv,dkfeufbh).
+    categoryHasItem(znkweirv,smvcmohg).
+    categoryHasItem(znkweirv,hpuxyyjh).
+    categoryHasItem(znkweirv,vluxpnrd).
+    categoryHasItem(xkzcvext,irlrtnzb).
+    categoryHasItem(xkzcvext,fimkhlxt).
+    categoryHasItem(xkzcvext,piakseab).
+    categoryHasItem(xkzcvext,xuoqvgim).
+    categoryHasItem(xkzcvext,xofyxgmc).
+    categoryHasItem(jbjzajbo,kqolrgkx).
+    categoryHasItem(jbjzajbo,fovmpjqt).
+    categoryHasItem(jbjzajbo,mnwgmogq).
+    categoryHasItem(jbjzajbo,cflzxmun).
+    categoryHasItem(jbjzajbo,qdmrhuqc).
+    categoryHasItem(jbjzajbo,mnlrsdmy).
+    categoryHasItem(wmhqovtu,zrympsyv).
+    categoryHasItem(wmhqovtu,sfrwtzvw).
+    categoryHasItem(wmhqovtu,hnextklx).
+    categoryHasItem(wmhqovtu,ekmbbmug).
+    categoryHasItem(wmhqovtu,wyscfyzg).
+    categoryHasItem(wmhqovtu,ytdoszfx).
+    categoryHasItem(wmhqovtu,fyokvcda).
+    categoryHasItem(yeydvadl,xofyxgmc).
+    categoryHasItem(yeydvadl,gdaasvgg).
+    categoryHasItem(yeydvadl,ntxheika).
+    categoryHasItem(yeydvadl,nyjlyoul).
+    categoryHasItem(yeydvadl,mqfexupf).
+    categoryHasItem(syljbbhn,ngklfnwi).
+    categoryHasItem(syljbbhn,rnewugrg).
+    categoryHasItem(syljbbhn,qujymaaz).
+    categoryHasItem(syljbbhn,elcajzut).
+    categoryHasItem(syljbbhn,cdcwgahh).
+    categoryHasItem(xqlvvvmb,kyguzjwg).
+    categoryHasItem(xqlvvvmb,irlrtnzb).
+    categoryHasItem(xqlvvvmb,kcilomsn).
+    categoryHasItem(xqlvvvmb,fimkhlxt).
+    categoryHasItem(xqlvvvmb,katbjhhv).
+    categoryHasItem(xqlvvvmb,jxjuyyiy).
+    categoryHasItem(rzkzzptq,ktqfblxt).
+    categoryHasItem(rzkzzptq,xuoqvgim).
+    categoryHasItem(rzkzzptq,nsufqczt).
+    categoryHasItem(rzkzzptq,qpjraqwn).
+    categoryHasItem(rzkzzptq,gbngnwth).
+    categoryHasItem(rzkzzptq,piakseab).
+    categoryHasItem(xkzcvext,ibcgmdas).
+    categoryHasItem(ekwueian,kxbdtpfs).
+    categoryHasItem(ekwueian,fatcigwp).
+    categoryHasItem(adeoaaxm,jhibsope).
+    categoryHasItem(adeoaaxm,ezeurdkp).
+    categoryHasItem(adeoaaxm,moqryotc).
+    categoryHasItem(adeoaaxm,vunkpdol).
+    categoryHasItem(ccojujbt,nemmfotc).
+    categoryHasItem(czpqkrsj,avagecln).
+    categoryHasItem(czpqkrsj,kaxbxyso).
+    categoryHasItem(czpqkrsj,iyzhuttm).
+    categoryHasItem(czpqkrsj,ksrnwmto).
+    categoryHasItem(czpqkrsj,rqmtgklb).
+    categoryHasItem(bvgsvtht,ezxdzhsg).
+    categoryHasItem(bvgsvtht,mowbpnsr).
+    categoryHasItem(bvgsvtht,zjqjiazf).
+    categoryHasItem(bvgsvtht,uxontugg).
+    categoryHasItem(bvgsvtht,zrmdedqy).
+    categoryHasItem(rgholllx,tfgideui).
+    categoryHasItem(rgholllx,tucdtesn).
+    categoryHasItem(rgholllx,cajpibzq).
+    categoryHasItem(rgholllx,yqhhwlts).
+    categoryHasItem(rgholllx,ruqjsxmo).
+    categoryHasItem(rgholllx,iiewzgbb).
+    categoryHasItem(rgholllx,azsyvssj).
+    categoryHasItem(rgholllx,hhhwcxfw).
+    categoryHasItem(rgholllx,ivfhqzbj).
+    categoryHasItem(rgholllx,awbqhmjo).
+    categoryHasItem(rgholllx,jecoljyk).
+    categoryHasItem(rgholllx,lahasimj).
+    categoryHasItem(onsjxlnr,peetqevh).
+    categoryHasItem(onsjxlnr,lnjhtnxx).
+    categoryHasItem(onsjxlnr,wyefpnve).
+    categoryHasItem(onsjxlnr,wduqzoik).
+    categoryHasItem(onsjxlnr,ezoaxlrs).
+    categoryHasItem(onsjxlnr,qbdcrbss).
+    categoryHasItem(onsjxlnr,ndwhskvh).
+    categoryHasItem(onsjxlnr,injiwwtd).
+    categoryHasItem(xkzcvext,ygmtxijy).
+    categoryHasItem(xkzcvext,dtfhopij).
+    categoryHasItem(yxudrbrs,civwxjoi).
+    categoryHasItem(yxudrbrs,jvazasan).
+    categoryHasItem(yxudrbrs,xrlealxo).
+    categoryHasItem(yxudrbrs,xjansupd).
+    categoryHasItem(yxudrbrs,nikzmyaa).
+    categoryHasItem(yxudrbrs,vihgolia).
+    categoryHasItem(vwtaqxvd,pmkldmmd).
+    categoryHasItem(vwtaqxvd,kojrmsby).
+    categoryHasItem(jznkxzud,fglzlvnd).
+    categoryHasItem(jznkxzud,zbtwsbhe).
+    categoryHasItem(jznkxzud,rrkktuao).
+    categoryHasItem(qaphrepe,gtquzzhf).
+    categoryHasItem(qaphrepe,nptosbfc).
+    categoryHasItem(qaphrepe,qdwyxtwa).
+    categoryHasItem(qaphrepe,addccfxc).
+    categoryHasItem(ufcaened,ebboohyl).
+    categoryHasItem(ufcaened,okvhdhkh).
+    categoryHasItem(ufcaened,yppiovmk).
+    categoryHasItem(ufcaened,jskdbvjg).
+    categoryHasItem(ufcaened,jxxssorf).
+    categoryHasItem(ufcaened,zunvkvxb).
+    categoryHasItem(ufcaened,rzcgndeb).
+    categoryHasItem(eflnlpdu,vogdcwoo).
+    categoryHasItem(eflnlpdu,mqcedrup).
+    categoryHasItem(eflnlpdu,telecprm).
+    categoryHasItem(eflnlpdu,jprwznhh).
+    categoryHasItem(eflnlpdu,newrskog).
+    categoryHasItem(eflnlpdu,pyvudheb).
+    categoryHasItem(bpusuqzk,haepxtgs).
+    categoryHasItem(bpusuqzk,agfhqbue).
+    categoryHasItem(bpusuqzk,bsbrlajn).
+    categoryHasItem(bpusuqzk,aahoirxj).
+    categoryHasItem(xkzcvext,ebrjkfyq).
+    categoryHasItem(xkzcvext,ihmgfiir).
+    categoryHasItem(xkzcvext,actcdqty).
+    categoryHasItem(xkzcvext,mdrinytm).
+    categoryHasItem(xkzcvext,igujkimr).
+    categoryHasItem(zduxsojk,xujrnvyh).
+    categoryHasItem(riiedzyd,dxjynjen).
+    categoryHasItem(riiedzyd,rwgfstcl).
+    categoryHasItem(rdpuhzrr,qvzpeioj).
+    categoryHasItem(rdpuhzrr,yvdjrdhs).
+    categoryHasItem(kvcxqnrg,edsyvtri).
+    categoryHasItem(kvcxqnrg,axoafxuo).
+    categoryHasItem(kvcxqnrg,rjysujqg).
+    categoryHasItem(czzhhsif,heobnlal).
+    categoryHasItem(czzhhsif,pwbmzapj).
+    categoryHasItem(czzhhsif,ygnesgal).
+    categoryHasItem(czzhhsif,vwxpnrdp).
+    categoryHasItem(czzhhsif,qenhcxat).
+    categoryHasItem(czzhhsif,ejfflynm).
+    categoryHasItem(hwaqkkzw,cpojimha).
+    categoryHasItem(hwaqkkzw,mupavroi).
+    categoryHasItem(hwaqkkzw,jbudkbpi).
+    categoryHasItem(hwaqkkzw,xcrdvubl).
+    categoryHasItem(hwaqkkzw,ixayieee).
+    categoryHasItem(zrmuwfem,hxafnsht).
+    categoryHasItem(zrmuwfem,dcikwzep).
+    categoryHasItem(zrmuwfem,vaffhbhb).
+    categoryHasItem(zrmuwfem,nzjojpxp).
+    categoryHasItem(zrmuwfem,elfgkhds).
+    categoryHasItem(zrmuwfem,dolbzziq).
+    categoryHasItem(zrmuwfem,btfeltfa).
+    categoryHasItem(zrmuwfem,ubdffpri).
+    categoryHasItem(zrmuwfem,ijraevuy).
+    categoryHasItem(lvjjbnsz,dihougks).
+    categoryHasItem(lvjjbnsz,hxzlpokj).
+    categoryHasItem(lvjjbnsz,itvmelra).
+    categoryHasItem(rrdewzyj,rrdewzyj).
+    categoryHasItem(rrdewzyj,zwleljwv).
+    categoryHasItem(kmsugtzy,hamlikne).
+    categoryHasItem(lzqrvmkt,jnqphlfj).
+    categoryHasItem(lzqrvmkt,laqgxtop).
+    categoryHasItem(rahdrcot,wfidqpgd).
+    categoryHasItem(rahdrcot,htnatnez).
+    categoryHasItem(rahdrcot,rqyoqnwg).
+    categoryHasItem(rahdrcot,ezxostzj).
+    categoryHasItem(rtrimsww,itpgjhyl).
+    categoryHasItem(rtrimsww,xqbmscdj).
+    categoryHasItem(rtrimsww,ytlpqdjn).
+    categoryHasItem(rtrimsww,dkhndhbp).
+    categoryHasItem(rtrimsww,xiftflne).
+    categoryHasItem(rtrimsww,hehzvzup).
+    categoryHasItem(rtrimsww,sxhoanre).
+    categoryHasItem(rtrimsww,uevsqctu).
+    categoryHasItem(rtrimsww,lmnnqovb).
+    categoryHasItem(onsjxlnr,mhxewnum).
+    categoryHasItem(onsjxlnr,rwuaeqyr).
+    categoryHasItem(onsjxlnr,mpytorwv).
+    categoryHasItem(onsjxlnr,okgrlfhb).
+    categoryHasItem(onsjxlnr,ulzgqquj).
+    categoryHasItem(onsjxlnr,wpczdhuj).
+    categoryHasItem(onsjxlnr,zwnsejff).
+    categoryHasItem(onsjxlnr,znanhljt).
+    categoryHasItem(onsjxlnr,gbmlbpcu).
+    categoryHasItem(onsjxlnr,owifxibl).
+    categoryHasItem(onsjxlnr,tilbkarz).
+    categoryHasItem(onsjxlnr,vplvprym).
+    categoryHasItem(onsjxlnr,gdrljqqg).
+    categoryHasItem(onsjxlnr,hxxbrdeo).
+    categoryHasItem(onsjxlnr,kmdovhlj).
+    categoryHasItem(onsjxlnr,jfnoemxi).
+    categoryHasItem(xlvjogtb,yoxqntqg).
+    categoryHasItem(xlvjogtb,xonxydnt).
+    categoryHasItem(xlvjogtb,bxquwyqp).
+    categoryHasItem(xlvjogtb,cavlrlko).
+    categoryHasItem(xlvjogtb,gxusqlmn).
+    categoryHasItem(xlvjogtb,fwfnldfi).
+    categoryHasItem(xlvjogtb,sbdbopqv).
+    categoryHasItem(xlvjogtb,nmswhwml).
+    categoryHasItem(xlvjogtb,ojlqbbol).
+    categoryHasItem(xlvjogtb,asyrclzv).
+    categoryHasItem(xlvjogtb,fytyhmwr).
+    categoryHasItem(xlvjogtb,yulaxxha).
+    categoryHasItem(xlvjogtb,biyiaygq).
+    categoryHasItem(xlvjogtb,ngtkvtin).
+    categoryHasItem(xlvjogtb,axjdgeqc).
+    categoryHasItem(xlvjogtb,swxlvhmx).
+    categoryHasItem(xlvjogtb,oggfrnkv).
+    categoryHasItem(xlvjogtb,hmjdoakq).
+    categoryHasItem(xlvjogtb,wlajanfh).
+    categoryHasItem(xlvjogtb,bbbxpwfg).
+    categoryHasItem(xlvjogtb,zdxtrdfp).
+    categoryHasItem(xlvjogtb,ayltkjma).
+    categoryHasItem(xlvjogtb,zcwbtvge).
+    categoryHasItem(xlvjogtb,kifoetqi).
+    categoryHasItem(xlvjogtb,xpjpokqa).
+    categoryHasItem(xlvjogtb,cndktbog).
+    categoryHasItem(xlvjogtb,majmasfw).
+    categoryHasItem(xlvjogtb,mkwyuiik).
+    categoryHasItem(xlvjogtb,ppyeghww).
+    categoryHasItem(xlvjogtb,ogmvfkqr).
+    categoryHasItem(xlvjogtb,prawflka).
+    categoryHasItem(xlvjogtb,abbxubyh).
+    categoryHasItem(xlvjogtb,xmikqwtm).
+    categoryHasItem(xlvjogtb,jbppglqo).
+    categoryHasItem(xlvjogtb,xdwlzswr).
+    categoryHasItem(xlvjogtb,sihzmyxo).
+    categoryHasItem(imbishqe,owrkleml).
+    categoryHasItem(imbishqe,ttkxvvno).
+    categoryHasItem(imbishqe,niafwpct).
+    categoryHasItem(imbishqe,ddfgzkvd).
+    categoryHasItem(imbishqe,avvreazu).
+    categoryHasItem(imbishqe,aktrvzaa).
+    categoryHasItem(imbishqe,cbnjerte).
+    categoryHasItem(imbishqe,kxadxtcj).
+    categoryHasItem(imbishqe,ojtnfohr).
+    categoryHasItem(xkzcvext,flqyyqjr).
+    categoryHasItem(xkzcvext,iplwmahn).
+    categoryHasItem(xkzcvext,xanjbuck).
+    categoryHasItem(xkzcvext,amidxcom).
+    categoryHasItem(xkzcvext,hguwhues).
+    categoryHasItem(ukeravyd,psgmmiwr).
+    categoryHasItem(ukeravyd,oedecjln).
+    categoryHasItem(ukeravyd,igjfjodt).
+    categoryHasItem(ukeravyd,sxjoekev).
+    categoryHasItem(ukeravyd,kgmsogcc).
+    categoryHasItem(ukeravyd,bzlwwppm).
+    categoryHasItem(ukeravyd,zmrryjck).
+    categoryHasItem(ukeravyd,cosmfbnr).
+    categoryHasItem(ukeravyd,tiodmozj).
+    categoryHasItem(ukeravyd,rjozzbal).
+    categoryHasItem(ukeravyd,dezetszj).
+    categoryHasItem(ukeravyd,upfmypdq).
+    categoryHasItem(ukeravyd,toceyrrq).
+    categoryHasItem(ukeravyd,pfmblsco).
+    categoryHasItem(ukeravyd,debgsork).
+    categoryHasItem(ukeravyd,frxpbzwk).
+    categoryHasItem(ukeravyd,xpfofplu).
+    categoryHasItem(tjxmjvns,xanjbuck).
+    categoryHasItem(tjxmjvns,iplwmahn).
+    categoryHasItem(tjxmjvns,hguwhues).
+    categoryHasItem(intqqmnk,lwkgrzha).
+    categoryHasItem(intqqmnk,amidxcom).
+    categoryHasItem(mhzxyrea,rjinvynn).
+    categoryHasItem(xlvjogtb,ywhiqcwc).
+    categoryHasItem(xlvjogtb,kgnkzgtu).
+    categoryHasItem(xlvjogtb,cppmytel).
+    categoryHasItem(xlvjogtb,yqhhwlts).
+    categoryHasItem(xlvjogtb,wshgwkrh).
+    categoryHasItem(xlvjogtb,vjqsipov).
+    categoryHasItem(xlvjogtb,mjjelpbi).
+    categoryHasItem(xlvjogtb,ncofyryu).
+    categoryHasItem(xlvjogtb,vezjijaw).
+    categoryHasItem(xlvjogtb,ksiogrjl).
+    categoryHasItem(xlvjogtb,ikoxiiug).
+    categoryHasItem(xlvjogtb,jyvvdutr).
+    categoryHasItem(xlvjogtb,xvaihwjd).
+    categoryHasItem(xlvjogtb,ozbubsnf).
+    categoryHasItem(xlvjogtb,fsknyqfn).
+    categoryHasItem(xlvjogtb,xonxvdpr).
+    categoryHasItem(xlvjogtb,oocvrsjk).
+    categoryHasItem(tlpmgdqn,flqyyqjr).
+    categoryHasItem(tlpmgdqn,eyrcqfoh).
+    categoryHasItem(tlpmgdqn,qrtxomtm).
+    categoryHasItem(tlpmgdqn,ljnkjpxo).
+    categoryHasItem(tlpmgdqn,yywrjody).
+    categoryHasItem(tlpmgdqn,japsvolv).
+    categoryHasItem(tlpmgdqn,umwueebe).
+    categoryHasItem(tlpmgdqn,ykzahyuu).
+    categoryHasItem(tlpmgdqn,caphdqvf).
+    categoryHasItem(tlpmgdqn,frzwymld).
+    categoryHasItem(xkzcvext,zjkrfesp).
+    categoryHasItem(xkzcvext,zdsfdgfj).
+    categoryHasItem(xkzcvext,oaragtrs).
+    categoryHasItem(xkzcvext,wweugfoj).
+    categoryHasItem(xkzcvext,qvsfcgmi).
+    categoryHasItem(yovyvucr,zjkrfesp).
+    categoryHasItem(yovyvucr,wweugfoj).
+    categoryHasItem(yovyvucr,qljsqybl).
+    categoryHasItem(bpagkjuo,tjvwdkok).
+    categoryHasItem(bpagkjuo,vbtwdrsj).
+    categoryHasItem(bpagkjuo,wblaensk).
+    categoryHasItem(bpagkjuo,oaragtrs).
+    categoryHasItem(bpagkjuo,sacmbeps).
+    categoryHasItem(bpagkjuo,nieubfaz).
+    categoryHasItem(bpagkjuo,leekjifs).
+    categoryHasItem(bpagkjuo,gsxtnlfm).
+    categoryHasItem(bpagkjuo,qvsfcgmi).
+    categoryHasItem(bpagkjuo,xjjchzfg).
+    categoryHasItem(bpagkjuo,asiago).
+    categoryHasItem(xkzcvext,hnvugymg).
+    categoryHasItem(xkzcvext,edtkpedl).
+    categoryHasItem(ydgrcaxx,ryzwvdaa).
+    categoryHasItem(ydgrcaxx,tjhmmurn).
+    categoryHasItem(ydgrcaxx,wxbncwhs).
+    categoryHasItem(ydgrcaxx,cnhzbias).
+    categoryHasItem(auqfbxmu,oghgbhko).
+    categoryHasItem(iekmbftp,cpaihdfi).
+    categoryHasItem(iekmbftp,uwftucfw).
+    categoryHasItem(iekmbftp,rdwcexqj).
+    categoryHasItem(iekmbftp,ybovtlqf).
+    categoryHasItem(iekmbftp,ajwdkxbf).
+    categoryHasItem(iekmbftp,aryppvcs).
+    categoryHasItem(iekmbftp,szarfopu).
+    categoryHasItem(iekmbftp,xljczzny).
+    categoryHasItem(iekmbftp,jqaczlvb).
+    categoryHasItem(iekmbftp,wldeaqre).
+    categoryHasItem(iekmbftp,glbsfqov).
+    categoryHasItem(iekmbftp,kvpnupaf).
+    categoryHasItem(iekmbftp,ovsbwxls).
+    categoryHasItem(iekmbftp,npbgebko).
+    categoryHasItem(iekmbftp,ghvhtlnr).
+    categoryHasItem(iekmbftp,rlnuabxo).
+    categoryHasItem(iekmbftp,uvprwvac).
+    categoryHasItem(iekmbftp,fysomtiz).
+    categoryHasItem(ojsxepei,uwhcaxod).
+    categoryHasItem(ojsxepei,veybddmr).
+    categoryHasItem(ojsxepei,cvtfyhff).
+    categoryHasItem(ojsxepei,xksuabgi).
+    categoryHasItem(ojsxepei,txyrcews).
+    categoryHasItem(ojsxepei,wrsiycyf).
+    categoryHasItem(ojsxepei,abbawjxx).
+    categoryHasItem(ojsxepei,tbdlhsuv).
+    categoryHasItem(ojsxepei,uupatnqn).
+    categoryHasItem(ojsxepei,mmurhgna).
+    categoryHasItem(ojsxepei,xsqyodky).
+    categoryHasItem(ojsxepei,wzuvphoo).
+    categoryHasItem(rbmaubjl,iseraceg).
+    categoryHasItem(rbmaubjl,enttecuw).
+    categoryHasItem(rbmaubjl,begnhmuy).
+    categoryHasItem(rbmaubjl,fcionpyk).
+    categoryHasItem(rbmaubjl,qzpgnmub).
+    categoryHasItem(rbmaubjl,yoqvypob).
+    categoryHasItem(rbmaubjl,fpnqkyav).
+    categoryHasItem(rbmaubjl,ssxhbsjr).
+    categoryHasItem(rbmaubjl,nvidyswp).
+    categoryHasItem(rbmaubjl,ybfimfpr).
+    categoryHasItem(rbmaubjl,ilwdolje).
+    categoryHasItem(xssajudq,ifrcickk).
+    categoryHasItem(xssajudq,heiyhfbw).
+    categoryHasItem(xssajudq,ocqpmjcj).
+    categoryHasItem(xssajudq,tupdvozi).
+    categoryHasItem(xssajudq,yjltzrdw).
+    categoryHasItem(xssajudq,lmxarfgp).
+    categoryHasItem(xssajudq,dqxtjlvq).
+    categoryHasItem(xssajudq,vbafuutn).
+    categoryHasItem(xssajudq,xsjtdujw).
+    categoryHasItem(xssajudq,oomtyczq).
+    categoryHasItem(xssajudq,nwjwrlkl).
+    categoryHasItem(euemitni,dddpidxk).
+    categoryHasItem(euemitni,injfgajy).
+    categoryHasItem(euemitni,ybuocjtt).
+    categoryHasItem(euemitni,hajpsgzw).
+    categoryHasItem(euemitni,frntfgqu).
+    categoryHasItem(euemitni,glbsfqov).
+    categoryHasItem(zfzqvppy,bvhucuqf).
+    categoryHasItem(zfzqvppy,elqaoxbj).
+    categoryHasItem(zfzqvppy,aytcynfb).
+    categoryHasItem(zfzqvppy,obrzujne).
+    categoryHasItem(zfzqvppy,awdgidqc).
+    categoryHasItem(zfzqvppy,dlobmldu).
+    categoryHasItem(zfzqvppy,gkajvqrn).
+    categoryHasItem(zfzqvppy,wxxpnqhd).
+    categoryHasItem(zfzqvppy,unhlobym).
+    categoryHasItem(zfzqvppy,tblsckgh).
+    categoryHasItem(zfzqvppy,jhyteiwh).
+    categoryHasItem(zfzqvppy,wigxnjus).
+    categoryHasItem(dgthcpnx,arpwhlzk).
+    categoryHasItem(dgthcpnx,oqkoegcn).
+    categoryHasItem(dgthcpnx,kecjabto).
+    categoryHasItem(dgthcpnx,wgqeonhr).
+    categoryHasItem(dgthcpnx,hqdroghn).
+    categoryHasItem(dgthcpnx,yjpllqsm).
+    categoryHasItem(dgthcpnx,gztqjvyl).
+    categoryHasItem(dgthcpnx,ekgifuxh).
+    categoryHasItem(dgthcpnx,ydscxzbq).
+    categoryHasItem(dgthcpnx,zevsmlow).
+    categoryHasItem(ffxhsshg,emnvpjnr).
+    categoryHasItem(ffxhsshg,pxhlkeod).
+    categoryHasItem(ffxhsshg,jnddyxzs).
+    categoryHasItem(ffxhsshg,aszqugrn).
+    categoryHasItem(ffxhsshg,heobnlal).
+    categoryHasItem(ffxhsshg,atdjyirq).
+    categoryHasItem(ffxhsshg,phvufcnp).
+    categoryHasItem(ffxhsshg,rlnuabxo).
+    categoryHasItem(ffxhsshg,akxykmap).
+    categoryHasItem(ffxhsshg,rmzsehhg).
+    categoryHasItem(ffxhsshg,bcqoefeh).
+    categoryHasItem(ffxhsshg,yntggtep).
+    categoryHasItem(klcspiai,zrzybbvg).
+    categoryHasItem(klcspiai,cqrgbrdq).
+    categoryHasItem(klcspiai,xlpurioo).
+    categoryHasItem(klcspiai,gkwizolm).
+    categoryHasItem(klcspiai,szdihrkj).
+    categoryHasItem(klcspiai,ybalbqxt).
+    categoryHasItem(klcspiai,fbpaxzen).
+    categoryHasItem(klcspiai,fmxcihux).
+    categoryHasItem(klcspiai,aktrvzaa).
+    categoryHasItem(nlnsdpaj,eisgabhn).
+    categoryHasItem(nlnsdpaj,kvqktiea).
+    categoryHasItem(nlnsdpaj,ivgsqzhf).
+    categoryHasItem(nlnsdpaj,tqhoxxva).
+    categoryHasItem(nlnsdpaj,xpgytmnh).
+    categoryHasItem(iidscufg,yvtbpzqz).
+    categoryHasItem(iidscufg,rmwekmny).
+    categoryHasItem(iidscufg,lhfpqrak).
+    categoryHasItem(iidscufg,qmkfknnd).
+    categoryHasItem(wwgqovsb,cajpibzq).
+    categoryHasItem(wwgqovsb,yqhhwlts).
+    categoryHasItem(wwgqovsb,fzehahae).
+    categoryHasItem(wwgqovsb,fijdpckd).
+    categoryHasItem(wwgqovsb,fgenybjc).
+    categoryHasItem(wwgqovsb,iiewzgbb).
+    categoryHasItem(wwgqovsb,tucdtesn).
+    categoryHasItem(wwgqovsb,tfgideui).
+    categoryHasItem(wwgqovsb,azsyvssj).
+    categoryHasItem(wwgqovsb,hxocibru).
+    categoryHasItem(wwgqovsb,ikoxiiug).
+    categoryHasItem(wwgqovsb,qlylqkyt).
+    categoryHasItem(wwgqovsb,woepqykp).
+    categoryHasItem(wwgqovsb,nqnmndva).
+    categoryHasItem(wwgqovsb,vrolfbgn).
+    categoryHasItem(wwgqovsb,xtvaumms).
+    categoryHasItem(wwgqovsb,vyvycuxd).
+    categoryHasItem(xkzcvext,kmtgurqv).
+    categoryHasItem(xkzcvext,zlxlxpsg).
+    categoryHasItem(xkzcvext,qinidrzi).
+    categoryHasItem(xkzcvext,fwskrdhd).
+    categoryHasItem(xkzcvext,vzipjhon).
+    categoryHasItem(zuglofcc,rezgkqoo).
+    categoryHasItem(fdmlqvrx,hliiewef).
+    categoryHasItem(fdmlqvrx,hroukusw).
+    categoryHasItem(ajnnosce,tplbtfon).
+    categoryHasItem(ajnnosce,mcyinzgc).
+    categoryHasItem(ajnnosce,aaeaenkw).
+    categoryHasItem(ajnnosce,chvxyzoc).
+    categoryHasItem(trzybwjx,spjxqjcv).
+    categoryHasItem(trzybwjx,svcpvtkk).
+    categoryHasItem(awoifbkk,rntfavoc).
+    categoryHasItem(wwgqovsb,hdvgnycn).
+    categoryHasItem(hpavfsad,vzipjhon).
+    categoryHasItem(hpavfsad,yhvxrmob).
+    categoryHasItem(hpavfsad,laqniuss).
+    categoryHasItem(hpavfsad,gdqkbmjc).
+    categoryHasItem(hpavfsad,cgpechhh).
+    categoryHasItem(hpavfsad,keazghnz).
+    categoryHasItem(hpavfsad,rqvnobmc).
+    categoryHasItem(hpavfsad,dbswgnao).
+    categoryHasItem(hpavfsad,oexylypo).
+    categoryHasItem(hpavfsad,fzgrkidm).
+    categoryHasItem(hpavfsad,dtemoklk).
+    categoryHasItem(hpavfsad,fwskrdhd).
+    categoryHasItem(hpavfsad,dagxrelu).
+    categoryHasItem(hpavfsad,lzibeioi).
+    categoryHasItem(hpavfsad,tzubnlsn).
+    categoryHasItem(hpavfsad,gchrddtu).
+    categoryHasItem(hpavfsad,szkhsxzf).
+    categoryHasItem(hpavfsad,qivbjuty).
+    categoryHasItem(xkzcvext,hetcanut).
+    categoryHasItem(xkzcvext,nbopghkw).
+    categoryHasItem(xkzcvext,qwllobpy).
+    categoryHasItem(xkzcvext,ymjwvdoy).
+    categoryHasItem(xkzcvext,ofyugrmh).
+    categoryHasItem(oxwpwewt,vvoweseg).
+    categoryHasItem(oxwpwewt,vtldjmhd).
+    categoryHasItem(oxwpwewt,svyykolx).
+    categoryHasItem(oxwpwewt,yljspvad).
+    categoryHasItem(oxwpwewt,lgnvmabq).
+    categoryHasItem(oxwpwewt,ueoxfbwt).
+    categoryHasItem(oxwpwewt,uqpkpbgq).
+    categoryHasItem(oxwpwewt,miwqoprr).
+    categoryHasItem(oxwpwewt,vzsgnyqq).
+    categoryHasItem(oxwpwewt,jxzcqlzj).
+    categoryHasItem(oxwpwewt,wbfertth).
+    categoryHasItem(oxwpwewt,qzhozgsk).
+    categoryHasItem(oxwpwewt,xismlyuv).
+    categoryHasItem(oxwpwewt,syijwdqq).
+    categoryHasItem(oxwpwewt,ibsqfcic).
+    categoryHasItem(oxwpwewt,vqwjnejy).
+    categoryHasItem(oxwpwewt,bxibdfvq).
+    categoryHasItem(oxwpwewt,fikndaex).
+    categoryHasItem(oxwpwewt,wklgjqjw).
+    categoryHasItem(oxwpwewt,nnzswgut).
+    categoryHasItem(oxwpwewt,raihpaeq).
+    categoryHasItem(oxwpwewt,merwduki).
+    categoryHasItem(oxwpwewt,btcnatgu).
+    categoryHasItem(oxwpwewt,ivrjyjmg).
+    categoryHasItem(oxwpwewt,krtsayey).
+    categoryHasItem(fjlgyvgi,lxvowoav).
+    categoryHasItem(fjlgyvgi,jnrfwwnh).
+    categoryHasItem(fjlgyvgi,feuonfzg).
+    categoryHasItem(fjlgyvgi,txttnpgi).
+    categoryHasItem(fjlgyvgi,goazxoge).
+    categoryHasItem(bzyhdezb,kfheqdxn).
+    categoryHasItem(hmqhlkma,xvfqslvd).
+    categoryHasItem(hmqhlkma,cqupthik).
+    categoryHasItem(hmqhlkma,vabgvnzl).
+    categoryHasItem(hmqhlkma,gwztohyd).
+    categoryHasItem(hmqhlkma,nbopghkw).
+    categoryHasItem(hmqhlkma,vwuxugsu).
+    categoryHasItem(hmqhlkma,cgmguexg).
+    categoryHasItem(hmqhlkma,ymjwvdoy).
+    categoryHasItem(hmqhlkma,xmfpawxi).
+    categoryHasItem(hmqhlkma,gaerxkfc).
+    categoryHasItem(hmqhlkma,kzurlmzf).
+    categoryHasItem(hmqhlkma,kuyeabaa).
+    categoryHasItem(oerhuqhv,oerhuqhv).
+    categoryHasItem(igmyemqn,fgcpkgfa).
+    categoryHasItem(igmyemqn,qwllobpy).
+    categoryHasItem(ezfuqxqb,lpmazmbq).
+    categoryHasItem(ezfuqxqb,kelgcbkb).
+    categoryHasItem(ezfuqxqb,xkvsxsal).
+    categoryHasItem(ezfuqxqb,teidmfwz).
+    categoryHasItem(ezfuqxqb,gycbxkkc).
+    categoryHasItem(ezfuqxqb,aoheyisf).
+    categoryHasItem(ezfuqxqb,rlvjptma).
+    categoryHasItem(ezfuqxqb,bvyieayi).
+    categoryHasItem(igkuekin,dxinbwwz).
+    categoryHasItem(igkuekin,mkebkdwk).
+    categoryHasItem(igkuekin,jjqzkepr).
+    categoryHasItem(igkuekin,hetcanut).
+    categoryHasItem(ugqsxvji,lngtknjs).
+    categoryHasItem(ugqsxvji,cvusueyc).
+    categoryHasItem(ugqsxvji,kjhnhujf).
+    categoryHasItem(ugqsxvji,oaoekapv).
+    categoryHasItem(ugqsxvji,hdugtjng).
+    categoryHasItem(ugqsxvji,uoevlwpb).
+    categoryHasItem(ugqsxvji,szfvqcvo).
+    categoryHasItem(ugqsxvji,ofyugrmh).
+    categoryHasItem(ugqsxvji,lojyeilh).
+    categoryHasItem(ugqsxvji,ngvztvjl).
+    categoryHasItem(gtnpuifs,yzhchdqr).
+    categoryHasItem(gtnpuifs,jjymnmom).
+    categoryHasItem(gtnpuifs,ssbahavu).
+    categoryHasItem(gtnpuifs,xtycopld).
+    categoryHasItem(gtnpuifs,lkvzmuwz).
+    categoryHasItem(gtnpuifs,uankugsd).
+    categoryHasItem(gtnpuifs,srotfiky).
+    categoryHasItem(gtnpuifs,rriahkij).
+    categoryHasItem(gtnpuifs,nkmmucug).
+    categoryHasItem(gtnpuifs,buniorrz).
+    categoryHasItem(gtnpuifs,ymcfypnv).
+    categoryHasItem(gtnpuifs,rgjqdxbe).
+    categoryHasItem(gtnpuifs,gujpebll).
+    categoryHasItem(gtnpuifs,tpxfmsqr).
+    categoryHasItem(gtnpuifs,csrzrorm).
+    categoryHasItem(wwgqovsb,zpjohrgk).
+    categoryHasItem(wwgqovsb,hfpwuoyh).
+    categoryHasItem(wwgqovsb,ckprfpgu).
+    categoryHasItem(wwgqovsb,nqnmndva).
+    categoryHasItem(wwgqovsb,lahasimj).
+    categoryHasItem(ktqrvipr,vdgtoens).
+    categoryHasItem(ktqrvipr,eumitvzu).
+    categoryHasItem(ktqrvipr,tjnzuwpu).
+    categoryHasItem(ktqrvipr,otnetnza).
+    categoryHasItem(xkzcvext,mkntddmw).
+    categoryHasItem(xkzcvext,xnhvucva).
+    categoryHasItem(xkzcvext,pslvqyuj).
+    categoryHasItem(xkzcvext,ejsklxdq).
+    categoryHasItem(xkzcvext,xjhcnimv).
+    categoryHasItem(iekmbftp,vpxmxren).
+    categoryHasItem(iekmbftp,ujyndyid).
+    categoryHasItem(iekmbftp,vwlfknmv).
+    categoryHasItem(iekmbftp,xlyqlwgx).
+    categoryHasItem(iekmbftp,xhbdcvqe).
+    categoryHasItem(iekmbftp,nbhoeigg).
+    categoryHasItem(iekmbftp,aatbbhzj).
+    categoryHasItem(iekmbftp,ktxeefhg).
+    categoryHasItem(iekmbftp,drgblisg).
+    categoryHasItem(iekmbftp,hsinmzep).
+    categoryHasItem(kmvhbuqi,vsehnqmx).
+    categoryHasItem(kmvhbuqi,tvyjdomh).
+    categoryHasItem(kmvhbuqi,dfyjdxba).
+    categoryHasItem(kmvhbuqi,euojlsdf).
+    categoryHasItem(kmvhbuqi,rksdszmo).
+    categoryHasItem(kmvhbuqi,abmgjxlv).
+    categoryHasItem(kmvhbuqi,azlcjmjv).
+    categoryHasItem(qwjkaoge,mkntddmw).
+    categoryHasItem(qwjkaoge,xnhvucva).
+    categoryHasItem(qwjkaoge,jhlmkaxo).
+    categoryHasItem(yzmiuxow,iccccmoc).
+    categoryHasItem(cwmlzxum,xjhcnimv).
+    categoryHasItem(cwmlzxum,vsfsrimf).
+    categoryHasItem(cwmlzxum,awoumepj).
+    categoryHasItem(cwmlzxum,mvmgoeim).
+    categoryHasItem(cwmlzxum,ayxggioe).
+    categoryHasItem(cwmlzxum,mrfocvsg).
+    categoryHasItem(cwmlzxum,kpkcaopm).
+    categoryHasItem(cwmlzxum,iizrmhhu).
+    categoryHasItem(cwmlzxum,ejsklxdq).
+    categoryHasItem(cwmlzxum,zyhldrse).
+    categoryHasItem(cwmlzxum,hgjqicdm).
+    categoryHasItem(sssciuse,zurdmhsj).
+    categoryHasItem(sssciuse,pslvqyuj).
+    categoryHasItem(sssciuse,pctrkxly).
+    categoryHasItem(sssciuse,eurzbncg).
+    categoryHasItem(xtyrfxuq,cfizbres).
+    categoryHasItem(xtyrfxuq,sxfrkpio).
+    categoryHasItem(xtyrfxuq,uwwokwty).
+    categoryHasItem(xtyrfxuq,mkovddgs).
+    categoryHasItem(xtyrfxuq,gdasdcbv).
+    categoryHasItem(daznxwic,trrwbsig).
+    categoryHasItem(daznxwic,iajerwse).
+    categoryHasItem(daznxwic,hsnjoiad).
+    categoryHasItem(daznxwic,oqidexuy).
+    categoryHasItem(daznxwic,aiygfqmu).
+    categoryHasItem(daznxwic,ggmdubrv).
+    categoryHasItem(daznxwic,rvdhrgrm).
+    categoryHasItem(azeuimig,xpmehnfy).
+    categoryHasItem(onsjxlnr,bcqoefeh).
+    categoryHasItem(onsjxlnr,yarexhup).
+    categoryHasItem(onsjxlnr,wixddlsm).
+    categoryHasItem(onsjxlnr,hgdzkyhk).
+    categoryHasItem(onsjxlnr,vhlnheln).
+    categoryHasItem(onsjxlnr,djatuwaz).
+    categoryHasItem(onsjxlnr,dsqdysvr).
+    categoryHasItem(xlvjogtb,xsfxmanx).
+    categoryHasItem(xkzcvext,opfrdwpu).
+    categoryHasItem(xkzcvext,spyibeol).
+    categoryHasItem(xkzcvext,vqiahgsh).
+    categoryHasItem(xkzcvext,ezrzjgmi).
+    categoryHasItem(xkzcvext,vplvprym).
+    categoryHasItem(coutmhpu,opfrdwpu).
+    categoryHasItem(coutmhpu,vqiahgsh).
+    categoryHasItem(xoiurirb,hmltwzfp).
+    categoryHasItem(xoiurirb,owrzltzk).
+    categoryHasItem(xoiurirb,mnxvljmx).
+    categoryHasItem(xoiurirb,udzdrtqt).
+    categoryHasItem(xoiurirb,ynqwpzss).
+    categoryHasItem(xoiurirb,spyibeol).
+    categoryHasItem(xoiurirb,ezrzjgmi).
+    categoryHasItem(eoycxldk,dlufryze).
+    categoryHasItem(eoycxldk,dfnztako).
+    categoryHasItem(eoycxldk,nazlbuey).
+    categoryHasItem(eoycxldk,nkhpgzzf).
+    categoryHasItem(pugzqysb,ohstlire).
+    categoryHasItem(pugzqysb,vplvprym).
+    categoryHasItem(onsjxlnr,yntggtep).
+    categoryHasItem(onsjxlnr,lrnpgbis).
+    categoryHasItem(onsjxlnr,tsrhbkag).
+    categoryHasItem(onsjxlnr,nksuxjib).
+    categoryHasItem(onsjxlnr,ffvjnmcw).
+    categoryHasItem(onsjxlnr,eafqngxi).
+    categoryHasItem(wwgqovsb,blvgoaqu).
+    categoryHasItem(wwgqovsb,fsknyqfn).
+    categoryHasItem(wwgqovsb,okrtzhfm).
+    categoryHasItem(wwgqovsb,rwezhced).
+    categoryHasItem(wwgqovsb,oxnqizwo).
+    categoryHasItem(wwgqovsb,nhjyohni).
+    categoryHasItem(wwgqovsb,juyaqljh).
+    categoryHasItem(wwgqovsb,dythlgxa).
+    categoryHasItem(wwgqovsb,olfrucsq).
+    categoryHasItem(wwgqovsb,njmhubuf).
+    categoryHasItem(wwgqovsb,irvuffce).
+    categoryHasItem(wwgqovsb,ykrshqty).
+    categoryHasItem(wwgqovsb,wikkmnjs).
+    categoryHasItem(iidscufg,ljekuysk).
+    categoryHasItem(iidscufg,kbpxibnp).
+    categoryHasItem(iidscufg,brhmfprq).
+    categoryHasItem(iidscufg,cnnxwhhd).
+    categoryHasItem(iidscufg,dsmtrvar).
+    categoryHasItem(iidscufg,nhldfiej).
+    categoryHasItem(xkzcvext,liveermg).
+    categoryHasItem(xkzcvext,qqeisajc).
+    categoryHasItem(xkzcvext,cxnkbuqu).
+    categoryHasItem(xkzcvext,wckptqxm).
+    categoryHasItem(xkzcvext,gljrouss).
+    categoryHasItem(rbmaubjl,eqwrbuhs).
+    categoryHasItem(rbmaubjl,ahmlqoex).
+    categoryHasItem(rbmaubjl,nkinmmqf).
+    categoryHasItem(rbmaubjl,gljrouss).
+    categoryHasItem(rbmaubjl,sbkqivyk).
+    categoryHasItem(rbmaubjl,ermxejxc).
+    categoryHasItem(rbmaubjl,zznwdrpt).
+    categoryHasItem(rbmaubjl,xwwpbwxa).
+    categoryHasItem(rbmaubjl,hoycewfo).
+    categoryHasItem(rbmaubjl,mjbwghed).
+    categoryHasItem(rbmaubjl,vbixpmbi).
+    categoryHasItem(rbmaubjl,erjomkcu).
+    categoryHasItem(rbmaubjl,xppwvmhg).
+    categoryHasItem(rbmaubjl,irgjmreu).
+    categoryHasItem(rbmaubjl,jfvqahod).
+    categoryHasItem(rbmaubjl,hlqosxde).
+    categoryHasItem(rbmaubjl,sbbhmfed).
+    categoryHasItem(rbmaubjl,hcmctndr).
+    categoryHasItem(rbmaubjl,cpsnrjpo).
+    categoryHasItem(rbmaubjl,avfgxqul).
+    categoryHasItem(rbmaubjl,jqtgrrmw).
+    categoryHasItem(rbmaubjl,djdhpfvt).
+    categoryHasItem(ukkuyflr,vkdivvga).
+    categoryHasItem(ukkuyflr,rhpitesw).
+    categoryHasItem(ukkuyflr,pgkcflzx).
+    categoryHasItem(ukkuyflr,pjuwvybx).
+    categoryHasItem(ukkuyflr,vjpbdupg).
+    categoryHasItem(ukkuyflr,nlrjomtk).
+    categoryHasItem(ukkuyflr,mysaqucs).
+    categoryHasItem(ukkuyflr,bifzausm).
+    categoryHasItem(ukkuyflr,ppevqxtq).
+    categoryHasItem(ukkuyflr,ksexkchh).
+    categoryHasItem(ukkuyflr,buzdogwq).
+    categoryHasItem(ukkuyflr,kzivpile).
+    categoryHasItem(ukkuyflr,ijcpnmcy).
+    categoryHasItem(ukkuyflr,pmchnxhi).
+    categoryHasItem(ukkuyflr,ijzlkfwh).
+    categoryHasItem(kmsugtzy,pocqkkhp).
+    categoryHasItem(kmsugtzy,wfnjgxcb).
+    categoryHasItem(kmsugtzy,aldlxqvd).
+    categoryHasItem(kmsugtzy,akzajhdf).
+    categoryHasItem(kmsugtzy,utwtxayv).
+    categoryHasItem(kmsugtzy,arncshtk).
+    categoryHasItem(kmsugtzy,abmgjxlv).
+    categoryHasItem(eewxrhna,cxnkbuqu).
+    categoryHasItem(eewxrhna,liveermg).
+    categoryHasItem(eewxrhna,evcuveta).
+    categoryHasItem(eewxrhna,vtbpiwtf).
+    categoryHasItem(eewxrhna,qawuklos).
+    categoryHasItem(eewxrhna,vsvuzukk).
+    categoryHasItem(eewxrhna,bbsjwxjz).
+    categoryHasItem(eewxrhna,bbkksgew).
+    categoryHasItem(eewxrhna,dtnmidfw).
+    categoryHasItem(bblqicsh,jcbchfos).
+    categoryHasItem(bblqicsh,dgjftgpj).
+    categoryHasItem(bblqicsh,zzmeiodk).
+    categoryHasItem(bblqicsh,wqxtpnlw).
+    categoryHasItem(bblqicsh,wfoajnsq).
+    categoryHasItem(bblqicsh,zzevgeex).
+    categoryHasItem(bblqicsh,iveafahj).
+    categoryHasItem(bblqicsh,zrylsaqb).
+    categoryHasItem(bblqicsh,jvvvujxi).
+    categoryHasItem(hnahdmbe,gvqfrhhj).
+    categoryHasItem(hnahdmbe,gtaxmhxv).
+    categoryHasItem(hnahdmbe,fljtihoh).
+    categoryHasItem(hnahdmbe,bmgoxauh).
+    categoryHasItem(hnahdmbe,qcwpljtt).
+    categoryHasItem(hnahdmbe,bdywiilu).
+    categoryHasItem(hnahdmbe,xdihwrci).
+    categoryHasItem(hnahdmbe,evemoves).
+    categoryHasItem(hnahdmbe,msiqcxjj).
+    categoryHasItem(hnahdmbe,vdnsnajo).
+    categoryHasItem(hnahdmbe,fcuwqxfh).
+    categoryHasItem(hnahdmbe,ejhamsdx).
+    categoryHasItem(hnahdmbe,aoewirqw).
+    categoryHasItem(hnahdmbe,mewklmjf).
+    categoryHasItem(hnahdmbe,kygqofzk).
+    categoryHasItem(hnahdmbe,wckptqxm).
+    categoryHasItem(hnahdmbe,sjsstbws).
+    categoryHasItem(hnahdmbe,qmbhasxq).
+    categoryHasItem(hnahdmbe,gotsaoep).
+    categoryHasItem(hnahdmbe,utwmtoqf).
+    categoryHasItem(wwgqovsb,uapepxrg).
+    categoryHasItem(wwgqovsb,qqeisajc).
+    categoryHasItem(wwgqovsb,wlubvued).
+    categoryHasItem(wwgqovsb,pztxlptf).
+    categoryHasItem(wwgqovsb,pbxnqnxp).
+    categoryHasItem(wwgqovsb,jtjtkxli).
+    categoryHasItem(wwgqovsb,thcborlh).
+    categoryHasItem(wwgqovsb,jhjwkqiy).
+    categoryHasItem(wwgqovsb,ykjwcajh).
+    categoryHasItem(wwgqovsb,lyyydpgq).
+    categoryHasItem(wwgqovsb,yoxqntqg).
+    categoryHasItem(wwgqovsb,uiouhnfr).
+    categoryHasItem(wwgqovsb,baftnltd).
+    categoryHasItem(wwgqovsb,rhobsamq).
+    categoryHasItem(wwgqovsb,mzgqbzup).
+    categoryHasItem(wwgqovsb,nfwhxntp).
+    categoryHasItem(wwgqovsb,nfaqeznv).
+    categoryHasItem(wwgqovsb,twrkfpjx).
+    categoryHasItem(wwgqovsb,uxknkfhh).
+    categoryHasItem(wwgqovsb,wrkkthjs).
+    categoryHasItem(wwgqovsb,nrilkuxm).
+    categoryHasItem(wwgqovsb,usuofele).
+    categoryHasItem(wwgqovsb,uouevaxu).
+    categoryHasItem(wwgqovsb,lfilbhyc).
+    categoryHasItem(wwgqovsb,zjqgscov).
+    categoryHasItem(wwgqovsb,wrzbbyrw).
+    categoryHasItem(wwgqovsb,ounggbrs).
+    categoryHasItem(wwgqovsb,jpafnjtm).
+    categoryHasItem(wwgqovsb,eecvoadm).
+    categoryHasItem(wwgqovsb,qjchhila).
+    categoryHasItem(wwgqovsb,arysosun).
+    categoryHasItem(wwgqovsb,vvgaxqet).
+    categoryHasItem(wwgqovsb,gciplmrt).
+    categoryHasItem(wwgqovsb,zshovcdk).
+    categoryHasItem(wwgqovsb,dcllmoqp).
+    categoryHasItem(wwgqovsb,vrolfbgn).
+    categoryHasItem(wwgqovsb,eqboqynm).
+    categoryHasItem(wwgqovsb,myoholit).
+    categoryHasItem(wwgqovsb,yxvmosry).
+    categoryHasItem(wwgqovsb,eidpxhqr).
+    categoryHasItem(wwgqovsb,mnwcebcl).
+    categoryHasItem(wwgqovsb,blnakqyx).
+    categoryHasItem(wwgqovsb,upvvwhuz).
+    categoryHasItem(wwgqovsb,anwaxuqr).
+    categoryHasItem(wwgqovsb,xnsisnfg).
+    categoryHasItem(wwgqovsb,njafjcdf).
+    categoryHasItem(wwgqovsb,wbbtejye).
+    categoryHasItem(wwgqovsb,kzutjjnk).
+    categoryHasItem(wwgqovsb,tzoohojq).
+    categoryHasItem(wwgqovsb,tvckqrew).
+    categoryHasItem(wwgqovsb,bzjpzkkz).
+    categoryHasItem(wwgqovsb,dcescesq).
+    categoryHasItem(wwgqovsb,dkrdwcmv).
+    categoryHasItem(csfxqwnt,baftnltd).
+    categoryHasItem(csfxqwnt,rhobsamq).
+    categoryHasItem(csfxqwnt,mzgqbzup).
+    categoryHasItem(csfxqwnt,nfwhxntp).
+    categoryHasItem(csfxqwnt,nfaqeznv).
+    categoryHasItem(csfxqwnt,twrkfpjx).
+    categoryHasItem(csfxqwnt,uxknkfhh).
+    categoryHasItem(csfxqwnt,wrkkthjs).
+    categoryHasItem(csfxqwnt,nrilkuxm).
+    categoryHasItem(csfxqwnt,usuofele).
+    categoryHasItem(csfxqwnt,uouevaxu).
+    categoryHasItem(csfxqwnt,lfilbhyc).
+    categoryHasItem(csfxqwnt,zjqgscov).
+    categoryHasItem(csfxqwnt,wrzbbyrw).
+    categoryHasItem(csfxqwnt,gvqfrhhj).
+    categoryHasItem(csfxqwnt,gtaxmhxv).
+    categoryHasItem(csfxqwnt,fljtihoh).
+    categoryHasItem(csfxqwnt,bmgoxauh).
+    categoryHasItem(csfxqwnt,qcwpljtt).
+    categoryHasItem(csfxqwnt,bdywiilu).
+    categoryHasItem(csfxqwnt,xdihwrci).
+    categoryHasItem(csfxqwnt,evemoves).
+    categoryHasItem(csfxqwnt,msiqcxjj).
+    categoryHasItem(csfxqwnt,vdnsnajo).
+    categoryHasItem(csfxqwnt,fcuwqxfh).
+    categoryHasItem(csfxqwnt,ejhamsdx).
+    categoryHasItem(csfxqwnt,aoewirqw).
+    categoryHasItem(csfxqwnt,yxvmosry).
+    categoryHasItem(csfxqwnt,eidpxhqr).
+    categoryHasItem(csfxqwnt,mnwcebcl).
+    categoryHasItem(csfxqwnt,blnakqyx).
+    categoryHasItem(csfxqwnt,upvvwhuz).
+    categoryHasItem(csfxqwnt,anwaxuqr).
+    categoryHasItem(csfxqwnt,xnsisnfg).
+    categoryHasItem(csfxqwnt,njafjcdf).
+    categoryHasItem(csfxqwnt,eqboqynm).
+    categoryHasItem(csfxqwnt,myoholit).
+    categoryHasItem(csfxqwnt,wbbtejye).
+    categoryHasItem(csfxqwnt,kzutjjnk).
+    categoryHasItem(csfxqwnt,tzoohojq).
+    categoryHasItem(csfxqwnt,tvckqrew).
+    categoryHasItem(csfxqwnt,bzjpzkkz).
+    categoryHasItem(ldroshyy,zzevgeex).
+    categoryHasItem(ldroshyy,iveafahj).
+    categoryHasItem(ldroshyy,zrylsaqb).
+    categoryHasItem(ldroshyy,jvvvujxi).
+    categoryHasItem(ldroshyy,jfvqahod).
+    categoryHasItem(ldroshyy,hlqosxde).
+    categoryHasItem(ldroshyy,sbbhmfed).
+    categoryHasItem(ldroshyy,hcmctndr).
+    categoryHasItem(ldroshyy,cpsnrjpo).
+    categoryHasItem(ldroshyy,avfgxqul).
+    categoryHasItem(szymwzlh,jqtgrrmw).
+    categoryHasItem(szymwzlh,djdhpfvt).
+    categoryHasItem(szymwzlh,jtdpnrvg).
+    categoryHasItem(szymwzlh,jnfjcabd).
+    categoryHasItem(nqgbiwis,snxvpeau).
+    categoryHasItem(nqgbiwis,mtomxvby).
+    categoryHasItem(nqgbiwis,yblcgqnz).
+    categoryHasItem(nqgbiwis,oipiiekb).
+    categoryHasItem(nqgbiwis,argpjpps).
+    categoryHasItem(nqgbiwis,sbbsqxss).
+    categoryHasItem(nqgbiwis,gyahefjr).
+    categoryHasItem(nqgbiwis,lsqwffos).
+    categoryHasItem(nqgbiwis,ekivtgav).
+    categoryHasItem(nqgbiwis,nmtwcnmj).
+    categoryHasItem(nqgbiwis,cdjjalcq).
+    categoryHasItem(nqgbiwis,putlishw).
+    categoryHasItem(nqgbiwis,wavvhpfa).
+    categoryHasItem(nqgbiwis,jqtuvfdt).
+    categoryHasItem(nqgbiwis,qitzgvvz).
+    categoryHasItem(nqgbiwis,zdxdsebi).
+    categoryHasItem(nqgbiwis,omxgmsoo).
+    categoryHasItem(nqgbiwis,taxpcmmr).
+    categoryHasItem(nqgbiwis,nevsolpb).
+    categoryHasItem(nqgbiwis,tnrlhlhn).
+    categoryHasItem(nqgbiwis,ntunrqeg).
+    categoryHasItem(nqgbiwis,mmsisawq).
+    categoryHasItem(nqgbiwis,brehvahh).
+    categoryHasItem(nqgbiwis,duhvtvgi).
+    categoryHasItem(nqgbiwis,dcescesq).
+    categoryHasItem(lbjpbkmb,ajsbzvex).
+    categoryHasItem(lbjpbkmb,xihlckfu).
+    categoryHasItem(lbjpbkmb,twyhymkg).
+    categoryHasItem(lbjpbkmb,shsqlraa).
+    categoryHasItem(lbjpbkmb,ipbgfouk).
+    categoryHasItem(lbjpbkmb,kwvprupn).
+    categoryHasItem(lbjpbkmb,hsitamyz).
+    categoryHasItem(xkzcvext,kdmjedzd).
+    categoryHasItem(xkzcvext,lrjbsjqo).
+    categoryHasItem(xkzcvext,dftfbahe).
+    categoryHasItem(xkzcvext,ihoefkag).
+    categoryHasItem(xkzcvext,aalhbmkx).
+    categoryHasItem(afnlienn,tassmaxk).
+    categoryHasItem(mgrhgttl,wyqmfbhh).
+    categoryHasItem(mgrhgttl,dftfbahe).
+    categoryHasItem(mgrhgttl,kdmjedzd).
+    categoryHasItem(mgrhgttl,aalhbmkx).
+    categoryHasItem(mgrhgttl,lrjbsjqo).
+    categoryHasItem(hpavfsad,ihoefkag).
+    categoryHasItem(hpavfsad,cmvzmrwo).
+    categoryHasItem(hpavfsad,yzbjnnsg).
+    categoryHasItem(hpavfsad,hpryvlga).
+    categoryHasItem(hpavfsad,hxxbrdeo).
+    categoryHasItem(xlvjogtb,nbbeabnq).
+    categoryHasItem(xlvjogtb,vezjijaw).
+    categoryHasItem(xlvjogtb,qngplagn).
+    categoryHasItem(afnlienn,owzfvjfk).
+    categoryHasItem(afnlienn,switfhve).
+    categoryHasItem(afnlienn,hxocibru).
+    categoryHasItem(afnlienn,dtgwcjqv).
+    
+    hasItem(1,agtujvnh).
+    hasItem(1,gaqvsphs).
+    hasItem(1,mhswceig).
+    hasItem(1,jrpmtiuo).
+    hasItem(1,hhcbpnyk).
+    hasItem(1,vekkhnna).
+    hasItem(1,kertodfh).
+    hasItem(1,ojdbwrnl).
+    hasItem(1,xicpfzmk).
+    hasItem(1,mbpdljnt).
+    hasItem(1,pnyzrver).
+    hasItem(1,xalffohh).
+    hasItem(1,shsfkewg).
+    hasItem(1,ovvocceu).
+    hasItem(1,bcqylwcn).
+    hasItem(1,sufngthl).
+    hasItem(1,tdkgynyx).
+    hasItem(1,gscrcxle).
+    hasItem(1,ctqwqotl).
+    hasItem(1,fhkjcuix).
+    hasItem(1,xrjvodfv).
+    hasItem(1,ndsbtrnu).
+    hasItem(1,bhldydul).
+    hasItem(1,soacgjye).
+    hasItem(3,pfwpinrc).
+    hasItem(3,cjqmyglb).
+    hasItem(3,rfustlek).
+    hasItem(3,dtgwcjqv).
+    hasItem(3,ozbubsnf).
+    hasItem(3,nwqlrizb).
+    hasItem(3,xbwsusbf).
+    hasItem(3,dkfeufbh).
+    hasItem(3,smvcmohg).
+    hasItem(3,hpuxyyjh).
+    hasItem(3,vluxpnrd).
+    hasItem(4,irlrtnzb).
+    hasItem(4,fimkhlxt).
+    hasItem(4,piakseab).
+    hasItem(4,xuoqvgim).
+    hasItem(4,xofyxgmc).
+    hasItem(4,kqolrgkx).
+    hasItem(4,fovmpjqt).
+    hasItem(4,mnwgmogq).
+    hasItem(4,cflzxmun).
+    hasItem(4,qdmrhuqc).
+    hasItem(4,mnlrsdmy).
+    hasItem(4,zrympsyv).
+    hasItem(4,sfrwtzvw).
+    hasItem(4,hnextklx).
+    hasItem(4,ekmbbmug).
+    hasItem(4,wyscfyzg).
+    hasItem(4,ytdoszfx).
+    hasItem(4,fyokvcda).
+    hasItem(4,gdaasvgg).
+    hasItem(4,ntxheika).
+    hasItem(4,nyjlyoul).
+    hasItem(4,mqfexupf).
+    hasItem(4,ngklfnwi).
+    hasItem(4,rnewugrg).
+    hasItem(4,qujymaaz).
+    hasItem(4,elcajzut).
+    hasItem(4,cdcwgahh).
+    hasItem(4,kyguzjwg).
+    hasItem(4,kcilomsn).
+    hasItem(4,katbjhhv).
+    hasItem(4,jxjuyyiy).
+    hasItem(4,ktqfblxt).
+    hasItem(4,nsufqczt).
+    hasItem(4,qpjraqwn).
+    hasItem(4,gbngnwth).
+    hasItem(5,ibcgmdas).
+    hasItem(5,kxbdtpfs).
+    hasItem(5,fatcigwp).
+    hasItem(20,jhibsope).
+    hasItem(20,ezeurdkp).
+    hasItem(20,moqryotc).
+    hasItem(20,vunkpdol).
+    hasItem(20,nemmfotc).
+    hasItem(20,avagecln).
+    hasItem(20,kaxbxyso).
+    hasItem(20,iyzhuttm).
+    hasItem(20,ksrnwmto).
+    hasItem(20,rqmtgklb).
+    hasItem(20,ezxdzhsg).
+    hasItem(20,mowbpnsr).
+    hasItem(20,zjqjiazf).
+    hasItem(20,uxontugg).
+    hasItem(20,zrmdedqy).
+    hasItem(20,tfgideui).
+    hasItem(20,tucdtesn).
+    hasItem(20,cajpibzq).
+    hasItem(20,yqhhwlts).
+    hasItem(20,ruqjsxmo).
+    hasItem(20,iiewzgbb).
+    hasItem(20,azsyvssj).
+    hasItem(20,hhhwcxfw).
+    hasItem(20,ivfhqzbj).
+    hasItem(20,awbqhmjo).
+    hasItem(20,jecoljyk).
+    hasItem(20,lahasimj).
+    hasItem(20,peetqevh).
+    hasItem(20,lnjhtnxx).
+    hasItem(20,wyefpnve).
+    hasItem(20,wduqzoik).
+    hasItem(20,ezoaxlrs).
+    hasItem(20,qbdcrbss).
+    hasItem(20,ndwhskvh).
+    hasItem(20,injiwwtd).
+    hasItem(23,ygmtxijy).
+    hasItem(23,dtfhopij).
+    hasItem(23,civwxjoi).
+    hasItem(23,jvazasan).
+    hasItem(23,xrlealxo).
+    hasItem(23,xjansupd).
+    hasItem(23,nikzmyaa).
+    hasItem(23,vihgolia).
+    hasItem(23,pmkldmmd).
+    hasItem(23,kojrmsby).
+    hasItem(23,fglzlvnd).
+    hasItem(23,zbtwsbhe).
+    hasItem(23,rrkktuao).
+    hasItem(23,gtquzzhf).
+    hasItem(23,nptosbfc).
+    hasItem(23,qdwyxtwa).
+    hasItem(23,addccfxc).
+    hasItem(23,ebboohyl).
+    hasItem(23,okvhdhkh).
+    hasItem(23,yppiovmk).
+    hasItem(23,jskdbvjg).
+    hasItem(23,jxxssorf).
+    hasItem(23,zunvkvxb).
+    hasItem(23,rzcgndeb).
+    hasItem(23,vogdcwoo).
+    hasItem(23,mqcedrup).
+    hasItem(23,telecprm).
+    hasItem(23,jprwznhh).
+    hasItem(23,newrskog).
+    hasItem(23,pyvudheb).
+    hasItem(23,haepxtgs).
+    hasItem(23,agfhqbue).
+    hasItem(23,bsbrlajn).
+    hasItem(23,aahoirxj).
+    hasItem(24,ebrjkfyq).
+    hasItem(24,ihmgfiir).
+    hasItem(24,actcdqty).
+    hasItem(24,mdrinytm).
+    hasItem(24,igujkimr).
+    hasItem(24,xujrnvyh).
+    hasItem(30,dxjynjen).
+    hasItem(30,rwgfstcl).
+    hasItem(32,qvzpeioj).
+    hasItem(32,yvdjrdhs).
+    hasItem(32,edsyvtri).
+    hasItem(32,axoafxuo).
+    hasItem(32,rjysujqg).
+    hasItem(32,heobnlal).
+    hasItem(32,pwbmzapj).
+    hasItem(32,ygnesgal).
+    hasItem(32,vwxpnrdp).
+    hasItem(32,qenhcxat).
+    hasItem(32,ejfflynm).
+    hasItem(32,cpojimha).
+    hasItem(32,mupavroi).
+    hasItem(32,jbudkbpi).
+    hasItem(32,xcrdvubl).
+    hasItem(32,ixayieee).
+    hasItem(32,hxafnsht).
+    hasItem(32,dcikwzep).
+    hasItem(32,vaffhbhb).
+    hasItem(32,nzjojpxp).
+    hasItem(32,elfgkhds).
+    hasItem(32,dolbzziq).
+    hasItem(32,btfeltfa).
+    hasItem(32,ubdffpri).
+    hasItem(32,ijraevuy).
+    hasItem(37,dihougks).
+    hasItem(37,hxzlpokj).
+    hasItem(37,itvmelra).
+    hasItem(37,rrdewzyj).
+    hasItem(37,zwleljwv).
+    hasItem(37,hamlikne).
+    hasItem(37,jnqphlfj).
+    hasItem(37,laqgxtop).
+    hasItem(37,wfidqpgd).
+    hasItem(37,htnatnez).
+    hasItem(37,rqyoqnwg).
+    hasItem(37,ezxostzj).
+    hasItem(37,itpgjhyl).
+    hasItem(37,xqbmscdj).
+    hasItem(37,ytlpqdjn).
+    hasItem(37,dkhndhbp).
+    hasItem(37,xiftflne).
+    hasItem(37,hehzvzup).
+    hasItem(37,sxhoanre).
+    hasItem(37,uevsqctu).
+    hasItem(37,lmnnqovb).
+    hasItem(37,mhxewnum).
+    hasItem(37,rwuaeqyr).
+    hasItem(37,mpytorwv).
+    hasItem(37,okgrlfhb).
+    hasItem(37,ulzgqquj).
+    hasItem(37,wpczdhuj).
+    hasItem(37,zwnsejff).
+    hasItem(37,znanhljt).
+    hasItem(37,gbmlbpcu).
+    hasItem(37,owifxibl).
+    hasItem(37,tilbkarz).
+    hasItem(37,vplvprym).
+    hasItem(37,gdrljqqg).
+    hasItem(37,hxxbrdeo).
+    hasItem(37,kmdovhlj).
+    hasItem(37,jfnoemxi).
+    hasItem(37,yoxqntqg).
+    hasItem(37,xonxydnt).
+    hasItem(37,bxquwyqp).
+    hasItem(37,cavlrlko).
+    hasItem(37,gxusqlmn).
+    hasItem(37,fwfnldfi).
+    hasItem(37,sbdbopqv).
+    hasItem(37,nmswhwml).
+    hasItem(37,ojlqbbol).
+    hasItem(37,asyrclzv).
+    hasItem(37,fytyhmwr).
+    hasItem(37,yulaxxha).
+    hasItem(37,biyiaygq).
+    hasItem(37,ngtkvtin).
+    hasItem(37,axjdgeqc).
+    hasItem(37,swxlvhmx).
+    hasItem(37,oggfrnkv).
+    hasItem(37,hmjdoakq).
+    hasItem(37,wlajanfh).
+    hasItem(37,bbbxpwfg).
+    hasItem(37,zdxtrdfp).
+    hasItem(37,ayltkjma).
+    hasItem(37,zcwbtvge).
+    hasItem(37,kifoetqi).
+    hasItem(37,xpjpokqa).
+    hasItem(37,cndktbog).
+    hasItem(37,majmasfw).
+    hasItem(37,mkwyuiik).
+    hasItem(37,ppyeghww).
+    hasItem(37,ogmvfkqr).
+    hasItem(37,prawflka).
+    hasItem(37,abbxubyh).
+    hasItem(37,xmikqwtm).
+    hasItem(37,jbppglqo).
+    hasItem(37,xdwlzswr).
+    hasItem(37,sihzmyxo).
+    hasItem(37,owrkleml).
+    hasItem(37,ttkxvvno).
+    hasItem(37,niafwpct).
+    hasItem(37,ddfgzkvd).
+    hasItem(37,avvreazu).
+    hasItem(37,aktrvzaa).
+    hasItem(37,cbnjerte).
+    hasItem(37,kxadxtcj).
+    hasItem(37,ojtnfohr).
+    hasItem(38,flqyyqjr).
+    hasItem(38,iplwmahn).
+    hasItem(38,xanjbuck).
+    hasItem(38,amidxcom).
+    hasItem(38,hguwhues).
+    hasItem(38,psgmmiwr).
+    hasItem(38,oedecjln).
+    hasItem(38,igjfjodt).
+    hasItem(38,sxjoekev).
+    hasItem(38,kgmsogcc).
+    hasItem(38,bzlwwppm).
+    hasItem(38,zmrryjck).
+    hasItem(38,cosmfbnr).
+    hasItem(38,tiodmozj).
+    hasItem(38,rjozzbal).
+    hasItem(38,dezetszj).
+    hasItem(38,upfmypdq).
+    hasItem(38,toceyrrq).
+    hasItem(38,pfmblsco).
+    hasItem(38,debgsork).
+    hasItem(38,frxpbzwk).
+    hasItem(38,xpfofplu).
+    hasItem(38,lwkgrzha).
+    hasItem(38,rjinvynn).
+    hasItem(38,ywhiqcwc).
+    hasItem(38,kgnkzgtu).
+    hasItem(38,cppmytel).
+    hasItem(38,yqhhwlts).
+    hasItem(38,wshgwkrh).
+    hasItem(38,vjqsipov).
+    hasItem(38,mjjelpbi).
+    hasItem(38,ncofyryu).
+    hasItem(38,vezjijaw).
+    hasItem(38,ksiogrjl).
+    hasItem(38,ikoxiiug).
+    hasItem(38,jyvvdutr).
+    hasItem(38,xvaihwjd).
+    hasItem(38,ozbubsnf).
+    hasItem(38,fsknyqfn).
+    hasItem(38,xonxvdpr).
+    hasItem(38,oocvrsjk).
+    hasItem(38,eyrcqfoh).
+    hasItem(38,qrtxomtm).
+    hasItem(38,ljnkjpxo).
+    hasItem(38,yywrjody).
+    hasItem(38,japsvolv).
+    hasItem(38,umwueebe).
+    hasItem(38,ykzahyuu).
+    hasItem(38,caphdqvf).
+    hasItem(38,frzwymld).
+    hasItem(39,zjkrfesp).
+    hasItem(39,zdsfdgfj).
+    hasItem(39,oaragtrs).
+    hasItem(39,wweugfoj).
+    hasItem(39,qvsfcgmi).
+    hasItem(39,qljsqybl).
+    hasItem(39,tjvwdkok).
+    hasItem(39,vbtwdrsj).
+    hasItem(39,wblaensk).
+    hasItem(39,sacmbeps).
+    hasItem(39,nieubfaz).
+    hasItem(39,leekjifs).
+    hasItem(39,gsxtnlfm).
+    hasItem(39,xjjchzfg).
+    hasItem(39,asiago).
+    hasItem(57,hnvugymg).
+    hasItem(57,edtkpedl).
+    hasItem(57,ryzwvdaa).
+    hasItem(57,tjhmmurn).
+    hasItem(57,wxbncwhs).
+    hasItem(57,cnhzbias).
+    hasItem(57,oghgbhko).
+    hasItem(136,cpaihdfi).
+    hasItem(136,uwftucfw).
+    hasItem(136,rdwcexqj).
+    hasItem(136,ybovtlqf).
+    hasItem(136,ajwdkxbf).
+    hasItem(136,aryppvcs).
+    hasItem(136,szarfopu).
+    hasItem(136,xljczzny).
+    hasItem(136,jqaczlvb).
+    hasItem(136,wldeaqre).
+    hasItem(136,glbsfqov).
+    hasItem(136,kvpnupaf).
+    hasItem(136,ovsbwxls).
+    hasItem(136,npbgebko).
+    hasItem(136,ghvhtlnr).
+    hasItem(136,rlnuabxo).
+    hasItem(136,uvprwvac).
+    hasItem(136,fysomtiz).
+    hasItem(136,uwhcaxod).
+    hasItem(136,veybddmr).
+    hasItem(136,cvtfyhff).
+    hasItem(136,xksuabgi).
+    hasItem(136,txyrcews).
+    hasItem(136,wrsiycyf).
+    hasItem(136,abbawjxx).
+    hasItem(136,tbdlhsuv).
+    hasItem(136,uupatnqn).
+    hasItem(136,mmurhgna).
+    hasItem(136,xsqyodky).
+    hasItem(136,wzuvphoo).
+    hasItem(136,iseraceg).
+    hasItem(136,enttecuw).
+    hasItem(136,begnhmuy).
+    hasItem(136,fcionpyk).
+    hasItem(136,qzpgnmub).
+    hasItem(136,yoqvypob).
+    hasItem(136,fpnqkyav).
+    hasItem(136,ssxhbsjr).
+    hasItem(136,nvidyswp).
+    hasItem(136,ybfimfpr).
+    hasItem(136,ilwdolje).
+    hasItem(136,ifrcickk).
+    hasItem(136,heiyhfbw).
+    hasItem(136,ocqpmjcj).
+    hasItem(136,tupdvozi).
+    hasItem(136,yjltzrdw).
+    hasItem(136,lmxarfgp).
+    hasItem(136,dqxtjlvq).
+    hasItem(136,vbafuutn).
+    hasItem(136,xsjtdujw).
+    hasItem(136,oomtyczq).
+    hasItem(136,nwjwrlkl).
+    hasItem(136,dddpidxk).
+    hasItem(136,injfgajy).
+    hasItem(136,ybuocjtt).
+    hasItem(136,hajpsgzw).
+    hasItem(136,frntfgqu).
+    hasItem(136,bvhucuqf).
+    hasItem(136,elqaoxbj).
+    hasItem(136,aytcynfb).
+    hasItem(136,obrzujne).
+    hasItem(136,awdgidqc).
+    hasItem(136,dlobmldu).
+    hasItem(136,gkajvqrn).
+    hasItem(136,wxxpnqhd).
+    hasItem(136,unhlobym).
+    hasItem(136,tblsckgh).
+    hasItem(136,jhyteiwh).
+    hasItem(136,wigxnjus).
+    hasItem(136,arpwhlzk).
+    hasItem(136,oqkoegcn).
+    hasItem(136,kecjabto).
+    hasItem(136,wgqeonhr).
+    hasItem(136,hqdroghn).
+    hasItem(136,yjpllqsm).
+    hasItem(136,gztqjvyl).
+    hasItem(136,ekgifuxh).
+    hasItem(136,ydscxzbq).
+    hasItem(136,zevsmlow).
+    hasItem(136,emnvpjnr).
+    hasItem(136,pxhlkeod).
+    hasItem(136,jnddyxzs).
+    hasItem(136,aszqugrn).
+    hasItem(136,heobnlal).
+    hasItem(136,atdjyirq).
+    hasItem(136,phvufcnp).
+    hasItem(136,akxykmap).
+    hasItem(136,rmzsehhg).
+    hasItem(136,bcqoefeh).
+    hasItem(136,yntggtep).
+    hasItem(136,zrzybbvg).
+    hasItem(136,cqrgbrdq).
+    hasItem(136,xlpurioo).
+    hasItem(136,gkwizolm).
+    hasItem(136,szdihrkj).
+    hasItem(136,ybalbqxt).
+    hasItem(136,fbpaxzen).
+    hasItem(136,fmxcihux).
+    hasItem(136,aktrvzaa).
+    hasItem(136,eisgabhn).
+    hasItem(136,kvqktiea).
+    hasItem(136,ivgsqzhf).
+    hasItem(136,tqhoxxva).
+    hasItem(136,xpgytmnh).
+    hasItem(136,yvtbpzqz).
+    hasItem(136,rmwekmny).
+    hasItem(136,lhfpqrak).
+    hasItem(136,qmkfknnd).
+    hasItem(136,cajpibzq).
+    hasItem(136,yqhhwlts).
+    hasItem(136,fzehahae).
+    hasItem(136,fijdpckd).
+    hasItem(136,fgenybjc).
+    hasItem(136,iiewzgbb).
+    hasItem(136,tucdtesn).
+    hasItem(136,tfgideui).
+    hasItem(136,azsyvssj).
+    hasItem(136,hxocibru).
+    hasItem(136,ikoxiiug).
+    hasItem(136,qlylqkyt).
+    hasItem(136,woepqykp).
+    hasItem(136,nqnmndva).
+    hasItem(136,vrolfbgn).
+    hasItem(136,xtvaumms).
+    hasItem(136,vyvycuxd).
+    hasItem(137,kmtgurqv).
+    hasItem(137,zlxlxpsg).
+    hasItem(137,qinidrzi).
+    hasItem(137,fwskrdhd).
+    hasItem(137,vzipjhon).
+    hasItem(137,rezgkqoo).
+    hasItem(137,hliiewef).
+    hasItem(137,hroukusw).
+    hasItem(137,tplbtfon).
+    hasItem(137,mcyinzgc).
+    hasItem(137,aaeaenkw).
+    hasItem(137,chvxyzoc).
+    hasItem(137,spjxqjcv).
+    hasItem(137,svcpvtkk).
+    hasItem(137,rntfavoc).
+    hasItem(137,hdvgnycn).
+    hasItem(137,yhvxrmob).
+    hasItem(137,laqniuss).
+    hasItem(137,gdqkbmjc).
+    hasItem(137,cgpechhh).
+    hasItem(137,keazghnz).
+    hasItem(137,rqvnobmc).
+    hasItem(137,dbswgnao).
+    hasItem(137,oexylypo).
+    hasItem(137,fzgrkidm).
+    hasItem(137,dtemoklk).
+    hasItem(137,dagxrelu).
+    hasItem(137,lzibeioi).
+    hasItem(137,tzubnlsn).
+    hasItem(137,gchrddtu).
+    hasItem(137,szkhsxzf).
+    hasItem(137,qivbjuty).
+    hasItem(138,hetcanut).
+    hasItem(138,nbopghkw).
+    hasItem(138,qwllobpy).
+    hasItem(138,ymjwvdoy).
+    hasItem(138,ofyugrmh).
+    hasItem(138,vvoweseg).
+    hasItem(138,vtldjmhd).
+    hasItem(138,svyykolx).
+    hasItem(138,yljspvad).
+    hasItem(138,lgnvmabq).
+    hasItem(138,ueoxfbwt).
+    hasItem(138,uqpkpbgq).
+    hasItem(138,miwqoprr).
+    hasItem(138,vzsgnyqq).
+    hasItem(138,jxzcqlzj).
+    hasItem(138,wbfertth).
+    hasItem(138,qzhozgsk).
+    hasItem(138,xismlyuv).
+    hasItem(138,syijwdqq).
+    hasItem(138,ibsqfcic).
+    hasItem(138,vqwjnejy).
+    hasItem(138,bxibdfvq).
+    hasItem(138,fikndaex).
+    hasItem(138,wklgjqjw).
+    hasItem(138,nnzswgut).
+    hasItem(138,raihpaeq).
+    hasItem(138,merwduki).
+    hasItem(138,btcnatgu).
+    hasItem(138,ivrjyjmg).
+    hasItem(138,krtsayey).
+    hasItem(138,lxvowoav).
+    hasItem(138,jnrfwwnh).
+    hasItem(138,feuonfzg).
+    hasItem(138,txttnpgi).
+    hasItem(138,goazxoge).
+    hasItem(138,kfheqdxn).
+    hasItem(138,xvfqslvd).
+    hasItem(138,cqupthik).
+    hasItem(138,vabgvnzl).
+    hasItem(138,gwztohyd).
+    hasItem(138,vwuxugsu).
+    hasItem(138,cgmguexg).
+    hasItem(138,xmfpawxi).
+    hasItem(138,gaerxkfc).
+    hasItem(138,kzurlmzf).
+    hasItem(138,kuyeabaa).
+    hasItem(138,oerhuqhv).
+    hasItem(138,fgcpkgfa).
+    hasItem(138,lpmazmbq).
+    hasItem(138,kelgcbkb).
+    hasItem(138,xkvsxsal).
+    hasItem(138,teidmfwz).
+    hasItem(138,gycbxkkc).
+    hasItem(138,aoheyisf).
+    hasItem(138,rlvjptma).
+    hasItem(138,bvyieayi).
+    hasItem(138,dxinbwwz).
+    hasItem(138,mkebkdwk).
+    hasItem(138,jjqzkepr).
+    hasItem(138,lngtknjs).
+    hasItem(138,cvusueyc).
+    hasItem(138,kjhnhujf).
+    hasItem(138,oaoekapv).
+    hasItem(138,hdugtjng).
+    hasItem(138,uoevlwpb).
+    hasItem(138,szfvqcvo).
+    hasItem(138,lojyeilh).
+    hasItem(138,ngvztvjl).
+    hasItem(138,yzhchdqr).
+    hasItem(138,jjymnmom).
+    hasItem(138,ssbahavu).
+    hasItem(138,xtycopld).
+    hasItem(138,lkvzmuwz).
+    hasItem(138,uankugsd).
+    hasItem(138,srotfiky).
+    hasItem(138,rriahkij).
+    hasItem(138,nkmmucug).
+    hasItem(138,buniorrz).
+    hasItem(138,ymcfypnv).
+    hasItem(138,rgjqdxbe).
+    hasItem(138,gujpebll).
+    hasItem(138,tpxfmsqr).
+    hasItem(138,csrzrorm).
+    hasItem(138,zpjohrgk).
+    hasItem(138,hfpwuoyh).
+    hasItem(138,ckprfpgu).
+    hasItem(138,nqnmndva).
+    hasItem(138,lahasimj).
+    hasItem(138,vdgtoens).
+    hasItem(138,eumitvzu).
+    hasItem(138,tjnzuwpu).
+    hasItem(138,otnetnza).
+    hasItem(139,mkntddmw).
+    hasItem(139,xnhvucva).
+    hasItem(139,pslvqyuj).
+    hasItem(139,ejsklxdq).
+    hasItem(139,xjhcnimv).
+    hasItem(139,vpxmxren).
+    hasItem(139,ujyndyid).
+    hasItem(139,vwlfknmv).
+    hasItem(139,xlyqlwgx).
+    hasItem(139,xhbdcvqe).
+    hasItem(139,nbhoeigg).
+    hasItem(139,aatbbhzj).
+    hasItem(139,ktxeefhg).
+    hasItem(139,drgblisg).
+    hasItem(139,hsinmzep).
+    hasItem(139,vsehnqmx).
+    hasItem(139,tvyjdomh).
+    hasItem(139,dfyjdxba).
+    hasItem(139,euojlsdf).
+    hasItem(139,rksdszmo).
+    hasItem(139,abmgjxlv).
+    hasItem(139,azlcjmjv).
+    hasItem(139,jhlmkaxo).
+    hasItem(139,iccccmoc).
+    hasItem(139,vsfsrimf).
+    hasItem(139,awoumepj).
+    hasItem(139,mvmgoeim).
+    hasItem(139,ayxggioe).
+    hasItem(139,mrfocvsg).
+    hasItem(139,kpkcaopm).
+    hasItem(139,iizrmhhu).
+    hasItem(139,zyhldrse).
+    hasItem(139,hgjqicdm).
+    hasItem(139,zurdmhsj).
+    hasItem(139,pctrkxly).
+    hasItem(139,eurzbncg).
+    hasItem(139,cfizbres).
+    hasItem(139,sxfrkpio).
+    hasItem(139,uwwokwty).
+    hasItem(139,mkovddgs).
+    hasItem(139,gdasdcbv).
+    hasItem(139,trrwbsig).
+    hasItem(139,iajerwse).
+    hasItem(139,hsnjoiad).
+    hasItem(139,oqidexuy).
+    hasItem(139,aiygfqmu).
+    hasItem(139,ggmdubrv).
+    hasItem(139,rvdhrgrm).
+    hasItem(139,xpmehnfy).
+    hasItem(139,bcqoefeh).
+    hasItem(139,yarexhup).
+    hasItem(139,wixddlsm).
+    hasItem(139,hgdzkyhk).
+    hasItem(139,vhlnheln).
+    hasItem(139,djatuwaz).
+    hasItem(139,dsqdysvr).
+    hasItem(139,xsfxmanx).
+    hasItem(140,opfrdwpu).
+    hasItem(140,spyibeol).
+    hasItem(140,vqiahgsh).
+    hasItem(140,ezrzjgmi).
+    hasItem(140,vplvprym).
+    hasItem(140,hmltwzfp).
+    hasItem(140,owrzltzk).
+    hasItem(140,mnxvljmx).
+    hasItem(140,udzdrtqt).
+    hasItem(140,ynqwpzss).
+    hasItem(140,dlufryze).
+    hasItem(140,dfnztako).
+    hasItem(140,nazlbuey).
+    hasItem(140,nkhpgzzf).
+    hasItem(140,ohstlire).
+    hasItem(140,yntggtep).
+    hasItem(140,lrnpgbis).
+    hasItem(140,tsrhbkag).
+    hasItem(140,nksuxjib).
+    hasItem(140,ffvjnmcw).
+    hasItem(140,eafqngxi).
+    hasItem(140,blvgoaqu).
+    hasItem(140,fsknyqfn).
+    hasItem(140,okrtzhfm).
+    hasItem(140,rwezhced).
+    hasItem(140,oxnqizwo).
+    hasItem(140,nhjyohni).
+    hasItem(140,juyaqljh).
+    hasItem(140,dythlgxa).
+    hasItem(140,olfrucsq).
+    hasItem(140,njmhubuf).
+    hasItem(140,irvuffce).
+    hasItem(140,ykrshqty).
+    hasItem(140,wikkmnjs).
+    hasItem(140,ljekuysk).
+    hasItem(140,kbpxibnp).
+    hasItem(140,brhmfprq).
+    hasItem(140,cnnxwhhd).
+    hasItem(140,dsmtrvar).
+    hasItem(140,nhldfiej).
+    hasItem(141,liveermg).
+    hasItem(141,qqeisajc).
+    hasItem(141,cxnkbuqu).
+    hasItem(141,wckptqxm).
+    hasItem(141,gljrouss).
+    hasItem(141,eqwrbuhs).
+    hasItem(141,ahmlqoex).
+    hasItem(141,nkinmmqf).
+    hasItem(141,sbkqivyk).
+    hasItem(141,ermxejxc).
+    hasItem(141,zznwdrpt).
+    hasItem(141,xwwpbwxa).
+    hasItem(141,hoycewfo).
+    hasItem(141,mjbwghed).
+    hasItem(141,vbixpmbi).
+    hasItem(141,erjomkcu).
+    hasItem(141,xppwvmhg).
+    hasItem(141,irgjmreu).
+    hasItem(141,jfvqahod).
+    hasItem(141,hlqosxde).
+    hasItem(141,sbbhmfed).
+    hasItem(141,hcmctndr).
+    hasItem(141,cpsnrjpo).
+    hasItem(141,avfgxqul).
+    hasItem(141,jqtgrrmw).
+    hasItem(141,djdhpfvt).
+    hasItem(141,vkdivvga).
+    hasItem(141,rhpitesw).
+    hasItem(141,pgkcflzx).
+    hasItem(141,pjuwvybx).
+    hasItem(141,vjpbdupg).
+    hasItem(141,nlrjomtk).
+    hasItem(141,mysaqucs).
+    hasItem(141,bifzausm).
+    hasItem(141,ppevqxtq).
+    hasItem(141,ksexkchh).
+    hasItem(141,buzdogwq).
+    hasItem(141,kzivpile).
+    hasItem(141,ijcpnmcy).
+    hasItem(141,pmchnxhi).
+    hasItem(141,ijzlkfwh).
+    hasItem(141,pocqkkhp).
+    hasItem(141,wfnjgxcb).
+    hasItem(141,aldlxqvd).
+    hasItem(141,akzajhdf).
+    hasItem(141,utwtxayv).
+    hasItem(141,arncshtk).
+    hasItem(141,abmgjxlv).
+    hasItem(141,evcuveta).
+    hasItem(141,vtbpiwtf).
+    hasItem(141,qawuklos).
+    hasItem(141,vsvuzukk).
+    hasItem(141,bbsjwxjz).
+    hasItem(141,bbkksgew).
+    hasItem(141,dtnmidfw).
+    hasItem(141,jcbchfos).
+    hasItem(141,dgjftgpj).
+    hasItem(141,zzmeiodk).
+    hasItem(141,wqxtpnlw).
+    hasItem(141,wfoajnsq).
+    hasItem(141,zzevgeex).
+    hasItem(141,iveafahj).
+    hasItem(141,zrylsaqb).
+    hasItem(141,jvvvujxi).
+    hasItem(141,gvqfrhhj).
+    hasItem(141,gtaxmhxv).
+    hasItem(141,fljtihoh).
+    hasItem(141,bmgoxauh).
+    hasItem(141,qcwpljtt).
+    hasItem(141,bdywiilu).
+    hasItem(141,xdihwrci).
+    hasItem(141,evemoves).
+    hasItem(141,msiqcxjj).
+    hasItem(141,vdnsnajo).
+    hasItem(141,fcuwqxfh).
+    hasItem(141,ejhamsdx).
+    hasItem(141,aoewirqw).
+    hasItem(141,mewklmjf).
+    hasItem(141,kygqofzk).
+    hasItem(141,sjsstbws).
+    hasItem(141,qmbhasxq).
+    hasItem(141,gotsaoep).
+    hasItem(141,utwmtoqf).
+    hasItem(141,uapepxrg).
+    hasItem(141,wlubvued).
+    hasItem(141,pztxlptf).
+    hasItem(141,pbxnqnxp).
+    hasItem(141,jtjtkxli).
+    hasItem(141,thcborlh).
+    hasItem(141,jhjwkqiy).
+    hasItem(141,ykjwcajh).
+    hasItem(141,lyyydpgq).
+    hasItem(141,yoxqntqg).
+    hasItem(141,uiouhnfr).
+    hasItem(141,baftnltd).
+    hasItem(141,rhobsamq).
+    hasItem(141,mzgqbzup).
+    hasItem(141,nfwhxntp).
+    hasItem(141,nfaqeznv).
+    hasItem(141,twrkfpjx).
+    hasItem(141,uxknkfhh).
+    hasItem(141,wrkkthjs).
+    hasItem(141,nrilkuxm).
+    hasItem(141,usuofele).
+    hasItem(141,uouevaxu).
+    hasItem(141,lfilbhyc).
+    hasItem(141,zjqgscov).
+    hasItem(141,wrzbbyrw).
+    hasItem(141,ounggbrs).
+    hasItem(141,jpafnjtm).
+    hasItem(141,eecvoadm).
+    hasItem(141,qjchhila).
+    hasItem(141,arysosun).
+    hasItem(141,vvgaxqet).
+    hasItem(141,gciplmrt).
+    hasItem(141,zshovcdk).
+    hasItem(141,dcllmoqp).
+    hasItem(141,vrolfbgn).
+    hasItem(141,eqboqynm).
+    hasItem(141,myoholit).
+    hasItem(141,yxvmosry).
+    hasItem(141,eidpxhqr).
+    hasItem(141,mnwcebcl).
+    hasItem(141,blnakqyx).
+    hasItem(141,upvvwhuz).
+    hasItem(141,anwaxuqr).
+    hasItem(141,xnsisnfg).
+    hasItem(141,njafjcdf).
+    hasItem(141,wbbtejye).
+    hasItem(141,kzutjjnk).
+    hasItem(141,tzoohojq).
+    hasItem(141,tvckqrew).
+    hasItem(141,bzjpzkkz).
+    hasItem(141,dcescesq).
+    hasItem(141,dkrdwcmv).
+    hasItem(141,jtdpnrvg).
+    hasItem(141,jnfjcabd).
+    hasItem(141,snxvpeau).
+    hasItem(141,mtomxvby).
+    hasItem(141,yblcgqnz).
+    hasItem(141,oipiiekb).
+    hasItem(141,argpjpps).
+    hasItem(141,sbbsqxss).
+    hasItem(141,gyahefjr).
+    hasItem(141,lsqwffos).
+    hasItem(141,ekivtgav).
+    hasItem(141,nmtwcnmj).
+    hasItem(141,cdjjalcq).
+    hasItem(141,putlishw).
+    hasItem(141,wavvhpfa).
+    hasItem(141,jqtuvfdt).
+    hasItem(141,qitzgvvz).
+    hasItem(141,zdxdsebi).
+    hasItem(141,omxgmsoo).
+    hasItem(141,taxpcmmr).
+    hasItem(141,nevsolpb).
+    hasItem(141,tnrlhlhn).
+    hasItem(141,ntunrqeg).
+    hasItem(141,mmsisawq).
+    hasItem(141,brehvahh).
+    hasItem(141,duhvtvgi).
+    hasItem(141,ajsbzvex).
+    hasItem(141,xihlckfu).
+    hasItem(141,twyhymkg).
+    hasItem(141,shsqlraa).
+    hasItem(141,ipbgfouk).
+    hasItem(141,kwvprupn).
+    hasItem(141,hsitamyz).
+    hasItem(142,kdmjedzd).
+    hasItem(142,lrjbsjqo).
+    hasItem(142,dftfbahe).
+    hasItem(142,ihoefkag).
+    hasItem(142,aalhbmkx).
+    hasItem(142,tassmaxk).
+    hasItem(142,wyqmfbhh).
+    hasItem(142,cmvzmrwo).
+    hasItem(142,yzbjnnsg).
+    hasItem(142,hpryvlga).
+    hasItem(142,hxxbrdeo).
+    hasItem(142,nbbeabnq).
+    hasItem(142,vezjijaw).
+    hasItem(142,qngplagn).
+    hasItem(142,owzfvjfk).
+    hasItem(142,switfhve).
+    hasItem(142,hxocibru).
+    hasItem(142,dtgwcjqv).
+    
+    price(agtujvnh,17).
+    price(gaqvsphs,21).
+    price(mhswceig,11).
+    price(jrpmtiuo,9).
+    price(hhcbpnyk,7).
+    price(vekkhnna,11).
+    price(kertodfh,4).
+    price(ojdbwrnl,9).
+    price(xicpfzmk,8).
+    price(mbpdljnt,7).
+    price(pnyzrver,70).
+    price(xalffohh,100).
+    price(shsfkewg,21).
+    price(ovvocceu,17).
+    price(bcqylwcn,2).
+    price(sufngthl,3).
+    price(tdkgynyx,7).
+    price(gscrcxle,10).
+    price(ctqwqotl,2).
+    price(fhkjcuix,3).
+    price(xrjvodfv,7).
+    price(ndsbtrnu,10).
+    price(bhldydul,4).
+    price(soacgjye,4).
+    price(pfwpinrc,14).
+    price(cjqmyglb,17).
+    
+    price(dtgwcjqv,2).
+    price(ozbubsnf,2).
+    price(nwqlrizb,10).
+    price(xbwsusbf,10).
+    price(dkfeufbh,10).
+    price(smvcmohg,12).
+    price(hpuxyyjh,10).
+    price(vluxpnrd,5).
+    price(irlrtnzb,4).
+    price(fimkhlxt,4).
+    price(piakseab,5).
+    price(xuoqvgim,5).
+    price(xofyxgmc,5).
+    price(kqolrgkx,4).
+    price(fovmpjqt,4).
+    price(mnwgmogq,4).
+    price(cflzxmun,4).
+    price(qdmrhuqc,4).
+    price(mnlrsdmy,4).
+    price(zrympsyv,2).
+    price(sfrwtzvw,2).
+    price(hnextklx,2).
+    price(ekmbbmug,2).
+    price(wyscfyzg,2).
+    price(ytdoszfx,2).
+    price(fyokvcda,2).
+    price(gdaasvgg,5).
+    price(ntxheika,5).
+    price(nyjlyoul,6).
+    price(mqfexupf,3).
+    price(ngklfnwi,4).
+    price(rnewugrg,4).
+    price(qujymaaz,4).
+    price(elcajzut,4).
+    price(cdcwgahh,4).
+    price(kyguzjwg,4).
+    price(kcilomsn,4).
+    price(katbjhhv,4).
+    price(jxjuyyiy,4).
+    price(ktqfblxt,5).
+    price(nsufqczt,5).
+    price(qpjraqwn,5).
+    price(gbngnwth,5).
+    price(ibcgmdas,8).
+    price(kxbdtpfs,7).
+    price(fatcigwp,0).
+    price(jhibsope,2).
+    price(ezeurdkp,2).
+    price(moqryotc,2).
+    price(vunkpdol,2).
+    price(nemmfotc,11).
+    price(avagecln,13).
+    price(kaxbxyso,5).
+    price(iyzhuttm,6).
+    price(ksrnwmto,9).
+    price(rqmtgklb,9).
+    price(ezxdzhsg,3).
+    price(mowbpnsr,5).
+    price(zjqjiazf,5).
+    price(zrmdedqy,17).
+    price(tfgideui,1).
+    price(tucdtesn,1).
+    price(cajpibzq,1).
+    price(yqhhwlts,1).
+    price(ruqjsxmo,1).
+    price(iiewzgbb,1).
+    price(azsyvssj,1).
+    price(hhhwcxfw,1).
+    price(ivfhqzbj,1).
+    price(awbqhmjo,1).
+    price(jecoljyk,1).
+    price(lahasimj,1).
+    price(peetqevh,2).
+    price(lnjhtnxx,2).
+    price(wduqzoik,1).
+    price(ezoaxlrs,1).
+    price(qbdcrbss,4).
+    price(ndwhskvh,2).
+    price(ygmtxijy,5).
+    price(dtfhopij,6).
+    price(civwxjoi,5).
+    price(jvazasan,5).
+    price(xrlealxo,5).
+    price(xjansupd,5).
+    price(nikzmyaa,5).
+    price(vihgolia,5).
+    price(pmkldmmd,6).
+    price(kojrmsby,6).
+    price(fglzlvnd,5).
+    price(zbtwsbhe,5).
+    price(rrkktuao,5).
+    price(gtquzzhf,5).
+    price(nptosbfc,6).
+    price(qdwyxtwa,6).
+    price(addccfxc,6).
+    price(ebboohyl,6).
+    price(okvhdhkh,6).
+    price(yppiovmk,6).
+    price(jskdbvjg,6).
+    price(jxxssorf,6).
+    price(zunvkvxb,6).
+    price(rzcgndeb,6).
+    price(vogdcwoo,5).
+    price(mqcedrup,5).
+    price(telecprm,5).
+    price(jprwznhh,5).
+    price(newrskog,6).
+    price(pyvudheb,6).
+    price(haepxtgs,6).
+    price(agfhqbue,5).
+    price(bsbrlajn,5).
+    price(aahoirxj,5).
+    price(ebrjkfyq,4).
+    price(ihmgfiir,7).
+    price(actcdqty,6).
+    price(mdrinytm,6).
+    price(igujkimr,8).
+    price(rwgfstcl,3).
+    price(qvzpeioj,8).
+    price(yvdjrdhs,8).
+    price(edsyvtri,9).
+    price(axoafxuo,9).
+    price(rjysujqg,9).
+    price(heobnlal,1).
+    price(pwbmzapj,1).
+    price(ygnesgal,1).
+    price(vwxpnrdp,1).
+    price(qenhcxat,1).
+    price(ejfflynm,1).
+    price(cpojimha,7).
+    price(mupavroi,7).
+    price(jbudkbpi,10).
+    price(xcrdvubl,10).
+    price(ixayieee,10).
+    price(hxafnsht,2).
+    price(dcikwzep,1).
+    price(vaffhbhb,7).
+    price(nzjojpxp,3).
+    price(elfgkhds,4).
+    price(dolbzziq,4).
+    price(btfeltfa,5).
+    price(dihougks,11).
+    price(hxzlpokj,10).
+    price(itvmelra,12).
+    price(rrdewzyj,12).
+    price(zwleljwv,7).
+    price(hamlikne,12).
+    price(jnqphlfj,7).
+    price(laqgxtop,5).
+    price(wfidqpgd,32).
+    price(htnatnez,44).
+    price(rqyoqnwg,47).
+    price(ezxostzj,27).
+    price(lmnnqovb,25).
+    price(mhxewnum,4).
+    price(rwuaeqyr,7).
+    price(mpytorwv,3).
+    price(okgrlfhb,5).
+    price(ulzgqquj,4).
+    price(wpczdhuj,8).
+    price(zwnsejff,4).
+    price(znanhljt,9).
+    price(gbmlbpcu,4).
+    price(owifxibl,4).
+    price(tilbkarz,7).
+    price(vplvprym,7).
+    price(gdrljqqg,7).
+    price(hxxbrdeo,1).
+    price(kmdovhlj,0).
+    price(jfnoemxi,0).
+    price(yoxqntqg,3).
+    price(xonxydnt,3).
+    price(bxquwyqp,3).
+    price(cavlrlko,3).
+    price(gxusqlmn,3).
+    price(fwfnldfi,3).
+    price(sbdbopqv,3).
+    price(nmswhwml,3).
+    price(ojlqbbol,3).
+    price(asyrclzv,3).
+    price(fytyhmwr,3).
+    price(yulaxxha,3).
+    price(biyiaygq,3).
+    price(ngtkvtin,3).
+    price(axjdgeqc,3).
+    price(swxlvhmx,3).
+    price(oggfrnkv,3).
+    price(hmjdoakq,3).
+    price(wlajanfh,3).
+    price(bbbxpwfg,3).
+    price(zdxtrdfp,3).
+    price(ayltkjma,3).
+    price(zcwbtvge,3).
+    price(kifoetqi,3).
+    price(xpjpokqa,3).
+    price(cndktbog,3).
+    price(majmasfw,3).
+    price(mkwyuiik,3).
+    price(ppyeghww,3).
+    price(ogmvfkqr,3).
+    price(prawflka,3).
+    price(abbxubyh,12).
+    price(xmikqwtm,7).
+    price(jbppglqo,7).
+    price(xdwlzswr,7).
+    price(sihzmyxo,7).
+    price(flqyyqjr,3).
+    price(iplwmahn,4).
+    price(xanjbuck,4).
+    price(amidxcom,5).
+    price(hguwhues,2).
+    price(psgmmiwr,2).
+    price(oedecjln,2).
+    price(igjfjodt,1).
+    price(sxjoekev,2).
+    price(kgmsogcc,2).
+    price(bzlwwppm,1).
+    price(zmrryjck,2).
+    price(cosmfbnr,2).
+    price(tiodmozj,1).
+    price(rjozzbal,2).
+    price(dezetszj,1).
+    price(upfmypdq,1).
+    price(toceyrrq,1).
+    price(pfmblsco,1).
+    price(debgsork,1).
+    price(frxpbzwk,2).
+    price(xpfofplu,2).
+    price(lwkgrzha,4).
+    price(rjinvynn,5).
+    price(ywhiqcwc,3).
+    price(kgnkzgtu,5).
+    price(cppmytel,2).
+    price(yqhhwlts,3).
+    price(wshgwkrh,3).
+    price(vjqsipov,4).
+    price(mjjelpbi,4).
+    price(ncofyryu,3).
+    price(vezjijaw,3).
+    price(ksiogrjl,3).
+    price(ikoxiiug,3).
+    price(jyvvdutr,2).
+    price(xvaihwjd,3).
+    price(fsknyqfn,4).
+    price(xonxvdpr,4).
+    price(oocvrsjk,2).
+    price(eyrcqfoh,4).
+    price(qrtxomtm,4).
+    price(ljnkjpxo,4).
+    price(yywrjody,4).
+    price(japsvolv,4).
+    price(umwueebe,4).
+    price(ykzahyuu,4).
+    price(caphdqvf,4).
+    price(frzwymld,4).
+    price(zjkrfesp,11).
+    price(zdsfdgfj,10).
+    price(oaragtrs,11).
+    price(wweugfoj,10).
+    price(qvsfcgmi,10).
+    price(qljsqybl,9).
+    price(tjvwdkok,11).
+    price(vbtwdrsj,11).
+    price(wblaensk,11).
+    price(sacmbeps,11).
+    price(nieubfaz,11).
+    price(leekjifs,11).
+    price(gsxtnlfm,11).
+    price(xjjchzfg,11).
+    price(asiago,0).
+    price(edtkpedl,7).
+    price(ryzwvdaa,38).
+    price(tjhmmurn,68).
+    price(wxbncwhs,50).
+    price(cnhzbias,57).
+    price(oghgbhko,0).
+    price(cpaihdfi,19).
+    price(uwftucfw,8).
+    price(rdwcexqj,8).
+    price(ybovtlqf,11).
+    price(ajwdkxbf,10).
+    price(aryppvcs,11).
+    price(szarfopu,12).
+    price(xljczzny,13).
+    price(jqaczlvb,14).
+    price(wldeaqre,10).
+    price(glbsfqov,11).
+    price(kvpnupaf,8).
+    price(ovsbwxls,11).
+    price(npbgebko,9).
+    price(ghvhtlnr,8).
+    price(rlnuabxo,6).
+    price(uvprwvac,6).
+    price(fysomtiz,4).
+    price(uwhcaxod,10).
+    price(veybddmr,10).
+    price(cvtfyhff,10).
+    price(xksuabgi,10).
+    price(txyrcews,11).
+    price(wrsiycyf,10).
+    price(abbawjxx,11).
+    price(tbdlhsuv,14).
+    price(uupatnqn,3).
+    price(mmurhgna,4).
+    price(xsqyodky,10).
+    price(wzuvphoo,4).
+    price(iseraceg,12).
+    price(enttecuw,11).
+    price(begnhmuy,12).
+    price(fcionpyk,10).
+    price(qzpgnmub,12).
+    price(yoqvypob,13).
+    price(fpnqkyav,10).
+    price(ssxhbsjr,10).
+    price(nvidyswp,13).
+    price(ybfimfpr,12).
+    price(ilwdolje,10).
+    price(ifrcickk,12).
+    price(heiyhfbw,10).
+    price(ocqpmjcj,12).
+    price(tupdvozi,12).
+    price(yjltzrdw,11).
+    price(lmxarfgp,11).
+    price(dqxtjlvq,12).
+    price(vbafuutn,10).
+    price(xsjtdujw,10).
+    price(oomtyczq,9).
+    price(nwjwrlkl,12).
+    price(dddpidxk,16).
+    price(injfgajy,15).
+    price(ybuocjtt,15).
+    price(hajpsgzw,14).
+    price(frntfgqu,13).
+    price(glbsfqov,14).
+    price(bvhucuqf,8).
+    price(elqaoxbj,9).
+    price(aytcynfb,10).
+    price(obrzujne,11).
+    price(awdgidqc,10).
+    price(dlobmldu,11).
+    price(gkajvqrn,8).
+    price(wxxpnqhd,9).
+    price(unhlobym,11).
+    price(tblsckgh,9).
+    price(jhyteiwh,10).
+    price(wigxnjus,11).
+    price(arpwhlzk,10).
+    price(oqkoegcn,9).
+    price(kecjabto,8).
+    price(wgqeonhr,8).
+    price(hqdroghn,8).
+    price(yjpllqsm,11).
+    price(gztqjvyl,11).
+    price(ekgifuxh,12).
+    price(ydscxzbq,10).
+    price(zevsmlow,10).
+    price(emnvpjnr,3).
+    price(pxhlkeod,1).
+    price(jnddyxzs,1).
+    price(aszqugrn,4).
+    price(heobnlal,4).
+    price(atdjyirq,1).
+    price(phvufcnp,2).
+    price(rlnuabxo,4).
+    price(akxykmap,4).
+    price(rmzsehhg,5).
+    price(bcqoefeh,3).
+    price(yntggtep,5).
+    price(zrzybbvg,8).
+    price(cqrgbrdq,9).
+    price(xlpurioo,7).
+    price(gkwizolm,10).
+    price(szdihrkj,7).
+    price(ybalbqxt,7).
+    price(fbpaxzen,7).
+    price(fmxcihux,7).
+    price(aktrvzaa,12).
+    price(eisgabhn,9).
+    price(kvqktiea,8).
+    price(ivgsqzhf,8).
+    price(tqhoxxva,4).
+    price(xpgytmnh,3).
+    price(yvtbpzqz,7).
+    price(rmwekmny,9).
+    price(lhfpqrak,8).
+    price(qmkfknnd,3).
+    price(cajpibzq,3).
+    price(fzehahae,3).
+    price(fijdpckd,3).
+    price(fgenybjc,3).
+    price(iiewzgbb,3).
+    price(tucdtesn,3).
+    price(tfgideui,3).
+    price(azsyvssj,3).
+    price(hxocibru,3).
+    price(qlylqkyt,1).
+    price(woepqykp,1).
+    price(nqnmndva,4).
+    price(vrolfbgn,4).
+    price(xtvaumms,4).
+    price(vyvycuxd,4).
+    price(kmtgurqv,20).
+    price(zlxlxpsg,7).
+    price(qinidrzi,10).
+    price(fwskrdhd,4).
+    price(vzipjhon,2).
+    price(rezgkqoo,0).
+    price(tplbtfon,14).
+    price(mcyinzgc,14).
+    price(aaeaenkw,17).
+    price(chvxyzoc,17).
+    price(spjxqjcv,15).
+    price(svcpvtkk,0).
+    price(rntfavoc,9).
+    price(hdvgnycn,3).
+    price(yhvxrmob,1).
+    price(laqniuss,1).
+    price(gdqkbmjc,1).
+    price(cgpechhh,1).
+    price(keazghnz,3).
+    price(rqvnobmc,3).
+    price(dbswgnao,3).
+    price(oexylypo,3).
+    price(fzgrkidm,1).
+    price(dtemoklk,1).
+    price(dagxrelu,8).
+    price(lzibeioi,1).
+    price(tzubnlsn,4).
+    price(gchrddtu,1).
+    price(szkhsxzf,5).
+    price(qivbjuty,2).
+    price(hetcanut,12).
+    price(nbopghkw,10).
+    price(qwllobpy,12).
+    price(ymjwvdoy,13).
+    price(ofyugrmh,11).
+    price(vvoweseg,10).
+    price(vtldjmhd,11).
+    price(svyykolx,12).
+    price(yljspvad,11).
+    price(lgnvmabq,12).
+    price(ueoxfbwt,13).
+    price(uqpkpbgq,19).
+    price(miwqoprr,13).
+    price(vzsgnyqq,8).
+    price(jxzcqlzj,10).
+    price(wbfertth,10).
+    price(qzhozgsk,12).
+    price(xismlyuv,8).
+    price(syijwdqq,7).
+    price(ibsqfcic,9).
+    price(vqwjnejy,9).
+    price(bxibdfvq,10).
+    price(fikndaex,6).
+    price(wklgjqjw,8).
+    price(nnzswgut,9).
+    price(raihpaeq,11).
+    price(merwduki,5).
+    price(btcnatgu,7).
+    price(ivrjyjmg,5).
+    price(krtsayey,8).
+    price(lxvowoav,11).
+    price(jnrfwwnh,10).
+    price(feuonfzg,11).
+    price(txttnpgi,9).
+    price(goazxoge,12).
+    price(xvfqslvd,17).
+    price(cqupthik,20).
+    price(vabgvnzl,10).
+    price(gwztohyd,14).
+    price(vwuxugsu,12).
+    price(cgmguexg,12).
+    price(xmfpawxi,14).
+    price(gaerxkfc,14).
+    price(kzurlmzf,11).
+    price(kuyeabaa,10).
+    price(oerhuqhv,12).
+    price(fgcpkgfa,11).
+    price(lpmazmbq,15).
+    price(kelgcbkb,12).
+    price(xkvsxsal,14).
+    price(teidmfwz,15).
+    price(gycbxkkc,12).
+    price(aoheyisf,12).
+    price(rlvjptma,13).
+    price(bvyieayi,55).
+    price(dxinbwwz,16).
+    price(mkebkdwk,15).
+    price(jjqzkepr,16).
+    price(lngtknjs,10).
+    price(cvusueyc,11).
+    price(kjhnhujf,9).
+    price(oaoekapv,12).
+    price(hdugtjng,11).
+    price(uoevlwpb,11).
+    price(szfvqcvo,12).
+    price(lojyeilh,11).
+    price(ngvztvjl,10).
+    price(yzhchdqr,4).
+    price(jjymnmom,6).
+    price(ssbahavu,6).
+    price(xtycopld,7).
+    price(lkvzmuwz,5).
+    price(uankugsd,5).
+    price(srotfiky,5).
+    price(rriahkij,6).
+    price(nkmmucug,6).
+    price(buniorrz,4).
+    price(ymcfypnv,5).
+    price(rgjqdxbe,6).
+    price(gujpebll,6).
+    price(tpxfmsqr,7).
+    price(csrzrorm,6).
+    price(zpjohrgk,3).
+    price(hfpwuoyh,3).
+    price(ckprfpgu,2).
+    price(lahasimj,3).
+    price(vdgtoens,7).
+    price(eumitvzu,7).
+    price(tjnzuwpu,7).
+    price(otnetnza,7).
+    price(mkntddmw,25).
+    price(xnhvucva,43).
+    price(pslvqyuj,14).
+    price(ejsklxdq,25).
+    price(xjhcnimv,39).
+    price(vpxmxren,11).
+    price(ujyndyid,7).
+    price(vwlfknmv,15).
+    price(xlyqlwgx,8).
+    price(xhbdcvqe,7).
+    price(nbhoeigg,10).
+    price(aatbbhzj,12).
+    price(ktxeefhg,8).
+    price(drgblisg,13).
+    price(hsinmzep,15).
+    price(vsehnqmx,8).
+    price(tvyjdomh,9).
+    price(dfyjdxba,10).
+    price(euojlsdf,7).
+    price(rksdszmo,9).
+    price(abmgjxlv,6).
+    price(azlcjmjv,7).
+    price(jhlmkaxo,58).
+    price(iccccmoc,0).
+    price(vsfsrimf,36).
+    price(awoumepj,15).
+    price(mvmgoeim,15).
+    price(ayxggioe,16).
+    price(mrfocvsg,18).
+    price(kpkcaopm,33).
+    price(iizrmhhu,21).
+    price(zyhldrse,24).
+    price(hgjqicdm,62).
+    price(zurdmhsj,21).
+    price(pctrkxly,12).
+    price(eurzbncg,9).
+    price(cfizbres,15).
+    price(sxfrkpio,15).
+    price(uwwokwty,15).
+    price(mkovddgs,14).
+    price(gdasdcbv,16).
+    price(trrwbsig,16).
+    price(iajerwse,15).
+    price(hsnjoiad,17).
+    price(oqidexuy,15).
+    price(aiygfqmu,12).
+    price(ggmdubrv,24).
+    price(rvdhrgrm,15).
+    price(xpmehnfy,17).
+    price(bcqoefeh,6).
+    price(yarexhup,7).
+    price(wixddlsm,6).
+    price(hgdzkyhk,3).
+    price(vhlnheln,7).
+    price(djatuwaz,5).
+    price(dsqdysvr,2).
+    price(xsfxmanx,3).
+    price(opfrdwpu,12).
+    price(spyibeol,13).
+    price(vqiahgsh,16).
+    price(ezrzjgmi,13).
+    price(vplvprym,9).
+    price(hmltwzfp,13).
+    price(owrzltzk,13).
+    price(mnxvljmx,13).
+    price(udzdrtqt,13).
+    price(ynqwpzss,13).
+    price(dlufryze,0).
+    price(dfnztako,0).
+    price(nazlbuey,14).
+    price(nkhpgzzf,13).
+    price(ohstlire,9).
+    price(yntggtep,7).
+    price(lrnpgbis,6).
+    price(tsrhbkag,7).
+    price(nksuxjib,5).
+    price(ffvjnmcw,5).
+    price(eafqngxi,7).
+    price(blvgoaqu,3).
+    price(fsknyqfn,5).
+    price(okrtzhfm,5).
+    price(rwezhced,5).
+    price(oxnqizwo,3).
+    price(nhjyohni,3).
+    price(juyaqljh,3).
+    price(dythlgxa,3).
+    price(olfrucsq,5).
+    price(njmhubuf,7).
+    price(irvuffce,7).
+    price(ykrshqty,8).
+    price(wikkmnjs,5).
+    price(ljekuysk,7).
+    price(kbpxibnp,7).
+    price(brhmfprq,7).
+    price(cnnxwhhd,4).
+    price(dsmtrvar,4).
+    price(nhldfiej,4).
+    price(liveermg,7).
+    price(qqeisajc,5).
+    price(cxnkbuqu,7).
+    price(wckptqxm,4).
+    price(gljrouss,9).
+    price(eqwrbuhs,13).
+    price(ahmlqoex,13).
+    price(nkinmmqf,9).
+    price(sbkqivyk,10).
+    price(ermxejxc,10).
+    price(zznwdrpt,9).
+    price(xwwpbwxa,6).
+    price(hoycewfo,8).
+    price(mjbwghed,9).
+    price(vbixpmbi,8).
+    price(erjomkcu,8).
+    price(xppwvmhg,8).
+    price(irgjmreu,6).
+    price(jfvqahod,50).
+    price(hlqosxde,45).
+    price(sbbhmfed,50).
+    price(hcmctndr,45).
+    price(cpsnrjpo,54).
+    price(avfgxqul,49).
+    price(jqtgrrmw,8).
+    price(djdhpfvt,8).
+    price(vkdivvga,0).
+    price(rhpitesw,0).
+    price(pgkcflzx,0).
+    price(pjuwvybx,0).
+    price(vjpbdupg,0).
+    price(nlrjomtk,0).
+    price(mysaqucs,0).
+    price(bifzausm,0).
+    price(ppevqxtq,0).
+    price(ksexkchh,0).
+    price(buzdogwq,0).
+    price(kzivpile,0).
+    price(ijcpnmcy,0).
+    price(pmchnxhi,0).
+    price(ijzlkfwh,0).
+    price(pocqkkhp,10).
+    price(wfnjgxcb,10).
+    price(aldlxqvd,9).
+    price(akzajhdf,9).
+    price(utwtxayv,7).
+    price(arncshtk,9).
+    price(abmgjxlv,7).
+    price(evcuveta,7).
+    price(vtbpiwtf,7).
+    price(qawuklos,7).
+    price(vsvuzukk,7).
+    price(bbsjwxjz,7).
+    price(bbkksgew,7).
+    price(dtnmidfw,7).
+    price(jcbchfos,12).
+    price(dgjftgpj,12).
+    price(zzmeiodk,12).
+    price(wqxtpnlw,11).
+    price(wfoajnsq,10).
+    price(zzevgeex,38).
+    price(iveafahj,29).
+    price(zrylsaqb,43).
+    price(jvvvujxi,38).
+    price(gvqfrhhj,2).
+    price(gtaxmhxv,2).
+    price(fljtihoh,2).
+    price(bmgoxauh,2).
+    price(qcwpljtt,2).
+    price(bdywiilu,2).
+    price(xdihwrci,2).
+    price(evemoves,2).
+    price(msiqcxjj,2).
+    price(vdnsnajo,8).
+    price(fcuwqxfh,9).
+    price(ejhamsdx,19).
+    price(aoewirqw,19).
+    price(mewklmjf,3).
+    price(kygqofzk,5).
+    price(sjsstbws,3).
+    price(qmbhasxq,3).
+    price(gotsaoep,4).
+    price(utwmtoqf,3).
+    price(uapepxrg,5).
+    price(wlubvued,5).
+    price(pztxlptf,3).
+    price(pbxnqnxp,3).
+    price(jtjtkxli,3).
+    price(thcborlh,3).
+    price(jhjwkqiy,3).
+    price(ykjwcajh,3).
+    price(lyyydpgq,3).
+    price(yoxqntqg,2).
+    price(uiouhnfr,4).
+    price(baftnltd,3).
+    price(rhobsamq,3).
+    price(mzgqbzup,3).
+    price(nfwhxntp,3).
+    price(nfaqeznv,3).
+    price(twrkfpjx,3).
+    price(uxknkfhh,5).
+    price(wrkkthjs,5).
+    price(nrilkuxm,4).
+    price(usuofele,5).
+    price(uouevaxu,24).
+    price(lfilbhyc,24).
+    price(zjqgscov,24).
+    price(wrzbbyrw,24).
+    price(ounggbrs,3).
+    price(jpafnjtm,3).
+    price(eecvoadm,3).
+    price(qjchhila,3).
+    price(arysosun,4).
+    price(vvgaxqet,7).
+    price(gciplmrt,7).
+    price(zshovcdk,7).
+    price(dcllmoqp,7).
+    price(vrolfbgn,7).
+    price(eqboqynm,6).
+    price(myoholit,6).
+    price(yxvmosry,6).
+    price(eidpxhqr,6).
+    price(mnwcebcl,6).
+    price(blnakqyx,5).
+    price(upvvwhuz,6).
+    price(anwaxuqr,5).
+    price(xnsisnfg,4).
+    price(njafjcdf,3).
+    price(wbbtejye,6).
+    price(kzutjjnk,6).
+    price(tzoohojq,6).
+    price(tvckqrew,6).
+    price(bzjpzkkz,5).
+    price(dcescesq,2).
+    price(dkrdwcmv,3).
+    price(jtdpnrvg,8).
+    price(jnfjcabd,8).
+    price(snxvpeau,7).
+    price(mtomxvby,7).
+    price(yblcgqnz,7).
+    price(oipiiekb,7).
+    price(argpjpps,7).
+    price(sbbsqxss,7).
+    price(gyahefjr,7).
+    price(lsqwffos,7).
+    price(ekivtgav,7).
+    price(nmtwcnmj,6).
+    price(cdjjalcq,6).
+    price(putlishw,10).
+    price(wavvhpfa,9).
+    price(jqtuvfdt,10).
+    price(qitzgvvz,8).
+    price(zdxdsebi,8).
+    price(omxgmsoo,10).
+    price(taxpcmmr,9).
+    price(nevsolpb,10).
+    price(tnrlhlhn,7).
+    price(ntunrqeg,9).
+    price(mmsisawq,7).
+    price(brehvahh,9).
+    price(duhvtvgi,10).
+    price(ajsbzvex,1).
+    price(xihlckfu,1).
+    price(twyhymkg,1).
+    price(shsqlraa,1).
+    price(ipbgfouk,3).
+    price(kwvprupn,2).
+    price(hsitamyz,2).
+    price(kdmjedzd,10).
+    price(lrjbsjqo,15).
+    price(dftfbahe,8).
+    price(ihoefkag,2).
+    price(aalhbmkx,6).
+    price(tassmaxk,39).
+    price(wyqmfbhh,8).
+    price(cmvzmrwo,1).
+    price(yzbjnnsg,1).
+    price(hpryvlga,0).
+    price(nbbeabnq,1).
+    price(vezjijaw,1).
+    price(qngplagn,1).
+    price(owzfvjfk,0).
+    price(switfhve,0).
+    price(hxocibru,10).
+    price(dtgwcjqv,1).
+    
+    description(agtujvnh,gsdphudq).
+    description(gaqvsphs,cesecozs).
+    description(mhswceig,jonhulzc).
+    description(jrpmtiuo,mtsyqhtp).
+    description(hhcbpnyk,ianaigqi).
+    description(vekkhnna,mjabhnfo).
+    description(kertodfh,hbeaatqn).
+    description(ojdbwrnl,zohgqgiu).
+    description(xicpfzmk,kkfvrjnw).
+    description(mbpdljnt,brploune).
+    description(pnyzrver,etcmuvas).
+    description(xalffohh,hnucbyhg).
+    description(shsfkewg,xnfuyyte).
+    description(ovvocceu,kmjapnlx).
+    description(bcqylwcn,kfheqdxn).
+    description(sufngthl,pcfyogmu).
+    description(tdkgynyx,pcfyogmu).
+    description(gscrcxle,pcfyogmu).
+    description(ctqwqotl,sgmbclmn).
+    description(fhkjcuix,ikgztaay).
+    description(xrjvodfv,oemaacbt).
+    description(ndsbtrnu,ikgztaay).
+    description(bhldydul,iyamngba).
+    description(soacgjye,kfheqdxn).
+    description(pfwpinrc,bndmcjcq).
+    description(cjqmyglb,emfggvml).
+    description(rfustlek,dkweibef).
+    description(dtgwcjqv,kfheqdxn).
+    description(ozbubsnf,kfheqdxn).
+    description(nwqlrizb,wwrumjhp).
+    description(xbwsusbf,ecuodzjv).
+    description(dkfeufbh,kqkpnuwf).
+    description(smvcmohg,dohjdqqy).
+    description(hpuxyyjh,esslaygp).
+    description(vluxpnrd,kfheqdxn).
+    description(irlrtnzb,kfheqdxn).
+    description(fimkhlxt,kfheqdxn).
+    description(piakseab,kfheqdxn).
+    description(xuoqvgim,kfheqdxn).
+    description(xofyxgmc,kfheqdxn).
+    description(kqolrgkx,kfheqdxn).
+    description(fovmpjqt,kfheqdxn).
+    description(mnwgmogq,kfheqdxn).
+    description(cflzxmun,kfheqdxn).
+    description(qdmrhuqc,kfheqdxn).
+    description(mnlrsdmy,kfheqdxn).
+    description(zrympsyv,kfheqdxn).
+    description(sfrwtzvw,kfheqdxn).
+    description(hnextklx,kfheqdxn).
+    description(ekmbbmug,kfheqdxn).
+    description(wyscfyzg,kfheqdxn).
+    description(ytdoszfx,kfheqdxn).
+    description(fyokvcda,kfheqdxn).
+    description(gdaasvgg,kfheqdxn).
+    description(ntxheika,kfheqdxn).
+    description(nyjlyoul,kfheqdxn).
+    description(mqfexupf,kfheqdxn).
+    description(ngklfnwi,kfheqdxn).
+    description(rnewugrg,kfheqdxn).
+    description(qujymaaz,kfheqdxn).
+    description(elcajzut,kfheqdxn).
+    description(cdcwgahh,kfheqdxn).
+    description(kyguzjwg,kfheqdxn).
+    description(kcilomsn,kfheqdxn).
+    description(katbjhhv,kfheqdxn).
+    description(jxjuyyiy,kfheqdxn).
+    description(ktqfblxt,kfheqdxn).
+    description(nsufqczt,kfheqdxn).
+    description(qpjraqwn,kfheqdxn).
+    description(gbngnwth,kfheqdxn).
+    description(ibcgmdas,mblcspzq).
+    description(jhibsope,kfheqdxn).
+    description(ezeurdkp,kfheqdxn).
+    description(moqryotc,kfheqdxn).
+    description(vunkpdol,kfheqdxn).
+    description(nemmfotc,aczqhaci).
+    description(avagecln,lcsficrp).
+    description(kaxbxyso,oykegpzc).
+    description(iyzhuttm,jogdnjjg).
+    description(ksrnwmto,wjevcjhv).
+    description(rqmtgklb,bjjkzipb).
+    description(ezxdzhsg,kfheqdxn).
+    description(mowbpnsr,kfheqdxn).
+    description(zjqjiazf,kfheqdxn).
+    description(uxontugg,kbxkrgll).
+    description(zrmdedqy,pmjvmtnq).
+    description(tfgideui,kfheqdxn).
+    description(tucdtesn,tucdtesn).
+    description(cajpibzq,cajpibzq).
+    description(yqhhwlts,yqhhwlts).
+    description(ruqjsxmo,kfheqdxn).
+    description(iiewzgbb,kfheqdxn).
+    description(azsyvssj,kfheqdxn).
+    description(hhhwcxfw,kfheqdxn).
+    description(ivfhqzbj,kfheqdxn).
+    description(awbqhmjo,kfheqdxn).
+    description(jecoljyk,kfheqdxn).
+    description(lahasimj,kfheqdxn).
+    description(peetqevh,qivobgqt).
+    description(lnjhtnxx,byuchlmz).
+    description(wyefpnve,kzftmpgu).
+    description(wduqzoik,fguvxqmk).
+    description(ezoaxlrs,lhomueke).
+    description(qbdcrbss,eewqddlc).
+    description(ndwhskvh,ektjuour).
+    description(injiwwtd,fnxfaayj).
+    description(ygmtxijy,msrpeguu).
+    description(dtfhopij,rbgquclm).
+    description(civwxjoi,kfheqdxn).
+    description(jvazasan,kfheqdxn).
+    description(xrlealxo,kfheqdxn).
+    description(xjansupd,kfheqdxn).
+    description(nikzmyaa,kfheqdxn).
+    description(vihgolia,kfheqdxn).
+    description(pmkldmmd,kfheqdxn).
+    description(kojrmsby,kfheqdxn).
+    description(fglzlvnd,kfheqdxn).
+    description(zbtwsbhe,kfheqdxn).
+    description(rrkktuao,kfheqdxn).
+    description(gtquzzhf,kfheqdxn).
+    description(nptosbfc,kfheqdxn).
+    description(qdwyxtwa,kfheqdxn).
+    description(addccfxc,kfheqdxn).
+    description(ebboohyl,hwibtmfp).
+    description(okvhdhkh,hwibtmfp).
+    description(yppiovmk,hwibtmfp).
+    description(jskdbvjg,kfheqdxn).
+    description(jxxssorf,kfheqdxn).
+    description(zunvkvxb,kfheqdxn).
+    description(rzcgndeb,kfheqdxn).
+    description(vogdcwoo,dhjgzvbs).
+    description(mqcedrup,lusevvwn).
+    description(telecprm,mhbatmdb).
+    description(jprwznhh,mhbatmdb).
+    description(newrskog,lusevvwn).
+    description(pyvudheb,kfheqdxn).
+    description(haepxtgs,kfheqdxn).
+    description(agfhqbue,kfheqdxn).
+    description(bsbrlajn,kfheqdxn).
+    description(aahoirxj,kfheqdxn).
+    description(ebrjkfyq,umrzvism).
+    description(ihmgfiir,iezkoffr).
+    description(actcdqty,iyqcaqua).
+    description(mdrinytm,yxppzcbd).
+    description(igujkimr,hkyhbjfl).
+    description(xujrnvyh,zshpgsub).
+    description(dxjynjen,lgvhyehq).
+    description(rwgfstcl,uakkekuy).
+    description(qvzpeioj,mspybnoj).
+    description(yvdjrdhs,kfheqdxn).
+    description(edsyvtri,kfheqdxn).
+    description(axoafxuo,kfheqdxn).
+    description(rjysujqg,kfheqdxn).
+    description(heobnlal,kfheqdxn).
+    description(pwbmzapj,kfheqdxn).
+    description(ygnesgal,kfheqdxn).
+    description(vwxpnrdp,kfheqdxn).
+    description(qenhcxat,kfheqdxn).
+    description(ejfflynm,kfheqdxn).
+    description(cpojimha,kfheqdxn).
+    description(mupavroi,kfheqdxn).
+    description(jbudkbpi,kfheqdxn).
+    description(xcrdvubl,kfheqdxn).
+    description(ixayieee,kfheqdxn).
+    description(hxafnsht,kfheqdxn).
+    description(dcikwzep,kfheqdxn).
+    description(vaffhbhb,kfheqdxn).
+    description(nzjojpxp,kfheqdxn).
+    description(elfgkhds,kfheqdxn).
+    description(dolbzziq,kfheqdxn).
+    description(btfeltfa,kfheqdxn).
+    description(ubdffpri,kfheqdxn).
+    description(ijraevuy,kfheqdxn).
+    description(dihougks,euogblzm).
+    description(hxzlpokj,oydpoqte).
+    description(itvmelra,ioyglopp).
+    description(rrdewzyj,udtmcjmd).
+    description(zwleljwv,ggrcusvq).
+    description(hamlikne,qaezjzex).
+    description(jnqphlfj,seiqiyrf).
+    description(laqgxtop,totytqdd).
+    description(wfidqpgd,lenadxci).
+    description(htnatnez,vuvexhis).
+    description(rqyoqnwg,fxuxtkgb).
+    description(ezxostzj,rhixruco).
+    description(itpgjhyl,rfbbibfr).
+    description(xqbmscdj,sajdbojt).
+    description(ytlpqdjn,mrhrsexh).
+    description(dkhndhbp,zjqsgbxo).
+    description(xiftflne,qumwpccu).
+    description(hehzvzup,eczqdcfh).
+    description(sxhoanre,cphzqjqg).
+    description(uevsqctu,sxexhbly).
+    description(lmnnqovb,xupzgghj).
+    description(mhxewnum,ttkxbtdq).
+    description(rwuaeqyr,ttkxbtdq).
+    description(mpytorwv,ttkxbtdq).
+    description(okgrlfhb,ttkxbtdq).
+    description(ulzgqquj,liwixecm).
+    description(wpczdhuj,liwixecm).
+    description(zwnsejff,jibnbdjk).
+    description(znanhljt,jibnbdjk).
+    description(gbmlbpcu,arbwsgtu).
+    description(owifxibl,qjeipciy).
+    description(tilbkarz,crwsmrng).
+    description(vplvprym,oqqdmrah).
+    description(gdrljqqg,maekhllk).
+    description(hxxbrdeo,hqsrgoju).
+    description(kmdovhlj,fgjqykqh).
+    description(jfnoemxi,cmpplevj).
+    description(yoxqntqg,kfheqdxn).
+    description(xonxydnt,kfheqdxn).
+    description(bxquwyqp,kfheqdxn).
+    description(cavlrlko,kfheqdxn).
+    description(gxusqlmn,kfheqdxn).
+    description(fwfnldfi,kfheqdxn).
+    description(sbdbopqv,kfheqdxn).
+    description(nmswhwml,kfheqdxn).
+    description(ojlqbbol,kfheqdxn).
+    description(asyrclzv,kfheqdxn).
+    description(fytyhmwr,kfheqdxn).
+    description(yulaxxha,kfheqdxn).
+    description(biyiaygq,kfheqdxn).
+    description(ngtkvtin,kfheqdxn).
+    description(axjdgeqc,kfheqdxn).
+    description(swxlvhmx,kfheqdxn).
+    description(oggfrnkv,kfheqdxn).
+    description(hmjdoakq,kfheqdxn).
+    description(wlajanfh,kfheqdxn).
+    description(bbbxpwfg,kfheqdxn).
+    description(zdxtrdfp,kfheqdxn).
+    description(ayltkjma,kfheqdxn).
+    description(zcwbtvge,kfheqdxn).
+    description(kifoetqi,kfheqdxn).
+    description(xpjpokqa,kfheqdxn).
+    description(cndktbog,kfheqdxn).
+    description(majmasfw,kfheqdxn).
+    description(mkwyuiik,kfheqdxn).
+    description(ppyeghww,kfheqdxn).
+    description(ogmvfkqr,kfheqdxn).
+    description(prawflka,kfheqdxn).
+    description(abbxubyh,avueidae).
+    description(xmikqwtm,ahisahhk).
+    description(jbppglqo,huqzlpho).
+    description(xdwlzswr,qdhmcnho).
+    description(sihzmyxo,vqtgcfvu).
+    description(owrkleml,ohnvvkps).
+    description(ttkxvvno,tfamllzw).
+    description(niafwpct,txrijffa).
+    description(ddfgzkvd,pomethls).
+    description(avvreazu,irxypaat).
+    description(aktrvzaa,vebltirn).
+    description(cbnjerte,mnjwdfru).
+    description(kxadxtcj,dzovqrew).
+    description(ojtnfohr,podiryxl).
+    description(flqyyqjr,kfheqdxn).
+    description(iplwmahn,kfheqdxn).
+    description(xanjbuck,kfheqdxn).
+    description(amidxcom,dlhapuoy).
+    description(hguwhues,kfheqdxn).
+    description(psgmmiwr,kfheqdxn).
+    description(oedecjln,kfheqdxn).
+    description(igjfjodt,kfheqdxn).
+    description(sxjoekev,kfheqdxn).
+    description(kgmsogcc,kfheqdxn).
+    description(bzlwwppm,kfheqdxn).
+    description(zmrryjck,kfheqdxn).
+    description(cosmfbnr,kfheqdxn).
+    description(tiodmozj,kfheqdxn).
+    description(rjozzbal,kfheqdxn).
+    description(dezetszj,kfheqdxn).
+    description(upfmypdq,kfheqdxn).
+    description(toceyrrq,kfheqdxn).
+    description(pfmblsco,kfheqdxn).
+    description(debgsork,kfheqdxn).
+    description(frxpbzwk,kfheqdxn).
+    description(xpfofplu,kfheqdxn).
+    description(lwkgrzha,kfheqdxn).
+    description(rjinvynn,kfheqdxn).
+    description(ywhiqcwc,kfheqdxn).
+    description(kgnkzgtu,kfheqdxn).
+    description(cppmytel,kfheqdxn).
+    description(yqhhwlts,kfheqdxn).
+    description(wshgwkrh,kfheqdxn).
+    description(vjqsipov,kfheqdxn).
+    description(mjjelpbi,kfheqdxn).
+    description(ncofyryu,kfheqdxn).
+    description(vezjijaw,kfheqdxn).
+    description(ksiogrjl,kfheqdxn).
+    description(ikoxiiug,kfheqdxn).
+    description(jyvvdutr,kfheqdxn).
+    description(xvaihwjd,kfheqdxn).
+    description(ozbubsnf,kfheqdxn).
+    description(fsknyqfn,kfheqdxn).
+    description(xonxvdpr,kfheqdxn).
+    description(oocvrsjk,kfheqdxn).
+    description(eyrcqfoh,kfheqdxn).
+    description(qrtxomtm,kfheqdxn).
+    description(ljnkjpxo,kfheqdxn).
+    description(yywrjody,kfheqdxn).
+    description(japsvolv,kfheqdxn).
+    description(umwueebe,kfheqdxn).
+    description(ykzahyuu,kfheqdxn).
+    description(caphdqvf,kfheqdxn).
+    description(frzwymld,kfheqdxn).
+    description(zjkrfesp,kfheqdxn).
+    description(zdsfdgfj,kfheqdxn).
+    description(oaragtrs,xnhpnvxq).
+    description(wweugfoj,upafafha).
+    description(qvsfcgmi,vnaaforp).
+    description(qljsqybl,eofnndmv).
+    description(tjvwdkok,jaepzpir).
+    description(vbtwdrsj,gllwsnmk).
+    description(wblaensk,fcarohfe).
+    description(sacmbeps,pufympmo).
+    description(nieubfaz,sxularnv).
+    description(leekjifs,uqafqwsc).
+    description(gsxtnlfm,tkagntal).
+    description(xjjchzfg,roiiqhxh).
+    description(hnvugymg,hdmjxcnj).
+    description(edtkpedl,vjetowxh).
+    description(tjhmmurn,fyicizlt).
+    description(wxbncwhs,uvucdvlw).
+    description(cnhzbias,btdsfuly).
+    description(cpaihdfi,zknxlqnr).
+    description(uwftucfw,yqlulyzx).
+    description(rdwcexqj,ukpyefge).
+    description(ybovtlqf,ukpyefge).
+    description(ajwdkxbf,ukpyefge).
+    description(aryppvcs,vesiaqpm).
+    description(szarfopu,gwrvflix).
+    description(xljczzny,vesiaqpm).
+    description(jqaczlvb,gwrvflix).
+    description(wldeaqre,vesiaqpm).
+    description(glbsfqov,gwrvflix).
+    description(kvpnupaf,krcmbasj).
+    description(ovsbwxls,fdwicbpl).
+    description(npbgebko,rvzalpfr).
+    description(ghvhtlnr,xpgmkoww).
+    description(rlnuabxo,qrkavygl).
+    description(uvprwvac,nhodiysg).
+    description(fysomtiz,kfheqdxn).
+    description(uwhcaxod,jfinpgwi).
+    description(veybddmr,kfheqdxn).
+    description(cvtfyhff,kfheqdxn).
+    description(xksuabgi,kfheqdxn).
+    description(txyrcews,kfheqdxn).
+    description(wrsiycyf,kfheqdxn).
+    description(abbawjxx,kfheqdxn).
+    description(tbdlhsuv,kfheqdxn).
+    description(uupatnqn,kfheqdxn).
+    description(mmurhgna,kfheqdxn).
+    description(xsqyodky,kfheqdxn).
+    description(wzuvphoo,kfheqdxn).
+    description(iseraceg,qugxnmgx).
+    description(enttecuw,xllnowyy).
+    description(begnhmuy,plhtbiui).
+    description(fcionpyk,ztjrkxxo).
+    description(qzpgnmub,plhtbiui).
+    description(yoqvypob,plhtbiui).
+    description(fpnqkyav,aixkvqwf).
+    description(ssxhbsjr,kfheqdxn).
+    description(nvidyswp,fexxqqkb).
+    description(ybfimfpr,fexxqqkb).
+    description(ilwdolje,plhtbiui).
+    description(ifrcickk,vonuvgdk).
+    description(heiyhfbw,nldagcun).
+    description(ocqpmjcj,zlnajbcv).
+    description(tupdvozi,zlnajbcv).
+    description(yjltzrdw,wrgwuypl).
+    description(lmxarfgp,nldagcun).
+    description(dqxtjlvq,kfheqdxn).
+    description(vbafuutn,kfheqdxn).
+    description(xsjtdujw,nldagcun).
+    description(oomtyczq,bgeosxwk).
+    description(nwjwrlkl,yzkryedc).
+    description(dddpidxk,kfheqdxn).
+    description(injfgajy,kfheqdxn).
+    description(ybuocjtt,hraqptqw).
+    description(hajpsgzw,hraqptqw).
+    description(frntfgqu,hraqptqw).
+    description(glbsfqov,rpawjafd).
+    description(bvhucuqf,kfheqdxn).
+    description(elqaoxbj,kfheqdxn).
+    description(aytcynfb,kfheqdxn).
+    description(obrzujne,kfheqdxn).
+    description(awdgidqc,kfheqdxn).
+    description(dlobmldu,kfheqdxn).
+    description(gkajvqrn,kfheqdxn).
+    description(wxxpnqhd,kfheqdxn).
+    description(unhlobym,kfheqdxn).
+    description(tblsckgh,kfheqdxn).
+    description(jhyteiwh,kfheqdxn).
+    description(wigxnjus,kfheqdxn).
+    description(arpwhlzk,kfheqdxn).
+    description(oqkoegcn,kfheqdxn).
+    description(kecjabto,antfqpet).
+    description(wgqeonhr,antfqpet).
+    description(hqdroghn,kfheqdxn).
+    description(yjpllqsm,kfheqdxn).
+    description(gztqjvyl,kfheqdxn).
+    description(ekgifuxh,kfheqdxn).
+    description(ydscxzbq,kfheqdxn).
+    description(zevsmlow,qjhrxilj).
+    description(emnvpjnr,kfheqdxn).
+    description(pxhlkeod,kfheqdxn).
+    description(jnddyxzs,kfheqdxn).
+    description(aszqugrn,kfheqdxn).
+    description(heobnlal,kfheqdxn).
+    description(atdjyirq,kfheqdxn).
+    description(phvufcnp,kfheqdxn).
+    description(rlnuabxo,kfheqdxn).
+    description(akxykmap,kfheqdxn).
+    description(rmzsehhg,kfheqdxn).
+    description(bcqoefeh,kfheqdxn).
+    description(yntggtep,kfheqdxn).
+    description(zrzybbvg,kfheqdxn).
+    description(cqrgbrdq,kfheqdxn).
+    description(xlpurioo,kfheqdxn).
+    description(gkwizolm,kfheqdxn).
+    description(szdihrkj,kfheqdxn).
+    description(ybalbqxt,kfheqdxn).
+    description(fbpaxzen,kfheqdxn).
+    description(fmxcihux,kfheqdxn).
+    description(aktrvzaa,kfheqdxn).
+    description(eisgabhn,kfheqdxn).
+    description(kvqktiea,kfheqdxn).
+    description(ivgsqzhf,kfheqdxn).
+    description(tqhoxxva,kfheqdxn).
+    description(xpgytmnh,kfheqdxn).
+    description(yvtbpzqz,kfheqdxn).
+    description(rmwekmny,kfheqdxn).
+    description(lhfpqrak,kfheqdxn).
+    description(qmkfknnd,kfheqdxn).
+    description(cajpibzq,kfheqdxn).
+    description(yqhhwlts,kfheqdxn).
+    description(fzehahae,kfheqdxn).
+    description(fijdpckd,kfheqdxn).
+    description(fgenybjc,kfheqdxn).
+    description(iiewzgbb,kfheqdxn).
+    description(tucdtesn,kfheqdxn).
+    description(tfgideui,kfheqdxn).
+    description(azsyvssj,kfheqdxn).
+    description(hxocibru,kfheqdxn).
+    description(ikoxiiug,kfheqdxn).
+    description(qlylqkyt,kfheqdxn).
+    description(woepqykp,kfheqdxn).
+    description(nqnmndva,kfheqdxn).
+    description(vrolfbgn,kfheqdxn).
+    description(xtvaumms,kfheqdxn).
+    description(vyvycuxd,kfheqdxn).
+    description(kmtgurqv,dstuuuap).
+    description(zlxlxpsg,cqvlcmxr).
+    description(qinidrzi,qilxsmqm).
+    description(fwskrdhd,kfheqdxn).
+    description(vzipjhon,kfheqdxn).
+    description(rezgkqoo,tmeymnwe).
+    description(hliiewef,vhtjcmnh).
+    description(hroukusw,iwrndthn).
+    description(tplbtfon,jyuirvan).
+    description(mcyinzgc,bmcejxzd).
+    description(aaeaenkw,eavxhglj).
+    description(chvxyzoc,xhemfzre).
+    description(spjxqjcv,ypuoivkj).
+    description(svcpvtkk,lytwexdj).
+    description(rntfavoc,jvdnutrl).
+    description(hdvgnycn,kfheqdxn).
+    description(yhvxrmob,kfheqdxn).
+    description(laqniuss,kfheqdxn).
+    description(gdqkbmjc,kfheqdxn).
+    description(cgpechhh,kfheqdxn).
+    description(keazghnz,kfheqdxn).
+    description(rqvnobmc,kfheqdxn).
+    description(dbswgnao,kfheqdxn).
+    description(oexylypo,kfheqdxn).
+    description(fzgrkidm,kfheqdxn).
+    description(dtemoklk,kfheqdxn).
+    description(dagxrelu,kfheqdxn).
+    description(lzibeioi,kfheqdxn).
+    description(tzubnlsn,kfheqdxn).
+    description(gchrddtu,kfheqdxn).
+    description(szkhsxzf,kfheqdxn).
+    description(qivbjuty,kfheqdxn).
+    description(hetcanut,sdvzgbcq).
+    description(nbopghkw,swvfvmnd).
+    description(qwllobpy,wrvfmsld).
+    description(ymjwvdoy,epekzngu).
+    description(ofyugrmh,ghnjacgu).
+    description(vvoweseg,kfheqdxn).
+    description(vtldjmhd,kfheqdxn).
+    description(svyykolx,kfheqdxn).
+    description(yljspvad,kfheqdxn).
+    description(lgnvmabq,kfheqdxn).
+    description(ueoxfbwt,kfheqdxn).
+    description(uqpkpbgq,kfheqdxn).
+    description(miwqoprr,vzynglvq).
+    description(vzsgnyqq,fwwklfyq).
+    description(jxzcqlzj,yfdxwxaj).
+    description(wbfertth,kfheqdxn).
+    description(qzhozgsk,ilfsuxog).
+    description(xismlyuv,rdpqnaul).
+    description(syijwdqq,fwwklfyq).
+    description(ibsqfcic,ognyxfyk).
+    description(vqwjnejy,kfheqdxn).
+    description(bxibdfvq,kfheqdxn).
+    description(fikndaex,jmgovyxg).
+    description(wklgjqjw,hqjftjqa).
+    description(nnzswgut,uctlcoel).
+    description(raihpaeq,kfheqdxn).
+    description(merwduki,kfheqdxn).
+    description(btcnatgu,kfheqdxn).
+    description(ivrjyjmg,kfheqdxn).
+    description(krtsayey,fwwklfyq).
+    description(lxvowoav,vxvpuknd).
+    description(jnrfwwnh,kclibfxq).
+    description(feuonfzg,aligvlxk).
+    description(txttnpgi,gadzlgzj).
+    description(goazxoge,cjvchozt).
+    description(kfheqdxn,qywxwuru).
+    description(xvfqslvd,agvuugfs).
+    description(cqupthik,medbbnxk).
+    description(vabgvnzl,sldlcsmp).
+    description(gwztohyd,limuvrma).
+    description(vwuxugsu,pilkqxds).
+    description(cgmguexg,juitrnsd).
+    description(xmfpawxi,sqwvfvqq).
+    description(gaerxkfc,wupoympc).
+    description(kzurlmzf,uukvuabw).
+    description(kuyeabaa,dfaeakel).
+    description(oerhuqhv,ijlmmgzq).
+    description(fgcpkgfa,wrvfmsld).
+    description(lpmazmbq,cwrfzmip).
+    description(kelgcbkb,xcbysznb).
+    description(xkvsxsal,iuabhvrk).
+    description(teidmfwz,ejgqlxrc).
+    description(gycbxkkc,ebbbveaj).
+    description(aoheyisf,ebbbveaj).
+    description(rlvjptma,ypvsaclt).
+    description(bvyieayi,gsyhjofx).
+    description(dxinbwwz,ofnrzubu).
+    description(mkebkdwk,sfemrxsd).
+    description(jjqzkepr,cnqgoheu).
+    description(lngtknjs,uelpknnu).
+    description(cvusueyc,riofimmn).
+    description(kjhnhujf,bnpflfan).
+    description(oaoekapv,zxvwgltm).
+    description(hdugtjng,cjeqnpli).
+    description(uoevlwpb,mbyykbtb).
+    description(szfvqcvo,mszkbqcg).
+    description(lojyeilh,vpeveros).
+    description(ngvztvjl,xqwslmum).
+    description(yzhchdqr,vkprnflb).
+    description(jjymnmom,vkprnflb).
+    description(ssbahavu,vkprnflb).
+    description(xtycopld,vkprnflb).
+    description(lkvzmuwz,vkprnflb).
+    description(uankugsd,ypnhurun).
+    description(srotfiky,vkprnflb).
+    description(rriahkij,vdwpzuel).
+    description(nkmmucug,lzizhlwm).
+    description(buniorrz,vkprnflb).
+    description(ymcfypnv,vkprnflb).
+    description(rgjqdxbe,vkprnflb).
+    description(gujpebll,vkprnflb).
+    description(tpxfmsqr,ypnhurun).
+    description(csrzrorm,vkprnflb).
+    description(zpjohrgk,mgydvvvx).
+    description(hfpwuoyh,kfheqdxn).
+    description(ckprfpgu,kfheqdxn).
+    description(nqnmndva,kfheqdxn).
+    description(lahasimj,kfheqdxn).
+    description(vdgtoens,penzkudc).
+    description(eumitvzu,vgaqcrir).
+    description(tjnzuwpu,qbgbysdo).
+    description(otnetnza,wvcglkmv).
+    description(mkntddmw,upnmeiit).
+    description(xnhvucva,xlxpumzf).
+    description(pslvqyuj,qhclrxqq).
+    description(ejsklxdq,rfevxbgw).
+    description(xjhcnimv,rfevxbgw).
+    description(vpxmxren,kfheqdxn).
+    description(ujyndyid,kfheqdxn).
+    description(vwlfknmv,kfheqdxn).
+    description(xlyqlwgx,kfheqdxn).
+    description(xhbdcvqe,kfheqdxn).
+    description(nbhoeigg,kfheqdxn).
+    description(aatbbhzj,kfheqdxn).
+    description(ktxeefhg,kfheqdxn).
+    description(drgblisg,kfheqdxn).
+    description(hsinmzep,hxbzhtmu).
+    description(vsehnqmx,kfheqdxn).
+    description(tvyjdomh,kfheqdxn).
+    description(dfyjdxba,kfheqdxn).
+    description(euojlsdf,kfheqdxn).
+    description(rksdszmo,kfheqdxn).
+    description(abmgjxlv,kfheqdxn).
+    description(azlcjmjv,kfheqdxn).
+    description(jhlmkaxo,kfheqdxn).
+    description(iccccmoc,kfheqdxn).
+    description(vsfsrimf,rfevxbgw).
+    description(awoumepj,rfevxbgw).
+    description(mvmgoeim,rfevxbgw).
+    description(ayxggioe,rfevxbgw).
+    description(mrfocvsg,rfevxbgw).
+    description(kpkcaopm,rfevxbgw).
+    description(iizrmhhu,rfevxbgw).
+    description(zyhldrse,rfevxbgw).
+    description(hgjqicdm,rfevxbgw).
+    description(zurdmhsj,qhclrxqq).
+    description(pctrkxly,qhclrxqq).
+    description(eurzbncg,qhclrxqq).
+    description(cfizbres,kfheqdxn).
+    description(sxfrkpio,kfheqdxn).
+    description(uwwokwty,kfheqdxn).
+    description(mkovddgs,kfheqdxn).
+    description(gdasdcbv,kfheqdxn).
+    description(trrwbsig,wcxwyqtf).
+    description(iajerwse,wcxwyqtf).
+    description(hsnjoiad,wcxwyqtf).
+    description(oqidexuy,wcxwyqtf).
+    description(aiygfqmu,wcxwyqtf).
+    description(ggmdubrv,wcxwyqtf).
+    description(rvdhrgrm,wcxwyqtf).
+    description(xpmehnfy,fmihldbm).
+    description(bcqoefeh,kfheqdxn).
+    description(yarexhup,kfheqdxn).
+    description(wixddlsm,kfheqdxn).
+    description(hgdzkyhk,kfheqdxn).
+    description(vhlnheln,kfheqdxn).
+    description(djatuwaz,kfheqdxn).
+    description(dsqdysvr,kfheqdxn).
+    description(xsfxmanx,kfheqdxn).
+    description(opfrdwpu,quadbvfr).
+    description(spyibeol,koiokzzw).
+    description(vqiahgsh,vcpxzgbo).
+    description(ezrzjgmi,tsqfmdfb).
+    description(vplvprym,ylliahxx).
+    description(hmltwzfp,anmqosrr).
+    description(owrzltzk,qrogcbyv).
+    description(mnxvljmx,bvpsrgbd).
+    description(udzdrtqt,hrmqpsct).
+    description(ynqwpzss,girzepvv).
+    description(dlufryze,ocjxliai).
+    description(dfnztako,yluuopfb).
+    description(nazlbuey,lqaaxcrz).
+    description(nkhpgzzf,tuamiveq).
+    description(ohstlire,xcwutnbg).
+    description(yntggtep,zfpnsidf).
+    description(lrnpgbis,lcwfvkhn).
+    description(tsrhbkag,dwygmskt).
+    description(nksuxjib,oxbabejr).
+    description(ffvjnmcw,etlshqea).
+    description(eafqngxi,catklmvk).
+    description(blvgoaqu,ouooqidv).
+    description(fsknyqfn,sexixiya).
+    description(okrtzhfm,uabxbvzr).
+    description(rwezhced,hwjehzke).
+    description(oxnqizwo,kfheqdxn).
+    description(nhjyohni,kfheqdxn).
+    description(juyaqljh,kfheqdxn).
+    description(dythlgxa,kfheqdxn).
+    description(olfrucsq,kfheqdxn).
+    description(njmhubuf,pshmbxhp).
+    description(irvuffce,ouooqidv).
+    description(ykrshqty,wxwstgpv).
+    description(wikkmnjs,sexixiya).
+    description(ljekuysk,apwaabnp).
+    description(kbpxibnp,apwaabnp).
+    description(brhmfprq,atsbaxpx).
+    description(cnnxwhhd,zroejrvh).
+    description(dsmtrvar,psibyimg).
+    description(nhldfiej,whinfyaa).
+    description(liveermg,dimnmvci).
+    description(qqeisajc,idcvuxgu).
+    description(cxnkbuqu,sjalcrut).
+    description(wckptqxm,mvtpgdtn).
+    description(gljrouss,sbbzqqlb).
+    description(eqwrbuhs,xgvvqshy).
+    description(ahmlqoex,bfuhuucg).
+    description(nkinmmqf,mpnsnllb).
+    description(sbkqivyk,qlcqttbj).
+    description(ermxejxc,fgizokqs).
+    description(zznwdrpt,fnasusbn).
+    description(xwwpbwxa,zvfjvhum).
+    description(hoycewfo,sucvptwr).
+    description(mjbwghed,fqiyzlfu).
+    description(vbixpmbi,dfuvuptk).
+    description(erjomkcu,qyrxomwj).
+    description(xppwvmhg,caccdkpu).
+    description(irgjmreu,dnqkhkxe).
+    description(jfvqahod,nxulwezl).
+    description(hlqosxde,beugsits).
+    description(sbbhmfed,dpjlrsgv).
+    description(hcmctndr,pbfqphrv).
+    description(cpsnrjpo,opdsfqwk).
+    description(avfgxqul,dhhrbtup).
+    description(jqtgrrmw,mzxdxuif).
+    description(djdhpfvt,egafmnjy).
+    description(vkdivvga,ybfqjhon).
+    description(rhpitesw,flqgiemw).
+    description(pgkcflzx,uthovbom).
+    description(pjuwvybx,hyyraphp).
+    description(vjpbdupg,jiahvbhw).
+    description(nlrjomtk,xrepoghz).
+    description(mysaqucs,tlumisry).
+    description(bifzausm,oncktzka).
+    description(ppevqxtq,nmqtvbhe).
+    description(ksexkchh,tqtjcrlf).
+    description(buzdogwq,wrexvian).
+    description(kzivpile,oxhsqfjm).
+    description(ijcpnmcy,efknpibk).
+    description(pmchnxhi,dfcpwkpt).
+    description(ijzlkfwh,xcbexpjd).
+    description(pocqkkhp,fdrkgseq).
+    description(wfnjgxcb,hkjhvpct).
+    description(aldlxqvd,uriamuqn).
+    description(akzajhdf,jjqilbah).
+    description(utwtxayv,owmeqkbu).
+    description(arncshtk,vuhvkupi).
+    description(abmgjxlv,fidhrquv).
+    description(evcuveta,dxmyokkg).
+    description(vtbpiwtf,lbdiymiu).
+    description(qawuklos,jwbdtjnw).
+    description(vsvuzukk,hnzwakvi).
+    description(bbsjwxjz,teaclliu).
+    description(bbkksgew,ooegdutb).
+    description(dtnmidfw,fzhbawnn).
+    description(jcbchfos,gmrfxbsw).
+    description(dgjftgpj,civtqsgf).
+    description(zzmeiodk,ukzqaxac).
+    description(wqxtpnlw,gjmeqxtu).
+    description(wfoajnsq,fmtskada).
+    description(zzevgeex,kqcjztnw).
+    description(iveafahj,pgbaanjv).
+    description(zrylsaqb,rskfrupi).
+    description(jvvvujxi,jguysfsj).
+    description(gvqfrhhj,hbhjyhfe).
+    description(gtaxmhxv,hiawdfes).
+    description(fljtihoh,dmbnbdky).
+    description(bmgoxauh,sgrhvwdo).
+    description(qcwpljtt,ttmibdph).
+    description(bdywiilu,qoifcdyo).
+    description(xdihwrci,ucnmpenq).
+    description(evemoves,rkilihqi).
+    description(msiqcxjj,aiuqlehq).
+    description(vdnsnajo,whrntzkz).
+    description(fcuwqxfh,oxtyvrjr).
+    description(ejhamsdx,jwnieika).
+    description(aoewirqw,julmqbop).
+    description(mewklmjf,dzvmunuk).
+    description(kygqofzk,phccpqxk).
+    description(sjsstbws,tmxvhndo).
+    description(qmbhasxq,bmoslahz).
+    description(gotsaoep,ihidchxg).
+    description(utwmtoqf,bkudoaof).
+    description(uapepxrg,ztwqszmp).
+    description(wlubvued,qadqktvt).
+    description(pztxlptf,mcoyxink).
+    description(pbxnqnxp,fskcyfid).
+    description(jtjtkxli,wuazewvl).
+    description(thcborlh,ymfpdpau).
+    description(jhjwkqiy,zlphhych).
+    description(ykjwcajh,whucuofe).
+    description(lyyydpgq,jpatfgcf).
+    description(yoxqntqg,nxkrpddk).
+    description(uiouhnfr,sdhpijay).
+    description(baftnltd,kotgxcak).
+    description(rhobsamq,etdbksxn).
+    description(mzgqbzup,mikthkky).
+    description(nfwhxntp,owwqqloz).
+    description(nfaqeznv,ocigoapv).
+    description(twrkfpjx,mtcjvuys).
+    description(uxknkfhh,pueqrjfr).
+    description(wrkkthjs,vhhgysqr).
+    description(nrilkuxm,booztlow).
+    description(usuofele,rvxqizeq).
+    description(uouevaxu,zjnujqfg).
+    description(lfilbhyc,yfczglhf).
+    description(zjqgscov,ozuwekkq).
+    description(wrzbbyrw,kgpyvupd).
+    description(ounggbrs,mscwoivj).
+    description(jpafnjtm,uwxrlogp).
+    description(eecvoadm,ihbkqntd).
+    description(qjchhila,hsuncsre).
+    description(arysosun,phiclxub).
+    description(vvgaxqet,cxybahoa).
+    description(gciplmrt,tlnfakak).
+    description(zshovcdk,rqtayrfk).
+    description(dcllmoqp,wkbpdrwy).
+    description(vrolfbgn,ktuxtegt).
+    description(eqboqynm,pxgisymu).
+    description(myoholit,oobxvqwm).
+    description(yxvmosry,aiufyhqh).
+    description(eidpxhqr,gfhphkdb).
+    description(mnwcebcl,dlwowcwa).
+    description(blnakqyx,wtfsteeu).
+    description(upvvwhuz,gwqdirbf).
+    description(anwaxuqr,gfwkpujm).
+    description(xnsisnfg,vtwyljji).
+    description(njafjcdf,fwhfocuu).
+    description(wbbtejye,vlghqfhj).
+    description(kzutjjnk,qppcaciv).
+    description(tzoohojq,zbtsyefk).
+    description(tvckqrew,cklaqvzm).
+    description(bzjpzkkz,rilhykac).
+    description(dcescesq,ujjaziuo).
+    description(dkrdwcmv,wtinuyql).
+    description(jtdpnrvg,qazbldqw).
+    description(jnfjcabd,yvmizgxh).
+    description(snxvpeau,zopmgwdh).
+    description(mtomxvby,mzepcdut).
+    description(yblcgqnz,tqwtxvwd).
+    description(oipiiekb,tbkksxrg).
+    description(argpjpps,etxvldht).
+    description(sbbsqxss,vqwoctfb).
+    description(gyahefjr,saasfube).
+    description(lsqwffos,kkezlfmf).
+    description(ekivtgav,wbkqldis).
+    description(nmtwcnmj,mezsjjke).
+    description(cdjjalcq,eqigriqv).
+    description(putlishw,maxotsvo).
+    description(wavvhpfa,nrgyfwjx).
+    description(jqtuvfdt,rmydhsee).
+    description(qitzgvvz,vesbpnxs).
+    description(zdxdsebi,vmpgntyr).
+    description(omxgmsoo,jwkmfpvj).
+    description(taxpcmmr,lkilmgtf).
+    description(nevsolpb,bejbwqsy).
+    description(tnrlhlhn,oajuspxf).
+    description(ntunrqeg,mlrjeeje).
+    description(mmsisawq,mdpedzyi).
+    description(brehvahh,qcokqnqz).
+    description(duhvtvgi,fmtskada).
+    description(ajsbzvex,sqmhfvgg).
+    description(xihlckfu,fpwawygf).
+    description(twyhymkg,bwvayybj).
+    description(shsqlraa,vsaerhuy).
+    description(ipbgfouk,beheyynz).
+    description(kwvprupn,uofxmbvk).
+    description(hsitamyz,plottkoq).
+    description(kdmjedzd,alvnqmkq).
+    description(lrjbsjqo,hghgkntp).
+    description(dftfbahe,bqpwvkus).
+    description(ihoefkag,kfheqdxn).
+    description(aalhbmkx,tlzbgvyt).
+    description(tassmaxk,vbohivug).
+    description(wyqmfbhh,ionvkjgh).
+    description(cmvzmrwo,kfheqdxn).
+    description(yzbjnnsg,kfheqdxn).
+    description(hpryvlga,kfheqdxn).
+    description(hxxbrdeo,kfheqdxn).
+    description(nbbeabnq,kfheqdxn).
+    description(vezjijaw,kfheqdxn).
+    description(qngplagn,kfheqdxn).
+    description(owzfvjfk,kfheqdxn).
+    description(switfhve,kfheqdxn).
+    description(hxocibru,kfheqdxn).
+    description(dtgwcjqv,kfheqdxn).
 
-priceRange(4,1).
-priceRange(5,1).
-priceRange(14,2).
-priceRange(15,1).
-
-priceRange(20,3).
-priceRange(23,1).
-priceRange(24,3).
-
-fullAddress(1,elkgnltp).
-fullAddress(2,autpqcog).
-fullAddress(4,dauxlkec).
-fullAddress(5,wtneuvan).
-fullAddress(14,gsgzhnco).
-fullAddress(15,avruixtu).
-fullAddress(16,wqjsxipb).
-fullAddress(20,kucbuchl).
-fullAddress(23,qderkdtr).
-fullAddress(24,abxrttzr).
-
-zipcode(1,bbvltflp).
-zipcode(2,euqzmpyx).
-zipcode(4,vlbhkipn).
-zipcode(5,vlbhkipn).
-zipcode(14,bbvltflp).
-zipcode(15,euqzmpyx).
-zipcode(16,ffrghyfc).
-zipcode(20,vlbhkipn).
-zipcode(23,ypcxxhqq).
-zipcode(24,bbvltflp).
-
-hasFoodCategory(1,ydgrcaxx).
-hasFoodCategory(1,ydgrcaxx).
-hasFoodCategory(1,ydgrcaxx).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,tjsbfdlb).
-hasFoodCategory(1,tjsbfdlb).
-hasFoodCategory(1,vmynpqdj).
-hasFoodCategory(1,moklfdsc).
-hasFoodCategory(1,moklfdsc).
-hasFoodCategory(1,onpahegy).
-hasFoodCategory(1,onpahegy).
-hasFoodCategory(1,xlvjogtb).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,iidscufg).
-hasFoodCategory(1,iidscufg).
-hasFoodCategory(1,iidscufg).
-hasFoodCategory(1,flzufqiu).
-hasFoodCategory(1,dlmarohb).
-hasFoodCategory(1,ydgrcaxx).
-hasFoodCategory(1,ydgrcaxx).
-hasFoodCategory(1,ydgrcaxx).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,nzdgtqbo).
-hasFoodCategory(1,tjsbfdlb).
-hasFoodCategory(1,tjsbfdlb).
-hasFoodCategory(1,vmynpqdj).
-hasFoodCategory(1,moklfdsc).
-hasFoodCategory(1,moklfdsc).
-hasFoodCategory(1,onpahegy).
-hasFoodCategory(1,onpahegy).
-hasFoodCategory(1,xlvjogtb).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,onsjxlnr).
-hasFoodCategory(1,iidscufg).
-hasFoodCategory(1,iidscufg).
-hasFoodCategory(1,iidscufg).
-hasFoodCategory(1,flzufqiu).
-hasFoodCategory(1,dlmarohb).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,evfghufy).
-hasFoodCategory(2,evfghufy).
-hasFoodCategory(2,evfghufy).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,xkzcvext).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,cbilfzcy).
-hasFoodCategory(2,evfghufy).
-hasFoodCategory(2,evfghufy).
-hasFoodCategory(2,evfghufy).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,jbtiseet).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,xrsjfzgy).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,ywnieaen).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,gchgefrv).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eybdoxlx).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,eslnvjue).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,foukgbls).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,iuwygtzn).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(2,yduqrbnh).
-hasFoodCategory(3,afnlienn).
-hasFoodCategory(3,afnlienn).
-hasFoodCategory(3,nhmhjcaq).
-hasFoodCategory(3,xlvjogtb).
-hasFoodCategory(3,xlvjogtb).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,afnlienn).
-hasFoodCategory(3,afnlienn).
-hasFoodCategory(3,nhmhjcaq).
-hasFoodCategory(3,xlvjogtb).
-hasFoodCategory(3,xlvjogtb).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(3,znkweirv).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,xkzcvext).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,jbjzajbo).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,wmhqovtu).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,yeydvadl).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,syljbbhn).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,xqlvvvmb).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(4,rzkzzptq).
-hasFoodCategory(5,xkzcvext).
-hasFoodCategory(5,xkzcvext).
-hasFoodCategory(5,ekwueian).
-hasFoodCategory(5,ekwueian).
-hasFoodCategory(5,xkzcvext).
-hasFoodCategory(5,xkzcvext).
-hasFoodCategory(5,ekwueian).
-hasFoodCategory(5,ekwueian).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,ccojujbt).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,adeoaaxm).
-hasFoodCategory(20,ccojujbt).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,czpqkrsj).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,bvgsvtht).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,rgholllx).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(20,onsjxlnr).
-hasFoodCategory(23,xkzcvext).
-hasFoodCategory(23,xkzcvext).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,vwtaqxvd).
-hasFoodCategory(23,vwtaqxvd).
-hasFoodCategory(23,jznkxzud).
-hasFoodCategory(23,jznkxzud).
-hasFoodCategory(23,jznkxzud).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,xkzcvext).
-hasFoodCategory(23,xkzcvext).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,yxudrbrs).
-hasFoodCategory(23,vwtaqxvd).
-hasFoodCategory(23,vwtaqxvd).
-hasFoodCategory(23,jznkxzud).
-hasFoodCategory(23,jznkxzud).
-hasFoodCategory(23,jznkxzud).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,qaphrepe).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,ufcaened).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,eflnlpdu).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(23,bpusuqzk).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,zduxsojk).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,xkzcvext).
-hasFoodCategory(24,zduxsojk).
-
-categoryHasItem(ydgrcaxx,agtujvnh).
-categoryHasItem(ydgrcaxx,gaqvsphs).
-categoryHasItem(ydgrcaxx,mhswceig).
-categoryHasItem(nzdgtqbo,jrpmtiuo).
-categoryHasItem(nzdgtqbo,hhcbpnyk).
-categoryHasItem(nzdgtqbo,vekkhnna).
-categoryHasItem(nzdgtqbo,kertodfh).
-categoryHasItem(tjsbfdlb,ojdbwrnl).
-categoryHasItem(tjsbfdlb,xicpfzmk).
-categoryHasItem(vmynpqdj,mbpdljnt).
-categoryHasItem(moklfdsc,pnyzrver).
-categoryHasItem(moklfdsc,xalffohh).
-categoryHasItem(onpahegy,shsfkewg).
-categoryHasItem(onpahegy,ovvocceu).
-categoryHasItem(xlvjogtb,bcqylwcn).
-categoryHasItem(onsjxlnr,sufngthl).
-categoryHasItem(onsjxlnr,tdkgynyx).
-categoryHasItem(onsjxlnr,gscrcxle).
-categoryHasItem(onsjxlnr,ctqwqotl).
-categoryHasItem(iidscufg,fhkjcuix).
-categoryHasItem(iidscufg,xrjvodfv).
-categoryHasItem(iidscufg,ndsbtrnu).
-categoryHasItem(flzufqiu,bhldydul).
-categoryHasItem(dlmarohb,soacgjye).
-categoryHasItem(ydgrcaxx,agtujvnh).
-categoryHasItem(ydgrcaxx,gaqvsphs).
-categoryHasItem(ydgrcaxx,mhswceig).
-categoryHasItem(nzdgtqbo,jrpmtiuo).
-categoryHasItem(nzdgtqbo,hhcbpnyk).
-categoryHasItem(nzdgtqbo,vekkhnna).
-categoryHasItem(nzdgtqbo,kertodfh).
-categoryHasItem(tjsbfdlb,ojdbwrnl).
-categoryHasItem(tjsbfdlb,xicpfzmk).
-categoryHasItem(vmynpqdj,mbpdljnt).
-categoryHasItem(moklfdsc,pnyzrver).
-categoryHasItem(moklfdsc,xalffohh).
-categoryHasItem(onpahegy,shsfkewg).
-categoryHasItem(onpahegy,ovvocceu).
-categoryHasItem(xlvjogtb,bcqylwcn).
-categoryHasItem(onsjxlnr,sufngthl).
-categoryHasItem(onsjxlnr,tdkgynyx).
-categoryHasItem(onsjxlnr,gscrcxle).
-categoryHasItem(onsjxlnr,ctqwqotl).
-categoryHasItem(iidscufg,fhkjcuix).
-categoryHasItem(iidscufg,xrjvodfv).
-categoryHasItem(iidscufg,ndsbtrnu).
-categoryHasItem(flzufqiu,bhldydul).
-categoryHasItem(dlmarohb,soacgjye).
-categoryHasItem(xkzcvext,ndtuyfxd).
-categoryHasItem(xkzcvext,hhdwvuya).
-categoryHasItem(xkzcvext,mqdvtmsr).
-categoryHasItem(xkzcvext,udpirazf).
-categoryHasItem(xkzcvext,ewnamoly).
-categoryHasItem(cbilfzcy,kgygdgyz).
-categoryHasItem(cbilfzcy,mfqfjpyc).
-categoryHasItem(cbilfzcy,ndtuyfxd).
-categoryHasItem(cbilfzcy,jsfdibyu).
-categoryHasItem(cbilfzcy,jrijpolr).
-categoryHasItem(cbilfzcy,ewnamoly).
-categoryHasItem(cbilfzcy,qoekvqrm).
-categoryHasItem(cbilfzcy,grqzxvnx).
-categoryHasItem(cbilfzcy,qxsqylcr).
-categoryHasItem(cbilfzcy,lfdhance).
-categoryHasItem(cbilfzcy,zogvxojf).
-categoryHasItem(cbilfzcy,bwtkvyvg).
-categoryHasItem(evfghufy,zyderedh).
-categoryHasItem(evfghufy,ckryfdat).
-categoryHasItem(evfghufy,rtyttxtq).
-categoryHasItem(jbtiseet,fezengow).
-categoryHasItem(jbtiseet,xycbqwqs).
-categoryHasItem(jbtiseet,ggohelni).
-categoryHasItem(jbtiseet,pghoarts).
-categoryHasItem(xrsjfzgy,hdxvyfkw).
-categoryHasItem(xrsjfzgy,bdnxvwdt).
-categoryHasItem(xrsjfzgy,sneilvbm).
-categoryHasItem(xrsjfzgy,vekujcyb).
-categoryHasItem(xrsjfzgy,vbqvpudj).
-categoryHasItem(xrsjfzgy,detlyzpn).
-categoryHasItem(xrsjfzgy,pixhfgwy).
-categoryHasItem(xrsjfzgy,tucdtesn).
-categoryHasItem(ywnieaen,zjivagfc).
-categoryHasItem(ywnieaen,pocdgqpx).
-categoryHasItem(ywnieaen,julxgomt).
-categoryHasItem(ywnieaen,rdnwkxse).
-categoryHasItem(gchgefrv,uhrleups).
-categoryHasItem(gchgefrv,teshunzg).
-categoryHasItem(gchgefrv,dpvjjobh).
-categoryHasItem(gchgefrv,mqdvtmsr).
-categoryHasItem(gchgefrv,vnzcbgoj).
-categoryHasItem(gchgefrv,fpfvwopw).
-categoryHasItem(gchgefrv,nimlmhqj).
-categoryHasItem(eybdoxlx,syaeyiqt).
-categoryHasItem(eybdoxlx,bgbpevgj).
-categoryHasItem(eybdoxlx,skpuidoc).
-categoryHasItem(eybdoxlx,wzzxbqbi).
-categoryHasItem(eybdoxlx,eiywblcq).
-categoryHasItem(eybdoxlx,npqincrv).
-categoryHasItem(eybdoxlx,hughxwlz).
-categoryHasItem(eybdoxlx,ejxoeepm).
-categoryHasItem(eybdoxlx,rifdtdti).
-categoryHasItem(eybdoxlx,swxadfgj).
-categoryHasItem(eybdoxlx,uzwfrjpb).
-categoryHasItem(eslnvjue,mzhujdjk).
-categoryHasItem(eslnvjue,szxladpz).
-categoryHasItem(eslnvjue,ydmtzkvi).
-categoryHasItem(eslnvjue,omdaviio).
-categoryHasItem(eslnvjue,gqkfjjqp).
-categoryHasItem(eslnvjue,jmgqkrcc).
-categoryHasItem(eslnvjue,gdtteork).
-categoryHasItem(eslnvjue,qysqwclu).
-categoryHasItem(eslnvjue,nnayldat).
-categoryHasItem(eslnvjue,egxmrjoq).
-categoryHasItem(eslnvjue,xwijkzsh).
-categoryHasItem(eslnvjue,qpxaphka).
-categoryHasItem(eslnvjue,oujiwsvg).
-categoryHasItem(foukgbls,peafczyl).
-categoryHasItem(foukgbls,gecokluf).
-categoryHasItem(foukgbls,dmnidguz).
-categoryHasItem(foukgbls,klrnhmbp).
-categoryHasItem(foukgbls,ljplrkoo).
-categoryHasItem(foukgbls,dqitlkrq).
-categoryHasItem(foukgbls,sqdiepsj).
-categoryHasItem(foukgbls,uejttnhe).
-categoryHasItem(foukgbls,ejvssbwo).
-categoryHasItem(foukgbls,jcsmtvdy).
-categoryHasItem(foukgbls,onadfnqq).
-categoryHasItem(foukgbls,tlkfzane).
-categoryHasItem(foukgbls,kpjqiitr).
-categoryHasItem(foukgbls,nxhiyvvj).
-categoryHasItem(foukgbls,nfoucwhf).
-categoryHasItem(foukgbls,gmukkfzm).
-categoryHasItem(iuwygtzn,gkdoenjp).
-categoryHasItem(iuwygtzn,cxrjzjmu).
-categoryHasItem(iuwygtzn,qabbqlhh).
-categoryHasItem(iuwygtzn,engwmpan).
-categoryHasItem(iuwygtzn,cqwihloe).
-categoryHasItem(iuwygtzn,cduxrhkx).
-categoryHasItem(iuwygtzn,aewfsyjk).
-categoryHasItem(iuwygtzn,jzhvnjbv).
-categoryHasItem(iuwygtzn,hhdwvuya).
-categoryHasItem(iuwygtzn,vdtjgejf).
-categoryHasItem(iuwygtzn,hnrbehjn).
-categoryHasItem(iuwygtzn,lzcyiycz).
-categoryHasItem(iuwygtzn,jbqdfvrn).
-categoryHasItem(iuwygtzn,ribbwtoq).
-categoryHasItem(iuwygtzn,bcaaqxbw).
-categoryHasItem(yduqrbnh,zaamhdky).
-categoryHasItem(yduqrbnh,lwktbvjq).
-categoryHasItem(yduqrbnh,tmcojnai).
-categoryHasItem(yduqrbnh,avrsesbh).
-categoryHasItem(yduqrbnh,jnuylowp).
-categoryHasItem(yduqrbnh,ceunovse).
-categoryHasItem(yduqrbnh,ajbksafr).
-categoryHasItem(yduqrbnh,zpemfycz).
-categoryHasItem(yduqrbnh,tzfqvihp).
-categoryHasItem(yduqrbnh,nboepgqc).
-categoryHasItem(yduqrbnh,nvdiccpx).
-categoryHasItem(yduqrbnh,udpirazf).
-categoryHasItem(yduqrbnh,seolwlcy).
-categoryHasItem(yduqrbnh,mcpwbwig).
-categoryHasItem(yduqrbnh,rusyftca).
-categoryHasItem(yduqrbnh,hpqvqpou).
-categoryHasItem(yduqrbnh,fshmajsj).
-categoryHasItem(yduqrbnh,bgptcqit).
-categoryHasItem(yduqrbnh,byqzsjaj).
-categoryHasItem(xkzcvext,ndtuyfxd).
-categoryHasItem(xkzcvext,hhdwvuya).
-categoryHasItem(xkzcvext,mqdvtmsr).
-categoryHasItem(xkzcvext,udpirazf).
-categoryHasItem(xkzcvext,ewnamoly).
-categoryHasItem(cbilfzcy,kgygdgyz).
-categoryHasItem(cbilfzcy,mfqfjpyc).
-categoryHasItem(cbilfzcy,ndtuyfxd).
-categoryHasItem(cbilfzcy,jsfdibyu).
-categoryHasItem(cbilfzcy,jrijpolr).
-categoryHasItem(cbilfzcy,ewnamoly).
-categoryHasItem(cbilfzcy,qoekvqrm).
-categoryHasItem(cbilfzcy,grqzxvnx).
-categoryHasItem(cbilfzcy,qxsqylcr).
-categoryHasItem(cbilfzcy,lfdhance).
-categoryHasItem(cbilfzcy,zogvxojf).
-categoryHasItem(cbilfzcy,bwtkvyvg).
-categoryHasItem(evfghufy,zyderedh).
-categoryHasItem(evfghufy,ckryfdat).
-categoryHasItem(evfghufy,rtyttxtq).
-categoryHasItem(jbtiseet,fezengow).
-categoryHasItem(jbtiseet,xycbqwqs).
-categoryHasItem(jbtiseet,ggohelni).
-categoryHasItem(jbtiseet,pghoarts).
-categoryHasItem(xrsjfzgy,hdxvyfkw).
-categoryHasItem(xrsjfzgy,bdnxvwdt).
-categoryHasItem(xrsjfzgy,sneilvbm).
-categoryHasItem(xrsjfzgy,vekujcyb).
-categoryHasItem(xrsjfzgy,vbqvpudj).
-categoryHasItem(xrsjfzgy,detlyzpn).
-categoryHasItem(xrsjfzgy,pixhfgwy).
-categoryHasItem(xrsjfzgy,tucdtesn).
-categoryHasItem(ywnieaen,zjivagfc).
-categoryHasItem(ywnieaen,pocdgqpx).
-categoryHasItem(ywnieaen,julxgomt).
-categoryHasItem(ywnieaen,rdnwkxse).
-categoryHasItem(gchgefrv,uhrleups).
-categoryHasItem(gchgefrv,teshunzg).
-categoryHasItem(gchgefrv,dpvjjobh).
-categoryHasItem(gchgefrv,mqdvtmsr).
-categoryHasItem(gchgefrv,vnzcbgoj).
-categoryHasItem(gchgefrv,fpfvwopw).
-categoryHasItem(gchgefrv,nimlmhqj).
-categoryHasItem(eybdoxlx,syaeyiqt).
-categoryHasItem(eybdoxlx,bgbpevgj).
-categoryHasItem(eybdoxlx,skpuidoc).
-categoryHasItem(eybdoxlx,wzzxbqbi).
-categoryHasItem(eybdoxlx,eiywblcq).
-categoryHasItem(eybdoxlx,npqincrv).
-categoryHasItem(eybdoxlx,hughxwlz).
-categoryHasItem(eybdoxlx,ejxoeepm).
-categoryHasItem(eybdoxlx,rifdtdti).
-categoryHasItem(eybdoxlx,swxadfgj).
-categoryHasItem(eybdoxlx,uzwfrjpb).
-categoryHasItem(eslnvjue,mzhujdjk).
-categoryHasItem(eslnvjue,szxladpz).
-categoryHasItem(eslnvjue,ydmtzkvi).
-categoryHasItem(eslnvjue,omdaviio).
-categoryHasItem(eslnvjue,gqkfjjqp).
-categoryHasItem(eslnvjue,jmgqkrcc).
-categoryHasItem(eslnvjue,gdtteork).
-categoryHasItem(eslnvjue,qysqwclu).
-categoryHasItem(eslnvjue,nnayldat).
-categoryHasItem(eslnvjue,egxmrjoq).
-categoryHasItem(eslnvjue,xwijkzsh).
-categoryHasItem(eslnvjue,qpxaphka).
-categoryHasItem(eslnvjue,oujiwsvg).
-categoryHasItem(foukgbls,peafczyl).
-categoryHasItem(foukgbls,gecokluf).
-categoryHasItem(foukgbls,dmnidguz).
-categoryHasItem(foukgbls,klrnhmbp).
-categoryHasItem(foukgbls,ljplrkoo).
-categoryHasItem(foukgbls,dqitlkrq).
-categoryHasItem(foukgbls,sqdiepsj).
-categoryHasItem(foukgbls,uejttnhe).
-categoryHasItem(foukgbls,ejvssbwo).
-categoryHasItem(foukgbls,jcsmtvdy).
-categoryHasItem(foukgbls,onadfnqq).
-categoryHasItem(foukgbls,tlkfzane).
-categoryHasItem(foukgbls,kpjqiitr).
-categoryHasItem(foukgbls,nxhiyvvj).
-categoryHasItem(foukgbls,nfoucwhf).
-categoryHasItem(foukgbls,gmukkfzm).
-categoryHasItem(iuwygtzn,gkdoenjp).
-categoryHasItem(iuwygtzn,cxrjzjmu).
-categoryHasItem(iuwygtzn,qabbqlhh).
-categoryHasItem(iuwygtzn,engwmpan).
-categoryHasItem(iuwygtzn,cqwihloe).
-categoryHasItem(iuwygtzn,cduxrhkx).
-categoryHasItem(iuwygtzn,aewfsyjk).
-categoryHasItem(iuwygtzn,jzhvnjbv).
-categoryHasItem(iuwygtzn,hhdwvuya).
-categoryHasItem(iuwygtzn,vdtjgejf).
-categoryHasItem(iuwygtzn,hnrbehjn).
-categoryHasItem(iuwygtzn,lzcyiycz).
-categoryHasItem(iuwygtzn,jbqdfvrn).
-categoryHasItem(iuwygtzn,ribbwtoq).
-categoryHasItem(iuwygtzn,bcaaqxbw).
-categoryHasItem(yduqrbnh,zaamhdky).
-categoryHasItem(yduqrbnh,lwktbvjq).
-categoryHasItem(yduqrbnh,tmcojnai).
-categoryHasItem(yduqrbnh,avrsesbh).
-categoryHasItem(yduqrbnh,jnuylowp).
-categoryHasItem(yduqrbnh,ceunovse).
-categoryHasItem(yduqrbnh,ajbksafr).
-categoryHasItem(yduqrbnh,zpemfycz).
-categoryHasItem(yduqrbnh,tzfqvihp).
-categoryHasItem(yduqrbnh,nboepgqc).
-categoryHasItem(yduqrbnh,nvdiccpx).
-categoryHasItem(yduqrbnh,udpirazf).
-categoryHasItem(yduqrbnh,seolwlcy).
-categoryHasItem(yduqrbnh,mcpwbwig).
-categoryHasItem(yduqrbnh,rusyftca).
-categoryHasItem(yduqrbnh,hpqvqpou).
-categoryHasItem(yduqrbnh,fshmajsj).
-categoryHasItem(yduqrbnh,bgptcqit).
-categoryHasItem(yduqrbnh,byqzsjaj).
-categoryHasItem(afnlienn,pfwpinrc).
-categoryHasItem(afnlienn,cjqmyglb).
-categoryHasItem(nhmhjcaq,rfustlek).
-categoryHasItem(xlvjogtb,dtgwcjqv).
-categoryHasItem(xlvjogtb,ozbubsnf).
-categoryHasItem(znkweirv,nwqlrizb).
-categoryHasItem(znkweirv,xbwsusbf).
-categoryHasItem(znkweirv,dkfeufbh).
-categoryHasItem(znkweirv,smvcmohg).
-categoryHasItem(znkweirv,hpuxyyjh).
-categoryHasItem(znkweirv,vluxpnrd).
-categoryHasItem(afnlienn,pfwpinrc).
-categoryHasItem(afnlienn,cjqmyglb).
-categoryHasItem(nhmhjcaq,rfustlek).
-categoryHasItem(xlvjogtb,dtgwcjqv).
-categoryHasItem(xlvjogtb,ozbubsnf).
-categoryHasItem(znkweirv,nwqlrizb).
-categoryHasItem(znkweirv,xbwsusbf).
-categoryHasItem(znkweirv,dkfeufbh).
-categoryHasItem(znkweirv,smvcmohg).
-categoryHasItem(znkweirv,hpuxyyjh).
-categoryHasItem(znkweirv,vluxpnrd).
-categoryHasItem(xkzcvext,irlrtnzb).
-categoryHasItem(xkzcvext,fimkhlxt).
-categoryHasItem(xkzcvext,piakseab).
-categoryHasItem(xkzcvext,xuoqvgim).
-categoryHasItem(xkzcvext,xofyxgmc).
-categoryHasItem(jbjzajbo,kqolrgkx).
-categoryHasItem(jbjzajbo,fovmpjqt).
-categoryHasItem(jbjzajbo,mnwgmogq).
-categoryHasItem(jbjzajbo,cflzxmun).
-categoryHasItem(jbjzajbo,qdmrhuqc).
-categoryHasItem(jbjzajbo,mnlrsdmy).
-categoryHasItem(wmhqovtu,zrympsyv).
-categoryHasItem(wmhqovtu,sfrwtzvw).
-categoryHasItem(wmhqovtu,hnextklx).
-categoryHasItem(wmhqovtu,ekmbbmug).
-categoryHasItem(wmhqovtu,wyscfyzg).
-categoryHasItem(wmhqovtu,ytdoszfx).
-categoryHasItem(wmhqovtu,fyokvcda).
-categoryHasItem(yeydvadl,xofyxgmc).
-categoryHasItem(yeydvadl,gdaasvgg).
-categoryHasItem(yeydvadl,ntxheika).
-categoryHasItem(yeydvadl,nyjlyoul).
-categoryHasItem(yeydvadl,mqfexupf).
-categoryHasItem(syljbbhn,ngklfnwi).
-categoryHasItem(syljbbhn,rnewugrg).
-categoryHasItem(syljbbhn,qujymaaz).
-categoryHasItem(syljbbhn,elcajzut).
-categoryHasItem(syljbbhn,cdcwgahh).
-categoryHasItem(xqlvvvmb,kyguzjwg).
-categoryHasItem(xqlvvvmb,irlrtnzb).
-categoryHasItem(xqlvvvmb,kcilomsn).
-categoryHasItem(xqlvvvmb,fimkhlxt).
-categoryHasItem(xqlvvvmb,katbjhhv).
-categoryHasItem(xqlvvvmb,jxjuyyiy).
-categoryHasItem(rzkzzptq,ktqfblxt).
-categoryHasItem(rzkzzptq,xuoqvgim).
-categoryHasItem(rzkzzptq,nsufqczt).
-categoryHasItem(rzkzzptq,qpjraqwn).
-categoryHasItem(rzkzzptq,gbngnwth).
-categoryHasItem(rzkzzptq,piakseab).
-categoryHasItem(xkzcvext,irlrtnzb).
-categoryHasItem(xkzcvext,fimkhlxt).
-categoryHasItem(xkzcvext,piakseab).
-categoryHasItem(xkzcvext,xuoqvgim).
-categoryHasItem(xkzcvext,xofyxgmc).
-categoryHasItem(jbjzajbo,kqolrgkx).
-categoryHasItem(jbjzajbo,fovmpjqt).
-categoryHasItem(jbjzajbo,mnwgmogq).
-categoryHasItem(jbjzajbo,cflzxmun).
-categoryHasItem(jbjzajbo,qdmrhuqc).
-categoryHasItem(jbjzajbo,mnlrsdmy).
-categoryHasItem(wmhqovtu,zrympsyv).
-categoryHasItem(wmhqovtu,sfrwtzvw).
-categoryHasItem(wmhqovtu,hnextklx).
-categoryHasItem(wmhqovtu,ekmbbmug).
-categoryHasItem(wmhqovtu,wyscfyzg).
-categoryHasItem(wmhqovtu,ytdoszfx).
-categoryHasItem(wmhqovtu,fyokvcda).
-categoryHasItem(yeydvadl,xofyxgmc).
-categoryHasItem(yeydvadl,gdaasvgg).
-categoryHasItem(yeydvadl,ntxheika).
-categoryHasItem(yeydvadl,nyjlyoul).
-categoryHasItem(yeydvadl,mqfexupf).
-categoryHasItem(syljbbhn,ngklfnwi).
-categoryHasItem(syljbbhn,rnewugrg).
-categoryHasItem(syljbbhn,qujymaaz).
-categoryHasItem(syljbbhn,elcajzut).
-categoryHasItem(syljbbhn,cdcwgahh).
-categoryHasItem(xqlvvvmb,kyguzjwg).
-categoryHasItem(xqlvvvmb,irlrtnzb).
-categoryHasItem(xqlvvvmb,kcilomsn).
-categoryHasItem(xqlvvvmb,fimkhlxt).
-categoryHasItem(xqlvvvmb,katbjhhv).
-categoryHasItem(xqlvvvmb,jxjuyyiy).
-categoryHasItem(rzkzzptq,ktqfblxt).
-categoryHasItem(rzkzzptq,xuoqvgim).
-categoryHasItem(rzkzzptq,nsufqczt).
-categoryHasItem(rzkzzptq,qpjraqwn).
-categoryHasItem(rzkzzptq,gbngnwth).
-categoryHasItem(rzkzzptq,piakseab).
-categoryHasItem(xkzcvext,ibcgmdas).
-
-categoryHasItem(ekwueian,fatcigwp).
-categoryHasItem(xkzcvext,ibcgmdas).
-
-categoryHasItem(ekwueian,fatcigwp).
-
-
-
-categoryHasItem(adeoaaxm,jhibsope).
-categoryHasItem(adeoaaxm,ezeurdkp).
-categoryHasItem(adeoaaxm,moqryotc).
-categoryHasItem(adeoaaxm,vunkpdol).
-categoryHasItem(ccojujbt,nemmfotc).
-categoryHasItem(czpqkrsj,avagecln).
-categoryHasItem(czpqkrsj,kaxbxyso).
-categoryHasItem(czpqkrsj,iyzhuttm).
-categoryHasItem(czpqkrsj,ksrnwmto).
-categoryHasItem(czpqkrsj,rqmtgklb).
-categoryHasItem(bvgsvtht,ezxdzhsg).
-categoryHasItem(bvgsvtht,mowbpnsr).
-categoryHasItem(bvgsvtht,zjqjiazf).
-categoryHasItem(bvgsvtht,uxontugg).
-categoryHasItem(bvgsvtht,zrmdedqy).
-categoryHasItem(rgholllx,tfgideui).
-categoryHasItem(rgholllx,tucdtesn).
-categoryHasItem(rgholllx,cajpibzq).
-categoryHasItem(rgholllx,yqhhwlts).
-categoryHasItem(rgholllx,ruqjsxmo).
-categoryHasItem(rgholllx,iiewzgbb).
-categoryHasItem(rgholllx,azsyvssj).
-categoryHasItem(rgholllx,hhhwcxfw).
-categoryHasItem(rgholllx,ivfhqzbj).
-categoryHasItem(rgholllx,awbqhmjo).
-categoryHasItem(rgholllx,jecoljyk).
-categoryHasItem(rgholllx,lahasimj).
-categoryHasItem(onsjxlnr,peetqevh).
-categoryHasItem(onsjxlnr,lnjhtnxx).
-categoryHasItem(onsjxlnr,wyefpnve).
-categoryHasItem(onsjxlnr,wduqzoik).
-categoryHasItem(onsjxlnr,ezoaxlrs).
-categoryHasItem(onsjxlnr,qbdcrbss).
-categoryHasItem(onsjxlnr,ndwhskvh).
-categoryHasItem(onsjxlnr,injiwwtd).
-categoryHasItem(adeoaaxm,jhibsope).
-categoryHasItem(adeoaaxm,ezeurdkp).
-categoryHasItem(adeoaaxm,moqryotc).
-categoryHasItem(adeoaaxm,vunkpdol).
-categoryHasItem(ccojujbt,nemmfotc).
-categoryHasItem(czpqkrsj,avagecln).
-categoryHasItem(czpqkrsj,kaxbxyso).
-categoryHasItem(czpqkrsj,iyzhuttm).
-categoryHasItem(czpqkrsj,ksrnwmto).
-categoryHasItem(czpqkrsj,rqmtgklb).
-categoryHasItem(bvgsvtht,ezxdzhsg).
-categoryHasItem(bvgsvtht,mowbpnsr).
-categoryHasItem(bvgsvtht,zjqjiazf).
-categoryHasItem(bvgsvtht,uxontugg).
-categoryHasItem(bvgsvtht,zrmdedqy).
-categoryHasItem(rgholllx,tfgideui).
-categoryHasItem(rgholllx,tucdtesn).
-categoryHasItem(rgholllx,cajpibzq).
-categoryHasItem(rgholllx,yqhhwlts).
-categoryHasItem(rgholllx,ruqjsxmo).
-categoryHasItem(rgholllx,iiewzgbb).
-categoryHasItem(rgholllx,azsyvssj).
-categoryHasItem(rgholllx,hhhwcxfw).
-categoryHasItem(rgholllx,ivfhqzbj).
-categoryHasItem(rgholllx,awbqhmjo).
-categoryHasItem(rgholllx,jecoljyk).
-categoryHasItem(rgholllx,lahasimj).
-categoryHasItem(onsjxlnr,peetqevh).
-categoryHasItem(onsjxlnr,lnjhtnxx).
-categoryHasItem(onsjxlnr,wyefpnve).
-categoryHasItem(onsjxlnr,wduqzoik).
-categoryHasItem(onsjxlnr,ezoaxlrs).
-categoryHasItem(onsjxlnr,qbdcrbss).
-categoryHasItem(onsjxlnr,ndwhskvh).
-categoryHasItem(onsjxlnr,injiwwtd).
-categoryHasItem(xkzcvext,ygmtxijy).
-categoryHasItem(xkzcvext,dtfhopij).
-categoryHasItem(yxudrbrs,civwxjoi).
-categoryHasItem(yxudrbrs,jvazasan).
-categoryHasItem(yxudrbrs,xrlealxo).
-categoryHasItem(yxudrbrs,xjansupd).
-categoryHasItem(yxudrbrs,nikzmyaa).
-categoryHasItem(yxudrbrs,vihgolia).
-categoryHasItem(vwtaqxvd,pmkldmmd).
-categoryHasItem(vwtaqxvd,kojrmsby).
-categoryHasItem(jznkxzud,fglzlvnd).
-categoryHasItem(jznkxzud,zbtwsbhe).
-categoryHasItem(jznkxzud,rrkktuao).
-categoryHasItem(qaphrepe,gtquzzhf).
-categoryHasItem(qaphrepe,nptosbfc).
-categoryHasItem(qaphrepe,qdwyxtwa).
-categoryHasItem(qaphrepe,addccfxc).
-categoryHasItem(ufcaened,ebboohyl).
-categoryHasItem(ufcaened,okvhdhkh).
-categoryHasItem(ufcaened,yppiovmk).
-categoryHasItem(ufcaened,jskdbvjg).
-categoryHasItem(ufcaened,jxxssorf).
-categoryHasItem(ufcaened,zunvkvxb).
-categoryHasItem(ufcaened,rzcgndeb).
-categoryHasItem(eflnlpdu,vogdcwoo).
-categoryHasItem(eflnlpdu,mqcedrup).
-categoryHasItem(eflnlpdu,telecprm).
-categoryHasItem(eflnlpdu,jprwznhh).
-categoryHasItem(eflnlpdu,newrskog).
-categoryHasItem(eflnlpdu,pyvudheb).
-categoryHasItem(bpusuqzk,haepxtgs).
-categoryHasItem(bpusuqzk,agfhqbue).
-categoryHasItem(bpusuqzk,bsbrlajn).
-categoryHasItem(bpusuqzk,aahoirxj).
-categoryHasItem(xkzcvext,ygmtxijy).
-categoryHasItem(xkzcvext,dtfhopij).
-categoryHasItem(yxudrbrs,civwxjoi).
-categoryHasItem(yxudrbrs,jvazasan).
-categoryHasItem(yxudrbrs,xrlealxo).
-categoryHasItem(yxudrbrs,xjansupd).
-categoryHasItem(yxudrbrs,nikzmyaa).
-categoryHasItem(yxudrbrs,vihgolia).
-categoryHasItem(vwtaqxvd,pmkldmmd).
-categoryHasItem(vwtaqxvd,kojrmsby).
-categoryHasItem(jznkxzud,fglzlvnd).
-categoryHasItem(jznkxzud,zbtwsbhe).
-categoryHasItem(jznkxzud,rrkktuao).
-categoryHasItem(qaphrepe,gtquzzhf).
-categoryHasItem(qaphrepe,nptosbfc).
-categoryHasItem(qaphrepe,qdwyxtwa).
-categoryHasItem(qaphrepe,addccfxc).
-categoryHasItem(ufcaened,ebboohyl).
-categoryHasItem(ufcaened,okvhdhkh).
-categoryHasItem(ufcaened,yppiovmk).
-categoryHasItem(ufcaened,jskdbvjg).
-categoryHasItem(ufcaened,jxxssorf).
-categoryHasItem(ufcaened,zunvkvxb).
-categoryHasItem(ufcaened,rzcgndeb).
-categoryHasItem(eflnlpdu,vogdcwoo).
-categoryHasItem(eflnlpdu,mqcedrup).
-categoryHasItem(eflnlpdu,telecprm).
-categoryHasItem(eflnlpdu,jprwznhh).
-categoryHasItem(eflnlpdu,newrskog).
-categoryHasItem(eflnlpdu,pyvudheb).
-categoryHasItem(bpusuqzk,haepxtgs).
-categoryHasItem(bpusuqzk,agfhqbue).
-categoryHasItem(bpusuqzk,bsbrlajn).
-categoryHasItem(bpusuqzk,aahoirxj).
-categoryHasItem(xkzcvext,ebrjkfyq).
-categoryHasItem(xkzcvext,ihmgfiir).
-categoryHasItem(xkzcvext,actcdqty).
-categoryHasItem(xkzcvext,mdrinytm).
-categoryHasItem(xkzcvext,igujkimr).
-categoryHasItem(zduxsojk,xujrnvyh).
-categoryHasItem(xkzcvext,ebrjkfyq).
-categoryHasItem(xkzcvext,ihmgfiir).
-categoryHasItem(xkzcvext,actcdqty).
-categoryHasItem(xkzcvext,mdrinytm).
-categoryHasItem(xkzcvext,igujkimr).
-categoryHasItem(zduxsojk,xujrnvyh).
-
-hasItem(1,agtujvnh).
-hasItem(1,gaqvsphs).
-hasItem(1,mhswceig).
-hasItem(1,jrpmtiuo).
-hasItem(1,hhcbpnyk).
-hasItem(1,vekkhnna).
-hasItem(1,kertodfh).
-hasItem(1,ojdbwrnl).
-hasItem(1,xicpfzmk).
-hasItem(1,mbpdljnt).
-hasItem(1,pnyzrver).
-hasItem(1,xalffohh).
-hasItem(1,shsfkewg).
-hasItem(1,ovvocceu).
-hasItem(1,bcqylwcn).
-hasItem(1,sufngthl).
-hasItem(1,tdkgynyx).
-hasItem(1,gscrcxle).
-hasItem(1,ctqwqotl).
-hasItem(1,fhkjcuix).
-hasItem(1,xrjvodfv).
-hasItem(1,ndsbtrnu).
-hasItem(1,bhldydul).
-hasItem(1,soacgjye).
-hasItem(1,agtujvnh).
-hasItem(1,gaqvsphs).
-hasItem(1,mhswceig).
-hasItem(1,jrpmtiuo).
-hasItem(1,hhcbpnyk).
-hasItem(1,vekkhnna).
-hasItem(1,kertodfh).
-hasItem(1,ojdbwrnl).
-hasItem(1,xicpfzmk).
-hasItem(1,mbpdljnt).
-hasItem(1,pnyzrver).
-hasItem(1,xalffohh).
-hasItem(1,shsfkewg).
-hasItem(1,ovvocceu).
-hasItem(1,bcqylwcn).
-hasItem(1,sufngthl).
-hasItem(1,tdkgynyx).
-hasItem(1,gscrcxle).
-hasItem(1,ctqwqotl).
-hasItem(1,fhkjcuix).
-hasItem(1,xrjvodfv).
-hasItem(1,ndsbtrnu).
-hasItem(1,bhldydul).
-hasItem(1,soacgjye).
-hasItem(2,ndtuyfxd).
-hasItem(2,hhdwvuya).
-hasItem(2,mqdvtmsr).
-hasItem(2,udpirazf).
-hasItem(2,ewnamoly).
-hasItem(2,kgygdgyz).
-hasItem(2,mfqfjpyc).
-hasItem(2,ndtuyfxd).
-hasItem(2,jsfdibyu).
-hasItem(2,jrijpolr).
-hasItem(2,ewnamoly).
-hasItem(2,qoekvqrm).
-hasItem(2,grqzxvnx).
-hasItem(2,qxsqylcr).
-hasItem(2,lfdhance).
-hasItem(2,zogvxojf).
-hasItem(2,bwtkvyvg).
-hasItem(2,zyderedh).
-hasItem(2,ckryfdat).
-hasItem(2,rtyttxtq).
-hasItem(2,fezengow).
-hasItem(2,xycbqwqs).
-hasItem(2,ggohelni).
-hasItem(2,pghoarts).
-hasItem(2,hdxvyfkw).
-hasItem(2,bdnxvwdt).
-hasItem(2,sneilvbm).
-hasItem(2,vekujcyb).
-hasItem(2,vbqvpudj).
-hasItem(2,detlyzpn).
-hasItem(2,pixhfgwy).
-hasItem(2,tucdtesn).
-hasItem(2,zjivagfc).
-hasItem(2,pocdgqpx).
-hasItem(2,julxgomt).
-hasItem(2,rdnwkxse).
-hasItem(2,uhrleups).
-hasItem(2,teshunzg).
-hasItem(2,dpvjjobh).
-hasItem(2,mqdvtmsr).
-hasItem(2,vnzcbgoj).
-hasItem(2,fpfvwopw).
-hasItem(2,nimlmhqj).
-hasItem(2,syaeyiqt).
-hasItem(2,bgbpevgj).
-hasItem(2,skpuidoc).
-hasItem(2,wzzxbqbi).
-hasItem(2,eiywblcq).
-hasItem(2,npqincrv).
-hasItem(2,hughxwlz).
-hasItem(2,ejxoeepm).
-hasItem(2,rifdtdti).
-hasItem(2,swxadfgj).
-hasItem(2,uzwfrjpb).
-hasItem(2,mzhujdjk).
-hasItem(2,szxladpz).
-hasItem(2,ydmtzkvi).
-hasItem(2,omdaviio).
-hasItem(2,gqkfjjqp).
-hasItem(2,jmgqkrcc).
-hasItem(2,gdtteork).
-hasItem(2,qysqwclu).
-hasItem(2,nnayldat).
-hasItem(2,egxmrjoq).
-hasItem(2,xwijkzsh).
-hasItem(2,qpxaphka).
-hasItem(2,oujiwsvg).
-hasItem(2,peafczyl).
-hasItem(2,gecokluf).
-hasItem(2,dmnidguz).
-hasItem(2,klrnhmbp).
-hasItem(2,ljplrkoo).
-hasItem(2,dqitlkrq).
-hasItem(2,sqdiepsj).
-hasItem(2,uejttnhe).
-hasItem(2,ejvssbwo).
-hasItem(2,jcsmtvdy).
-hasItem(2,onadfnqq).
-hasItem(2,tlkfzane).
-hasItem(2,kpjqiitr).
-hasItem(2,nxhiyvvj).
-hasItem(2,nfoucwhf).
-hasItem(2,gmukkfzm).
-hasItem(2,gkdoenjp).
-hasItem(2,cxrjzjmu).
-hasItem(2,qabbqlhh).
-hasItem(2,engwmpan).
-hasItem(2,cqwihloe).
-hasItem(2,cduxrhkx).
-hasItem(2,aewfsyjk).
-hasItem(2,jzhvnjbv).
-hasItem(2,hhdwvuya).
-hasItem(2,vdtjgejf).
-hasItem(2,hnrbehjn).
-hasItem(2,lzcyiycz).
-hasItem(2,jbqdfvrn).
-hasItem(2,ribbwtoq).
-hasItem(2,bcaaqxbw).
-hasItem(2,zaamhdky).
-hasItem(2,lwktbvjq).
-hasItem(2,tmcojnai).
-hasItem(2,avrsesbh).
-hasItem(2,jnuylowp).
-hasItem(2,ceunovse).
-hasItem(2,ajbksafr).
-hasItem(2,zpemfycz).
-hasItem(2,tzfqvihp).
-hasItem(2,nboepgqc).
-hasItem(2,nvdiccpx).
-hasItem(2,udpirazf).
-hasItem(2,seolwlcy).
-hasItem(2,mcpwbwig).
-hasItem(2,rusyftca).
-hasItem(2,hpqvqpou).
-hasItem(2,fshmajsj).
-hasItem(2,bgptcqit).
-hasItem(2,byqzsjaj).
-hasItem(2,ndtuyfxd).
-hasItem(2,hhdwvuya).
-hasItem(2,mqdvtmsr).
-hasItem(2,udpirazf).
-hasItem(2,ewnamoly).
-hasItem(2,kgygdgyz).
-hasItem(2,mfqfjpyc).
-hasItem(2,ndtuyfxd).
-hasItem(2,jsfdibyu).
-hasItem(2,jrijpolr).
-hasItem(2,ewnamoly).
-hasItem(2,qoekvqrm).
-hasItem(2,grqzxvnx).
-hasItem(2,qxsqylcr).
-hasItem(2,lfdhance).
-hasItem(2,zogvxojf).
-hasItem(2,bwtkvyvg).
-hasItem(2,zyderedh).
-hasItem(2,ckryfdat).
-hasItem(2,rtyttxtq).
-hasItem(2,fezengow).
-hasItem(2,xycbqwqs).
-hasItem(2,ggohelni).
-hasItem(2,pghoarts).
-hasItem(2,hdxvyfkw).
-hasItem(2,bdnxvwdt).
-hasItem(2,sneilvbm).
-hasItem(2,vekujcyb).
-hasItem(2,vbqvpudj).
-hasItem(2,detlyzpn).
-hasItem(2,pixhfgwy).
-hasItem(2,tucdtesn).
-hasItem(2,zjivagfc).
-hasItem(2,pocdgqpx).
-hasItem(2,julxgomt).
-hasItem(2,rdnwkxse).
-hasItem(2,uhrleups).
-hasItem(2,teshunzg).
-hasItem(2,dpvjjobh).
-hasItem(2,mqdvtmsr).
-hasItem(2,vnzcbgoj).
-hasItem(2,fpfvwopw).
-hasItem(2,nimlmhqj).
-hasItem(2,syaeyiqt).
-hasItem(2,bgbpevgj).
-hasItem(2,skpuidoc).
-hasItem(2,wzzxbqbi).
-hasItem(2,eiywblcq).
-hasItem(2,npqincrv).
-hasItem(2,hughxwlz).
-hasItem(2,ejxoeepm).
-hasItem(2,rifdtdti).
-hasItem(2,swxadfgj).
-hasItem(2,uzwfrjpb).
-hasItem(2,mzhujdjk).
-hasItem(2,szxladpz).
-hasItem(2,ydmtzkvi).
-hasItem(2,omdaviio).
-hasItem(2,gqkfjjqp).
-hasItem(2,jmgqkrcc).
-hasItem(2,gdtteork).
-hasItem(2,qysqwclu).
-hasItem(2,nnayldat).
-hasItem(2,egxmrjoq).
-hasItem(2,xwijkzsh).
-hasItem(2,qpxaphka).
-hasItem(2,oujiwsvg).
-hasItem(2,peafczyl).
-hasItem(2,gecokluf).
-hasItem(2,dmnidguz).
-hasItem(2,klrnhmbp).
-hasItem(2,ljplrkoo).
-hasItem(2,dqitlkrq).
-hasItem(2,sqdiepsj).
-hasItem(2,uejttnhe).
-hasItem(2,ejvssbwo).
-hasItem(2,jcsmtvdy).
-hasItem(2,onadfnqq).
-hasItem(2,tlkfzane).
-hasItem(2,kpjqiitr).
-hasItem(2,nxhiyvvj).
-hasItem(2,nfoucwhf).
-hasItem(2,gmukkfzm).
-hasItem(2,gkdoenjp).
-hasItem(2,cxrjzjmu).
-hasItem(2,qabbqlhh).
-hasItem(2,engwmpan).
-hasItem(2,cqwihloe).
-hasItem(2,cduxrhkx).
-hasItem(2,aewfsyjk).
-hasItem(2,jzhvnjbv).
-hasItem(2,hhdwvuya).
-hasItem(2,vdtjgejf).
-hasItem(2,hnrbehjn).
-hasItem(2,lzcyiycz).
-hasItem(2,jbqdfvrn).
-hasItem(2,ribbwtoq).
-hasItem(2,bcaaqxbw).
-hasItem(2,zaamhdky).
-hasItem(2,lwktbvjq).
-hasItem(2,tmcojnai).
-hasItem(2,avrsesbh).
-hasItem(2,jnuylowp).
-hasItem(2,ceunovse).
-hasItem(2,ajbksafr).
-hasItem(2,zpemfycz).
-hasItem(2,tzfqvihp).
-hasItem(2,nboepgqc).
-hasItem(2,nvdiccpx).
-hasItem(2,udpirazf).
-hasItem(2,seolwlcy).
-hasItem(2,mcpwbwig).
-hasItem(2,rusyftca).
-hasItem(2,hpqvqpou).
-hasItem(2,fshmajsj).
-hasItem(2,bgptcqit).
-hasItem(2,byqzsjaj).
-hasItem(3,pfwpinrc).
-hasItem(3,cjqmyglb).
-hasItem(3,rfustlek).
-hasItem(3,dtgwcjqv).
-hasItem(3,ozbubsnf).
-hasItem(3,nwqlrizb).
-hasItem(3,xbwsusbf).
-hasItem(3,dkfeufbh).
-hasItem(3,smvcmohg).
-hasItem(3,hpuxyyjh).
-hasItem(3,vluxpnrd).
-hasItem(3,pfwpinrc).
-hasItem(3,cjqmyglb).
-hasItem(3,rfustlek).
-hasItem(3,dtgwcjqv).
-hasItem(3,ozbubsnf).
-hasItem(3,nwqlrizb).
-hasItem(3,xbwsusbf).
-hasItem(3,dkfeufbh).
-hasItem(3,smvcmohg).
-hasItem(3,hpuxyyjh).
-hasItem(3,vluxpnrd).
-hasItem(4,irlrtnzb).
-hasItem(4,fimkhlxt).
-hasItem(4,piakseab).
-hasItem(4,xuoqvgim).
-hasItem(4,xofyxgmc).
-hasItem(4,kqolrgkx).
-hasItem(4,fovmpjqt).
-hasItem(4,mnwgmogq).
-hasItem(4,cflzxmun).
-hasItem(4,qdmrhuqc).
-hasItem(4,mnlrsdmy).
-hasItem(4,zrympsyv).
-hasItem(4,sfrwtzvw).
-hasItem(4,hnextklx).
-hasItem(4,ekmbbmug).
-hasItem(4,wyscfyzg).
-hasItem(4,ytdoszfx).
-hasItem(4,fyokvcda).
-hasItem(4,xofyxgmc).
-hasItem(4,gdaasvgg).
-hasItem(4,ntxheika).
-hasItem(4,nyjlyoul).
-hasItem(4,mqfexupf).
-hasItem(4,ngklfnwi).
-hasItem(4,rnewugrg).
-hasItem(4,qujymaaz).
-hasItem(4,elcajzut).
-hasItem(4,cdcwgahh).
-hasItem(4,kyguzjwg).
-hasItem(4,irlrtnzb).
-hasItem(4,kcilomsn).
-hasItem(4,fimkhlxt).
-hasItem(4,katbjhhv).
-hasItem(4,jxjuyyiy).
-hasItem(4,ktqfblxt).
-hasItem(4,xuoqvgim).
-hasItem(4,nsufqczt).
-hasItem(4,qpjraqwn).
-hasItem(4,gbngnwth).
-hasItem(4,piakseab).
-hasItem(4,irlrtnzb).
-hasItem(4,fimkhlxt).
-hasItem(4,piakseab).
-hasItem(4,xuoqvgim).
-hasItem(4,xofyxgmc).
-hasItem(4,kqolrgkx).
-hasItem(4,fovmpjqt).
-hasItem(4,mnwgmogq).
-hasItem(4,cflzxmun).
-hasItem(4,qdmrhuqc).
-hasItem(4,mnlrsdmy).
-hasItem(4,zrympsyv).
-hasItem(4,sfrwtzvw).
-hasItem(4,hnextklx).
-hasItem(4,ekmbbmug).
-hasItem(4,wyscfyzg).
-hasItem(4,ytdoszfx).
-hasItem(4,fyokvcda).
-hasItem(4,xofyxgmc).
-hasItem(4,gdaasvgg).
-hasItem(4,ntxheika).
-hasItem(4,nyjlyoul).
-hasItem(4,mqfexupf).
-hasItem(4,ngklfnwi).
-hasItem(4,rnewugrg).
-hasItem(4,qujymaaz).
-hasItem(4,elcajzut).
-hasItem(4,cdcwgahh).
-hasItem(4,kyguzjwg).
-hasItem(4,irlrtnzb).
-hasItem(4,kcilomsn).
-hasItem(4,fimkhlxt).
-hasItem(4,katbjhhv).
-hasItem(4,jxjuyyiy).
-hasItem(4,ktqfblxt).
-hasItem(4,xuoqvgim).
-hasItem(4,nsufqczt).
-hasItem(4,qpjraqwn).
-hasItem(4,gbngnwth).
-hasItem(4,piakseab).
-hasItem(5,ibcgmdas).
-hasItem(5,fatcigwp).
-hasItem(5,ibcgmdas).
-hasItem(5,fatcigwp).
-
-hasItem(20,jhibsope).
-hasItem(20,ezeurdkp).
-hasItem(20,moqryotc).
-hasItem(20,vunkpdol).
-hasItem(20,nemmfotc).
-hasItem(20,avagecln).
-hasItem(20,kaxbxyso).
-hasItem(20,iyzhuttm).
-hasItem(20,ksrnwmto).
-hasItem(20,rqmtgklb).
-hasItem(20,ezxdzhsg).
-hasItem(20,mowbpnsr).
-hasItem(20,zjqjiazf).
-hasItem(20,uxontugg).
-hasItem(20,zrmdedqy).
-hasItem(20,tfgideui).
-hasItem(20,tucdtesn).
-hasItem(20,cajpibzq).
-hasItem(20,yqhhwlts).
-hasItem(20,ruqjsxmo).
-hasItem(20,iiewzgbb).
-hasItem(20,azsyvssj).
-hasItem(20,hhhwcxfw).
-hasItem(20,ivfhqzbj).
-hasItem(20,awbqhmjo).
-hasItem(20,jecoljyk).
-hasItem(20,lahasimj).
-hasItem(20,peetqevh).
-hasItem(20,lnjhtnxx).
-hasItem(20,wyefpnve).
-hasItem(20,wduqzoik).
-hasItem(20,ezoaxlrs).
-hasItem(20,qbdcrbss).
-hasItem(20,ndwhskvh).
-hasItem(20,injiwwtd).
-hasItem(20,jhibsope).
-hasItem(20,ezeurdkp).
-hasItem(20,moqryotc).
-hasItem(20,vunkpdol).
-hasItem(20,nemmfotc).
-hasItem(20,avagecln).
-hasItem(20,kaxbxyso).
-hasItem(20,iyzhuttm).
-hasItem(20,ksrnwmto).
-hasItem(20,rqmtgklb).
-hasItem(20,ezxdzhsg).
-hasItem(20,mowbpnsr).
-hasItem(20,zjqjiazf).
-hasItem(20,uxontugg).
-hasItem(20,zrmdedqy).
-hasItem(20,tfgideui).
-hasItem(20,tucdtesn).
-hasItem(20,cajpibzq).
-hasItem(20,yqhhwlts).
-hasItem(20,ruqjsxmo).
-hasItem(20,iiewzgbb).
-hasItem(20,azsyvssj).
-hasItem(20,hhhwcxfw).
-hasItem(20,ivfhqzbj).
-hasItem(20,awbqhmjo).
-hasItem(20,jecoljyk).
-hasItem(20,lahasimj).
-hasItem(20,peetqevh).
-hasItem(20,lnjhtnxx).
-hasItem(20,wyefpnve).
-hasItem(20,wduqzoik).
-hasItem(20,ezoaxlrs).
-hasItem(20,qbdcrbss).
-hasItem(20,ndwhskvh).
-hasItem(20,injiwwtd).
-hasItem(23,ygmtxijy).
-hasItem(23,dtfhopij).
-hasItem(23,civwxjoi).
-hasItem(23,jvazasan).
-hasItem(23,xrlealxo).
-hasItem(23,xjansupd).
-hasItem(23,nikzmyaa).
-hasItem(23,vihgolia).
-hasItem(23,pmkldmmd).
-hasItem(23,kojrmsby).
-hasItem(23,fglzlvnd).
-hasItem(23,zbtwsbhe).
-hasItem(23,rrkktuao).
-hasItem(23,gtquzzhf).
-hasItem(23,nptosbfc).
-hasItem(23,qdwyxtwa).
-hasItem(23,addccfxc).
-hasItem(23,ebboohyl).
-hasItem(23,okvhdhkh).
-hasItem(23,yppiovmk).
-hasItem(23,jskdbvjg).
-hasItem(23,jxxssorf).
-hasItem(23,zunvkvxb).
-hasItem(23,rzcgndeb).
-hasItem(23,vogdcwoo).
-hasItem(23,mqcedrup).
-hasItem(23,telecprm).
-hasItem(23,jprwznhh).
-hasItem(23,newrskog).
-hasItem(23,pyvudheb).
-hasItem(23,haepxtgs).
-hasItem(23,agfhqbue).
-hasItem(23,bsbrlajn).
-hasItem(23,aahoirxj).
-hasItem(23,ygmtxijy).
-hasItem(23,dtfhopij).
-hasItem(23,civwxjoi).
-hasItem(23,jvazasan).
-hasItem(23,xrlealxo).
-hasItem(23,xjansupd).
-hasItem(23,nikzmyaa).
-hasItem(23,vihgolia).
-hasItem(23,pmkldmmd).
-hasItem(23,kojrmsby).
-hasItem(23,fglzlvnd).
-hasItem(23,zbtwsbhe).
-hasItem(23,rrkktuao).
-hasItem(23,gtquzzhf).
-hasItem(23,nptosbfc).
-hasItem(23,qdwyxtwa).
-hasItem(23,addccfxc).
-hasItem(23,ebboohyl).
-hasItem(23,okvhdhkh).
-hasItem(23,yppiovmk).
-hasItem(23,jskdbvjg).
-hasItem(23,jxxssorf).
-hasItem(23,zunvkvxb).
-hasItem(23,rzcgndeb).
-hasItem(23,vogdcwoo).
-hasItem(23,mqcedrup).
-hasItem(23,telecprm).
-hasItem(23,jprwznhh).
-hasItem(23,newrskog).
-hasItem(23,pyvudheb).
-hasItem(23,haepxtgs).
-hasItem(23,agfhqbue).
-hasItem(23,bsbrlajn).
-hasItem(23,aahoirxj).
-hasItem(24,ebrjkfyq).
-hasItem(24,ihmgfiir).
-hasItem(24,actcdqty).
-hasItem(24,mdrinytm).
-hasItem(24,igujkimr).
-hasItem(24,xujrnvyh).
-hasItem(24,ebrjkfyq).
-hasItem(24,ihmgfiir).
-hasItem(24,actcdqty).
-hasItem(24,mdrinytm).
-hasItem(24,igujkimr).
-hasItem(24,xujrnvyh).
-
-price(agtujvnh,17).
-price(gaqvsphs,21).
-price(mhswceig,11).
-price(jrpmtiuo,9).
-price(hhcbpnyk,7).
-price(vekkhnna,11).
-price(kertodfh,4).
-price(ojdbwrnl,9).
-price(xicpfzmk,8).
-price(mbpdljnt,7).
-price(pnyzrver,70).
-price(xalffohh,100).
-price(shsfkewg,21).
-price(ovvocceu,17).
-price(bcqylwcn,2).
-price(sufngthl,3).
-price(tdkgynyx,7).
-price(gscrcxle,10).
-price(ctqwqotl,2).
-price(fhkjcuix,3).
-price(xrjvodfv,7).
-price(ndsbtrnu,10).
-price(bhldydul,4).
-price(soacgjye,4).
-price(agtujvnh,17).
-price(gaqvsphs,21).
-price(mhswceig,11).
-price(jrpmtiuo,9).
-price(hhcbpnyk,7).
-price(vekkhnna,11).
-price(kertodfh,4).
-price(ojdbwrnl,9).
-price(xicpfzmk,8).
-price(mbpdljnt,7).
-price(pnyzrver,70).
-price(xalffohh,100).
-price(shsfkewg,21).
-price(ovvocceu,17).
-price(bcqylwcn,2).
-price(sufngthl,3).
-price(tdkgynyx,7).
-price(gscrcxle,10).
-price(ctqwqotl,2).
-price(fhkjcuix,3).
-price(xrjvodfv,7).
-price(ndsbtrnu,10).
-price(bhldydul,4).
-price(soacgjye,4).
-price(ndtuyfxd,18).
-price(hhdwvuya,18).
-price(mqdvtmsr,28).
-price(udpirazf,17).
-price(ewnamoly,23).
-price(kgygdgyz,18).
-price(mfqfjpyc,18).
-price(ndtuyfxd,18).
-price(jsfdibyu,23).
-price(jrijpolr,13).
-price(ewnamoly,23).
-price(qoekvqrm,23).
-price(grqzxvnx,23).
-price(qxsqylcr,23).
-price(lfdhance,23).
-price(zogvxojf,24).
-price(bwtkvyvg,4).
-price(zyderedh,17).
-price(ckryfdat,58).
-price(rtyttxtq,17).
-price(fezengow,40).
-price(xycbqwqs,37).
-price(ggohelni,17).
-price(pghoarts,13).
-price(hdxvyfkw,3).
-price(bdnxvwdt,3).
-price(sneilvbm,3).
-price(vekujcyb,13).
-price(vbqvpudj,9).
-price(detlyzpn,9).
-price(pixhfgwy,9).
-price(tucdtesn,3).
-price(zjivagfc,5).
-price(pocdgqpx,5).
-price(julxgomt,2).
-price(rdnwkxse,36).
-price(uhrleups,40).
-price(teshunzg,35).
-price(dpvjjobh,40).
-price(mqdvtmsr,28).
-price(vnzcbgoj,10).
-price(fpfvwopw,19).
-price(nimlmhqj,19).
-price(syaeyiqt,22).
-price(bgbpevgj,33).
-price(skpuidoc,22).
-price(wzzxbqbi,36).
-price(eiywblcq,24).
-price(npqincrv,24).
-price(hughxwlz,23).
-price(ejxoeepm,24).
-price(rifdtdti,24).
-price(swxadfgj,35).
-price(uzwfrjpb,40).
-price(mzhujdjk,24).
-price(szxladpz,24).
-price(ydmtzkvi,71).
-price(omdaviio,40).
-price(gqkfjjqp,35).
-price(jmgqkrcc,14).
-price(gdtteork,14).
-price(qysqwclu,17).
-price(nnayldat,19).
-price(egxmrjoq,19).
-price(xwijkzsh,33).
-price(qpxaphka,40).
-price(oujiwsvg,41).
-price(peafczyl,30).
-price(gecokluf,44).
-price(dmnidguz,18).
-price(klrnhmbp,22).
-price(ljplrkoo,16).
-price(dqitlkrq,8).
-price(sqdiepsj,30).
-price(uejttnhe,24).
-price(ejvssbwo,25).
-price(jcsmtvdy,43).
-price(onadfnqq,25).
-price(tlkfzane,22).
-price(kpjqiitr,17).
-price(nxhiyvvj,25).
-price(nfoucwhf,25).
-price(gmukkfzm,22).
-price(gkdoenjp,37).
-price(cxrjzjmu,37).
-price(qabbqlhh,20).
-price(engwmpan,32).
-price(cqwihloe,35).
-price(cduxrhkx,22).
-price(aewfsyjk,53).
-price(jzhvnjbv,41).
-price(hhdwvuya,18).
-price(vdtjgejf,30).
-price(hnrbehjn,35).
-price(lzcyiycz,47).
-price(jbqdfvrn,40).
-price(ribbwtoq,26).
-price(bcaaqxbw,48).
-price(zaamhdky,17).
-price(lwktbvjq,17).
-price(tmcojnai,31).
-price(avrsesbh,18).
-price(jnuylowp,18).
-price(ceunovse,14).
-price(ajbksafr,14).
-price(zpemfycz,14).
-price(tzfqvihp,11).
-price(nboepgqc,13).
-price(nvdiccpx,10).
-price(udpirazf,17).
-price(seolwlcy,16).
-price(mcpwbwig,16).
-price(rusyftca,10).
-price(hpqvqpou,5).
-price(fshmajsj,5).
-price(bgptcqit,5).
-price(byqzsjaj,17).
-price(ndtuyfxd,18).
-price(hhdwvuya,18).
-price(mqdvtmsr,28).
-price(udpirazf,17).
-price(ewnamoly,23).
-price(kgygdgyz,18).
-price(mfqfjpyc,18).
-price(ndtuyfxd,18).
-price(jsfdibyu,23).
-price(jrijpolr,13).
-price(ewnamoly,23).
-price(qoekvqrm,23).
-price(grqzxvnx,23).
-price(qxsqylcr,23).
-price(lfdhance,23).
-price(zogvxojf,24).
-price(bwtkvyvg,4).
-price(zyderedh,17).
-price(ckryfdat,58).
-price(rtyttxtq,17).
-price(fezengow,40).
-price(xycbqwqs,37).
-price(ggohelni,17).
-price(pghoarts,13).
-price(hdxvyfkw,3).
-price(bdnxvwdt,3).
-price(sneilvbm,3).
-price(vekujcyb,13).
-price(vbqvpudj,9).
-price(detlyzpn,9).
-price(pixhfgwy,9).
-price(tucdtesn,3).
-price(zjivagfc,5).
-price(pocdgqpx,5).
-price(julxgomt,2).
-price(rdnwkxse,36).
-price(uhrleups,40).
-price(teshunzg,35).
-price(dpvjjobh,40).
-price(mqdvtmsr,28).
-price(vnzcbgoj,10).
-price(fpfvwopw,19).
-price(nimlmhqj,19).
-price(syaeyiqt,22).
-price(bgbpevgj,33).
-price(skpuidoc,22).
-price(wzzxbqbi,36).
-price(eiywblcq,24).
-price(npqincrv,24).
-price(hughxwlz,23).
-price(ejxoeepm,24).
-price(rifdtdti,24).
-price(swxadfgj,35).
-price(uzwfrjpb,40).
-price(mzhujdjk,24).
-price(szxladpz,24).
-price(ydmtzkvi,71).
-price(omdaviio,40).
-price(gqkfjjqp,35).
-price(jmgqkrcc,14).
-price(gdtteork,14).
-price(qysqwclu,17).
-price(nnayldat,19).
-price(egxmrjoq,19).
-price(xwijkzsh,33).
-price(qpxaphka,40).
-price(oujiwsvg,41).
-price(peafczyl,30).
-price(gecokluf,44).
-price(dmnidguz,18).
-price(klrnhmbp,22).
-price(ljplrkoo,16).
-price(dqitlkrq,8).
-price(sqdiepsj,30).
-price(uejttnhe,24).
-price(ejvssbwo,25).
-price(jcsmtvdy,43).
-price(onadfnqq,25).
-price(tlkfzane,22).
-price(kpjqiitr,17).
-price(nxhiyvvj,25).
-price(nfoucwhf,25).
-price(gmukkfzm,22).
-price(gkdoenjp,37).
-price(cxrjzjmu,37).
-price(qabbqlhh,20).
-price(engwmpan,32).
-price(cqwihloe,35).
-price(cduxrhkx,22).
-price(aewfsyjk,53).
-price(jzhvnjbv,41).
-price(hhdwvuya,18).
-price(vdtjgejf,30).
-price(hnrbehjn,35).
-price(lzcyiycz,47).
-price(jbqdfvrn,40).
-price(ribbwtoq,26).
-price(bcaaqxbw,48).
-price(zaamhdky,17).
-price(lwktbvjq,17).
-price(tmcojnai,31).
-price(avrsesbh,18).
-price(jnuylowp,18).
-price(ceunovse,14).
-price(ajbksafr,14).
-price(zpemfycz,14).
-price(tzfqvihp,11).
-price(nboepgqc,13).
-price(nvdiccpx,10).
-price(udpirazf,17).
-price(seolwlcy,16).
-price(mcpwbwig,16).
-price(rusyftca,10).
-price(hpqvqpou,5).
-price(fshmajsj,5).
-price(bgptcqit,5).
-price(byqzsjaj,17).
-price(pfwpinrc,14).
-price(cjqmyglb,17).
-
-price(dtgwcjqv,2).
-price(ozbubsnf,2).
-price(nwqlrizb,10).
-price(xbwsusbf,10).
-price(dkfeufbh,10).
-price(smvcmohg,12).
-price(hpuxyyjh,10).
-price(vluxpnrd,5).
-price(pfwpinrc,14).
-price(cjqmyglb,17).
-
-price(dtgwcjqv,2).
-price(ozbubsnf,2).
-price(nwqlrizb,10).
-price(xbwsusbf,10).
-price(dkfeufbh,10).
-price(smvcmohg,12).
-price(hpuxyyjh,10).
-price(vluxpnrd,5).
-price(irlrtnzb,4).
-price(fimkhlxt,4).
-price(piakseab,5).
-price(xuoqvgim,5).
-price(xofyxgmc,5).
-price(kqolrgkx,4).
-price(fovmpjqt,4).
-price(mnwgmogq,4).
-price(cflzxmun,4).
-price(qdmrhuqc,4).
-price(mnlrsdmy,4).
-price(zrympsyv,2).
-price(sfrwtzvw,2).
-price(hnextklx,2).
-price(ekmbbmug,2).
-price(wyscfyzg,2).
-price(ytdoszfx,2).
-price(fyokvcda,2).
-price(xofyxgmc,5).
-price(gdaasvgg,5).
-price(ntxheika,5).
-price(nyjlyoul,6).
-price(mqfexupf,3).
-price(ngklfnwi,4).
-price(rnewugrg,4).
-price(qujymaaz,4).
-price(elcajzut,4).
-price(cdcwgahh,4).
-price(kyguzjwg,4).
-price(irlrtnzb,4).
-price(kcilomsn,4).
-price(fimkhlxt,4).
-price(katbjhhv,4).
-price(jxjuyyiy,4).
-price(ktqfblxt,5).
-price(xuoqvgim,5).
-price(nsufqczt,5).
-price(qpjraqwn,5).
-price(gbngnwth,5).
-price(piakseab,5).
-price(irlrtnzb,4).
-price(fimkhlxt,4).
-price(piakseab,5).
-price(xuoqvgim,5).
-price(xofyxgmc,5).
-price(kqolrgkx,4).
-price(fovmpjqt,4).
-price(mnwgmogq,4).
-price(cflzxmun,4).
-price(qdmrhuqc,4).
-price(mnlrsdmy,4).
-price(zrympsyv,2).
-price(sfrwtzvw,2).
-price(hnextklx,2).
-price(ekmbbmug,2).
-price(wyscfyzg,2).
-price(ytdoszfx,2).
-price(fyokvcda,2).
-price(xofyxgmc,5).
-price(gdaasvgg,5).
-price(ntxheika,5).
-price(nyjlyoul,6).
-price(mqfexupf,3).
-price(ngklfnwi,4).
-price(rnewugrg,4).
-price(qujymaaz,4).
-price(elcajzut,4).
-price(cdcwgahh,4).
-price(kyguzjwg,4).
-price(irlrtnzb,4).
-price(kcilomsn,4).
-price(fimkhlxt,4).
-price(katbjhhv,4).
-price(jxjuyyiy,4).
-price(ktqfblxt,5).
-price(xuoqvgim,5).
-price(nsufqczt,5).
-price(qpjraqwn,5).
-price(gbngnwth,5).
-price(piakseab,5).
-price(ibcgmdas,8).
-price(fatcigwp,0).
-price(ibcgmdas,8).
-
-price(fatcigwp,0).
-
-
-
-price(jhibsope,2).
-price(ezeurdkp,2).
-price(moqryotc,2).
-price(vunkpdol,2).
-price(nemmfotc,11).
-price(avagecln,13).
-price(kaxbxyso,5).
-price(iyzhuttm,6).
-price(ksrnwmto,9).
-price(rqmtgklb,9).
-price(ezxdzhsg,3).
-price(mowbpnsr,5).
-price(zjqjiazf,5).
-
-price(zrmdedqy,17).
-price(tfgideui,1).
-price(tucdtesn,1).
-price(cajpibzq,1).
-price(yqhhwlts,1).
-price(ruqjsxmo,1).
-price(iiewzgbb,1).
-price(azsyvssj,1).
-price(hhhwcxfw,1).
-price(ivfhqzbj,1).
-price(awbqhmjo,1).
-price(jecoljyk,1).
-price(lahasimj,1).
-price(peetqevh,2).
-price(lnjhtnxx,2).
-
-price(wduqzoik,1).
-price(ezoaxlrs,1).
-price(qbdcrbss,4).
-price(ndwhskvh,2).
-
-price(jhibsope,2).
-price(ezeurdkp,2).
-price(moqryotc,2).
-price(vunkpdol,2).
-price(nemmfotc,11).
-price(avagecln,13).
-price(kaxbxyso,5).
-price(iyzhuttm,6).
-price(ksrnwmto,9).
-price(rqmtgklb,9).
-price(ezxdzhsg,3).
-price(mowbpnsr,5).
-price(zjqjiazf,5).
-
-price(zrmdedqy,17).
-price(tfgideui,1).
-price(tucdtesn,1).
-price(cajpibzq,1).
-price(yqhhwlts,1).
-price(ruqjsxmo,1).
-price(iiewzgbb,1).
-price(azsyvssj,1).
-price(hhhwcxfw,1).
-price(ivfhqzbj,1).
-price(awbqhmjo,1).
-price(jecoljyk,1).
-price(lahasimj,1).
-price(peetqevh,2).
-price(lnjhtnxx,2).
-
-price(wduqzoik,1).
-price(ezoaxlrs,1).
-price(qbdcrbss,4).
-price(ndwhskvh,2).
-
-price(ygmtxijy,5).
-price(dtfhopij,6).
-price(civwxjoi,5).
-price(jvazasan,5).
-price(xrlealxo,5).
-price(xjansupd,5).
-price(nikzmyaa,5).
-price(vihgolia,5).
-price(pmkldmmd,6).
-price(kojrmsby,6).
-price(fglzlvnd,5).
-price(zbtwsbhe,5).
-price(rrkktuao,5).
-price(gtquzzhf,5).
-price(nptosbfc,6).
-price(qdwyxtwa,6).
-price(addccfxc,6).
-price(ebboohyl,6).
-price(okvhdhkh,6).
-price(yppiovmk,6).
-price(jskdbvjg,6).
-price(jxxssorf,6).
-price(zunvkvxb,6).
-price(rzcgndeb,6).
-price(vogdcwoo,5).
-price(mqcedrup,5).
-price(telecprm,5).
-price(jprwznhh,5).
-price(newrskog,6).
-price(pyvudheb,6).
-price(haepxtgs,6).
-price(agfhqbue,5).
-price(bsbrlajn,5).
-price(aahoirxj,5).
-price(ygmtxijy,5).
-price(dtfhopij,6).
-price(civwxjoi,5).
-price(jvazasan,5).
-price(xrlealxo,5).
-price(xjansupd,5).
-price(nikzmyaa,5).
-price(vihgolia,5).
-price(pmkldmmd,6).
-price(kojrmsby,6).
-price(fglzlvnd,5).
-price(zbtwsbhe,5).
-price(rrkktuao,5).
-price(gtquzzhf,5).
-price(nptosbfc,6).
-price(qdwyxtwa,6).
-price(addccfxc,6).
-price(ebboohyl,6).
-price(okvhdhkh,6).
-price(yppiovmk,6).
-price(jskdbvjg,6).
-price(jxxssorf,6).
-price(zunvkvxb,6).
-price(rzcgndeb,6).
-price(vogdcwoo,5).
-price(mqcedrup,5).
-price(telecprm,5).
-price(jprwznhh,5).
-price(newrskog,6).
-price(pyvudheb,6).
-price(haepxtgs,6).
-price(agfhqbue,5).
-price(bsbrlajn,5).
-price(aahoirxj,5).
-price(ebrjkfyq,4).
-price(ihmgfiir,7).
-price(actcdqty,6).
-price(mdrinytm,6).
-price(igujkimr,8).
-
-price(ebrjkfyq,4).
-price(ihmgfiir,7).
-price(actcdqty,6).
-price(mdrinytm,6).
-price(igujkimr,8).
-
-
-description(agtujvnh,gsdphudq).
-description(gaqvsphs,cesecozs).
-description(mhswceig,jonhulzc).
-description(jrpmtiuo,mtsyqhtp).
-description(hhcbpnyk,ianaigqi).
-description(vekkhnna,mjabhnfo).
-description(kertodfh,hbeaatqn).
-description(ojdbwrnl,zohgqgiu).
-description(xicpfzmk,kkfvrjnw).
-description(mbpdljnt,brploune).
-description(pnyzrver,etcmuvas).
-description(xalffohh,hnucbyhg).
-description(shsfkewg,xnfuyyte).
-description(ovvocceu,kmjapnlx).
-description(bcqylwcn,kfheqdxn).
-description(sufngthl,pcfyogmu).
-description(tdkgynyx,pcfyogmu).
-description(gscrcxle,pcfyogmu).
-description(ctqwqotl,sgmbclmn).
-description(fhkjcuix,ikgztaay).
-description(xrjvodfv,oemaacbt).
-description(ndsbtrnu,ikgztaay).
-description(bhldydul,iyamngba).
-description(soacgjye,kfheqdxn).
-description(agtujvnh,gsdphudq).
-description(gaqvsphs,cesecozs).
-description(mhswceig,jonhulzc).
-description(jrpmtiuo,mtsyqhtp).
-description(hhcbpnyk,ianaigqi).
-description(vekkhnna,mjabhnfo).
-description(kertodfh,hbeaatqn).
-description(ojdbwrnl,zohgqgiu).
-description(xicpfzmk,kkfvrjnw).
-description(mbpdljnt,brploune).
-description(pnyzrver,etcmuvas).
-description(xalffohh,hnucbyhg).
-description(shsfkewg,xnfuyyte).
-description(ovvocceu,kmjapnlx).
-description(bcqylwcn,kfheqdxn).
-description(sufngthl,pcfyogmu).
-description(tdkgynyx,pcfyogmu).
-description(gscrcxle,pcfyogmu).
-description(ctqwqotl,sgmbclmn).
-description(fhkjcuix,ikgztaay).
-description(xrjvodfv,oemaacbt).
-description(ndsbtrnu,ikgztaay).
-description(bhldydul,iyamngba).
-description(soacgjye,kfheqdxn).
-description(ndtuyfxd,lizccvci).
-description(hhdwvuya,kfheqdxn).
-description(mqdvtmsr,yiljppcv).
-description(udpirazf,gmmihqox).
-description(ewnamoly,kfheqdxn).
-description(kgygdgyz,jtdeowet).
-description(mfqfjpyc,jtdeowet).
-description(ndtuyfxd,lizccvci).
-description(jsfdibyu,kfheqdxn).
-description(jrijpolr,kfheqdxn).
-description(ewnamoly,kfheqdxn).
-description(qoekvqrm,ujwugrxv).
-description(grqzxvnx,kfheqdxn).
-description(qxsqylcr,kfheqdxn).
-description(lfdhance,kfheqdxn).
-description(zogvxojf,kfheqdxn).
-description(bwtkvyvg,ypcwquzu).
-description(zyderedh,gxavewdw).
-description(ckryfdat,kfheqdxn).
-description(rtyttxtq,kfheqdxn).
-description(fezengow,kfheqdxn).
-description(xycbqwqs,kfheqdxn).
-description(ggohelni,kfheqdxn).
-description(pghoarts,dvbyczqd).
-description(hdxvyfkw,kfheqdxn).
-description(bdnxvwdt,kfheqdxn).
-description(sneilvbm,kfheqdxn).
-description(vekujcyb,kfheqdxn).
-description(vbqvpudj,kfheqdxn).
-description(detlyzpn,kfheqdxn).
-description(pixhfgwy,kfheqdxn).
-description(tucdtesn,smdxrakp).
-description(zjivagfc,kfheqdxn).
-description(pocdgqpx,kfheqdxn).
-description(julxgomt,hblceqsf).
-description(rdnwkxse,kidmsfcb).
-description(uhrleups,kfheqdxn).
-description(teshunzg,kfheqdxn).
-description(dpvjjobh,kfheqdxn).
-description(mqdvtmsr,yiljppcv).
-description(vnzcbgoj,kfheqdxn).
-description(fpfvwopw,kfheqdxn).
-description(nimlmhqj,nndkylno).
-description(syaeyiqt,kfheqdxn).
-description(bgbpevgj,kfheqdxn).
-description(skpuidoc,kfheqdxn).
-description(wzzxbqbi,kfheqdxn).
-description(eiywblcq,kfheqdxn).
-description(npqincrv,kfheqdxn).
-description(hughxwlz,kfheqdxn).
-description(ejxoeepm,rrqnawga).
-description(rifdtdti,rrqnawga).
-description(swxadfgj,rrqnawga).
-description(uzwfrjpb,prrmctjh).
-description(mzhujdjk,kfheqdxn).
-description(szxladpz,kfheqdxn).
-description(ydmtzkvi,kfheqdxn).
-description(omdaviio,kfheqdxn).
-description(gqkfjjqp,kfheqdxn).
-description(jmgqkrcc,bhjkuydl).
-description(gdtteork,nfilefol).
-description(qysqwclu,yugzyffc).
-description(nnayldat,fnhzxcbk).
-description(egxmrjoq,llmlbcnv).
-description(xwijkzsh,ahljrpko).
-description(qpxaphka,dajigcpp).
-description(oujiwsvg,dajigcpp).
-description(peafczyl,kfheqdxn).
-description(gecokluf,kfheqdxn).
-description(dmnidguz,rlpzdjzj).
-description(klrnhmbp,kfheqdxn).
-description(ljplrkoo,kfheqdxn).
-description(dqitlkrq,kfheqdxn).
-description(sqdiepsj,kfheqdxn).
-description(uejttnhe,kfheqdxn).
-description(ejvssbwo,kfheqdxn).
-description(jcsmtvdy,kfheqdxn).
-description(onadfnqq,kfheqdxn).
-description(tlkfzane,kfheqdxn).
-description(kpjqiitr,kfheqdxn).
-description(nxhiyvvj,kfheqdxn).
-description(nfoucwhf,mmvoagey).
-description(gmukkfzm,mwtkuvsk).
-description(gkdoenjp,kfheqdxn).
-description(cxrjzjmu,kfheqdxn).
-description(qabbqlhh,kfheqdxn).
-description(engwmpan,kfheqdxn).
-description(cqwihloe,kfheqdxn).
-description(cduxrhkx,kfheqdxn).
-description(aewfsyjk,kfheqdxn).
-description(jzhvnjbv,kfheqdxn).
-description(hhdwvuya,kfheqdxn).
-description(vdtjgejf,kfheqdxn).
-description(hnrbehjn,kfheqdxn).
-description(lzcyiycz,kfheqdxn).
-description(jbqdfvrn,nmnooqzu).
-description(ribbwtoq,xnqrpuoc).
-description(bcaaqxbw,kfheqdxn).
-description(zaamhdky,kfheqdxn).
-description(lwktbvjq,kfheqdxn).
-description(tmcojnai,kfheqdxn).
-description(avrsesbh,kfheqdxn).
-description(jnuylowp,kfheqdxn).
-description(ceunovse,xgxowvyo).
-description(ajbksafr,xgxowvyo).
-description(zpemfycz,xgxowvyo).
-description(tzfqvihp,zfmlhhfz).
-description(nboepgqc,rvluolpa).
-description(nvdiccpx,djpvorjj).
-description(udpirazf,gmmihqox).
-description(seolwlcy,hhbqakxj).
-description(mcpwbwig,hhbqakxj).
-description(rusyftca,fqevunbk).
-description(hpqvqpou,iwtonoyh).
-description(fshmajsj,iwtonoyh).
-description(bgptcqit,iwtonoyh).
-description(byqzsjaj,qomunaum).
-description(ndtuyfxd,lizccvci).
-description(hhdwvuya,kfheqdxn).
-description(mqdvtmsr,yiljppcv).
-description(udpirazf,gmmihqox).
-description(ewnamoly,kfheqdxn).
-description(kgygdgyz,jtdeowet).
-description(mfqfjpyc,jtdeowet).
-description(ndtuyfxd,lizccvci).
-description(jsfdibyu,kfheqdxn).
-description(jrijpolr,kfheqdxn).
-description(ewnamoly,kfheqdxn).
-description(qoekvqrm,ujwugrxv).
-description(grqzxvnx,kfheqdxn).
-description(qxsqylcr,kfheqdxn).
-description(lfdhance,kfheqdxn).
-description(zogvxojf,kfheqdxn).
-description(bwtkvyvg,ypcwquzu).
-description(zyderedh,gxavewdw).
-description(ckryfdat,kfheqdxn).
-description(rtyttxtq,kfheqdxn).
-description(fezengow,kfheqdxn).
-description(xycbqwqs,kfheqdxn).
-description(ggohelni,kfheqdxn).
-description(pghoarts,dvbyczqd).
-description(hdxvyfkw,kfheqdxn).
-description(bdnxvwdt,kfheqdxn).
-description(sneilvbm,kfheqdxn).
-description(vekujcyb,kfheqdxn).
-description(vbqvpudj,kfheqdxn).
-description(detlyzpn,kfheqdxn).
-description(pixhfgwy,kfheqdxn).
-description(tucdtesn,smdxrakp).
-description(zjivagfc,kfheqdxn).
-description(pocdgqpx,kfheqdxn).
-description(julxgomt,hblceqsf).
-description(rdnwkxse,kidmsfcb).
-description(uhrleups,kfheqdxn).
-description(teshunzg,kfheqdxn).
-description(dpvjjobh,kfheqdxn).
-description(mqdvtmsr,yiljppcv).
-description(vnzcbgoj,kfheqdxn).
-description(fpfvwopw,kfheqdxn).
-description(nimlmhqj,nndkylno).
-description(syaeyiqt,kfheqdxn).
-description(bgbpevgj,kfheqdxn).
-description(skpuidoc,kfheqdxn).
-description(wzzxbqbi,kfheqdxn).
-description(eiywblcq,kfheqdxn).
-description(npqincrv,kfheqdxn).
-description(hughxwlz,kfheqdxn).
-description(ejxoeepm,rrqnawga).
-description(rifdtdti,rrqnawga).
-description(swxadfgj,rrqnawga).
-description(uzwfrjpb,prrmctjh).
-description(mzhujdjk,kfheqdxn).
-description(szxladpz,kfheqdxn).
-description(ydmtzkvi,kfheqdxn).
-description(omdaviio,kfheqdxn).
-description(gqkfjjqp,kfheqdxn).
-description(jmgqkrcc,bhjkuydl).
-description(gdtteork,nfilefol).
-description(qysqwclu,yugzyffc).
-description(nnayldat,fnhzxcbk).
-description(egxmrjoq,llmlbcnv).
-description(xwijkzsh,ahljrpko).
-description(qpxaphka,dajigcpp).
-description(oujiwsvg,dajigcpp).
-description(peafczyl,kfheqdxn).
-description(gecokluf,kfheqdxn).
-description(dmnidguz,rlpzdjzj).
-description(klrnhmbp,kfheqdxn).
-description(ljplrkoo,kfheqdxn).
-description(dqitlkrq,kfheqdxn).
-description(sqdiepsj,kfheqdxn).
-description(uejttnhe,kfheqdxn).
-description(ejvssbwo,kfheqdxn).
-description(jcsmtvdy,kfheqdxn).
-description(onadfnqq,kfheqdxn).
-description(tlkfzane,kfheqdxn).
-description(kpjqiitr,kfheqdxn).
-description(nxhiyvvj,kfheqdxn).
-description(nfoucwhf,mmvoagey).
-description(gmukkfzm,mwtkuvsk).
-description(gkdoenjp,kfheqdxn).
-description(cxrjzjmu,kfheqdxn).
-description(qabbqlhh,kfheqdxn).
-description(engwmpan,kfheqdxn).
-description(cqwihloe,kfheqdxn).
-description(cduxrhkx,kfheqdxn).
-description(aewfsyjk,kfheqdxn).
-description(jzhvnjbv,kfheqdxn).
-description(hhdwvuya,kfheqdxn).
-description(vdtjgejf,kfheqdxn).
-description(hnrbehjn,kfheqdxn).
-description(lzcyiycz,kfheqdxn).
-description(jbqdfvrn,nmnooqzu).
-description(ribbwtoq,xnqrpuoc).
-description(bcaaqxbw,kfheqdxn).
-description(zaamhdky,kfheqdxn).
-description(lwktbvjq,kfheqdxn).
-description(tmcojnai,kfheqdxn).
-description(avrsesbh,kfheqdxn).
-description(jnuylowp,kfheqdxn).
-description(ceunovse,xgxowvyo).
-description(ajbksafr,xgxowvyo).
-description(zpemfycz,xgxowvyo).
-description(tzfqvihp,zfmlhhfz).
-description(nboepgqc,rvluolpa).
-description(nvdiccpx,djpvorjj).
-description(udpirazf,gmmihqox).
-description(seolwlcy,hhbqakxj).
-description(mcpwbwig,hhbqakxj).
-description(rusyftca,fqevunbk).
-description(hpqvqpou,iwtonoyh).
-description(fshmajsj,iwtonoyh).
-description(bgptcqit,iwtonoyh).
-description(byqzsjaj,qomunaum).
-description(pfwpinrc,bndmcjcq).
-description(cjqmyglb,emfggvml).
-description(rfustlek,dkweibef).
-description(dtgwcjqv,kfheqdxn).
-description(ozbubsnf,kfheqdxn).
-description(nwqlrizb,wwrumjhp).
-description(xbwsusbf,ecuodzjv).
-description(dkfeufbh,kqkpnuwf).
-description(smvcmohg,dohjdqqy).
-description(hpuxyyjh,esslaygp).
-description(vluxpnrd,kfheqdxn).
-description(pfwpinrc,bndmcjcq).
-description(cjqmyglb,emfggvml).
-description(rfustlek,dkweibef).
-description(dtgwcjqv,kfheqdxn).
-description(ozbubsnf,kfheqdxn).
-description(nwqlrizb,wwrumjhp).
-description(xbwsusbf,ecuodzjv).
-description(dkfeufbh,kqkpnuwf).
-description(smvcmohg,dohjdqqy).
-description(hpuxyyjh,esslaygp).
-description(vluxpnrd,kfheqdxn).
-description(irlrtnzb,kfheqdxn).
-description(fimkhlxt,kfheqdxn).
-description(piakseab,kfheqdxn).
-description(xuoqvgim,kfheqdxn).
-description(xofyxgmc,kfheqdxn).
-description(kqolrgkx,kfheqdxn).
-description(fovmpjqt,kfheqdxn).
-description(mnwgmogq,kfheqdxn).
-description(cflzxmun,kfheqdxn).
-description(qdmrhuqc,kfheqdxn).
-description(mnlrsdmy,kfheqdxn).
-description(zrympsyv,kfheqdxn).
-description(sfrwtzvw,kfheqdxn).
-description(hnextklx,kfheqdxn).
-description(ekmbbmug,kfheqdxn).
-description(wyscfyzg,kfheqdxn).
-description(ytdoszfx,kfheqdxn).
-description(fyokvcda,kfheqdxn).
-description(xofyxgmc,kfheqdxn).
-description(gdaasvgg,kfheqdxn).
-description(ntxheika,kfheqdxn).
-description(nyjlyoul,kfheqdxn).
-description(mqfexupf,kfheqdxn).
-description(ngklfnwi,kfheqdxn).
-description(rnewugrg,kfheqdxn).
-description(qujymaaz,kfheqdxn).
-description(elcajzut,kfheqdxn).
-description(cdcwgahh,kfheqdxn).
-description(kyguzjwg,kfheqdxn).
-description(irlrtnzb,kfheqdxn).
-description(kcilomsn,kfheqdxn).
-description(fimkhlxt,kfheqdxn).
-description(katbjhhv,kfheqdxn).
-description(jxjuyyiy,kfheqdxn).
-description(ktqfblxt,kfheqdxn).
-description(xuoqvgim,kfheqdxn).
-description(nsufqczt,kfheqdxn).
-description(qpjraqwn,kfheqdxn).
-description(gbngnwth,kfheqdxn).
-description(piakseab,kfheqdxn).
-description(irlrtnzb,kfheqdxn).
-description(fimkhlxt,kfheqdxn).
-description(piakseab,kfheqdxn).
-description(xuoqvgim,kfheqdxn).
-description(xofyxgmc,kfheqdxn).
-description(kqolrgkx,kfheqdxn).
-description(fovmpjqt,kfheqdxn).
-description(mnwgmogq,kfheqdxn).
-description(cflzxmun,kfheqdxn).
-description(qdmrhuqc,kfheqdxn).
-description(mnlrsdmy,kfheqdxn).
-description(zrympsyv,kfheqdxn).
-description(sfrwtzvw,kfheqdxn).
-description(hnextklx,kfheqdxn).
-description(ekmbbmug,kfheqdxn).
-description(wyscfyzg,kfheqdxn).
-description(ytdoszfx,kfheqdxn).
-description(fyokvcda,kfheqdxn).
-description(xofyxgmc,kfheqdxn).
-description(gdaasvgg,kfheqdxn).
-description(ntxheika,kfheqdxn).
-description(nyjlyoul,kfheqdxn).
-description(mqfexupf,kfheqdxn).
-description(ngklfnwi,kfheqdxn).
-description(rnewugrg,kfheqdxn).
-description(qujymaaz,kfheqdxn).
-description(elcajzut,kfheqdxn).
-description(cdcwgahh,kfheqdxn).
-description(kyguzjwg,kfheqdxn).
-description(irlrtnzb,kfheqdxn).
-description(kcilomsn,kfheqdxn).
-description(fimkhlxt,kfheqdxn).
-description(katbjhhv,kfheqdxn).
-description(jxjuyyiy,kfheqdxn).
-description(ktqfblxt,kfheqdxn).
-description(xuoqvgim,kfheqdxn).
-description(nsufqczt,kfheqdxn).
-description(qpjraqwn,kfheqdxn).
-description(gbngnwth,kfheqdxn).
-description(piakseab,kfheqdxn).
-description(ibcgmdas,mblcspzq).
-description(jhibsope,kfheqdxn).
-description(ezeurdkp,kfheqdxn).
-description(moqryotc,kfheqdxn).
-description(vunkpdol,kfheqdxn).
-description(nemmfotc,aczqhaci).
-description(avagecln,lcsficrp).
-description(kaxbxyso,oykegpzc).
-description(iyzhuttm,jogdnjjg).
-description(ksrnwmto,wjevcjhv).
-description(rqmtgklb,bjjkzipb).
-description(ezxdzhsg,kfheqdxn).
-description(mowbpnsr,kfheqdxn).
-description(zjqjiazf,kfheqdxn).
-description(uxontugg,kbxkrgll).
-description(zrmdedqy,pmjvmtnq).
-description(tfgideui,kfheqdxn).
-description(tucdtesn,tucdtesn).
-description(cajpibzq,cajpibzq).
-description(yqhhwlts,yqhhwlts).
-description(ruqjsxmo,kfheqdxn).
-description(iiewzgbb,kfheqdxn).
-description(azsyvssj,kfheqdxn).
-description(hhhwcxfw,kfheqdxn).
-description(ivfhqzbj,kfheqdxn).
-description(awbqhmjo,kfheqdxn).
-description(jecoljyk,kfheqdxn).
-description(lahasimj,kfheqdxn).
-description(peetqevh,qivobgqt).
-description(lnjhtnxx,byuchlmz).
-description(wyefpnve,kzftmpgu).
-description(wduqzoik,fguvxqmk).
-description(ezoaxlrs,lhomueke).
-description(qbdcrbss,eewqddlc).
-description(ndwhskvh,ektjuour).
-description(injiwwtd,fnxfaayj).
-description(jhibsope,kfheqdxn).
-description(ezeurdkp,kfheqdxn).
-description(moqryotc,kfheqdxn).
-description(vunkpdol,kfheqdxn).
-description(nemmfotc,aczqhaci).
-description(avagecln,lcsficrp).
-description(kaxbxyso,oykegpzc).
-description(iyzhuttm,jogdnjjg).
-description(ksrnwmto,wjevcjhv).
-description(rqmtgklb,bjjkzipb).
-description(ezxdzhsg,kfheqdxn).
-description(mowbpnsr,kfheqdxn).
-description(zjqjiazf,kfheqdxn).
-description(uxontugg,kbxkrgll).
-description(zrmdedqy,pmjvmtnq).
-description(tfgideui,kfheqdxn).
-description(tucdtesn,tucdtesn).
-description(cajpibzq,cajpibzq).
-description(yqhhwlts,yqhhwlts).
-description(ruqjsxmo,kfheqdxn).
-description(iiewzgbb,kfheqdxn).
-description(azsyvssj,kfheqdxn).
-description(hhhwcxfw,kfheqdxn).
-description(ivfhqzbj,kfheqdxn).
-description(awbqhmjo,kfheqdxn).
-description(jecoljyk,kfheqdxn).
-description(lahasimj,kfheqdxn).
-description(peetqevh,qivobgqt).
-description(lnjhtnxx,byuchlmz).
-description(wyefpnve,kzftmpgu).
-description(wduqzoik,fguvxqmk).
-description(ezoaxlrs,lhomueke).
-description(qbdcrbss,eewqddlc).
-description(ndwhskvh,ektjuour).
-description(injiwwtd,fnxfaayj).
-description(ygmtxijy,msrpeguu).
-description(dtfhopij,rbgquclm).
-description(civwxjoi,kfheqdxn).
-description(jvazasan,kfheqdxn).
-description(xrlealxo,kfheqdxn).
-description(xjansupd,kfheqdxn).
-description(nikzmyaa,kfheqdxn).
-description(vihgolia,kfheqdxn).
-description(pmkldmmd,kfheqdxn).
-description(kojrmsby,kfheqdxn).
-description(fglzlvnd,kfheqdxn).
-description(zbtwsbhe,kfheqdxn).
-description(rrkktuao,kfheqdxn).
-description(gtquzzhf,kfheqdxn).
-description(nptosbfc,kfheqdxn).
-description(qdwyxtwa,kfheqdxn).
-description(addccfxc,kfheqdxn).
-description(ebboohyl,hwibtmfp).
-description(okvhdhkh,hwibtmfp).
-description(yppiovmk,hwibtmfp).
-description(jskdbvjg,kfheqdxn).
-description(jxxssorf,kfheqdxn).
-description(zunvkvxb,kfheqdxn).
-description(rzcgndeb,kfheqdxn).
-description(vogdcwoo,dhjgzvbs).
-description(mqcedrup,lusevvwn).
-description(telecprm,mhbatmdb).
-description(jprwznhh,mhbatmdb).
-description(newrskog,lusevvwn).
-description(pyvudheb,kfheqdxn).
-description(haepxtgs,kfheqdxn).
-description(agfhqbue,kfheqdxn).
-description(bsbrlajn,kfheqdxn).
-description(aahoirxj,kfheqdxn).
-description(ygmtxijy,msrpeguu).
-description(dtfhopij,rbgquclm).
-description(civwxjoi,kfheqdxn).
-description(jvazasan,kfheqdxn).
-description(xrlealxo,kfheqdxn).
-description(xjansupd,kfheqdxn).
-description(nikzmyaa,kfheqdxn).
-description(vihgolia,kfheqdxn).
-description(pmkldmmd,kfheqdxn).
-description(kojrmsby,kfheqdxn).
-description(fglzlvnd,kfheqdxn).
-description(zbtwsbhe,kfheqdxn).
-description(rrkktuao,kfheqdxn).
-description(gtquzzhf,kfheqdxn).
-description(nptosbfc,kfheqdxn).
-description(qdwyxtwa,kfheqdxn).
-description(addccfxc,kfheqdxn).
-description(ebboohyl,hwibtmfp).
-description(okvhdhkh,hwibtmfp).
-description(yppiovmk,hwibtmfp).
-description(jskdbvjg,kfheqdxn).
-description(jxxssorf,kfheqdxn).
-description(zunvkvxb,kfheqdxn).
-description(rzcgndeb,kfheqdxn).
-description(vogdcwoo,dhjgzvbs).
-description(mqcedrup,lusevvwn).
-description(telecprm,mhbatmdb).
-description(jprwznhh,mhbatmdb).
-description(newrskog,lusevvwn).
-description(pyvudheb,kfheqdxn).
-description(haepxtgs,kfheqdxn).
-description(agfhqbue,kfheqdxn).
-description(bsbrlajn,kfheqdxn).
-description(aahoirxj,kfheqdxn).
-description(ebrjkfyq,umrzvism).
-description(ihmgfiir,iezkoffr).
-description(actcdqty,iyqcaqua).
-description(mdrinytm,yxppzcbd).
-description(igujkimr,hkyhbjfl).
-description(xujrnvyh,zshpgsub).
-description(ebrjkfyq,umrzvism).
-description(ihmgfiir,iezkoffr).
-description(actcdqty,iyqcaqua).
-description(mdrinytm,yxppzcbd).
-description(igujkimr,hkyhbjfl).
-description(xujrnvyh,zshpgsub).
 `;
 

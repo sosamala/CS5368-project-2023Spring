@@ -1,4 +1,4 @@
-const unkown_names = ['A','B','C','D','E','F','G','H','I','J','S','K','T','Z'];
+const unknown_names = ['A','B','C','D','E','F','G','H','I','J','S','K','T','Z'];
 
 const positive_response = ['y','yes','yeah','allright','whynot','si','okay','ok','yep','yup','forsure','absolutely','idloveto','sure'];
 const negative_response = ['n','no','noplease','nah','never','nothappening'];
