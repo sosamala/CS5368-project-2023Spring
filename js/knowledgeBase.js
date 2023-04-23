@@ -37,7 +37,7 @@ predicates
     scoreByName(#restaurantName, #score).
     ratingsByName(#restaurantName, #rating).
     categoryByName(#restaurantName, #category).
-    priceRangeByName(#restaurantName, #priceRange).
+    priceRangeByName(#restaurantName, #priceRange, #id).
     fullAddressByName(#restaurantName, #fullAddress).
     zipcodeByName(#restaurantName, #zipcode).
     
@@ -73,7 +73,7 @@ rules
     %scoreByName(X,Y) :- name(I,X), score(I,Y).
     %ratingsByName(X,Y) :- name(I,X), ratings(I,Y).
     %categoryByName(X,Y) :- name(I,X), category(I,Y).
-    priceRangeByName(X,Y) :- name(I,X), priceRange(I,Y).
+    priceRangeByName(X,Y,I) :- name(I,X), priceRange(I,Y).
     %fullAddressByName(X,Y) :- name(I,X), fullAddress(I,Y).
     %zipcodeByName(X,Y) :- name(I,X), zipcode(I,Y).
     zipcodeByNameAndId(I,N,Z) :-  zipcode(I, Z), name(I,N).
