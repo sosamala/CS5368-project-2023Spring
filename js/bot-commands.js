@@ -18,7 +18,7 @@ var commands = {
             "pattern": ["(.*)what can you do(.*)"],
             "match_tye": "r",
             "response_type": "string",
-            "response" : "Ask me  <br/> 1. Suggest a Restaurant<br/> 2. Show Top Rated Restaurants<br/> 3. Restaurants by price range [$$] ( $ - Budget Friendly  $$$ - Expensive) <br/> 4. What are restaurants in [zipcode]</br> 5. Show me restaurants that are serving [Category] </br> 6. Search for [Restaurant Name]"
+            "response" : "Ask me  <br/> 1. Suggest a Restaurant.<br/> 2. Show Top Rated Restaurants.<br/> 3. Suggest Restaurants by [$$] ( $ - Budget Friendly  $$$ - Expensive) <br/> 4. What are restaurants in [zipcode]</br> 5. Show me restaurants that are serving [Category] </br> 6. Search for [Restaurant Name]"
         },
         {
             "pattern": ["the names (.*)"],
@@ -66,8 +66,9 @@ var commands = {
             "pattern": ["(.*)ask(.*)now(.*)"],
             "match_tye": "r",
             "response_type": "string",
-            "expecting_a_response": "asknow",
-            "response" : "Ask me  <br/> 1.What cuisine this restaurant serves? <br/> 2. Show me the menu<br/> 3. What is budget range of this restaurant <br/> 4. Where is this restaurant located? </br> 5. What are food categories served in this restaurant? </br> You can reply with a number for selecting the above options."
+            "response" : "Ask me  <br/> 1. What cuisine this restaurant serves? <br/> 2. Show me the menu.<br/> 3. What is budget range of this restaurant?<br/> 4. Where is this restaurant located? </br> 5. What are food categories served in this restaurant?",
+            "expecting_a_response": "asknow"
+
         },
         {
             "pattern": ["(.*)cuisine(.*)((restaurant)|(they)|(it))(.*)((serve)|(have))(.*)"],
