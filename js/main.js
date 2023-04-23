@@ -86,7 +86,7 @@ $(document).ready(function() {
     function processMessage(message) {
 
         // clean the message
-        message = message.toLowerCase().trim().replace(/[^a-z0-9 ]/g, "");
+        message = message.toLowerCase().trim().replace(/[^a-z0-9$ ]/g, "");
 
         //process if expecting a response first :O 
         if(context != null && context.expecting_a_response != null) {
@@ -172,6 +172,25 @@ $(document).ready(function() {
                 console.log(err)
                 return null;
             }
+        } else if(context.expecting_a_response == "q3") {
+            message = message.replace(/[^0-9]/g, "");
+            try {
+                option = Number(message)
+                if(option <= context.saved_suff.data_q3.length && option > 0) {
+                    option = option - 1
+                    context.res = context.saved_suff.data_q3[option][0];
+                    context.res_id = context.saved_suff.data_q3[option][1];
+                    response_message = `Awesome! what more do you want to know about the Restaurant '{}' ?.  
+                    To know what you can ask me now say "what can I ask now?".
+                    `.format([res_hash_name[context.saved_suff.data_q3[option][0]]]);
+                    console.log({'data': response_message, 'tag':'string'})
+                    return {'data': response_message, 'tag':'string'};
+                }
+            }
+            catch(err) {
+                console.log(err)
+                return null;
+            }
         }
         return null;
 
@@ -218,7 +237,13 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q3'){
-                console.log('In q1');
+                params = [];
+                unkowns = 0;
+                params.push(unkown_names[unkowns++]);
+                params.push(regex[2].length);
+                params.push(unkown_names[unkowns++]);
+                query_name = 'priceRangeByName';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q4'){
                 zipcode = regex[2];
@@ -482,6 +507,24 @@ $(document).ready(function() {
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
+        }  else if (response_case === "q3") {
+            response_message = "Please give the price range between 1-3";
+            if(results.length > 0){
+                response_message = 'According to the given range, these are the restaurants:</br>';
+                const uniqueRestName = results?.filter((thing, index) => {
+                    return index === results.findIndex(obj => {
+                        return obj[0] === thing[0];
+                    });
+                });
+                context = getEmptyContext();
+                context.expecting_a_response = "q3";
+                context.saved_suff = { "data_q3": results };
+                for (let i = 0; i < uniqueRestName.length; i++) {
+                    response_message += (i+1)+" "+res_hash_name[results[i][0]] + "</br>"
+                }
+                response_message += "</br>"+"Select a restaurant by entering it's serial number."
+            }
+            return createResponseMessage(response_message);
         } else if(response_case === "q6"){
             response_message = '';
             console.log(results);
