@@ -18,7 +18,7 @@ var commands = {
             "pattern": ["(.*)what can you do(.*)"],
             "match_tye": "r",
             "response_type": "string",
-            "response" : "Ask me  <br/> 1. Suggest a Restaurant<br/> 2. Show Top Rated Restaurants<br/> 3. Suggest Restaurants by [$$] ( $ - Budget Friendly  $$$ - Expensive) <br/> 4. What are restaurants in [zipcode]</br> 5. Show me restaurants that are serving [Category] </br> 6. Search for [Restaurant Name]"
+            "response" : "Ask me  <br/> 1. Suggest a Restaurant<br/> 2. Show Top Rated Restaurants<br/> 3. Restaurants by price range [$1- $3] <br/> 4. What are restaurants in [zipcode]</br> 5. Show me restaurants that are serving [Category] </br> 6. Search for [Restaurant Name]"
         },
         {
             "pattern": ["the names (.*)"],
@@ -39,7 +39,7 @@ var commands = {
             "response" : "q2"
         },
         {
-            "pattern": ["(.*)restaurants by (${1-3})(.*)"],
+            "pattern": ["(.*)restaurants by price range(.*)"],
             "match_tye":"r",
             "response_type":"calculated",
             "response" : "q3"

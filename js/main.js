@@ -218,7 +218,12 @@ $(document).ready(function() {
                 console.log('In q1');
             }
             else if(response_case === 'q3'){
-                console.log('In q1');
+                params = [];
+                unkowns = 0;
+                params.push(unkown_names[unkowns++]);
+                params.push(regex[2]);
+                query_name = 'priceRangeByName';
+                return createAndMakeQuery(query_name, params, unkowns, pr_return);
             }
             else if(response_case === 'q4'){
                 zipcode = regex[2];
@@ -482,6 +487,17 @@ $(document).ready(function() {
                 response_message = 'Okay, wanna try "{}" Resturaunt Instead ?'.format([res_name]);
             return createResponseMessage(response_message);
 
+        }  else if (response_case === "q3") {
+            response_message = "Please give the price range between 1-3";
+            if(results.length > 0){
+                response_message = 'According to the given range, these are the restaurants:</br>';
+                const res = results.flat();
+                const uniqueRestName = [...new Set(res)];
+                for (let i = 0; i < uniqueRestName.length; i++) {
+                    response_message += res_hash_name[results[i]] + "</br>"
+                }
+            }
+            return createResponseMessage(response_message);
         } else if(response_case === "q6"){
             response_message = '';
             console.log(results);
