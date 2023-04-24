@@ -1,9 +1,10 @@
 const knowledge = `
+
 sorts
    %% Restarants table
     #id = 1..200. %%1..271
     #position =  1..250. %%1..182.
-    #restaurantName = {rdsciprv, ouyceuyb, gbxjblpd, hqsplpey, jsqdtysb, ishnguvg, sqscmmsr, kodnhpea, lggpjmpr, xmzqgfca, zdwqmllx, gldowqla, cletuumn, qbfrppef, bczaeloa, sbirykvj, xhpuenbj, vxukbrwc, dmneonwq }.
+    #restaurantName = {rdsciprv, ouyceuyb, gbxjblpd, hqsplpey, jsqdtysb, ishnguvg, sqscmmsr, lggpjmpr, cletuumn, qbfrppef, bczaeloa, sbirykvj, xhpuenbj, vxukbrwc, dmneonwq }.
     #score = 0..50.
     #rating = 0..200.
     #category = {ipsgxfrn, mbqdomyp, ttkxvvno, eimkemgr, ktxeefhg, gdmfeoks, intqqmnk, rahdrcot, fzjugfbl, hozdveen, dfmnogqq, iidscufg, yavgbbkr, ldiryiri, yliyhxlx, nrkaudde, ryvbsweh, intqqmnk, eimkemgr, ryvbsweh, kqqqgiwa, ipzovute, nrkaudde, mzieroag, xlvjogtb, hnahdmbe, mzieroag, iidscufg, tdzmfulb, rahdrcot, intqqmnk, kceborfg, bblqicsh, kqqqgiwa, xixgogkr, guiddmud, ryvbsweh, intqqmnk, rahdrcot, rbmaubjl, iidscufg, bblqicsh, kmsugtzy, ktxeefhg, bblqicsh, unjrwyxk, ktxeefhg, slgsmlpu, eimkemgr, rbmaubjl, kqqqgiwa, ziwlbfeu, xixgogkr, kqqqgiwa, ziwlbfeu, xixgogkr, eimkemgr, kpigxwux, xslfkehe, eimkemgr, gdmfeoks, sevgyqmi, rbmaubjl, slgsmlpu, dswazbvm, kceborfg, intqqmnk, rahdrcot, bblqicsh, yavgbbkr, eimkemgr, eoycxldk, slgsmlpu, eimkemgr, rbmaubjl}.
@@ -125,11 +126,7 @@ rules
     name(23,jsqdtysb).
     name(24,ishnguvg).
     name(30,sqscmmsr).
-    name(32,kodnhpea).
     name(37,lggpjmpr).
-    name(38,xmzqgfca).
-    name(39,zdwqmllx).
-    name(57,gldowqla).
     name(136,cletuumn).
     name(137,qbfrppef).
     name(138,bczaeloa).
@@ -145,11 +142,8 @@ rules
     position(23,14).
     position(24,11).
     position(30,110).
-    position(32,103).
+ 
     position(37,75).
-    position(38,72).
-    position(39,68).
-    position(57,40).
     position(136,42).
     position(137,41).
     position(138,40).
@@ -166,9 +160,7 @@ rules
     score(23,47).
     score(24,49).
     score(30,42).
-    score(32,42).
     score(37,46).
-    score(38,47).
     score(136,49).
     score(137,47).
     score(138,39).
@@ -185,9 +177,7 @@ rules
     ratings(23,100).
     ratings(24,12).
     ratings(30,0).
-    ratings(32,0).
     ratings(37,71).
-    ratings(38,47).
     
     
     ratings(136,20).
@@ -231,20 +221,10 @@ rules
     category(30,intqqmnk).
     category(30,kceborfg).
     category(30,bblqicsh).
-    category(32,kqqqgiwa).
-    category(32,xixgogkr).
-    category(32,guiddmud).
     category(37,ryvbsweh).
     category(37,intqqmnk).
     category(37,rahdrcot).
-    category(38,rbmaubjl).
-    category(38,iidscufg).
-    category(39,bblqicsh).
-    category(39,kmsugtzy).
-    category(39,ktxeefhg).
-    category(57,bblqicsh).
-    category(57,unjrwyxk).
-    category(57,ktxeefhg).
+   
     category(136,slgsmlpu).
     category(136,eimkemgr).
     category(136,rbmaubjl).
@@ -284,8 +264,6 @@ rules
     
     priceRange(37,1).
     
-    
-    priceRange(57,1).
     priceRange(136,2).
     priceRange(137,1).
     priceRange(138,1).
@@ -301,11 +279,9 @@ rules
     fullAddress(23,qderkdtr).
     fullAddress(24,abxrttzr).
     fullAddress(30,sqjtcgzo).
-    fullAddress(32,nwidmpbv).
     fullAddress(37,dfknkjlm).
     fullAddress(38,uhhwcukm).
     fullAddress(39,asegwxyy).
-    fullAddress(57,zcvnzkdf).
     fullAddress(136,buznjfhr).
     fullAddress(137,izgzrpbe).
     fullAddress(138,hstqhtcj).
@@ -321,11 +297,9 @@ rules
     zipcode(23,ypcxxhqq).
     zipcode(24,bbvltflp).
     zipcode(30,jphjbnvq).
-    zipcode(32,ksxbvglz).
     zipcode(37,vlbhkipn).
     zipcode(38,euqzmpyx).
     zipcode(39,jphjbnvq).
-    zipcode(57,vlbhkipn).
     zipcode(136,vlbhkipn).
     zipcode(137,bbvltflp).
     zipcode(138,bbvltflp).
@@ -375,11 +349,7 @@ rules
     hasFoodCategory(24,xkzcvext).
     hasFoodCategory(24,zduxsojk).
     hasFoodCategory(30,riiedzyd).
-    hasFoodCategory(32,rdpuhzrr).
-    hasFoodCategory(32,kvcxqnrg).
-    hasFoodCategory(32,czzhhsif).
-    hasFoodCategory(32,hwaqkkzw).
-    hasFoodCategory(32,zrmuwfem).
+  
     hasFoodCategory(37,lvjjbnsz).
     hasFoodCategory(37,rrdewzyj).
     hasFoodCategory(37,kmsugtzy).
@@ -389,19 +359,7 @@ rules
     hasFoodCategory(37,onsjxlnr).
     hasFoodCategory(37,xlvjogtb).
     hasFoodCategory(37,imbishqe).
-    hasFoodCategory(38,xkzcvext).
-    hasFoodCategory(38,ukeravyd).
-    hasFoodCategory(38,tjxmjvns).
-    hasFoodCategory(38,intqqmnk).
-    hasFoodCategory(38,mhzxyrea).
-    hasFoodCategory(38,xlvjogtb).
-    hasFoodCategory(38,tlpmgdqn).
-    hasFoodCategory(39,xkzcvext).
-    hasFoodCategory(39,yovyvucr).
-    hasFoodCategory(39,bpagkjuo).
-    hasFoodCategory(57,xkzcvext).
-    hasFoodCategory(57,ydgrcaxx).
-    hasFoodCategory(57,auqfbxmu).
+  
     hasFoodCategory(136,iekmbftp).
     hasFoodCategory(136,ojsxepei).
     hasFoodCategory(136,rbmaubjl).
@@ -1584,31 +1542,7 @@ rules
     hasItem(24,xujrnvyh).
     hasItem(30,dxjynjen).
     hasItem(30,rwgfstcl).
-    hasItem(32,qvzpeioj).
-    hasItem(32,yvdjrdhs).
-    hasItem(32,edsyvtri).
-    hasItem(32,axoafxuo).
-    hasItem(32,rjysujqg).
-    hasItem(32,heobnlal).
-    hasItem(32,pwbmzapj).
-    hasItem(32,ygnesgal).
-    hasItem(32,vwxpnrdp).
-    hasItem(32,qenhcxat).
-    hasItem(32,ejfflynm).
-    hasItem(32,cpojimha).
-    hasItem(32,mupavroi).
-    hasItem(32,jbudkbpi).
-    hasItem(32,xcrdvubl).
-    hasItem(32,ixayieee).
-    hasItem(32,hxafnsht).
-    hasItem(32,dcikwzep).
-    hasItem(32,vaffhbhb).
-    hasItem(32,nzjojpxp).
-    hasItem(32,elfgkhds).
-    hasItem(32,dolbzziq).
-    hasItem(32,btfeltfa).
-    hasItem(32,ubdffpri).
-    hasItem(32,ijraevuy).
+  
     hasItem(37,dihougks).
     hasItem(37,hxzlpokj).
     hasItem(37,itvmelra).
@@ -1691,78 +1625,8 @@ rules
     hasItem(37,cbnjerte).
     hasItem(37,kxadxtcj).
     hasItem(37,ojtnfohr).
-    hasItem(38,flqyyqjr).
-    hasItem(38,iplwmahn).
-    hasItem(38,xanjbuck).
-    hasItem(38,amidxcom).
-    hasItem(38,hguwhues).
-    hasItem(38,psgmmiwr).
-    hasItem(38,oedecjln).
-    hasItem(38,igjfjodt).
-    hasItem(38,sxjoekev).
-    hasItem(38,kgmsogcc).
-    hasItem(38,bzlwwppm).
-    hasItem(38,zmrryjck).
-    hasItem(38,cosmfbnr).
-    hasItem(38,tiodmozj).
-    hasItem(38,rjozzbal).
-    hasItem(38,dezetszj).
-    hasItem(38,upfmypdq).
-    hasItem(38,toceyrrq).
-    hasItem(38,pfmblsco).
-    hasItem(38,debgsork).
-    hasItem(38,frxpbzwk).
-    hasItem(38,xpfofplu).
-    hasItem(38,lwkgrzha).
-    hasItem(38,rjinvynn).
-    hasItem(38,ywhiqcwc).
-    hasItem(38,kgnkzgtu).
-    hasItem(38,cppmytel).
-    hasItem(38,yqhhwlts).
-    hasItem(38,wshgwkrh).
-    hasItem(38,vjqsipov).
-    hasItem(38,mjjelpbi).
-    hasItem(38,ncofyryu).
-    hasItem(38,vezjijaw).
-    hasItem(38,ksiogrjl).
-    hasItem(38,ikoxiiug).
-    hasItem(38,jyvvdutr).
-    hasItem(38,xvaihwjd).
-    hasItem(38,ozbubsnf).
-    hasItem(38,fsknyqfn).
-    hasItem(38,xonxvdpr).
-    hasItem(38,oocvrsjk).
-    hasItem(38,eyrcqfoh).
-    hasItem(38,qrtxomtm).
-    hasItem(38,ljnkjpxo).
-    hasItem(38,yywrjody).
-    hasItem(38,japsvolv).
-    hasItem(38,umwueebe).
-    hasItem(38,ykzahyuu).
-    hasItem(38,caphdqvf).
-    hasItem(38,frzwymld).
-    hasItem(39,zjkrfesp).
-    hasItem(39,zdsfdgfj).
-    hasItem(39,oaragtrs).
-    hasItem(39,wweugfoj).
-    hasItem(39,qvsfcgmi).
-    hasItem(39,qljsqybl).
-    hasItem(39,tjvwdkok).
-    hasItem(39,vbtwdrsj).
-    hasItem(39,wblaensk).
-    hasItem(39,sacmbeps).
-    hasItem(39,nieubfaz).
-    hasItem(39,leekjifs).
-    hasItem(39,gsxtnlfm).
-    hasItem(39,xjjchzfg).
-    hasItem(39,asiago).
-    hasItem(57,hnvugymg).
-    hasItem(57,edtkpedl).
-    hasItem(57,ryzwvdaa).
-    hasItem(57,tjhmmurn).
-    hasItem(57,wxbncwhs).
-    hasItem(57,cnhzbias).
-    hasItem(57,oghgbhko).
+ 
+
     hasItem(136,cpaihdfi).
     hasItem(136,uwftucfw).
     hasItem(136,rdwcexqj).
@@ -3985,6 +3849,7 @@ rules
     description(switfhve,kfheqdxn).
     description(hxocibru,kfheqdxn).
     description(dtgwcjqv,kfheqdxn).
+
 
 `;
 
