@@ -671,12 +671,12 @@ $(document).ready(function() {
             }
 
             response_message = 'Please find restaurant Details </br>' +
-                                'Name: '+ res_hash_name[results[1]]+ '</br>'+
-                                'Ranking: ' +results[2]+'</br>'+
-                                'Rating: ' + results[4]+'</br>'+
+                                'Name: '+ res_hash_name[context.q6_res_name_hash]+ '</br>'+
+                                'Ranking: ' +results[0][3]+'</br>'+
+                                'Rating: ' + (results[0][4]/10)+'</br>'+
                                 'Price Range: '+priceRange+'</br>'+
-                                'Address: ' + res_hash_address[results[6]]+'</br>'+
-                                'zipcode: ' + res_hash_zip[results[7]]+'</br>'
+                                'Address: ' + res_hash_address[results[0][5]]+'</br>'+
+                                'zipcode: ' + res_hash_zip[results[0][6]]+'</br>'
 
 
             return createResponseMessage(response_message);
